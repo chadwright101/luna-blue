@@ -1,14 +1,20 @@
+import Header from "@/components/header";
+import Layout from "@/components/layout";
+
 export default function Home() {
   return (
-    <div className="p-4 bg-beige">
-      <h1>Hello</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero commodi
-        consequuntur hic amet, magni eius autem culpa beatae doloribus accusamus
-        reprehenderit tempora dolore veritatis officia, odio blanditiis nobis
-        distinctio, minus animi suscipit quasi quas unde ab. Earum hic saepe
-        ratione.
-      </p>
-    </div>
+    <>
+      <Header cssClasses="px-8 py-2 mb-4" />
+      <Layout>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+          soluta amet sunt illo molestiae odio corrupti dicta, qui nemo nulla
+          quidem fugit iste architecto, accusamus veritatis dolorem laborum
+          rerum cupiditate sed earum. Aspernatur eum nisi magni excepturi rem
+          dolores repellat sit ullam fugit assumenda, ut mollitia veritatis vero
+          placeat voluptatibus?
+        </p>
+      </Layout>
+    </>
   );
 }

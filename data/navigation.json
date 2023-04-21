@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "About us",
+    "url": "#"
+  },
+  {
+    "title": "Our rooms",
+    "url": "#"
+  },
+  {
+    "title": "Gallery",
+    "url": "#"
+  },
+  {
+    "title": "Contact",
+    "url": "#"
+  }
+]

@@ -140,4 +140,39 @@
   }
 }
 
-@layer components {}
+@layer components {
+  body {
+    font-family: "Josefin_Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #4d4d4d;
+    background-color: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Cormorant, serif;
+    color: #0e0e0e;
+    font-weight: 500;
+  }
+
+  h1 {
+    @apply text-60px
+  }
+
+  h2 {
+    @apply text-43px
+  }
+
+  h3 {
+    @apply text-35px
+  }
+
+  h4 {
+    @apply text-25px
+  }
+}

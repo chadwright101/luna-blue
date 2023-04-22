@@ -143,7 +143,7 @@
 @layer components {
   body {
     font-family: "Josefin_Sans", sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 300;
     color: #4d4d4d;
     background-color: #fff;
@@ -174,5 +174,13 @@
 
   h4 {
     @apply text-25px
+  }
+
+  a {
+    @apply transition-all duration-300
+  }
+
+  a:hover {
+    @apply text-brown
   }
 }

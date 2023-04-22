@@ -16,7 +16,7 @@ module.exports = {
       "43px": "2.688rem",
       "35px": "2.188rem",
       "25px": "1.563rem",
-      "17px": "1.063rem",
+      "18px": "1.125rem",
       "14px": "0.875rem",
     },
     colors: {

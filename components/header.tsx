@@ -49,7 +49,7 @@ const Header = ({ cssClasses }: Props) => {
                     <Link
                       href={url}
                       className={classNames(
-                        "p-4 -m-4 text-17px uppercase font-Raleway tracking-widest",
+                        "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
                         }
@@ -92,7 +92,7 @@ const Header = ({ cssClasses }: Props) => {
                     <Link
                       href={url}
                       className={classNames(
-                        "p-4 -m-4 text-14px uppercase font-Raleway tracking-widest hover:text-brown",
+                        "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
                         }
@@ -117,13 +117,28 @@ const Header = ({ cssClasses }: Props) => {
                       className="-mt-0.5"
                     />
                   </div>
-                  {toggleLanguage && (
-                    <ul className="-translate-x-2 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-8 absolute translate-y-[17px]">
-                      <li className="hover:text-brown cursor-pointer">FR</li>
-                      <li className="hover:text-brown cursor-pointer">GR</li>
-                      <li className="hover:text-brown cursor-pointer">IT</li>
-                    </ul>
-                  )}
+                  <div
+                    className={classNames(
+                      "transition-all duration-300 scale-y-0",
+                      {
+                        " scale-y-100": toggleLanguage,
+                      }
+                    )}
+                  >
+                    {toggleLanguage && (
+                      <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-8 absolute -translate-y-5">
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                          FR
+                        </li>
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                          GR
+                        </li>
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                          IT
+                        </li>
+                      </ul>
+                    )}
+                  </div>
                 </li>
               </ul>
             </nav>

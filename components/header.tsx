@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import classNames from "classnames";
 
-import navigationList from "../data/navigation.json";
+import navigationList from "../data/navigation-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -23,7 +23,10 @@ const Header = ({ cssClasses }: Props) => {
         {/* mobile view */}
         <div className="tabletLarge:hidden">
           <div className="flex justify-between items-center">
-            <Link href="/" className="p-3 -m-3">
+            <Link
+              href="/"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+            >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
                 alt="Luna Blue logo"
@@ -32,7 +35,10 @@ const Header = ({ cssClasses }: Props) => {
                 className="w-10 h-auto"
               />
             </Link>
-            <button onClick={() => setToggleMenu(true)} className="p-3 -m-3">
+            <button
+              onClick={() => setToggleMenu(true)}
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+            >
               <Image
                 src="/icons/menu.svg"
                 alt="Menu icon"
@@ -49,7 +55,7 @@ const Header = ({ cssClasses }: Props) => {
                     <Link
                       href={url}
                       className={classNames(
-                        "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest",
+                        "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {
                           "text-brown": currentRoute === url,
                         }
@@ -60,7 +66,10 @@ const Header = ({ cssClasses }: Props) => {
                   </li>
                 ))}
               </ul>
-              <button onClick={() => setToggleMenu(false)} className="p-3 -m-3">
+              <button
+                onClick={() => setToggleMenu(false)}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              >
                 <Image
                   src="/icons/close.svg"
                   alt="Close icon"
@@ -102,12 +111,13 @@ const Header = ({ cssClasses }: Props) => {
                     </Link>
                   </li>
                 ))}
+                {/* language submenu */}
                 <li
                   className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer"
                   onMouseEnter={() => setToggleLanguage(true)}
                   onMouseLeave={() => setToggleLanguage(false)}
                 >
-                  <div className="flex hover:text-brown  p-2 -m-2 translate-y-0.5">
+                  <div className="flex hover:text-brown  p-2 -m-2 translate-y-[3px] desktopSmall:p-0 desktopSmall:m-0">
                     EN{" "}
                     <Image
                       src="/icons/down-arrow.svg"
@@ -121,7 +131,7 @@ const Header = ({ cssClasses }: Props) => {
                     className={classNames(
                       "transition-all duration-300 scale-y-0",
                       {
-                        " scale-y-100": toggleLanguage,
+                        "scale-y-100": toggleLanguage,
                       }
                     )}
                   >

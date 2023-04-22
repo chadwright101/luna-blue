@@ -32,7 +32,7 @@ const Header = ({ cssClasses }: Props) => {
                 alt="Luna Blue logo"
                 width={150}
                 height={193}
-                className="w-10 h-auto"
+                className="w-12 h-auto"
               />
             </Link>
             <button
@@ -85,7 +85,10 @@ const Header = ({ cssClasses }: Props) => {
         {/* desktop view */}
         <div className="hidden tabletLarge:block">
           <div className="flex justify-between items-end">
-            <Link href="/">
+            <Link
+              href="/"
+              className="desktopSmall:hover:scale-105 transition-all duration-500"
+            >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
                 alt="Luna Blue logo"
@@ -97,7 +100,10 @@ const Header = ({ cssClasses }: Props) => {
             <nav>
               <ul className="flex gap-6 -translate-y-3">
                 {navigationList.map(({ title, url }, index) => (
-                  <li key={index}>
+                  <li
+                    key={index}
+                    className="desktopSmall:hover:scale-110 transition-all duration-500"
+                  >
                     <Link
                       href={url}
                       className={classNames(
@@ -113,7 +119,7 @@ const Header = ({ cssClasses }: Props) => {
                 ))}
                 {/* language submenu */}
                 <li
-                  className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer"
+                  className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-110 transition-all duration-500"
                   onMouseEnter={() => setToggleLanguage(true)}
                   onMouseLeave={() => setToggleLanguage(false)}
                 >
@@ -136,14 +142,14 @@ const Header = ({ cssClasses }: Props) => {
                     )}
                   >
                     {toggleLanguage && (
-                      <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-8 absolute -translate-y-5">
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                      <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
                           FR
                         </li>
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
                           GR
                         </li>
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer">
+                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
                           IT
                         </li>
                       </ul>

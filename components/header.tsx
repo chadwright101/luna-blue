@@ -124,7 +124,7 @@ const Header = ({ cssClasses }: Props) => {
                   onMouseLeave={() => setToggleLanguage(false)}
                 >
                   <div className="flex hover:text-brown  p-2 -m-2 translate-y-[3px] desktopSmall:p-0 desktopSmall:m-0">
-                    EN{" "}
+                    EN
                     <Image
                       src="/icons/down-arrow.svg"
                       alt="Down arrow icon"
@@ -135,7 +135,7 @@ const Header = ({ cssClasses }: Props) => {
                   </div>
                   <div
                     className={classNames(
-                      "transition-all duration-300 scale-y-0",
+                      "ease-in-out duration-500 scale-y-0",
                       {
                         "scale-y-100": toggleLanguage,
                       }
@@ -144,13 +144,7 @@ const Header = ({ cssClasses }: Props) => {
                     {toggleLanguage && (
                       <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
                         <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
-                          FR
-                        </li>
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
                           GR
-                        </li>
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
-                          IT
                         </li>
                       </ul>
                     )}

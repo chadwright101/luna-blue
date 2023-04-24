@@ -24,13 +24,10 @@ const Button = ({ cssClasses, url }: Props) => {
         alt="Plus sign icon"
         width={13}
         height={13}
-        className={classNames(
-          "-translate-y-[1.5px] transition-all duration-300",
-          {
-            "w-[16px] animate-pulse rotate-180 -translate-x-[1.5px]":
-              arrowAnimate,
-          }
-        )}
+        className={classNames("-translate-y-[1.5px] ease-in-out duration-500", {
+          "w-[16px] animate-pulse rotate-180 -translate-x-[1.5px]":
+            arrowAnimate,
+        })}
       />
     </Link>
   );

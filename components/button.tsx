@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+
+import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
@@ -7,10 +10,13 @@ interface Props {
 }
 
 const Button = ({ cssClasses, url }: Props) => {
+  const [arrowAnimate, setArrowAnimate] = useState(false);
   return (
     <Link
       href={url}
       className={`flex gap-2 uppercase text-14px text-pureBlack font-350 tracking-widest ${cssClasses}`}
+      onMouseEnter={() => setArrowAnimate(true)}
+      onMouseLeave={() => setArrowAnimate(false)}
     >
       Read more
       <Image
@@ -18,7 +24,13 @@ const Button = ({ cssClasses, url }: Props) => {
         alt="Plus sign icon"
         width={13}
         height={13}
-        className="-translate-y-[1.5px]"
+        className={classNames(
+          "-translate-y-[1.5px] transition-all duration-300",
+          {
+            "w-[16px] animate-pulse rotate-180 -translate-x-[1.5px]":
+              arrowAnimate,
+          }
+        )}
       />
     </Link>
   );

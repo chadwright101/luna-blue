@@ -18,6 +18,7 @@ const Slider = ({ cssClasses, imageData }: Props) => {
           type: "loop",
           interval: 4500,
           speed: 2000,
+          gap: "1.75em",
           rewind: true,
           dragMinThreshold: 10,
           breakpoints: {

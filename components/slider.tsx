@@ -68,7 +68,7 @@ const Slider = ({ cssClasses, imageData }: Props) => {
           {imageData!.map(({ url, alt }, index) => (
             <SplideSlide
               key={index}
-              className="h-[250px] phone:h-[325px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[600px]"
+              className="h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
             >
               <Image
                 src={url}

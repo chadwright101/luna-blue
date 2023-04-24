@@ -87,7 +87,7 @@ const Header = ({ cssClasses }: Props) => {
           <div className="flex justify-between items-end">
             <Link
               href="/"
-              className="desktopSmall:hover:scale-105 transition-all duration-500"
+              className="desktopSmall:hover:scale-105 ease-in-out duration-500"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
@@ -102,7 +102,7 @@ const Header = ({ cssClasses }: Props) => {
                 {navigationList.map(({ title, url }, index) => (
                   <li
                     key={index}
-                    className="desktopSmall:hover:scale-110 transition-all duration-500"
+                    className="desktopSmall:hover:scale-110 ease-in-out duration-300"
                   >
                     <Link
                       href={url}
@@ -119,7 +119,7 @@ const Header = ({ cssClasses }: Props) => {
                 ))}
                 {/* language submenu */}
                 <li
-                  className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-110 transition-all duration-500"
+                  className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-110 ease-in-out duration-300"
                   onMouseEnter={() => setToggleLanguage(true)}
                   onMouseLeave={() => setToggleLanguage(false)}
                 >
@@ -135,7 +135,7 @@ const Header = ({ cssClasses }: Props) => {
                   </div>
                   <div
                     className={classNames(
-                      "ease-in-out duration-500 scale-y-0",
+                      "ease-in-out duration-300 scale-y-0",
                       {
                         "scale-y-100": toggleLanguage,
                       }
@@ -143,7 +143,7 @@ const Header = ({ cssClasses }: Props) => {
                   >
                     {toggleLanguage && (
                       <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
-                        <li className="hover:text-brown transition-all duration-300 cursor-pointer desktopSmall:hover:scale-110">
+                        <li className="hover:text-brown ease-in-out duration-300 cursor-pointer desktopSmall:hover:scale-110">
                           GR
                         </li>
                       </ul>

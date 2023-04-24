@@ -17,7 +17,7 @@ const {
 const Footer = ({ cssClasses }: Props) => {
   return (
     <footer className={`${cssClasses}`}>
-      <hr className="mb-10" />
+      <hr className="mb-10 text-black" />
       <div className="flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]">
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>

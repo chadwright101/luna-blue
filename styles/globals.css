@@ -178,7 +178,7 @@
   }
 
   a {
-    @apply transition-all duration-300
+    @apply ease-in-out duration-300
   }
 
   a:hover {

@@ -18,7 +18,7 @@ const Header = ({ cssClasses }: Props) => {
   const currentRoute = router.pathname;
 
   return (
-    <header className={`${cssClasses}`}>
+    <header className={`bg-white ${cssClasses}`}>
       <div className="desktop:max-w-[1400px] desktop:mx-auto">
         {/* mobile view */}
         <div className="tabletLarge:hidden">
@@ -75,7 +75,7 @@ const Header = ({ cssClasses }: Props) => {
                   alt="Close icon"
                   width={45}
                   height={45}
-                  className="fixed top-0 pt-[18px] right-8"
+                  className="fixed top-0 pt-[24px] right-8"
                 />
               </button>
             </nav>

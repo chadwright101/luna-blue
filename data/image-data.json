@@ -1,0 +1,22 @@
+{
+  "homePage": {
+    "heroSlider": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Dining-with-deck-and-sea-view_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Front-Garden-to-House-view_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Kitchen-Front_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Ocean-View-from-wooden-deck_done.jpg",
+        "alt": ""
+      }
+    ]
+  }
+}

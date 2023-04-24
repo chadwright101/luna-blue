@@ -185,3 +185,25 @@
     @apply text-brown
   }
 }
+
+@layer utilities {
+  .splide__arrows {
+    @apply z-10 absolute w-full flex justify-between px-10 top-1/2 -translate-y-5
+  }
+
+  .splide__arrow {
+    @apply fill-black p-4 -m-4 opacity-90
+  }
+
+  .splide__arrow:hover {
+    @apply fill-brown
+  }
+
+  .splide__arrow:disabled {
+    @apply fill-white
+  }
+
+  .splide__arrow--prev {
+    @apply -scale-100
+  }
+}

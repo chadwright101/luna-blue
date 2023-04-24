@@ -1,12 +1,14 @@
+import Slider from "@/components/slider";
+
+import imageData from "../data/image-data.json";
+
 export default function Home() {
+  const {
+    homePage: { heroSlider },
+  } = imageData;
   return (
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
-      soluta amet sunt illo molestiae odio corrupti dicta, qui nemo nulla quidem
-      fugit iste architecto, accusamus veritatis dolorem laborum rerum
-      cupiditate sed earum. Aspernatur eum nisi magni excepturi rem dolores
-      repellat sit ullam fugit assumenda, ut mollitia veritatis vero placeat
-      voluptatibus?
-    </p>
+    <>
+      <Slider imageData={heroSlider} />
+    </>
   );
 }

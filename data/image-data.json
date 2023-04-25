@@ -1,0 +1,56 @@
+{
+  "homePage": {
+    "heroSlider": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Dining-with-deck-and-sea-view_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Front-Garden-to-House-view_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Kitchen-Front_done.jpg",
+        "alt": ""
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/LB-Ocean-View-from-wooden-deck_done.jpg",
+        "alt": ""
+      }
+    ]
+  },
+  "amenityIcons": [
+    {
+      "url": "/icons/swimming-pool.svg",
+      "title": "Swimming Pool"
+    },
+    {
+      "url": "/icons/gym.svg",
+      "title": "Gym"
+    },
+    {
+      "url": "/icons/pet-friendly.svg",
+      "title": "Pet Friendly"
+    },
+    {
+      "url": "/icons/airport-transfers.svg",
+      "title": "Airport Transfers"
+    },
+    {
+      "url": "/icons/kitchen.svg",
+      "title": "Kitchen"
+    },
+    {
+      "url": "/icons/garden.svg",
+      "title": "Garden"
+    },
+    {
+      "url": "/icons/bbq-facilities.svg",
+      "title": "BBQ Facilities"
+    },
+    {
+      "url": "/icons/free-wifi.svg",
+      "title": "Free Wifi"
+    }
+  ]
+}

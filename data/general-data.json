@@ -1,0 +1,17 @@
+{
+  "address": {
+    "street": "7 Jane street",
+    "town": "Plettenberg Bay",
+    "province": "Western Cape",
+    "areaCode": 6600
+  },
+  "contact": {
+    "phone": "+27 66 488 2828",
+    "email": "nikki@lunarblue.co.za"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/lunarbluevillas",
+    "instagram": "",
+    "tripAdvisor": ""
+  }
+}

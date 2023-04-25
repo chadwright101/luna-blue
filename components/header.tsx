@@ -49,7 +49,13 @@ const Header = ({ cssClasses }: Props) => {
           </div>
           {toggleMenu && (
             <nav className="fixed top-0 h-screen w-full bg-beige -mx-8 pl-8 pt-14">
-              <ul className="flex flex-col gap-7">
+              <ul className="flex flex-col gap-8">
+                <li className="mb-4 flex gap-8">
+                  <p className="px-3 py-2 -mx-3 -my-2 border-brown border-2 font-500">
+                    English
+                  </p>
+                  <p className="p-3 -m-3">Deutsch</p>
+                </li>
                 {navigationList.map(({ title, url }, index) => (
                   <li key={index}>
                     <Link
@@ -58,6 +64,8 @@ const Header = ({ cssClasses }: Props) => {
                         "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {
                           "text-brown": currentRoute === url,
+                          "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
+                            index === 5,
                         }
                       )}
                     >
@@ -102,7 +110,7 @@ const Header = ({ cssClasses }: Props) => {
                 {navigationList.map(({ title, url }, index) => (
                   <li
                     key={index}
-                    className="desktopSmall:hover:scale-110 ease-in-out duration-300"
+                    className="desktopSmall:hover:scale-105 ease-in-out duration-300"
                   >
                     <Link
                       href={url}
@@ -110,6 +118,8 @@ const Header = ({ cssClasses }: Props) => {
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
+                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
+                            index === 5,
                         }
                       )}
                     >
@@ -119,7 +129,7 @@ const Header = ({ cssClasses }: Props) => {
                 ))}
                 {/* language submenu */}
                 <li
-                  className="flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-110 ease-in-out duration-300"
+                  className="ml-3 flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-105 ease-in-out duration-300"
                   onMouseEnter={() => setToggleLanguage(true)}
                   onMouseLeave={() => setToggleLanguage(false)}
                 >
@@ -144,7 +154,13 @@ const Header = ({ cssClasses }: Props) => {
                     {toggleLanguage && (
                       <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
                         <li className="hover:text-brown ease-in-out duration-300 cursor-pointer desktopSmall:hover:scale-110">
-                          GR
+                          DE
+                          <Image
+                            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/125px-Flag_of_Germany.svg.png"
+                            alt="German flag"
+                            width={20}
+                            height={15}
+                          />
                         </li>
                       </ul>
                     )}

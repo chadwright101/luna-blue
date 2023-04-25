@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../button";
 import { useState } from "react";
+
+import Button from "../button";
 
 import classNames from "classnames";
 
@@ -13,7 +14,7 @@ const OurRooms = ({ cssClasses }: Props) => {
   const [cardMove, setCardMove] = useState(false);
   return (
     <section
-      className={`grid gap-10 desktopSmall:grid-cols-[1fr_450px] ${cssClasses}`}
+      className={`grid gap-10 desktopSmall:grid-cols-[2fr_1fr] ${cssClasses}`}
     >
       <div className="grid gap-y-8">
         {/* desktop view */}
@@ -22,9 +23,9 @@ const OurRooms = ({ cssClasses }: Props) => {
           onMouseEnter={() => setCardMove(true)}
           onMouseLeave={() => setCardMove(false)}
           className={classNames(
-            "hidden tabletLarge:block absolute bg-white/[85%] py-10 desktopSmall:py-7 desktop:py-10 px-20 translate-y-[200px] -translate-x-[45px] desktopSmall:translate-y-36 desktop:translate-y-48 duration-300 ease-in-out",
+            "hidden tabletLarge:block absolute bg-white/[85%] py-10 desktopSmall:py-7 desktop:py-10 px-20 translate-y-[200px] -ml-12 desktopSmall:translate-y-36 desktop:translate-y-48 duration-300 ease-in-out",
             {
-              "-translate-x-8": cardMove,
+              "-ml-6": cardMove,
             }
           )}
         >

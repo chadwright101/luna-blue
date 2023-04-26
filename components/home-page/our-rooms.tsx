@@ -1,10 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-
 import Button from "../button";
 
-import classNames from "classnames";
 import ImageCard from "../image-card";
 
 interface Props {
@@ -12,7 +7,6 @@ interface Props {
 }
 
 const OurRooms = ({ cssClasses }: Props) => {
-  const [cardMove, setCardMove] = useState(false);
   return (
     <section
       className={`grid gap-8 desktopSmall:gap-10 desktopSmall:grid-cols-[2fr_1fr] ${cssClasses}`}

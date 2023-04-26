@@ -67,7 +67,7 @@ const Footer = ({ cssClasses }: Props) => {
           <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
             <Link
               href={facebook}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
@@ -79,7 +79,7 @@ const Footer = ({ cssClasses }: Props) => {
             </Link>
             <Link
               href={instagram}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
@@ -91,7 +91,7 @@ const Footer = ({ cssClasses }: Props) => {
             </Link>
             <Link
               href={tripAdvisor}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
             >
               <Image
                 src="/icons/tripadvisor.svg"
@@ -112,7 +112,7 @@ const Footer = ({ cssClasses }: Props) => {
           className="hidden w-16 h-auto ml-auto desktopSmall:block"
         />
       </div>
-      <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4">
+      <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
         © Copyright <Link href="/">Luna Blue Holiday Villas</Link>
       </p>
     </footer>

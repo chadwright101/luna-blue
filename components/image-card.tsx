@@ -11,8 +11,11 @@ interface Props {
   image: string;
   imageLeft?: boolean;
   imageRight?: boolean;
+  imageTop?: boolean;
+  imageBottom?: boolean;
   flip?: boolean;
   thin?: boolean;
+  link: string;
 }
 
 const ImageCard = ({
@@ -24,6 +27,9 @@ const ImageCard = ({
   thin,
   imageLeft,
   imageRight,
+  imageBottom,
+  imageTop,
+  link,
 }: Props) => {
   const [cardMove, setCardMove] = useState(false);
 
@@ -31,7 +37,15 @@ const ImageCard = ({
     <section
       className={classNames(
         `grid gap-10 grid-rows-3 ${
-          imageLeft ? "bg-left" : imageRight ? "bg-right" : "bg-center"
+          imageLeft
+            ? "bg-left"
+            : imageRight
+            ? "bg-right"
+            : imageBottom
+            ? "bg-bottom"
+            : imageTop
+            ? "bg-top"
+            : "bg-center"
         } bg-cover bg-no-repeat ${image} place-items-start ${cssClasses}`,
         {
           "place-items-end ": flip,
@@ -45,7 +59,7 @@ const ImageCard = ({
       <div className="row-start-2">
         {/* desktop view */}
         <Link
-          href="/"
+          href={link}
           onMouseEnter={() => setCardMove(true)}
           onMouseLeave={() => setCardMove(false)}
           className={classNames(

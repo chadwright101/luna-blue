@@ -29,6 +29,7 @@ module.exports = {
       black: "#0e0e0e",
       pureBlack: "#000",
       white: "#fff",
+      blueLink: "#0645AD",
     },
     fontWeight: {
       300: "300",

@@ -11,7 +11,9 @@ interface Props {
 const About = ({ cssClasses }: Props) => {
   const { amenityIcons } = imageData;
   return (
-    <main className={`grid desktopSmall:grid-cols-2 gap-10 ${cssClasses}`}>
+    <main
+      className={`grid desktopSmall:grid-cols-[1fr_2fr] gap-10 ${cssClasses}`}
+    >
       <article>
         <h2>About</h2>
         <p className="mt-4 mb-8">
@@ -24,8 +26,8 @@ const About = ({ cssClasses }: Props) => {
         </p>
         <Button url="/" />
       </article>
-      <article className="bg-beige py-8 px-4">
-        <ul className="grid grid-cols-2 gap-y-8 tablet:grid-cols-3">
+      <article className="">
+        <ul className="grid grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4 desktopSmall:grid-cols-3 desktop:grid-cols-4 desktop:gap-y-16">
           {amenityIcons.map(({ url, title }, index) => (
             <li
               key={index}

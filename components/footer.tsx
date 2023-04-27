@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 import generalData from "../data/general-data.json";
 import navData from "../data/navigation-data.json";
@@ -9,12 +10,15 @@ interface Props {
 }
 
 const {
-  contact: { phone, email },
+  contact: { phone, phoneDisplay, email },
   address: { areaCode, province, street, town },
   social: { facebook, instagram, tripAdvisor },
 } = generalData;
 
 const Footer = ({ cssClasses }: Props) => {
+  const [showEmail, setShowEmail] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
+
   return (
     <footer className={`${cssClasses}`}>
       <hr className="mb-10 text-black" />
@@ -36,23 +40,41 @@ const Footer = ({ cssClasses }: Props) => {
         </div>
         <div>
           <h4>Contact</h4>
-          <ul className="flex flex-col gap-4 mt-6 tabletLarge:grid grid-rows-[40px_40px_1fr] tabletLarge:h-[200px] tabletLarge:gap-0">
-            <li>
-              <Link
-                href={`tel:${phone}`}
-                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
-              >
-                {phone}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`mailto:${email}`}
-                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
-              >
-                {email}
-              </Link>
-            </li>
+          <ul className="flex flex-col gap-6 desktopSmall:gap-4 mt-6 tabletLarge:grid grid-rows-[40px_40px_1fr] tabletLarge:h-[200px] tabletLarge:gap-0">
+            {!showPhone && (
+              <li onClick={() => setShowPhone(true)} className="mr-auto">
+                <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
+                  Show phone number
+                </p>
+              </li>
+            )}
+            {showPhone && (
+              <li>
+                <Link
+                  href={`tel:${phone}`}
+                  className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+                >
+                  {phoneDisplay}
+                </Link>
+              </li>
+            )}
+            {!showEmail && (
+              <li onClick={() => setShowEmail(true)} className="mr-auto">
+                <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
+                  Show email address
+                </p>
+              </li>
+            )}
+            {showEmail && (
+              <li>
+                <Link
+                  href={`mailto:${email}`}
+                  className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+                >
+                  {email}
+                </Link>
+              </li>
+            )}
             <li>
               <address>
                 {street}, {town}
@@ -67,7 +89,7 @@ const Footer = ({ cssClasses }: Props) => {
           <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
             <Link
               href={facebook}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
@@ -79,23 +101,11 @@ const Footer = ({ cssClasses }: Props) => {
             </Link>
             <Link
               href={instagram}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
                 alt="Instagram logo"
-                width={40}
-                height={40}
-                className="desktopSmall:w-[30px] h-auto"
-              />
-            </Link>
-            <Link
-              href={tripAdvisor}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-90 transition-all duration-500"
-            >
-              <Image
-                src="/icons/tripadvisor.svg"
-                alt="Trip Advisor logo"
                 width={40}
                 height={40}
                 className="desktopSmall:w-[30px] h-auto"
@@ -112,7 +122,7 @@ const Footer = ({ cssClasses }: Props) => {
           className="hidden w-16 h-auto ml-auto desktopSmall:block"
         />
       </div>
-      <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4">
+      <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
         © Copyright <Link href="/">Luna Blue Holiday Villas</Link>
       </p>
     </footer>

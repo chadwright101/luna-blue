@@ -6,7 +6,8 @@
     "areaCode": 6600
   },
   "contact": {
-    "phone": "+27 66 488 2828",
+    "phoneDisplay": "+27 66 488 2828",
+    "phone": "+27664882828",
     "email": "nikki@lunarblue.co.za"
   },
   "social": {

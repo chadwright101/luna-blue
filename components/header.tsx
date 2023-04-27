@@ -51,7 +51,7 @@ const Header = ({ cssClasses }: Props) => {
             <nav className="fixed top-0 h-screen w-full bg-beige -mx-8 pl-8 pt-14">
               <ul className="flex flex-col gap-8">
                 <li className="mb-4 flex gap-8">
-                  <p className="px-3 py-2 -mx-3 -my-2 border-brown border-2 font-500">
+                  <p className="px-3 pt-2 pb-1.5 -mx-3 -my-2 border-brown border-2 font-500">
                     English
                   </p>
                   <p className="p-3 -m-3">Deutsch</p>

@@ -8,14 +8,17 @@ interface Props {
   cssClasses?: string;
   url: string;
   children?: ReactNode;
+  width?: string;
 }
 
-const Button = ({ cssClasses, url, children }: Props) => {
+const Button = ({ cssClasses, url, children, width }: Props) => {
   const [arrowAnimate, setArrowAnimate] = useState(false);
   return (
     <Link
       href={url}
-      className={`flex gap-2 uppercase text-14px text-pureBlack font-350 tracking-widest w-[147px] p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`}
+      className={`flex gap-2 uppercase text-14px text-pureBlack font-350 tracking-widest ${
+        width || "w-[147px]"
+      } p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`}
       onMouseEnter={() => setArrowAnimate(true)}
       onMouseLeave={() => setArrowAnimate(false)}
     >

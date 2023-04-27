@@ -8,7 +8,7 @@ interface Props {
 
 const MoreInfoAvailability = ({ cssClasses }: Props) => {
   return (
-    <section className={`grid gap-8 desktopSmall:gap-10 ${cssClasses}`}>
+    <section className={`grid gap-10 ${cssClasses}`}>
       <div>
         <div>
           <h2 className="mb-8 tabletLarge:hidden">Check Availability</h2>

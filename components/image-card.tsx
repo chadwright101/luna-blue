@@ -2,12 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import Button from "./button";
+
 import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
   title: string;
   buttonText?: string | "View More";
+  mobileButtonWidth?: string;
   image: string;
   imageLeft?: boolean;
   imageRight?: boolean;
@@ -16,12 +19,14 @@ interface Props {
   flip?: boolean;
   thin?: boolean;
   link: string;
+  mobileCard?: boolean;
 }
 
 const ImageCard = ({
   cssClasses,
   title,
   buttonText,
+  mobileButtonWidth,
   image,
   flip,
   thin,
@@ -30,13 +35,14 @@ const ImageCard = ({
   imageBottom,
   imageTop,
   link,
+  mobileCard,
 }: Props) => {
   const [cardMove, setCardMove] = useState(false);
 
   return (
     <section
       className={classNames(
-        `grid gap-10 grid-rows-3 ${
+        `grid gap-10 grid-rows-3 tabletLarge:grid-rows-3 ${
           imageLeft
             ? "bg-left"
             : imageRight
@@ -46,9 +52,9 @@ const ImageCard = ({
             : imageTop
             ? "bg-top"
             : "bg-center"
-        } bg-cover bg-no-repeat ${image} place-items-start ${cssClasses}`,
+        } bg-cover bg-no-repeat ${image} place-items-center tabletLarge:place-items-start ${cssClasses}`,
         {
-          "place-items-end ": flip,
+          "tabletLarge:place-items-end ": flip,
           "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[550px] desktopSmall:h-[425px] desktop:h-[550px]":
             !thin,
           "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px] desktopSmall:h-[300px] desktop:h-[400px]":
@@ -56,6 +62,18 @@ const ImageCard = ({
         }
       )}
     >
+      {/* mobile view */}
+      {mobileCard && (
+        <div className="tabletLarge:hidden row-start-3 bg-white/75 w-full h-full">
+          <Button
+            url="#"
+            cssClasses="mx-auto mt-5 text-[16px] text-center"
+            width={mobileButtonWidth}
+          >
+            {buttonText}
+          </Button>
+        </div>
+      )}
       <div className="row-start-2">
         {/* desktop view */}
         <Link

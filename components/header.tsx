@@ -70,6 +70,7 @@ const Header = ({ cssClasses }: Props) => {
                   <li key={index}>
                     <Link
                       href={url}
+                      onClick={() => setToggleMenu(false)}
                       className={classNames(
                         "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {

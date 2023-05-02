@@ -1,7 +1,13 @@
-import ImageCard from "@/components/image-card";
 import Image from "next/image";
 
+import ImageCard from "@/components/image-card";
+import LightboxSlider from "@/components/sliders/lightbox-slider";
+
+import imageData from "../data/image-data.json";
+
 const AboutUs = () => {
+  const { aboutUsSlider } = imageData;
+
   return (
     <>
       <h1 className="text-center">About Us</h1>
@@ -25,7 +31,9 @@ const AboutUs = () => {
           we want you to feel when you visit our villas.
         </p>
       </article>
-      {/* Slider */}
+      <div className="my-10 desktopSmall:my-16">
+        <LightboxSlider imageList={aboutUsSlider} />
+      </div>
       <main>
         <p>
           Located on the magnificent, unspoilt shores of the Indian Ocean, in

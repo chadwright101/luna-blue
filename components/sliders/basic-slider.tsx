@@ -9,7 +9,7 @@ interface Props {
   imageData?: Array<{ url: string; alt: string }>;
 }
 
-const Slider = ({ cssClasses, imageData }: Props) => {
+const BasicSlider = ({ cssClasses, imageData }: Props) => {
   return (
     <>
       <Splide
@@ -86,4 +86,4 @@ const Slider = ({ cssClasses, imageData }: Props) => {
   );
 };
 
-export default Slider;
+export default BasicSlider;

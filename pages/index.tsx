@@ -1,4 +1,4 @@
-import Slider from "@/components/slider";
+import BasicSlider from "@/components/sliders/basic-slider";
 
 import imageData from "../data/image-data.json";
 import About from "@/components/home-page/about";
@@ -11,7 +11,7 @@ export default function Home() {
   } = imageData;
   return (
     <>
-      <Slider imageData={heroSlider} />
+      <BasicSlider imageData={heroSlider} />
       <About cssClasses="my-10 desktopSmall:my-16" />
       <OurRooms cssClasses="pt-4" />
       <hr className="text-black my-10 desktopSmall:my-16" />

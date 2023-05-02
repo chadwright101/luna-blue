@@ -1,4 +1,3 @@
-import Button from "../button";
 import ImageCard from "../image-card";
 
 interface Props {

@@ -61,19 +61,19 @@ const ImageCard = ({
         } bg-cover bg-no-repeat ${image} place-items-center tabletLarge:place-items-start ${cssClasses}`,
         {
           "tabletLarge:place-items-end ": flip,
-          "desktop:place-items-center": center,
-          "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[550px] desktopSmall:h-[425px] desktop:h-[550px]":
+          "desktopSmall:place-items-center": center,
+          "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[475px] desktopSmall:h-[425px]":
             !thin,
           "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px] desktopSmall:h-[300px] desktop:h-[400px]":
             thin,
-          "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[550px] desktopSmall:h-[425px] desktop:h-[375px]":
+          "h-[300px] phone:h-[325px] tablet:h-[326px] tabletLarge:h-[450px] desktopSmall:h-[425px] desktop:h-[375px]":
             thinDesktopOnly,
         }
       )}
     >
       {/* mobile view */}
       {mobileCard && (
-        <div className="tabletLarge:hidden row-start-3 bg-white/75 w-full h-full">
+        <div className="tabletLarge:hidden row-start-3  bg-white/75 w-full h-full">
           <Button
             url="#"
             cssClasses="mx-auto mt-5 text-[16px] text-center"

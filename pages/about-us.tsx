@@ -129,6 +129,7 @@ const AboutUs = () => {
             mobileButtonWidth="w-[158px]"
             mobileCard
             center
+            cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
           />
         </div>
       </section>

@@ -37,7 +37,7 @@ const LightboxSlider = ({ imageList }) => {
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: 10,
+            dragMinThreshold: 100,
             breakpoints: {
               900: {
                 arrows: false,
@@ -55,17 +55,17 @@ const LightboxSlider = ({ imageList }) => {
               alt="Close icon"
               width={45}
               height={45}
-              className="fixed top-6 right-10"
+              className="fixed top-6 right-8 tabletLarge:top-14 tabletLarge:right-16 bg-darkBeige/75 z-40"
             />
           </button>
           {imageList.map(({ url }, index) => (
-            <SplideSlide key={index} className="max-h-[750px]">
+            <SplideSlide key={index} className="max-h-screen py-8">
               <Image
                 src={url}
                 alt="Luna Blue guesthouse"
                 width={1400}
                 height={1000}
-                className="object-cover h-full w-full"
+                className="object-cover h-full w-full tablet:w-10/12 tabletLarge:w-full mx-auto"
               />
             </SplideSlide>
           ))}
@@ -83,7 +83,7 @@ const LightboxSlider = ({ imageList }) => {
           speed: 2000,
           interval: 6500,
           autoplay: true,
-          dragMinThreshold: 10,
+          dragMinThreshold: 100,
           gap: "1rem",
           fixedHeight: 500,
           arrows: true,
@@ -95,23 +95,26 @@ const LightboxSlider = ({ imageList }) => {
               arrows: false,
               fixedHeight: 400,
             },
+            650: {
+              fixedHeight: 300,
+            },
             425: {
-              fixedHeight: 325,
+              fixedHeight: 275,
             },
           },
         }}
-        className="h-[325px] phone:h-[400px] tabletLarge:h-[500px]"
+        className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
         ref={(slider) => (slider2.current = slider)}
       >
         {imageList.map(({ url }, index) => (
           <SplideSlide key={index} className="h-full w-full">
-            <div className="w-full bg-white h-full flex justify-center overflow-hidden object-cover">
+            <div className="w-full bg-white h-full object-cover">
               <Image
                 src={url}
                 alt="Luna Blue guesthouse"
-                width={200}
-                height={200}
-                className="object-cover h-full w-full cursor-pointer px-1 pt-2"
+                width={900}
+                height={500}
+                className="object-cover h-full w-full cursor-pointer"
                 onClick={() => (
                   slider1.current.go(index), setToggleLightbox(true)
                 )}

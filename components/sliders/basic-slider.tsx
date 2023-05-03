@@ -20,7 +20,7 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: 10,
+          dragMinThreshold: 100,
           breakpoints: {
             900: {
               arrows: false,

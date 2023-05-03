@@ -121,7 +121,7 @@ const AboutUs = () => {
           />
           <ImageCard
             title="Events"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-events-1.jpg')]"
+            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.jpg')]"
             link="https://www.plett-tourism.co.za/do/event/"
             targetBlank
             thinDesktopOnly

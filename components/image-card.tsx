@@ -66,7 +66,7 @@ const ImageCard = ({
             !thin,
           "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px] desktopSmall:h-[300px] desktop:h-[400px]":
             thin,
-          "h-[300px] phone:h-[325px] tablet:h-[326px] tabletLarge:h-[450px] desktopSmall:h-[425px] desktop:h-[375px]":
+          "h-[300px] phone:h-[325px] tablet:h-[324px] tabletLarge:h-[450px] desktopSmall:h-[425px] desktop:h-[375px]":
             thinDesktopOnly,
         }
       )}

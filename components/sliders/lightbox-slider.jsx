@@ -75,7 +75,7 @@ const LightboxSlider = ({ imageList }) => {
       {/* slider */}
       <Splide
         options={{
-          type: "slide",
+          type: "loop",
           rewind: true,
           pagination: false,
           perPage: 2,

@@ -107,6 +107,7 @@ const AboutUs = () => {
             mobileButtonWidth="w-[158px]"
             mobileCard
             center
+            thin
           />
           <ImageCard
             title="Restaurants"
@@ -118,6 +119,7 @@ const AboutUs = () => {
             mobileButtonWidth="w-[158px]"
             mobileCard
             center
+            thin
           />
           <ImageCard
             title="Events"
@@ -130,6 +132,7 @@ const AboutUs = () => {
             mobileCard
             center
             cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
+            thin
           />
         </div>
       </section>

@@ -64,10 +64,10 @@ const ImageCard = ({
           "desktopSmall:place-items-center": center,
           "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[475px] desktopSmall:h-[425px]":
             !thin,
-          "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px] desktopSmall:h-[300px] desktop:h-[400px]":
+          "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px]":
             thin,
-          "h-[300px] phone:h-[325px] tablet:h-[324px] tabletLarge:h-[450px] desktopSmall:h-[425px] desktop:h-[375px]":
-            thinDesktopOnly,
+          "desktopSmall:h-[300px] desktop:h-[400px]": thin && thinDesktopOnly,
+          "desktopSmall:h-[425px] desktop:h-[375px]": thinDesktopOnly,
         }
       )}
     >

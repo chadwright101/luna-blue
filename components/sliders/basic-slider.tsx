@@ -9,7 +9,7 @@ interface Props {
   imageData?: Array<{ url: string; alt: string }>;
 }
 
-const Slider = ({ cssClasses, imageData }: Props) => {
+const BasicSlider = ({ cssClasses, imageData }: Props) => {
   return (
     <>
       <Splide
@@ -20,7 +20,7 @@ const Slider = ({ cssClasses, imageData }: Props) => {
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: 10,
+          dragMinThreshold: 100,
           breakpoints: {
             900: {
               arrows: false,
@@ -86,4 +86,4 @@ const Slider = ({ cssClasses, imageData }: Props) => {
   );
 };
 
-export default Slider;
+export default BasicSlider;

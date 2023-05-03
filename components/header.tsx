@@ -2,6 +2,9 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+
+import useScrollPosition from "./utils/scroll-position";
+
 import classNames from "classnames";
 
 import navigationList from "../data/navigation-data.json";
@@ -16,6 +19,8 @@ const Header = ({ cssClasses }: Props) => {
 
   const router = useRouter();
   const currentRoute = router.pathname;
+
+  const scrollPosition = useScrollPosition();
 
   return (
     <header className={`bg-white ${cssClasses}`}>
@@ -32,7 +37,12 @@ const Header = ({ cssClasses }: Props) => {
                 alt="Luna Blue logo"
                 width={150}
                 height={193}
-                className="w-12 h-auto"
+                className={classNames(
+                  "w-12 h-auto ease-in-out duration-300 delay-[10ms]",
+                  {
+                    "w-[40px] -translate-y-0.5": scrollPosition > 0,
+                  }
+                )}
               />
             </Link>
             <button
@@ -60,6 +70,7 @@ const Header = ({ cssClasses }: Props) => {
                   <li key={index}>
                     <Link
                       href={url}
+                      onClick={() => setToggleMenu(false)}
                       className={classNames(
                         "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {
@@ -102,11 +113,22 @@ const Header = ({ cssClasses }: Props) => {
                 alt="Luna Blue logo"
                 width={150}
                 height={193}
-                className="w-10 h-auto tabletLarge:w-[75px]"
+                className={classNames(
+                  "h-auto ease-in-out duration-300 delay-[10ms]",
+                  {
+                    "w-[75px]": scrollPosition === 0,
+                    "w-[50px]": scrollPosition > 0,
+                  }
+                )}
               />
             </Link>
             <nav>
-              <ul className="flex gap-6 -translate-y-3">
+              <ul
+                className={classNames(
+                  "flex gap-6 ease-in-out delay-[10ms] duration-300 -translate-y-3",
+                  { "translate-y-2": scrollPosition > 0 }
+                )}
+              >
                 {navigationList.map(({ title, url }, index) => (
                   <li
                     key={index}

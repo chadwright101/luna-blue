@@ -15,7 +15,7 @@ const About = ({ cssClasses }: Props) => {
       className={`grid desktopSmall:grid-cols-[1fr_2fr] gap-10 ${cssClasses}`}
     >
       <article>
-        <h2>About</h2>
+        <h2>About Us</h2>
         <p className="mt-4 mb-8">
           There is no older or greater love story than that of the moon and the
           sea, with this relationship covered by both mythology and science.
@@ -24,7 +24,7 @@ const About = ({ cssClasses }: Props) => {
           greater perspective of how we fit into this world. This is the magic
           we want you to feel when you visit our villas.
         </p>
-        <Button url="/" />
+        <Button url="about-us" />
       </article>
       <article className="">
         <ul className="grid grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4 desktopSmall:grid-cols-3 desktop:grid-cols-4 desktop:gap-y-16">

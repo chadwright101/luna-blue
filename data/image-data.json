@@ -19,6 +19,98 @@
       }
     ]
   },
+  "aboutUsSlider": [
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Braai-Patio-area_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Casual-Dining-Area_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Dining-and-kitchen-lyout_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Dining-Area_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Double-Garage-and-Carport_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Downstairs-Hallway_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Entrance-Hall_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Front-Entrance_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Front-Garden-to-House-view_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Gym_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Kitchen-Front_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Kitchen-Front-View_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Kitchen-to-Dining-view_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Kitchen-with-appliance-view_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Main-Living-Area_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Main-Living-Area-3_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Ocean-and-mountain-view-from-deck_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Pool-and-Fountain_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Pool-and-lounger-from-deck_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Pool-area-and-loungers_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Pool-below-Deck-View_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Pool-view-from-deck_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-TV-Lounge-Entrance_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-TV-Room_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-TV-Room-2_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-TV-Room-3_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Upstairs-landing_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Upstairs-Landing-to-bedrooms_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Wooden-Deck_done.jpg"
+    },
+    {
+      "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LP-Landing-view-of-entrance_done.jpg"
+    }
+  ],
   "amenityIcons": [
     {
       "url": "/icons/swimming-pool.svg",
@@ -33,8 +125,8 @@
       "title": "Pet Friendly"
     },
     {
-      "url": "/icons/airport-transfers.svg",
-      "title": "Airport Transfers"
+      "url": "/icons/solar.svg",
+      "title": "Solar Powered"
     },
     {
       "url": "/icons/kitchen.svg",

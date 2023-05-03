@@ -1,5 +1,3 @@
-import Button from "../button";
-
 import ImageCard from "../image-card";
 
 interface Props {
@@ -8,7 +6,7 @@ interface Props {
 
 const MoreInfoAvailability = ({ cssClasses }: Props) => {
   return (
-    <section className={`grid gap-8 desktopSmall:gap-10 ${cssClasses}`}>
+    <section className={`grid gap-10 ${cssClasses}`}>
       <div>
         <div>
           <h2 className="mb-8 tabletLarge:hidden">Check Availability</h2>
@@ -19,12 +17,11 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
             flip
             thin
             buttonText="View our calendar"
+            mobileButtonWidth="w-[249px]"
             imageTop
+            mobileCard
           />
         </div>
-        <Button url="#" cssClasses="mt-8 tabletLarge:hidden" width="w-[228px]">
-          View our calendar
-        </Button>
       </div>
 
       <div>
@@ -34,13 +31,12 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
             title="About Plettenberg Bay"
             link="#"
             image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/footprints-in-the-sand.jpg')]"
+            mobileButtonWidth="w-[158px]"
             thin
             imageLeft
+            mobileCard
           />
         </div>
-        <Button url="#" cssClasses="mt-8 tabletLarge:hidden">
-          View More
-        </Button>
       </div>
     </section>
   );

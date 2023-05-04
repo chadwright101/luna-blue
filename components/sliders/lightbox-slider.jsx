@@ -66,6 +66,7 @@ const LightboxSlider = ({ imageList }) => {
                 width={1400}
                 height={1000}
                 className="object-cover h-full w-full tablet:w-10/12 tabletLarge:w-full mx-auto"
+                quality={60}
               />
             </SplideSlide>
           ))}
@@ -108,18 +109,17 @@ const LightboxSlider = ({ imageList }) => {
       >
         {imageList.map(({ url }, index) => (
           <SplideSlide key={index} className="h-full w-full">
-            <div className="w-full bg-white h-full object-cover">
-              <Image
-                src={url}
-                alt="Luna Blue guesthouse"
-                width={900}
-                height={500}
-                className="object-cover h-full w-full cursor-pointer"
-                onClick={() => (
-                  slider1.current.go(index), setToggleLightbox(true)
-                )}
-              />
-            </div>
+            <Image
+              src={url}
+              alt="Luna Blue guesthouse"
+              width={900}
+              height={500}
+              className="object-cover h-full w-full cursor-pointer"
+              onClick={() => (
+                slider1.current.go(index), setToggleLightbox(true)
+              )}
+              quality={60}
+            />
           </SplideSlide>
         ))}
       </Splide>

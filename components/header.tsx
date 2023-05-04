@@ -43,6 +43,7 @@ const Header = ({ cssClasses }: Props) => {
                     "w-[40px] -translate-y-0.5": scrollPosition > 0,
                   }
                 )}
+                priority
               />
             </Link>
             <button
@@ -54,6 +55,7 @@ const Header = ({ cssClasses }: Props) => {
                 alt="Menu icon"
                 width={45}
                 height={45}
+                priority
               />
             </button>
           </div>
@@ -95,6 +97,7 @@ const Header = ({ cssClasses }: Props) => {
                   width={45}
                   height={45}
                   className="fixed top-0 pt-[24px] right-8"
+                  priority
                 />
               </button>
             </nav>
@@ -120,6 +123,7 @@ const Header = ({ cssClasses }: Props) => {
                     "w-[50px]": scrollPosition > 0,
                   }
                 )}
+                priority
               />
             </Link>
             <nav>
@@ -163,6 +167,7 @@ const Header = ({ cssClasses }: Props) => {
                       width={25}
                       height={25}
                       className="-mt-0.5"
+                      priority
                     />
                   </div>
                   <div

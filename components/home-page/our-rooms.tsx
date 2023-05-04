@@ -16,7 +16,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         <ImageCard
           title="Our Homes"
           link="#"
-          image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.jpg')]"
+          image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.webp"
         />
       </div>
       <p>

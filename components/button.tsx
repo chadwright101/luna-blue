@@ -16,7 +16,7 @@ const Button = ({ cssClasses, url, children, width }: Props) => {
   return (
     <Link
       href={url}
-      className={`flex gap-2 uppercase text-14px text-left text-pureBlack font-350 tracking-widest hover:text-black hover:tabletLarge:text-brown ${
+      className={`flex gap-2 items-center uppercase text-14px text-left text-pureBlack font-350 tracking-widest hover:text-black hover:tabletLarge:text-brown ${
         width || "w-[147px]"
       } p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`}
       onMouseEnter={() => setArrowAnimate(true)}

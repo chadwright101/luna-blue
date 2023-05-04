@@ -17,7 +17,7 @@ const AboutUs = () => {
         width={1400}
         height={750}
         className="mt-4 mb-10 desktopSmall:mb-16 desktopSmall:mt-6 object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px]"
-        quality={50}
+        quality={75}
       />
       <article className=" max-w-[900px] mx-auto">
         <h2 className="text-43px tabletLarge:text-center mb-10">
@@ -63,7 +63,7 @@ const AboutUs = () => {
             <li>Pillow Library</li>
             <li>Underfloor Heating</li>
             <li>Coffee Machine</li>
-            <li>Garder</li>
+            <li>Garden</li>
             <li>Smart TVs</li>
             <li>BBQ Facilities</li>
             <li>Free Wifi</li>

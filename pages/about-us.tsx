@@ -17,6 +17,7 @@ const AboutUs = () => {
         width={1400}
         height={750}
         className="mt-4 mb-10 desktopSmall:mb-16 desktopSmall:mt-6 object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px]"
+        quality={50}
       />
       <article className=" max-w-[900px] mx-auto">
         <h2 className="text-43px tabletLarge:text-center mb-10">
@@ -101,46 +102,40 @@ const AboutUs = () => {
             <h2 className="mb-8 tabletLarge:hidden">Activities</h2>
             <ImageCard
               title="Activities"
-              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/activities.webp')]"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/activities.webp"
               link="https://www.plett-tourism.co.za/do/activities/"
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth="w-[158px]"
-              mobileCard
+              mobileButtonWidth="w-[161px]"
               center
-              thin
             />
           </div>
           <div>
             <h2 className="mb-8 tabletLarge:hidden">Restaurants</h2>
             <ImageCard
               title="Restaurants"
-              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-food.webp')]"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-food.webp"
               link="https://www.plett-tourism.co.za/eat/"
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth="w-[158px]"
-              mobileCard
+              mobileButtonWidth="w-[161px]"
               center
-              thin
             />
           </div>
           <div>
             <h2 className="mb-8 tabletLarge:hidden">Events</h2>
             <ImageCard
               title="Events"
-              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.webp')]"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.webp"
               link="https://www.plett-tourism.co.za/do/event/"
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth="w-[158px]"
-              mobileCard
-              center
+              mobileButtonWidth="w-[161px]"
               cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
-              thin
+              center
             />
           </div>
         </div>

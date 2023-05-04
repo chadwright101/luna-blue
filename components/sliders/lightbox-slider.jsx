@@ -66,7 +66,7 @@ const LightboxSlider = ({ imageList }) => {
                 width={1400}
                 height={1000}
                 className="object-cover h-full w-full tablet:w-10/12 tabletLarge:w-full mx-auto"
-                quality={60}
+                quality={50}
               />
             </SplideSlide>
           ))}
@@ -118,7 +118,7 @@ const LightboxSlider = ({ imageList }) => {
               onClick={() => (
                 slider1.current.go(index), setToggleLightbox(true)
               )}
-              quality={60}
+              quality={50}
             />
           </SplideSlide>
         ))}

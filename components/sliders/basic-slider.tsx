@@ -76,7 +76,7 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
                 width={1400}
                 height={1000}
                 className="object-cover h-full w-full max-w-[1400px]"
-                quality={60}
+                quality={50}
                 loading={index < 2 ? "eager" : "lazy"}
               />
             </SplideSlide>

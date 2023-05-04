@@ -12,16 +12,10 @@ interface Props {
   buttonText?: string | "View More";
   mobileButtonWidth?: string;
   image: string;
-  imageLeft?: boolean;
-  imageRight?: boolean;
-  imageTop?: boolean;
-  imageBottom?: boolean;
   flip?: boolean;
   center?: boolean;
-  thin?: boolean;
   thinDesktopOnly?: boolean;
   link: string;
-  mobileCard?: boolean;
   targetBlank?: boolean;
 }
 
@@ -31,73 +25,60 @@ const ImageCard = ({
   buttonText,
   mobileButtonWidth,
   image,
+  link,
   flip,
   center,
-  thin,
-  thinDesktopOnly,
-  imageLeft,
-  imageRight,
-  imageBottom,
-  imageTop,
-  link,
-  mobileCard,
   targetBlank,
 }: Props) => {
   const [cardMove, setCardMove] = useState(false);
 
   return (
-    <section
-      className={classNames(
-        `grid gap-10 grid-rows-3 tabletLarge:grid-rows-3 ${
-          imageLeft
-            ? "bg-left"
-            : imageRight
-            ? "bg-right"
-            : imageBottom
-            ? "bg-bottom"
-            : imageTop
-            ? "bg-top"
-            : "bg-center"
-        } bg-cover bg-no-repeat ${image} place-items-center tabletLarge:place-items-start ${cssClasses}`,
-        {
-          "tabletLarge:place-items-end ": flip,
-          "desktopSmall:place-items-center": center,
-          "h-[300px] phone:h-[325px] tablet:h-[425px] tabletLarge:h-[475px] desktopSmall:h-[425px]":
-            !thin,
-          "h-[300px] phone:h-[325px] tablet:h-[325px] tabletLarge:h-[450px]":
-            thin,
-          "desktopSmall:h-[300px] desktop:h-[400px]": thin && thinDesktopOnly,
-          "desktopSmall:h-[425px] desktop:h-[375px]": thinDesktopOnly,
-        }
-      )}
+    <article
+      className={`h-[275px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[475px] desktop:h-[400px] ${cssClasses}`}
     >
+      <Image
+        src={image}
+        alt=""
+        width={900}
+        height={500}
+        className="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
+      />
+
       {/* mobile view */}
-      {mobileCard && (
-        <div className="tabletLarge:hidden row-start-3  bg-white/75 w-full h-full">
+      <div className="h-full grid grid-rows-4 tabletLarge:hidden">
+        <div className="bg-white/75 row-start-4 grid grid-rows-3">
           <Button
             url="#"
-            cssClasses="mx-auto mt-5 text-[16px] text-center"
+            cssClasses="mx-auto text-[16px] text-center row-start-2"
             width={mobileButtonWidth}
           >
             {buttonText}
           </Button>
         </div>
-      )}
-      <div className="row-start-2">
-        {/* desktop view */}
+      </div>
+
+      {/* desktop view */}
+      <div
+        className={classNames(
+          "hidden tabletLarge:grid grid-rows-3 tabletLarge:place-items-start",
+          {
+            "tabletLarge:place-items-end": flip,
+            "desktop:place-items-center": center,
+          }
+        )}
+      >
         <Link
           href={link}
           onMouseEnter={() => setCardMove(true)}
           onMouseLeave={() => setCardMove(false)}
           className={classNames(
-            `hidden tabletLarge:block bg-white/[85%] py-10 desktopSmall:py-7 desktop:py-10 ${
-              center ? "px-10" : "pr-20 pl-10"
-            }  duration-300 ease-in-out`,
+            `bg-white/[85%] tabletLarge:mt-3 desktopSmall:mt-7 desktop:-mt-2 row-start-2 py-10 desktopSmall:py-7 desktop:py-10 px-10 duration-300 ease-in-out`,
             {
-              "pl-20 pr-10": flip,
-              "pl-14": cardMove && !flip && !center,
-              "pr-24": cardMove && flip,
               "px-12": cardMove && center,
+              "pl-[80px]": flip && !center,
+              "pr-[80px]": !flip && !center,
+              "pl-14": cardMove && !flip && !center,
+              "pr-14": cardMove && flip && !center,
             }
           )}
           target={targetBlank ? "_blank" : "_self"}
@@ -123,7 +104,7 @@ const ImageCard = ({
           </div>
         </Link>
       </div>
-    </section>
+    </article>
   );
 };
 

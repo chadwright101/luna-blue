@@ -13,12 +13,10 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <ImageCard
             title="Check Availability"
             link="#"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0440-HDR-cropped.webp')]"
+            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0440-HDR-cropped.webp"
             flip
-            thin
             buttonText="View our calendar"
             mobileButtonWidth="w-[249px]"
-            mobileCard
           />
         </div>
       </div>
@@ -29,11 +27,8 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <ImageCard
             title="About Plettenberg Bay"
             link="https://www.plett-tourism.co.za/"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/footprints-in-the-sand.webp')]"
+            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/footprints-in-the-sand.webp"
             mobileButtonWidth="w-[158px]"
-            thin
-            imageLeft
-            mobileCard
             targetBlank
           />
         </div>

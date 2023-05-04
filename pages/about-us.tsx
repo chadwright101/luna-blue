@@ -10,19 +10,19 @@ const AboutUs = () => {
 
   return (
     <>
-      <h1 className="text-center">About Us</h1>
+      <h1 className="tabletLarge:text-center">About Us</h1>
       <Image
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/LB-Front-Garden-to-House-view_done.jpg"
+        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/9U7A0628-HDR-30.jpg"
         alt="Luna Blue guesthouse"
         width={1400}
         height={750}
-        className="my-10 desktopSmall:my-16 object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px]"
+        className="mt-4 mb-10 desktopSmall:mb-16 desktopSmall:mt-6 object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px]"
       />
       <article className=" max-w-[900px] mx-auto">
-        <h2 className="text-43px text-center mb-10">
+        <h2 className="text-43px tabletLarge:text-center mb-10">
           Located on the magnificent, unspoilt shores of the Indian Ocean.
         </h2>
-        <p className="text-center">
+        <p className="tabletLarge:text-center">
           There is no older or greater love story than that of the moon and the
           sea, with this relationship covered by both mythology and science.
           Whether apart or together they have the power to entrance with their
@@ -88,8 +88,8 @@ const AboutUs = () => {
       </main>
       <section>
         <div className="max-w-[900px] mx-auto mb-10">
-          <h3 className="text-center mb-10">Things To Do</h3>
-          <p className="text-center">
+          <h3 className="tabletLarge:text-center mb-10">Things To Do</h3>
+          <p className="tabletLarge:text-center">
             This beautiful region offers you access to top rated golf courses,
             hiking trails, vineyards, kayaking, surfing, wildlife sanctuaries,
             ocean tours, markets and numerous adrenalin inducing activities,
@@ -97,43 +97,52 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="grid tabletLarge:grid-cols-2 desktop:grid-cols-3 gap-10">
-          <ImageCard
-            title="Activities"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/activities.jpg')]"
-            link="https://www.plett-tourism.co.za/do/activities/"
-            targetBlank
-            thinDesktopOnly
-            buttonText="Read More"
-            mobileButtonWidth="w-[158px]"
-            mobileCard
-            center
-            thin
-          />
-          <ImageCard
-            title="Restaurants"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-food.jpg')]"
-            link="https://www.plett-tourism.co.za/eat/"
-            targetBlank
-            thinDesktopOnly
-            buttonText="Read More"
-            mobileButtonWidth="w-[158px]"
-            mobileCard
-            center
-            thin
-          />
-          <ImageCard
-            title="Events"
-            image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.jpg')]"
-            link="https://www.plett-tourism.co.za/do/event/"
-            targetBlank
-            thinDesktopOnly
-            buttonText="Read More"
-            mobileButtonWidth="w-[158px]"
-            mobileCard
-            center
-            cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
-            thin
-          />
+          <div>
+            <h2 className="mb-8 tabletLarge:hidden">Activities</h2>
+            <ImageCard
+              title="Activities"
+              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/activities.jpg')]"
+              link="https://www.plett-tourism.co.za/do/activities/"
+              targetBlank
+              thinDesktopOnly
+              buttonText="Read More"
+              mobileButtonWidth="w-[158px]"
+              mobileCard
+              center
+              thin
+            />
+          </div>
+          <div>
+            <h2 className="mb-8 tabletLarge:hidden">Restaurants</h2>
+            <ImageCard
+              title="Restaurants"
+              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-food.jpg')]"
+              link="https://www.plett-tourism.co.za/eat/"
+              targetBlank
+              thinDesktopOnly
+              buttonText="Read More"
+              mobileButtonWidth="w-[158px]"
+              mobileCard
+              center
+              thin
+            />
+          </div>
+          <div>
+            <h2 className="mb-8 tabletLarge:hidden">Events</h2>
+            <ImageCard
+              title="Events"
+              image="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.jpg')]"
+              link="https://www.plett-tourism.co.za/do/event/"
+              targetBlank
+              thinDesktopOnly
+              buttonText="Read More"
+              mobileButtonWidth="w-[158px]"
+              mobileCard
+              center
+              cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
+              thin
+            />
+          </div>
         </div>
       </section>
     </>

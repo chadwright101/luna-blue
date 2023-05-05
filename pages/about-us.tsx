@@ -4,6 +4,7 @@ import ImageCard from "@/components/image-card";
 import LightboxSlider from "@/components/sliders/lightbox-slider";
 
 import imageData from "../data/image-data.json";
+import HeroSplit from "@/components/hero-split";
 
 const AboutUs = () => {
   const { aboutUsSlider } = imageData;
@@ -13,48 +14,18 @@ const AboutUs = () => {
       <h1 className=" mb-4 tabletLarge:text-center desktopSmall:mb-6">
         About Us
       </h1>
-      <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tablet:grid-cols-4 desktopSmall:grid-cols-5 gap-4">
-        <Image
-          src="/9U7A0520-HDR.jpg"
-          alt=""
-          width={1400}
-          height={750}
-          className="hidden tablet:block object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
-          priority
+      <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
+        <HeroSplit
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0520-HDR.jpg"
+          cssClasses="hidden tabletLarge:block"
         />
-        <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/Plett_Imagery-03669.jpg"
-          alt=""
-          width={1400}
-          height={750}
-          className="hidden desktopSmall:block object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
-          priority
+        <HeroSplit
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/Plett_Imagery-03669.jpg"
+          cssClasses="hidden desktop:block"
         />
-        <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg"
-          alt="Luna Blue guesthouse"
-          width={1400}
-          height={750}
-          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
-          priority
-        />
-
-        <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg"
-          alt=""
-          width={1400}
-          height={750}
-          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
-          priority
-        />
-        <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg"
-          alt=""
-          width={1400}
-          height={750}
-          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
-          priority
-        />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg" />
       </div>
       <article className=" max-w-[900px] mx-auto">
         <h2 className="text-43px tabletLarge:text-center mb-10">
@@ -70,7 +41,12 @@ const AboutUs = () => {
         </p>
       </article>
       <div className="my-10 desktopSmall:my-16">
-        <LightboxSlider imageList={aboutUsSlider} singleImage={false} />
+        <LightboxSlider
+          imageList={aboutUsSlider}
+          singleImageFast={false}
+          singleImageMedium={false}
+          singleImageSlow={false}
+        />
       </div>
       <main>
         <p>

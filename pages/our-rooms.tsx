@@ -104,22 +104,33 @@ const OurRooms = ({ cssClasses }: Props) => {
         </article>
       </main>
       <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider roomInfo={roomData.bedroom1} imageList={bedroom1} />
+      <RoomInfoSlider
+        roomInfo={roomData.bedroom1}
+        imageList={bedroom1}
+        singleImageFast={true}
+      />
       <hr className="my-10 desktopSmall:my-16 text-black" />
       <div className="grid gap-10 desktopSmall:grid-cols-2">
         <RoomInfoSlider
           roomInfo={roomData.bedroom2}
           imageList={bedroom2}
           flip
+          singleImageMedium={true}
         />
         <RoomInfoSlider
           roomInfo={roomData.bedroom3}
           imageList={bedroom3}
           flip
+          singleImageSlow={true}
         />
       </div>
       <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider roomInfo={roomData.bedroom4} imageList={bedroom4} flip />
+      <RoomInfoSlider
+        roomInfo={roomData.bedroom4}
+        imageList={bedroom4}
+        flip
+        singleImageFast={true}
+      />
     </div>
   );
 };

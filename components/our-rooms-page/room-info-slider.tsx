@@ -9,9 +9,19 @@ interface Props {
     facilities: string[];
   };
   flip?: boolean;
+  singleImageFast?: boolean;
+  singleImageMedium?: boolean;
+  singleImageSlow?: boolean;
 }
 
-const RoomInfoSlider = ({ imageList, roomInfo, flip }: Props) => {
+const RoomInfoSlider = ({
+  imageList,
+  roomInfo,
+  flip,
+  singleImageFast,
+  singleImageMedium,
+  singleImageSlow,
+}: Props) => {
   const { title, facilities } = roomInfo;
   return (
     <section
@@ -35,7 +45,12 @@ const RoomInfoSlider = ({ imageList, roomInfo, flip }: Props) => {
           ))}
         </ul>
       </div>
-      <LightBoxSlider imageList={imageList} singleImage={true} />
+      <LightBoxSlider
+        imageList={imageList}
+        singleImageFast={singleImageFast}
+        singleImageMedium={singleImageMedium}
+        singleImageSlow={singleImageSlow}
+      />
     </section>
   );
 };

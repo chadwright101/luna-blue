@@ -70,7 +70,7 @@ const AboutUs = () => {
         </p>
       </article>
       <div className="my-10 desktopSmall:my-16">
-        <LightboxSlider imageList={aboutUsSlider} />
+        <LightboxSlider imageList={aboutUsSlider} singleImage={false} />
       </div>
       <main>
         <p>

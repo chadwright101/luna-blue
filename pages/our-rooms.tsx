@@ -1,15 +1,25 @@
 import Image from "next/image";
 
+import RoomInfoSlider from "@/components/our-rooms-page/room-info-slider";
+
+import imageList from "../data/image-data.json";
+import roomData from "../data/room-data.json";
+
 interface Props {
   cssClasses?: string;
 }
 
 const OurRooms = ({ cssClasses }: Props) => {
+  const {
+    ourRooms: { bedroom1, bedroom2, bedroom3, bedroom4 },
+  } = imageList;
   return (
     <div className={`${cssClasses}`}>
       <h1 className=" mb-4 tabletLarge:text-center desktopSmall:mb-6">
         Our Rooms
       </h1>
+
+      {/* hero split */}
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tablet:grid-cols-4 desktopSmall:grid-cols-5 gap-4">
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0792-HDR.jpg"
@@ -52,7 +62,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           priority
         />
       </div>
-      <main className="grid desktopSmall:grid-cols-[3fr_2fr] gap-10">
+      <main className="grid desktopSmall:grid-cols-[1fr_1fr] gap-10">
         <article className="bg-beige p-8">
           <div className="grid gap-4">
             <p>
@@ -85,9 +95,30 @@ const OurRooms = ({ cssClasses }: Props) => {
             <li>Smart TV</li>
             <li>Underfloor Heating</li>
             <li>Pillow Library</li>
+            <li>Linen & Towels</li>
           </ul>
+          <p className="italic mt-4">
+            Please see the additional facilities which are unique to each room
+            below...
+          </p>
         </article>
       </main>
+      <RoomInfoSlider roomInfo={roomData.bedroom1} imageList={bedroom1} />
+      <hr className="my-10 desktopSmall:my-16 text-black" />
+      <div className="grid gap-10 desktopSmall:grid-cols-2">
+        <RoomInfoSlider
+          roomInfo={roomData.bedroom2}
+          imageList={bedroom2}
+          flip
+        />
+        <RoomInfoSlider
+          roomInfo={roomData.bedroom3}
+          imageList={bedroom3}
+          flip
+        />
+      </div>
+      <hr className="my-10 desktopSmall:my-16 text-black" />
+      <RoomInfoSlider roomInfo={roomData.bedroom4} imageList={bedroom4} flip />
     </div>
   );
 };

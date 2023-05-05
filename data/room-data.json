@@ -1,0 +1,24 @@
+{
+  "bedroom1": {
+    "title": "Main Bedroom",
+    "facilities": [
+      "King size bed",
+      "Walk-in closet",
+      "Fireplace",
+      "Large balcony",
+      "Superior bathroom"
+    ]
+  },
+  "bedroom2": {
+    "title": "Bedroom Two",
+    "facilities": ["King size bed", "Small balcony"]
+  },
+  "bedroom3": {
+    "title": "Bedroom Three",
+    "facilities": ["Queen size bed", "Small balcony"]
+  },
+  "bedroom4": {
+    "title": "Bedroom Four",
+    "facilities": ["King size bed", "Superior balcony", "Kitchenette"]
+  }
+}

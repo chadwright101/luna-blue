@@ -112,5 +112,99 @@
       "url": "/icons/free-wifi.svg",
       "title": "Free Wifi"
     }
-  ]
+  ],
+  "ourRooms": {
+    "bedroom1": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0800-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0804-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0808-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0812-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0816-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0820-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0824-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0828-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0832-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0836-HDR.jpg"
+      }
+    ],
+    "bedroom2": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0764-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0768-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0772-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0776-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0788-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0792-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0796-HDR.jpg"
+      }
+    ],
+    "bedroom3": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+3/9U7A0712-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+3/9U7A0720-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+3/9U7A0752-HDR-Edit.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+3/9U7A0756-HDR.jpg"
+      }
+    ],
+    "bedroom4": [
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0868-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0872-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0876-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0880-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0884-HDR.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0888-HDR-Edit.jpg"
+      },
+      {
+        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+4/9U7A0904-HDR.jpg"
+      }
+    ]
+  }
 }

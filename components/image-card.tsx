@@ -17,6 +17,7 @@ interface Props {
   thinDesktopOnly?: boolean;
   link: string;
   targetBlank?: boolean;
+  blankMobileCard?: boolean;
 }
 
 const ImageCard = ({
@@ -29,6 +30,7 @@ const ImageCard = ({
   flip,
   center,
   targetBlank,
+  blankMobileCard,
 }: Props) => {
   const [cardMove, setCardMove] = useState(false);
 
@@ -45,10 +47,14 @@ const ImageCard = ({
       />
 
       {/* mobile view */}
-      <div className="h-full grid grid-rows-4 tabletLarge:hidden">
+      <div
+        className={classNames("h-full grid grid-rows-4 tabletLarge:hidden", {
+          "hidden ": blankMobileCard,
+        })}
+      >
         <div className="bg-white/75 row-start-4 grid grid-rows-3">
           <Button
-            url="#"
+            url={link}
             cssClasses="mx-auto text-[16px] text-center row-start-2"
             width={mobileButtonWidth}
           >

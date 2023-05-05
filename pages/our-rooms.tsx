@@ -63,7 +63,7 @@ const OurRooms = ({ cssClasses }: Props) => {
             </p>
             <p>
               Our upmarket rooms feature only the finest amenities and
-              furnishings, including plush bedding, top-of-the-line electronics,
+              furnishings, including plush bedding, top of the line electronics,
               and high-quality toiletries. You&#39;ll feel pampered and indulged
               as you sink into our soft, comfortable beds and enjoy a restful
               night&#39;s sleep.

@@ -15,9 +15,10 @@ const OurRooms = ({ cssClasses }: Props) => {
         <h2 className="mb-8 tabletLarge:hidden">Our Rooms</h2>
         <ImageCard
           title="Our Homes"
-          link="#"
+          link="/our-rooms"
           image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.webp"
           mobileButtonWidth="w-[158px]"
+          blankMobileCard
         />
       </div>
       <p>
@@ -34,7 +35,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         stay is perfect. Whether you&#39;re here for business or pleasure, our
         upmarket rooms will provide you with the ultimate in comfort and luxury.
       </p>
-      <Button url="/" cssClasses="tabletLarge:hidden">
+      <Button url="/our-rooms" cssClasses="tabletLarge:hidden">
         View More
       </Button>
     </section>

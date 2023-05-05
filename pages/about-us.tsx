@@ -10,15 +10,52 @@ const AboutUs = () => {
 
   return (
     <>
-      <h1 className="tabletLarge:text-center">About Us</h1>
-      <Image
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0628-HDR-30.jpg"
-        alt="Luna Blue guesthouse"
-        width={1400}
-        height={750}
-        className="mt-4 mb-10 desktopSmall:mb-16 desktopSmall:mt-6 object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px]"
-        quality={75}
-      />
+      <h1 className=" mb-4 tabletLarge:text-center desktopSmall:mb-6">
+        About Us
+      </h1>
+      <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tablet:grid-cols-4 desktopSmall:grid-cols-5 gap-4">
+        <Image
+          src="/9U7A0520-HDR.jpg"
+          alt=""
+          width={1400}
+          height={750}
+          className="hidden tablet:block object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
+          priority
+        />
+        <Image
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/Plett_Imagery-03669.jpg"
+          alt=""
+          width={1400}
+          height={750}
+          className="hidden desktopSmall:block object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
+          priority
+        />
+        <Image
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg"
+          alt="Luna Blue guesthouse"
+          width={1400}
+          height={750}
+          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
+          priority
+        />
+
+        <Image
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg"
+          alt=""
+          width={1400}
+          height={750}
+          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
+          priority
+        />
+        <Image
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg"
+          alt=""
+          width={1400}
+          height={750}
+          className="object-cover h-[250px] phone:h-[300px] tablet:h-[350px] tabletLarge:h-[425px] desktop:h-[525px] object-center"
+          priority
+        />
+      </div>
       <article className=" max-w-[900px] mx-auto">
         <h2 className="text-43px tabletLarge:text-center mb-10">
           Located on the magnificent, unspoilt shores of the Indian Ocean.

@@ -62,7 +62,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           priority
         />
       </div>
-      <main className="grid desktopSmall:grid-cols-[1fr_1fr] gap-10">
+      <main className="grid desktopSmall:grid-cols-[0.8fr_1fr] gap-10">
         <article className="bg-beige p-8">
           <div className="grid gap-4">
             <p>
@@ -87,7 +87,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           </div>
         </article>
         <article>
-          <h2 className="mb-10">Each Room Boasts the following facilities:</h2>
+          <h2 className="mb-10">Each room boasts the following facilities:</h2>
           <ul className="list-disc pl-4">
             <li>En-suite bathroom with shower and bath</li>
             <li>Magnificent views</li>
@@ -103,6 +103,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           </p>
         </article>
       </main>
+      <hr className="my-10 desktopSmall:my-16 text-black" />
       <RoomInfoSlider roomInfo={roomData.bedroom1} imageList={bedroom1} />
       <hr className="my-10 desktopSmall:my-16 text-black" />
       <div className="grid gap-10 desktopSmall:grid-cols-2">

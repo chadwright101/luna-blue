@@ -6,7 +6,12 @@ import classNames from "classnames";
 
 import "@splidejs/react-splide/css/core";
 
-const LightboxSlider = ({ imageList, singleImage }) => {
+const LightboxSlider = ({
+  imageList,
+  singleImageFast,
+  singleImageMedium,
+  singleImageSlow,
+}) => {
   const slider1 = useRef();
   const slider2 = useRef();
 
@@ -73,18 +78,113 @@ const LightboxSlider = ({ imageList, singleImage }) => {
         </Splide>
       </div>
 
-      {singleImage ? (
+      {singleImageFast ? (
         <Splide
           options={{
-            type: "loop",
+            type: "fade",
             rewind: true,
             pagination: false,
             perPage: 1,
             speed: 2000,
-            interval: 6500,
+            interval: 5000,
             autoplay: true,
             dragMinThreshold: 100,
-            gap: "1rem",
+            fixedHeight: 500,
+            arrows: true,
+            breakpoints: {
+              1100: {
+                perPage: 1,
+              },
+              900: {
+                arrows: false,
+                fixedHeight: 400,
+              },
+              650: {
+                fixedHeight: 300,
+              },
+              425: {
+                fixedHeight: 275,
+              },
+            },
+          }}
+          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
+          ref={(slider) => (slider2.current = slider)}
+        >
+          {imageList.map(({ url }, index) => (
+            <SplideSlide key={index} className="h-full w-full">
+              <Image
+                src={url}
+                alt="Luna Blue guesthouse"
+                width={900}
+                height={500}
+                className="object-cover h-full w-full cursor-pointer"
+                onClick={() => (
+                  slider1.current.go(index), setToggleLightbox(true)
+                )}
+                quality={50}
+              />
+            </SplideSlide>
+          ))}
+        </Splide>
+      ) : singleImageMedium ? (
+        <Splide
+          options={{
+            type: "fade",
+            rewind: true,
+            pagination: false,
+            perPage: 1,
+            speed: 2000,
+            interval: 6000,
+            autoplay: true,
+            dragMinThreshold: 100,
+            fixedHeight: 500,
+            arrows: true,
+            breakpoints: {
+              1100: {
+                perPage: 1,
+              },
+              900: {
+                arrows: false,
+                fixedHeight: 400,
+              },
+              650: {
+                fixedHeight: 300,
+              },
+              425: {
+                fixedHeight: 275,
+              },
+            },
+          }}
+          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
+          ref={(slider) => (slider2.current = slider)}
+        >
+          {imageList.map(({ url }, index) => (
+            <SplideSlide key={index} className="h-full w-full">
+              <Image
+                src={url}
+                alt="Luna Blue guesthouse"
+                width={900}
+                height={500}
+                className="object-cover h-full w-full cursor-pointer"
+                onClick={() => (
+                  slider1.current.go(index), setToggleLightbox(true)
+                )}
+                quality={50}
+              />
+            </SplideSlide>
+          ))}
+        </Splide>
+      ) : singleImageSlow ? (
+        <Splide
+          options={{
+            type: "fade",
+            rewind: true,
+            pagination: false,
+            perPage: 1,
+            speed: 2000,
+            interval: 7000,
+            autoplay: true,
+            dragMinThreshold: 100,
             fixedHeight: 500,
             arrows: true,
             breakpoints: {

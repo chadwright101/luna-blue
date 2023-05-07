@@ -92,11 +92,16 @@ const ImageCard = ({
           <h2
             className={classNames("text-[32px]", {
               "text-brown": cardMove,
+              "text-right": flip,
             })}
           >
             {title}
           </h2>
-          <div className="flex gap-2">
+          <div
+            className={classNames("flex gap-2", {
+              "justify-end": flip,
+            })}
+          >
             <p className="uppercase text-[13px] text-pureBlack font-350 tracking-widest">
               {buttonText || "View More"}
             </p>

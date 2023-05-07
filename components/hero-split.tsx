@@ -18,7 +18,7 @@ const HeroSplit = ({ url, cssClasses }: Props) => {
         width={1400}
         height={750}
         className={classNames(
-          "object-cover h-[275px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[425px] desktop:h-[500px] ease-in-out duration-500",
+          "object-cover h-[275px] phone:h-[300px] tablet:h-[375px] tabletLarge:h-[425px] desktop:h-[500px] ease-in-out duration-500",
           {
             "scale-[107.5%]": hoverZoom,
           }

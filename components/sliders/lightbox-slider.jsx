@@ -49,7 +49,7 @@ const LightboxSlider = ({
               },
             },
           }}
-          className="max-w-[1200px]"
+          className="max-w-[350px] phone:max-w-[500px] tablet:max-w-[600px] tabletLarge:max-w-[800px] desktopSmall:max-w-[900px] desktop:max-w-[1200px]"
         >
           <button
             onClick={() => setToggleLightbox(false)}
@@ -64,17 +64,14 @@ const LightboxSlider = ({
             />
           </button>
           {imageList.map(({ url }, index) => (
-            <SplideSlide
-              key={index}
-              className="h-[80vh] grid place-items-center"
-            >
+            <SplideSlide key={index} className="h-[80vh] flex">
               <Image
                 src={url}
                 alt="Luna Blue guesthouse"
                 width={1400}
                 height={1000}
                 quality={50}
-                className="object-cover"
+                className="object-cover place-self-center"
               />
             </SplideSlide>
           ))}

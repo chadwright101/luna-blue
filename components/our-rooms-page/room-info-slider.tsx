@@ -12,6 +12,7 @@ interface Props {
   singleImageFast?: boolean;
   singleImageMedium?: boolean;
   singleImageSlow?: boolean;
+  cssClasses?: string;
 }
 
 const RoomInfoSlider = ({
@@ -21,17 +22,15 @@ const RoomInfoSlider = ({
   singleImageFast,
   singleImageMedium,
   singleImageSlow,
+  cssClasses,
 }: Props) => {
   const { title, facilities } = roomInfo;
   return (
     <section
-      className={classNames(
-        "mt-10 desktopSmall:mt-16 block desktopSmall:grid gap-10",
-        {
-          "desktopSmall:grid-cols-[1fr_2fr]": flip,
-          "desktopSmall:grid-cols-[2fr_1fr]": !flip,
-        }
-      )}
+      className={classNames(`block desktopSmall:grid gap-10 ${cssClasses}`, {
+        "desktopSmall:grid-cols-[1fr_2fr]": flip,
+        "desktopSmall:grid-cols-[2fr_1fr]": !flip,
+      })}
     >
       <div
         className={classNames("mb-10", {

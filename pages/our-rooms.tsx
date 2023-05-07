@@ -23,15 +23,15 @@ const OurRooms = ({ cssClasses }: Props) => {
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
         <HeroSplit
           url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0792-HDR.jpg"
-          cssClasses="hidden tabletLarge:block"
+          cssClasses="hidden desktop:block"
         />
         <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0836-HDR.jpg" />
         <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0804-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/9U7A0848-HDR.jpg" />
         <HeroSplit
-          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/9U7A0848-HDR.jpg"
-          cssClasses="hidden desktop:block"
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0820-HDR.jpg"
+          cssClasses="hidden tabletLarge:block"
         />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0820-HDR.jpg" />
       </div>
       <main className="grid desktopSmall:grid-cols-[0.8fr_1fr] gap-10">
         <article className="bg-beige p-8">
@@ -61,7 +61,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           <h2 className="mb-10">Each room boasts the following facilities:</h2>
           <ul className="list-disc pl-4">
             <li>En-suite bathroom with shower and bath</li>
-            <li>Magnificent views</li>
+            <li>Magnificent sea facing views</li>
             <li>Free Wifi</li>
             <li>Smart TV</li>
             <li>Underfloor Heating</li>
@@ -81,18 +81,21 @@ const OurRooms = ({ cssClasses }: Props) => {
         singleImageFast={true}
       />
       <hr className="my-10 desktopSmall:my-16 text-black" />
-      <div className="grid gap-10 desktopSmall:grid-cols-2">
+      <div className="grid gap-x-10 desktopSmall:grid-cols-2">
         <RoomInfoSlider
           roomInfo={roomData.bedroom2}
           imageList={bedroom2}
           flip
           singleImageMedium={true}
+          cssClasses="mt-0"
         />
+        <hr className="my-16 desktopSmall:hidden text-black" />
         <RoomInfoSlider
           roomInfo={roomData.bedroom3}
           imageList={bedroom3}
           flip
           singleImageSlow={true}
+          cssClasses="-mt-5 desktopSmall:mt-0"
         />
       </div>
       <hr className="my-10 desktopSmall:my-16 text-black" />

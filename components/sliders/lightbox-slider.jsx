@@ -25,7 +25,7 @@ const LightboxSlider = ({
       {/* lightbox */}
       <div
         className={classNames(
-          "fixed top-0 left-0 w-full h-full bg-darkBeige z-40 px-10 place-items-center",
+          "fixed top-0 left-0 w-screen h-full bg-darkBeige z-40 place-items-center px-10",
           {
             "hidden ": !toggleLightbox,
             "grid ": toggleLightbox,
@@ -64,20 +64,24 @@ const LightboxSlider = ({
             />
           </button>
           {imageList.map(({ url }, index) => (
-            <SplideSlide key={index} className="max-h-screen py-8">
+            <SplideSlide
+              key={index}
+              className="h-[80vh] grid place-items-center"
+            >
               <Image
                 src={url}
                 alt="Luna Blue guesthouse"
                 width={1400}
                 height={1000}
-                className="object-cover h-full w-full tablet:w-10/12 tabletLarge:w-full mx-auto"
                 quality={50}
+                className="object-cover"
               />
             </SplideSlide>
           ))}
         </Splide>
       </div>
 
+      {/* slider */}
       {singleImageFast ? (
         <Splide
           options={{

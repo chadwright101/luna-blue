@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import generalData from "../data/general-data.json";
 import navData from "../data/navigation-data.json";
+import classNames from "classnames";
 
 interface Props {
   cssClasses?: string;
@@ -12,17 +14,27 @@ interface Props {
 const {
   contact: { phone, phoneDisplay, email },
   address: { areaCode, province, street, town },
-  social: { facebook, instagram, tripAdvisor },
+  social: { facebook, instagram },
 } = generalData;
 
 const Footer = ({ cssClasses }: Props) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
 
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   return (
     <footer className={`${cssClasses}`}>
       <hr className="mb-10 text-black" />
-      <div className="flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]">
+      <div
+        className={classNames(
+          "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
+          {
+            "justify-center": currentRoute === "/contact",
+          }
+        )}
+      >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
           <ul className="mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0">
@@ -38,7 +50,11 @@ const Footer = ({ cssClasses }: Props) => {
             ))}
           </ul>
         </div>
-        <div>
+        <div
+          className={classNames("", {
+            hidden: currentRoute === "/contact",
+          })}
+        >
           <h4>Contact</h4>
           <ul className="flex flex-col gap-6 desktopSmall:gap-4 mt-6 tabletLarge:grid grid-rows-[40px_40px_1fr] tabletLarge:h-[200px] tabletLarge:gap-0">
             {!showPhone && (
@@ -85,7 +101,13 @@ const Footer = ({ cssClasses }: Props) => {
           </ul>
         </div>
         <div>
-          <h4>Social</h4>
+          <h4
+            className={classNames("", {
+              "text-center tabletLarge:text-left": currentRoute === "/contact",
+            })}
+          >
+            Social
+          </h4>
           <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
             <Link
               href={facebook}

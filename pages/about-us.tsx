@@ -40,32 +40,32 @@ const AboutUs = () => {
           we want you to feel when you visit our villas.
         </p>
       </article>
-      <div className="my-10 desktopSmall:my-16">
+      <div id="gallery" className="-translate-y-20"></div>
+      <section className="my-10 desktopSmall:my-16">
+        <h2 className="mb-10">Gallery</h2>
         <LightboxSlider
           imageList={aboutUsSlider}
           singleImageFast={false}
           singleImageMedium={false}
           singleImageSlow={false}
         />
-      </div>
+      </section>
       <main>
         <p>
-          Located on the magnificent, unspoilt shores of the Indian Ocean, in
-          particular the Tsitsikamma Marine Protected Area, Plettenburg Bay in
-          the Garden Route is known for it&#39;s crystal clear seas and white
-          sand beaches. Our Villas offer majestic views of the coast and were
-          built to offer a cultivated experience of the things that we love.
-          Luna Blue Villas is the passion project of Nikki and Heath, who
-          together found their home in Plettenburg Bay. While their work
-          experience has been vast, the one consistent factor throughout is
-          their hospitality and passion for dealing with people. The Villas are
-          a reflection of the things that they most care for, including the
-          environment, fitness, animals, vegan cuisine and a deep love for
-          Africa. Located outside of the hustle and bustle of central
-          Plettenburg Bay, your stay with us will be a peaceful, soul restoring
-          experience, while giving you quick access of a 5 minute drive to the
-          airport, 7 minute drive to town and 10 minute drive to the beautiful
-          beaches.
+          Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the
+          Garden Route is known for it&#39;s crystal clear seas and white sand
+          beaches. Our Villas offer majestic views of the coast and were built
+          to offer a cultivated experience of the things that we love. Luna Blue
+          Villas is the passion project of Nikki and Heath, who together found
+          their home in Plettenburg Bay. While their work experience has been
+          vast, the one consistent factor throughout is their hospitality and
+          passion for dealing with people. The Villas are a reflection of the
+          things that they most care for, including the environment, fitness,
+          animals, vegan cuisine and a deep love for Africa. Located outside of
+          the hustle and bustle of central Plettenburg Bay, your stay with us
+          will be a peaceful, soul restoring experience, while giving you quick
+          access of a 5 minute drive to the airport, 7 minute drive to town and
+          10 minute drive to the beautiful beaches.
         </p>
         <article className="my-10 desktopSmall:my-16">
           <h2 className="mb-10">Facilities</h2>

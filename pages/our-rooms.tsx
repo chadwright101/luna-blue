@@ -15,7 +15,7 @@ const OurRooms = ({ cssClasses }: Props) => {
 
   return (
     <div className={`${cssClasses}`}>
-      <h1 className=" mb-4 tabletLarge:text-center desktopSmall:mb-6">
+      <h1 className=" mb-6 tabletLarge:text-center desktopSmall:mb-8å">
         Our Rooms
       </h1>
 

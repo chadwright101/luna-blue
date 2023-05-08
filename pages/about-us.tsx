@@ -11,7 +11,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <h1 className=" mb-4 tabletLarge:text-center desktopSmall:mb-6">
+      <h1 className=" mb-6 tabletLarge:text-center desktopSmall:mb-8">
         About Us
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">

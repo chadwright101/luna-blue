@@ -79,7 +79,8 @@ const Contact = () => {
           </ul>
           <div>
             <p className="mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4">
-              Please fill out the form below and we'll get back to you ASAP...
+              Please fill out the form below and we&#39;ll get back to you
+              ASAP...
             </p>
             <form action="" method="POST" className="flex flex-col gap-10">
               <div className="flex flex-col gap-3">

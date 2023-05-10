@@ -8,7 +8,7 @@ interface Props {
     title: string;
     facilities: string[];
     size: number;
-    excluding: string;
+    excluding?: string;
   };
   flip?: boolean;
   singleImageFast?: boolean;

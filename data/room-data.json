@@ -13,7 +13,7 @@
   "bedroom2": {
     "title": "King Room with Sea View",
     "facilities": ["King size bed", "Small balcony"],
-    "size": "24"
+    "size": 24
   },
   "bedroom3": {
     "title": "Queen Room with Sea View",
@@ -24,6 +24,6 @@
     "title": "Sea View Studio with Kitchenette",
     "facilities": ["King size bed", "Superior balcony", "Kitchenette"],
     "size": 28,
-    "excluding": "excluding balcony"
+    "excluding": "excluding private balcony"
   }
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import generalData from "../data/general-data.json";
+import ContactMap from "@/components/contact-page/map";
 
 const {
   contact: { phone, phoneDisplay, email },
@@ -82,7 +83,11 @@ const Contact = () => {
               Please fill out the form below and we&#39;ll get back to you
               ASAP...
             </p>
-            <form action="" method="POST" className="flex flex-col gap-10">
+            <form
+              action="https://formsubmit.co/enquiries@lunarblue.co.za"
+              method="POST"
+              className="flex flex-col gap-10"
+            >
               <div className="flex flex-col gap-3">
                 <label htmlFor="name" className="font-500">
                   Name:
@@ -96,6 +101,7 @@ const Contact = () => {
                   className="pl-2 py-1.5 bg-darkBeige"
                 />
               </div>
+              <input type="text" name="_honey" className="hidden"></input>
               {showMessage && (
                 <>
                   <div className="flex flex-col gap-3">
@@ -155,6 +161,7 @@ const Contact = () => {
           />
         )}
       </div>
+      <ContactMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>
   );
 };

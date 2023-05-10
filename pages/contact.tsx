@@ -22,7 +22,7 @@ const Contact = () => {
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
         <Image
-          src="/DSC01683.jpg"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
           alt=""
           width={1100}
           height={750}
@@ -153,11 +153,11 @@ const Contact = () => {
         </div>
         {!showMessage && (
           <Image
-            src="/DSC01981.jpg"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
             alt=""
             width={1400}
             height={740}
-            className="object-cover mt-4 col-span-full h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            className="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
           />
         )}
       </div>

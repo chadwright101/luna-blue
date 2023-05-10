@@ -68,7 +68,7 @@ const Header = ({ cssClasses }: Props) => {
                   </p>
                   <p className="p-3 -m-3">Deutsch</p>
                 </li>
-                {navigationList.map(({ title, url }, index) => (
+                {navigationList.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>
                     <Link
                       href={url}
@@ -81,6 +81,7 @@ const Header = ({ cssClasses }: Props) => {
                             index === 5,
                         }
                       )}
+                      target={targetBlank ? "_blank" : "_self"}
                     >
                       {title}
                     </Link>
@@ -133,7 +134,7 @@ const Header = ({ cssClasses }: Props) => {
                   { "translate-y-2": scrollPosition > 0 }
                 )}
               >
-                {navigationList.map(({ title, url }, index) => (
+                {navigationList.map(({ title, url, targetBlank }, index) => (
                   <li
                     key={index}
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
@@ -148,6 +149,7 @@ const Header = ({ cssClasses }: Props) => {
                             index === 5,
                         }
                       )}
+                      target={targetBlank ? "_blank" : "_self"}
                     >
                       {title}
                     </Link>

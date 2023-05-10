@@ -1,24 +1,29 @@
 {
   "bedroom1": {
-    "title": "Main Bedroom",
+    "title": "Luxury Suite with Sea View",
     "facilities": [
       "King size bed",
       "Walk-in closet",
       "Fireplace",
       "Large balcony",
       "Superior bathroom"
-    ]
+    ],
+    "size": 54
   },
   "bedroom2": {
-    "title": "Bedroom Two",
-    "facilities": ["King size bed", "Small balcony"]
+    "title": "King Room with Sea View",
+    "facilities": ["King size bed", "Small balcony"],
+    "size": "24"
   },
   "bedroom3": {
-    "title": "Bedroom Three",
-    "facilities": ["Queen size bed", "Small balcony"]
+    "title": "Queen Room with Sea View",
+    "facilities": ["Queen size bed", "Small balcony"],
+    "size": 28
   },
   "bedroom4": {
-    "title": "Bedroom Four",
-    "facilities": ["King size bed", "Superior balcony", "Kitchenette"]
+    "title": "Sea View Studio with Kitchenette",
+    "facilities": ["King size bed", "Superior balcony", "Kitchenette"],
+    "size": 28,
+    "excluding": "excluding balcony"
   }
 }

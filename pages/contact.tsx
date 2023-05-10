@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 import generalData from "../data/general-data.json";
+import ContactMap from "@/components/contact-page/map";
 
 const {
   contact: { phone, phoneDisplay, email },
@@ -21,7 +22,7 @@ const Contact = () => {
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
         <Image
-          src="/DSC01683.jpg"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
           alt=""
           width={1100}
           height={750}
@@ -82,7 +83,11 @@ const Contact = () => {
               Please fill out the form below and we&#39;ll get back to you
               ASAP...
             </p>
-            <form action="" method="POST" className="flex flex-col gap-10">
+            <form
+              action="https://formsubmit.co/enquiries@lunarblue.co.za"
+              method="POST"
+              className="flex flex-col gap-10"
+            >
               <div className="flex flex-col gap-3">
                 <label htmlFor="name" className="font-500">
                   Name:
@@ -96,6 +101,7 @@ const Contact = () => {
                   className="pl-2 py-1.5 bg-darkBeige"
                 />
               </div>
+              <input type="text" name="_honey" className="hidden"></input>
               {showMessage && (
                 <>
                   <div className="flex flex-col gap-3">
@@ -147,14 +153,15 @@ const Contact = () => {
         </div>
         {!showMessage && (
           <Image
-            src="/DSC01981.jpg"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
             alt=""
             width={1400}
             height={740}
-            className="object-cover mt-4 col-span-full h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            className="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
           />
         )}
       </div>
+      <ContactMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>
   );
 };

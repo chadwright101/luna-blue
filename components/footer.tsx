@@ -29,20 +29,27 @@ const Footer = ({ cssClasses }: Props) => {
       <hr className="mb-10 text-black" />
       <div
         className={classNames(
-          "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
+          "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
           {
-            "justify-center": currentRoute === "/contact",
+            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px_1fr]":
+              currentRoute === "/contact",
           }
         )}
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
           <ul className="mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0">
-            {navData.map(({ title, url }, index) => (
+            {navData.map(({ title, url, targetBlank }, index) => (
               <li key={index}>
                 <Link
                   href={url}
-                  className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+                  className={classNames(
+                    "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
+                    {
+                      "font-500": targetBlank,
+                    }
+                  )}
+                  target={targetBlank ? "_blank" : "_self"}
                 >
                   {title}
                 </Link>
@@ -116,8 +123,8 @@ const Footer = ({ cssClasses }: Props) => {
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
                 alt="Facebook logo"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
                 className="desktopSmall:w-[30px] h-auto"
               />
             </Link>
@@ -128,20 +135,19 @@ const Footer = ({ cssClasses }: Props) => {
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
                 alt="Instagram logo"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
                 className="desktopSmall:w-[30px] h-auto"
               />
             </Link>
           </div>
         </div>
-
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
           alt="Luna Blue logo"
           width={150}
           height={193}
-          className="hidden w-16 h-auto ml-auto desktopSmall:block"
+          className="hidden w-16 h-auto desktopSmall:block ml-auto"
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">

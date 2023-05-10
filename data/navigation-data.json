@@ -21,6 +21,7 @@
   },
   {
     "title": "Book now",
-    "url": "#"
+    "url": "https://book.nightsbridge.com/34927",
+    "targetBlank": true
   }
 ]

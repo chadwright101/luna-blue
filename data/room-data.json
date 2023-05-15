@@ -23,7 +23,6 @@
   "bedroom4": {
     "title": "Sea View Studio with Kitchenette",
     "facilities": ["King size bed", "Superior balcony", "Kitchenette"],
-    "size": 28,
-    "excluding": "excluding private balcony"
+    "size": 52
   }
 }

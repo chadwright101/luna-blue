@@ -64,8 +64,8 @@ const AboutUs = () => {
           animals, vegan cuisine and a deep love for Africa. Located outside of
           the hustle and bustle of central Plettenburg Bay, your stay with us
           will be a peaceful, soul restoring experience, while giving you quick
-          access of a 5 minute drive to the airport, 7 minute drive to town and
-          10 minute drive to the beautiful beaches.
+          access of a 5 minute drive to the Plettenberg Bay Airport, 7 minute
+          drive to town and 10 minute drive to the beautiful beaches.
         </p>
         <article className="my-10 desktopSmall:my-16">
           <h2 className="mb-10">Facilities</h2>

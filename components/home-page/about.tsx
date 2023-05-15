@@ -19,6 +19,7 @@ const About = ({ cssClasses }: Props) => {
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna+Blue+Showreel.mp4"
           controls
           className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
+          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna+Blue+-+Video+poster.png"
         ></video>
         <article>
           <h2>About Us</h2>

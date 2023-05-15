@@ -14,7 +14,7 @@ const OurRooms = ({ cssClasses }: Props) => {
       <div>
         <h2 className="mb-8 tabletLarge:hidden">Our Rooms</h2>
         <ImageCard
-          title="Our Homes"
+          title="Our Rooms"
           link="/our-rooms"
           image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.webp"
           mobileButtonWidth="w-[158px]"

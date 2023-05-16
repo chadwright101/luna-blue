@@ -12,11 +12,12 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <h2 className="mb-8 tabletLarge:hidden">Check Availability</h2>
           <ImageCard
             title="Check Availability"
-            link="#"
+            link="https://book.nightsbridge.com/34927"
             image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0440-HDR-cropped.webp"
             flip
             buttonText="View our calendar"
             mobileButtonWidth="w-[249px]"
+            targetBlank
           />
         </div>
       </div>

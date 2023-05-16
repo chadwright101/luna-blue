@@ -123,6 +123,7 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 quality={50}
+                loading={index < 2 ? "eager" : "lazy"}
               />
             </SplideSlide>
           ))}

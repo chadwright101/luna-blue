@@ -119,6 +119,7 @@ const Footer = ({ cssClasses }: Props) => {
             <Link
               href={facebook}
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
@@ -131,6 +132,7 @@ const Footer = ({ cssClasses }: Props) => {
             <Link
               href={instagram}
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"

@@ -68,10 +68,11 @@ const LightboxSlider = ({
               <Image
                 src={url}
                 alt="Luna Blue guesthouse"
-                width={1400}
-                height={1000}
-                quality={50}
+                width={1200}
+                height={900}
+                quality={60}
                 className="object-cover place-self-center"
+                sizes="(max-width:425px) 75vw, (max-width:900px) 75vw, 60vw"
               />
             </SplideSlide>
           ))}
@@ -124,6 +125,7 @@ const LightboxSlider = ({
                 )}
                 quality={50}
                 loading={index < 2 ? "eager" : "lazy"}
+                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
               />
             </SplideSlide>
           ))}
@@ -172,6 +174,7 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 quality={50}
+                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
               />
             </SplideSlide>
           ))}
@@ -220,6 +223,7 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 quality={50}
+                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
               />
             </SplideSlide>
           ))}
@@ -270,6 +274,7 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 quality={50}
+                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
               />
             </SplideSlide>
           ))}

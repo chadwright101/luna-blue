@@ -5,7 +5,10 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    deviceSizes: [640, 750, 828, 1080, 1200, 1400],
+    deviceSizes: [425, 900, 1400],
+    imageSizes: [
+      50, 100, 200, 250, 300, 400, 500, 750, 850, 1000, 1100, 1250, 1400,
+    ],
     remotePatterns: [
       {
         protocol: "https",

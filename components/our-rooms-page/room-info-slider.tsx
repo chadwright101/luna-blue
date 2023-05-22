@@ -15,6 +15,9 @@ interface Props {
   singleImageMedium?: boolean;
   singleImageSlow?: boolean;
   cssClasses?: string;
+  large?: boolean;
+  medium?: boolean;
+  small?: boolean;
 }
 
 const RoomInfoSlider = ({

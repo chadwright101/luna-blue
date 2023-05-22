@@ -35,8 +35,8 @@ const Header = ({ cssClasses }: Props) => {
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
                 alt="Luna Blue logo"
-                width={150}
-                height={193}
+                width={50}
+                height={65}
                 className={classNames(
                   "w-12 h-auto ease-in-out duration-300 delay-[10ms]",
                   {
@@ -44,6 +44,7 @@ const Header = ({ cssClasses }: Props) => {
                   }
                 )}
                 priority
+                sizes="(max-width: 425px) 5vw, 5vw"
               />
             </Link>
             <button
@@ -125,6 +126,7 @@ const Header = ({ cssClasses }: Props) => {
                   }
                 )}
                 priority
+                sizes="(max-width: 1400px) 15vw, 15vw"
               />
             </Link>
             <nav>

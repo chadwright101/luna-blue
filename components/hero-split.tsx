@@ -15,8 +15,8 @@ const HeroSplit = ({ url, cssClasses }: Props) => {
       <Image
         src={url}
         alt="Luna Blue Guesthouse"
-        width={1400}
-        height={750}
+        width={450}
+        height={500}
         className={classNames(
           "object-cover h-[275px] phone:h-[300px] tablet:h-[375px] tabletLarge:h-[425px] desktop:h-[500px] ease-in-out duration-500",
           {
@@ -26,6 +26,7 @@ const HeroSplit = ({ url, cssClasses }: Props) => {
         priority
         onMouseEnter={() => setHoverZoom(true)}
         onMouseLeave={() => setHoverZoom(false)}
+        sizes="(max-width: 425px) 60vw, (max-width: 900px) 50vw,(max-width: 1400px) 50vw, 25vw"
       />
     </div>
   );

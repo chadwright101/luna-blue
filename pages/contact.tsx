@@ -162,7 +162,6 @@ const Contact = () => {
               )}
               {showMessage && (
                 <button
-                  onClick={() => setShowMessage(false)}
                   className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2"
                   type="submit"
                 >

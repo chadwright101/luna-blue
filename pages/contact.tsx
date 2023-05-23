@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
@@ -17,13 +18,40 @@ const Contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact - Luna Blue Guesthouse</title>
+        <meta
+          name="description"
+          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+        />
+        <meta
+          name="keywords"
+          content="luna blue guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo-square.png"
+        />
+        <meta property="og:title" content="Contact - Luna Blue Guesthouse" />
+        <meta property="og:url" content="https://www.lunarblue.co.za" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+        />
+        <meta
+          property="og:site_name"
+          content="Contact - Luna Blue Guesthouse"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+      </Head>
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
         Contact Us
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
-          alt=""
+          alt="Luna Blue Off-grid Guesthouse"
           width={1100}
           height={750}
           className="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
@@ -154,7 +182,7 @@ const Contact = () => {
         {!showMessage && (
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
-            alt=""
+            alt="Luna Blue Off-grid Guesthouse"
             width={1400}
             height={740}
             className="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"

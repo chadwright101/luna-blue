@@ -29,7 +29,7 @@ const About = ({ cssClasses }: Props) => {
             science. Whether apart or together they have the power to entrance
             with their beauty, gently touch our souls or simply make us stop and
             give us a greater perspective of how we fit into this world. This is
-            the magic we want you to feel when you visit our villas.
+            the magic we want you to feel when you visit our guesthouses.
           </p>
           <Button url="about-us" />
         </article>

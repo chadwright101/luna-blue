@@ -119,6 +119,7 @@ const Footer = ({ cssClasses }: Props) => {
             <Link
               href={facebook}
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
@@ -131,6 +132,7 @@ const Footer = ({ cssClasses }: Props) => {
             <Link
               href={instagram}
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
@@ -144,7 +146,7 @@ const Footer = ({ cssClasses }: Props) => {
         </div>
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-          alt="Luna Blue logo"
+          alt="Luna Blue Off-grid Guesthouse logo"
           width={150}
           height={193}
           className="hidden w-16 h-auto desktopSmall:block ml-auto"

@@ -6,7 +6,7 @@ import "@splidejs/react-splide/css/core";
 
 interface Props {
   cssClasses?: string;
-  imageData?: Array<{ url: string; alt: string }>;
+  imageData?: Array<{ url: string }>;
 }
 
 const BasicSlider = ({ cssClasses, imageData }: Props) => {
@@ -65,19 +65,20 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           </button>
         </div>
         <SplideTrack>
-          {imageData!.map(({ url, alt }, index) => (
+          {imageData!.map(({ url }, index) => (
             <SplideSlide
               key={index}
               className="h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
             >
               <Image
                 src={url}
-                alt={alt}
+                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={1400}
                 height={1000}
                 className="object-cover h-full w-full max-w-[1400px]"
-                quality={50}
+                quality={60}
                 loading={index < 2 ? "eager" : "lazy"}
+                sizes="(max-width: 425px) 50vw, (max-width:900px) 50vw, (max-width: 1400px) 80vw, 50vw"
               />
             </SplideSlide>
           ))}

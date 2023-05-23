@@ -39,6 +39,10 @@ export default function Home() {
           content="Lunar Blue Off-grid Guesthouse"
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+        <meta
+          name="google-site-verification"
+          content="6wijN18bZX_HMfoo9Bj3JplvYLDxVw4-vczywhmz9Y0"
+        />
       </Head>
       <BasicSlider imageData={heroSlider} />
       <About cssClasses="my-10 desktopSmall:my-16" />

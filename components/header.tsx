@@ -34,7 +34,7 @@ const Header = ({ cssClasses }: Props) => {
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-                alt="Luna Blue logo"
+                alt="Luna Blue Off-grid Guesthouse logo"
                 width={50}
                 height={65}
                 className={classNames(
@@ -115,7 +115,7 @@ const Header = ({ cssClasses }: Props) => {
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-                alt="Luna Blue logo"
+                alt="Luna Blue Off-grid Guesthouse logo"
                 width={150}
                 height={193}
                 className={classNames(

@@ -44,7 +44,12 @@ const ImageCard = ({
         width={900}
         height={500}
         className="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
-        sizes="(max-width: 425px) 90vw, 75vw"
+        sizes={
+          center
+            ? "(max-width: 425px) 90vw,(max-width: 1400px) 30vw, 20vw"
+            : "(max-width: 425px) 90vw, 75vw"
+        }
+        quality={50}
       />
 
       {/* mobile view */}

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Head from "next/head";
 
 import ImageCard from "@/components/image-card";
 import LightboxSlider from "@/components/sliders/lightbox-slider";
@@ -11,6 +11,33 @@ const AboutUs = () => {
 
   return (
     <>
+      <Head>
+        <title>About us - Luna Blue Guesthouse</title>
+        <meta
+          name="description"
+          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+        />
+        <meta
+          name="keywords"
+          content="luna blue guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo-square.png"
+        />
+        <meta property="og:title" content="About us - Luna Blue Guesthouse" />
+        <meta property="og:url" content="https://www.lunarblue.co.za" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+        />
+        <meta
+          property="og:site_name"
+          content="About us - Luna Blue Guesthouse"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
+      </Head>
       <h1 className=" mb-6 tabletLarge:text-center desktopSmall:mb-8">
         About Us
       </h1>
@@ -37,7 +64,7 @@ const AboutUs = () => {
           Whether apart or together they have the power to entrance with their
           beauty, gently touch our souls or simply make us stop and give us a
           greater perspective of how we fit into this world. This is the magic
-          we want you to feel when you visit our villas.
+          we want you to feel when you visit our guesthouses.
         </p>
       </article>
       <div id="gallery" className="-translate-y-20"></div>
@@ -54,18 +81,19 @@ const AboutUs = () => {
         <p>
           Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the
           Garden Route is known for it&#39;s crystal clear seas and white sand
-          beaches. Our Villas offer majestic views of the coast and were built
-          to offer a cultivated experience of the things that we love. Luna Blue
-          Villas is the passion project of Nikki and Heath, who together found
-          their home in Plettenburg Bay. While their work experience has been
-          vast, the one consistent factor throughout is their hospitality and
-          passion for dealing with people. The Villas are a reflection of the
-          things that they most care for, including the environment, fitness,
-          animals, vegan cuisine and a deep love for Africa. Located outside of
-          the hustle and bustle of central Plettenburg Bay, your stay with us
-          will be a peaceful, soul restoring experience, while giving you quick
-          access of a 5 minute drive to the Plettenberg Bay Airport, 7 minute
-          drive to town and 10 minute drive to the beautiful beaches.
+          beaches. Our guesthouses offer majestic views of the coast and were
+          built to offer a cultivated experience of the things that we love.
+          Luna Blue Off-grid Guesthouse is the passion project of Nikki and
+          Heath, who together found their home in Plettenburg Bay. While their
+          work experience has been vast, the one consistent factor throughout is
+          their hospitality and passion for dealing with people. The guesthouses
+          are a reflection of the things that they most care for, including the
+          environment, fitness, animals, vegan cuisine and a deep love for
+          Africa. Located outside of the hustle and bustle of central
+          Plettenburg Bay, your stay with us will be a peaceful, soul restoring
+          experience, while giving you quick access of a 5 minute drive to the
+          Plettenberg Bay Airport, 7 minute drive to town and 10 minute drive to
+          the beautiful beaches.
         </p>
         <article className="my-10 desktopSmall:my-16">
           <h2 className="mb-10">Facilities</h2>

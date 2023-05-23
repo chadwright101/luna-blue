@@ -146,7 +146,7 @@ const Footer = ({ cssClasses }: Props) => {
         </div>
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-          alt="Luna Blue logo"
+          alt="Luna Blue Off-grid Guesthouse logo"
           width={150}
           height={193}
           className="hidden w-16 h-auto desktopSmall:block ml-auto"

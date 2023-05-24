@@ -112,7 +112,7 @@ const Contact = () => {
               ASAP...
             </p>
             <form
-              action="https://formsubmit.co/enquiries@lunarblue.co.za"
+              action="https://formsubmit.co/40ca08923db7f7ef1ea324bce7ce9752"
               method="POST"
               className="flex flex-col gap-10"
             >

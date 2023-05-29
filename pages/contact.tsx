@@ -22,7 +22,7 @@ const Contact = () => {
         <title>Contact - Luna Blue Guesthouse</title>
         <meta
           name="description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
         />
         <meta
           name="keywords"
@@ -37,7 +37,7 @@ const Contact = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay."
+          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
         />
         <meta
           property="og:site_name"

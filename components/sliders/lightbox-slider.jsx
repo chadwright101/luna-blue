@@ -43,7 +43,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             breakpoints: {
               900: {
                 arrows: false,
@@ -96,7 +96,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 5000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -150,7 +150,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -204,7 +204,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 7000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -259,7 +259,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             gap: "1rem",
             fixedHeight: 500,
             arrows: true,

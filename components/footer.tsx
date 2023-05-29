@@ -153,7 +153,7 @@ const Footer = ({ cssClasses }: Props) => {
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
-        © Copyright <Link href="/">Luna Blue Holiday Villas</Link>
+        © Copyright <Link href="/">Luna Blue Off-grid Guesthouse</Link>
       </p>
     </footer>
   );

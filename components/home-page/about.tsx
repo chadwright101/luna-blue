@@ -44,7 +44,7 @@ const About = ({ cssClasses }: Props) => {
             >
               <Image
                 src={url}
-                alt={`${title} icon`}
+                alt={`${title}{' '} icon`}
                 width={60}
                 height={60}
                 className={`desktopSmall:w-[50px] desktopSmall:h-auto ${

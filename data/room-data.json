@@ -1,6 +1,6 @@
 {
   "bedroom1": {
-    "title": "Luxury Suite with Sea View",
+    "title": "Sapphire Suite",
     "facilities": [
       "King size bed",
       "Walk-in closet",
@@ -11,17 +11,17 @@
     "size": 54
   },
   "bedroom2": {
-    "title": "King Room with Sea View",
+    "title": "Cyan Room",
     "facilities": ["King size bed", "Small balcony"],
     "size": 24
   },
   "bedroom3": {
-    "title": "Queen Room with Sea View",
+    "title": "Cobalt Room",
     "facilities": ["Queen size bed", "Small balcony"],
     "size": 28
   },
   "bedroom4": {
-    "title": "Sea View Studio with Kitchenette",
+    "title": "Turquoise Studio",
     "facilities": ["King size bed", "Superior balcony", "Kitchenette"],
     "size": 52
   }

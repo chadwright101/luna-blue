@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import generalData from "../data/general-data.json";
 import ContactMap from "@/components/contact-page/map";
+import ImageContainer from "@/components/utils/image-container";
 
 const {
   contact: { phone, phoneDisplay, email },
@@ -49,12 +50,18 @@ const Contact = () => {
         Contact Us
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
-        <Image
+        <ImageContainer
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
           alt="Luna Blue Off-grid Guesthouse"
           width={1100}
           height={750}
-          className="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
+          cssClasses="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
+          smallest={75}
+          phone={70}
+          tablet={60}
+          tabletLarge={55}
+          desktopSmall={25}
+          desktop={20}
         />
         <hr className="my-4 desktopSmall:hidden text-black" />
         <div className="grid gap-10 desktopSmall:col-start-1 desktopSmall:row-start-1">
@@ -178,12 +185,17 @@ const Contact = () => {
           </div>
         </div>
         {!showMessage && (
-          <Image
+          <ImageContainer
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
-            alt="Luna Blue Off-grid Guesthouse"
             width={1400}
             height={740}
-            className="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            cssClasses="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            smallest={75}
+            phone={70}
+            tablet={60}
+            tabletLarge={55}
+            desktopSmall={25}
+            desktop={20}
           />
         )}
       </div>

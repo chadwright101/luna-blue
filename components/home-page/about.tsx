@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import Button from "../button";
 
 import imageData from "../../data/image-data.json";
+import ImageContainer from "../utils/image-container";
 
 interface Props {
   cssClasses?: string;
@@ -42,12 +41,12 @@ const About = ({ cssClasses }: Props) => {
               key={index}
               className="flex flex-col items-center gap-3 text-center"
             >
-              <Image
+              <ImageContainer
                 src={url}
                 alt={`${title}{' '} icon`}
                 width={60}
                 height={60}
-                className={`desktopSmall:w-[50px] desktopSmall:h-auto ${
+                cssClasses={`desktopSmall:w-[50px] desktopSmall:h-auto ${
                   index === 0 && "pt-1.5 -mb-1.5"
                 }`}
               />

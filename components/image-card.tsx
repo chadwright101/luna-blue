@@ -5,6 +5,7 @@ import { useState } from "react";
 import Button from "./button";
 
 import classNames from "classnames";
+import ImageContainer from "./utils/image-container";
 
 interface Props {
   cssClasses?: string;
@@ -38,18 +39,15 @@ const ImageCard = ({
     <article
       className={`h-[275px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[475px] desktop:h-[400px] ${cssClasses}`}
     >
-      <Image
+      <ImageContainer
         src={image}
         alt="Luna Blue Off-grid Guesthouse"
         width={900}
         height={500}
-        className="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
-        sizes={
-          center
-            ? "(max-width: 425px) 90vw,(max-width: 1400px) 30vw, 20vw"
-            : "(max-width: 425px) 90vw, 75vw"
-        }
-        quality={50}
+        cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
+        smallest={90}
+        desktopSmall={center ? 30 : undefined}
+        desktop={center ? 20 : 75}
       />
 
       {/* mobile view */}

@@ -31,6 +31,7 @@ const Header = ({ cssClasses }: Props) => {
             <Link
               href="/"
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              as="image"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
@@ -112,6 +113,7 @@ const Header = ({ cssClasses }: Props) => {
             <Link
               href="/"
               className="desktopSmall:hover:scale-105 ease-in-out duration-500"
+              as="image"
             >
               <Image
                 src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"

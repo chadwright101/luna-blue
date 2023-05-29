@@ -2,10 +2,11 @@ import Head from "next/head";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import imageData from "../data/image-data.json";
 import About from "@/components/home-page/about";
 import OurRooms from "@/components/home-page/our-rooms";
 import MoreInfoAvailability from "@/components/home-page/more-info-availability";
+
+import imageData from "../data/image-data.json";
 
 export default function Home() {
   const {

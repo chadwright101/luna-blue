@@ -31,7 +31,7 @@ const Footer = ({ cssClasses }: Props) => {
         className={classNames(
           "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
           {
-            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px_1fr]":
+            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
               currentRoute === "/contact",
           }
         )}
@@ -149,7 +149,12 @@ const Footer = ({ cssClasses }: Props) => {
           alt="Luna Blue Off-grid Guesthouse logo"
           width={150}
           height={193}
-          className="hidden w-16 h-auto desktopSmall:block ml-auto"
+          className={classNames(
+            "hidden w-16 h-auto desktopSmall:block ml-auto",
+            {
+              " justify-self-end": currentRoute === "/contact",
+            }
+          )}
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">

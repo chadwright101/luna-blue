@@ -1,14 +1,20 @@
+import { useRouter } from "next/router";
+
 import LightBoxSlider from "@/components/sliders/lightbox-slider";
 
 import classNames from "classnames";
+import Translated from "../utils/translated";
 
 interface Props {
   imageList?: Array<{ url: string }>;
-  roomInfo: {
-    title: string;
-    facilities: string[];
-    size: number;
-    excluding?: string;
+  enRoomInfo: {
+    enTitle: string;
+    enFacilities: string[];
+    enSize: number;
+  };
+  deRoomInfo: {
+    deTitle: string;
+    deFacilities: string[];
   };
   flip?: boolean;
   singleImageFast?: boolean;
@@ -22,14 +28,18 @@ interface Props {
 
 const RoomInfoSlider = ({
   imageList,
-  roomInfo,
+  enRoomInfo,
+  deRoomInfo,
   flip,
   singleImageFast,
   singleImageMedium,
   singleImageSlow,
   cssClasses,
 }: Props) => {
-  const { title, facilities, size, excluding } = roomInfo;
+  const { enTitle, enFacilities, enSize } = enRoomInfo;
+  const { deTitle, deFacilities } = deRoomInfo;
+  const { locale } = useRouter();
+
   return (
     <section
       className={classNames(`block desktopSmall:grid gap-10 ${cssClasses}`, {
@@ -42,15 +52,17 @@ const RoomInfoSlider = ({
           "desktopSmall:order-2": !flip,
         })}
       >
-        <h3 className="text-43px w-full mb-4 desktopSmall:mb-10">{title}</h3>
+        <h3 className="text-43px w-full mb-4 desktopSmall:mb-10">
+          <Translated german={deTitle}>{enTitle}</Translated>
+        </h3>
         <p className="mb-10">
-          Room Size: {size}m<sup>2</sup>{" "}
-          {excluding && <span className="italic">({excluding})</span>}
+          <Translated german="Zimmergröße">Room Size:</Translated> {enSize}m
+          <sup>2</sup>
         </p>
         <ul className="block phone:grid grid-cols-2 tablet:grid-cols-3 tabletLarge:block gap-x-10 list-disc ml-4">
-          {facilities.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
+          {locale === "en"
+            ? enFacilities.map((item, index) => <li key={index}>{item}</li>)
+            : deFacilities.map((item, index) => <li key={index}>{item}</li>)}
         </ul>
       </div>
       <LightBoxSlider

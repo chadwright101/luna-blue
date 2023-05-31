@@ -1,8 +1,3 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
-
 module.exports = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1400],
@@ -15,5 +10,10 @@ module.exports = {
         pathname: "/luna-blue/**",
       },
     ],
+  },
+  reactStrictMode: true,
+  i18n: {
+    locales: ["en", "de"],
+    defaultLocale: "en",
   },
 };

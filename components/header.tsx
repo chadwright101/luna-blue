@@ -8,17 +8,21 @@ import useScrollPosition from "./utils/scroll-position";
 import classNames from "classnames";
 
 import navigationList from "../data/navigation-data.json";
+import LanguageDesktopSubmenu from "./language-desktop-submenu";
+import LanguageMobileMenu from "./language-mobile-menu";
 
 interface Props {
   cssClasses?: string;
 }
 
+const { en, de } = navigationList;
+
 const Header = ({ cssClasses }: Props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [toggleLanguage, setToggleLanguage] = useState(false);
 
   const router = useRouter();
   const currentRoute = router.pathname;
+  const { locale } = useRouter();
 
   const scrollPosition = useScrollPosition();
 
@@ -64,31 +68,46 @@ const Header = ({ cssClasses }: Props) => {
           {toggleMenu && (
             <nav className="fixed top-0 h-screen w-full bg-beige -mx-8 pl-8 pt-14">
               <ul className="flex flex-col gap-8">
-                <li className="mb-4 flex gap-8">
-                  <p className="px-3 pt-2 pb-1.5 -mx-3 -my-2 border-brown border-2 font-500">
-                    English
-                  </p>
-                  <p className="p-3 -m-3">Deutsch</p>
-                </li>
-                {navigationList.map(({ title, url, targetBlank }, index) => (
-                  <li key={index}>
-                    <Link
-                      href={url}
-                      onClick={() => setToggleMenu(false)}
-                      className={classNames(
-                        "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
-                        {
-                          "text-brown": currentRoute === url,
-                          "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
-                            index === 5,
-                        }
-                      )}
-                      target={targetBlank ? "_blank" : "_self"}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
+                <LanguageMobileMenu />
+                {locale === "en"
+                  ? en.map(({ title, url, targetBlank }, index) => (
+                      <li key={index}>
+                        <Link
+                          href={url}
+                          onClick={() => setToggleMenu(false)}
+                          className={classNames(
+                            "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
+                            {
+                              "text-brown": currentRoute === url,
+                              "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
+                                index === 5,
+                            }
+                          )}
+                          target={targetBlank ? "_blank" : "_self"}
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    ))
+                  : de.map(({ title, url, targetBlank }, index) => (
+                      <li key={index}>
+                        <Link
+                          href={url}
+                          onClick={() => setToggleMenu(false)}
+                          className={classNames(
+                            "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
+                            {
+                              "text-brown": currentRoute === url,
+                              "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
+                                index === 5,
+                            }
+                          )}
+                          target={targetBlank ? "_blank" : "_self"}
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
               </ul>
               <button
                 onClick={() => setToggleMenu(false)}
@@ -138,67 +157,51 @@ const Header = ({ cssClasses }: Props) => {
                   { "translate-y-2": scrollPosition > 0 }
                 )}
               >
-                {navigationList.map(({ title, url, targetBlank }, index) => (
-                  <li
-                    key={index}
-                    className="desktopSmall:hover:scale-105 ease-in-out duration-300"
-                  >
-                    <Link
-                      href={url}
-                      className={classNames(
-                        "text-14px uppercase font-Raleway tracking-widest",
-                        {
-                          "text-brown": currentRoute === url,
-                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
-                            index === 5,
-                        }
-                      )}
-                      target={targetBlank ? "_blank" : "_self"}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
+                {locale === "en"
+                  ? en.map(({ title, url, targetBlank }, index) => (
+                      <li
+                        key={index}
+                        className="desktopSmall:hover:scale-105 ease-in-out duration-300"
+                      >
+                        <Link
+                          href={url}
+                          className={classNames(
+                            "text-14px uppercase font-Raleway tracking-widest",
+                            {
+                              "text-brown": currentRoute === url,
+                              "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
+                                index === 5,
+                            }
+                          )}
+                          target={targetBlank ? "_blank" : "_self"}
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    ))
+                  : de.map(({ title, url, targetBlank }, index) => (
+                      <li
+                        key={index}
+                        className="desktopSmall:hover:scale-105 ease-in-out duration-300"
+                      >
+                        <Link
+                          href={url}
+                          className={classNames(
+                            "text-14px uppercase font-Raleway tracking-widest",
+                            {
+                              "text-brown": currentRoute === url,
+                              "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
+                                index === 5,
+                            }
+                          )}
+                          target={targetBlank ? "_blank" : "_self"}
+                        >
+                          {title}
+                        </Link>
+                      </li>
+                    ))}
                 {/* language submenu */}
-                <li
-                  className="ml-3 flex flex-col gap-4 items-center text-14px uppercase font-Raleway tracking-widest cursor-pointer desktopSmall:hover:scale-105 ease-in-out duration-300"
-                  onMouseEnter={() => setToggleLanguage(true)}
-                  onMouseLeave={() => setToggleLanguage(false)}
-                >
-                  <div className="flex hover:text-brown  p-2 -m-2 translate-y-[3px] desktopSmall:p-0 desktopSmall:m-0">
-                    EN
-                    <Image
-                      src="/icons/down-arrow.svg"
-                      alt="Down arrow icon"
-                      width={25}
-                      height={25}
-                      className="-mt-0.5"
-                      priority
-                    />
-                  </div>
-                  <div
-                    className={classNames(
-                      "ease-in-out duration-300 scale-y-0",
-                      {
-                        "scale-y-100": toggleLanguage,
-                      }
-                    )}
-                  >
-                    {toggleLanguage && (
-                      <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
-                        <li className="hover:text-brown ease-in-out duration-300 cursor-pointer desktopSmall:hover:scale-110">
-                          DE
-                          <Image
-                            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/125px-Flag_of_Germany.svg.png"
-                            alt="German flag"
-                            width={20}
-                            height={15}
-                          />
-                        </li>
-                      </ul>
-                    )}
-                  </div>
-                </li>
+                <LanguageDesktopSubmenu />
               </ul>
             </nav>
           </div>

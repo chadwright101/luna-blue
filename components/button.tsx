@@ -23,6 +23,7 @@ const Button = ({ cssClasses, url, children, width }: Props) => {
       onMouseLeave={() => setArrowAnimate(false)}
     >
       {children || "Read more"}
+
       <Image
         src="/icons/plus.svg"
         alt="Plus sign icon"

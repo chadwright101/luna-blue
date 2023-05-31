@@ -74,40 +74,6 @@
       "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/Slider/DSC01930.jpg"
     }
   ],
-  "amenityIcons": [
-    {
-      "url": "/icons/swimming-pool.svg",
-      "title": "Swimming Pool"
-    },
-    {
-      "url": "/icons/gym.svg",
-      "title": "Gym"
-    },
-    {
-      "url": "/icons/pet-friendly.svg",
-      "title": "Pet Friendly"
-    },
-    {
-      "url": "/icons/solar.svg",
-      "title": "Solar Powered"
-    },
-    {
-      "url": "/icons/kitchen.svg",
-      "title": "Kitchen"
-    },
-    {
-      "url": "/icons/garden.svg",
-      "title": "Garden"
-    },
-    {
-      "url": "/icons/bbq-facilities.svg",
-      "title": "BBQ Facilities"
-    },
-    {
-      "url": "/icons/free-wifi.svg",
-      "title": "Free Wifi"
-    }
-  ],
   "ourRooms": {
     "bedroom1": [
       {

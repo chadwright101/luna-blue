@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 import ImageCard from "../image-card";
 
 interface Props {
@@ -5,6 +7,7 @@ interface Props {
 }
 
 const MoreInfoAvailability = ({ cssClasses }: Props) => {
+  const { locale } = useRouter();
   return (
     <section className={`grid gap-10 ${cssClasses}`}>
       <div>
@@ -12,11 +15,13 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <h2 className="mb-8 tabletLarge:hidden">Check Availability</h2>
           <ImageCard
             title="Check Availability"
+            titleGerman="Verfügbarkeit prüfen"
             link="https://book.nightsbridge.com/34927"
             image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0440-HDR-cropped.webp"
             flip
             buttonText="View our calendar"
-            mobileButtonWidth="w-[249px]"
+            buttonTextGerman="Unser Kalender"
+            mobileButtonWidth={locale === "en" ? "w-[249px]" : "w-[216px]"}
             targetBlank
           />
         </div>
@@ -27,9 +32,10 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <h2 className="mb-8 tabletLarge:hidden">About Plettenberg Bay</h2>
           <ImageCard
             title="About Plettenberg Bay"
+            titleGerman="Über Plettenberg Bay"
             link="https://www.plett-tourism.co.za/"
             image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/footprints-in-the-sand.webp"
-            mobileButtonWidth="w-[158px]"
+            mobileButtonWidth={locale === "en" ? "w-[158px]" : "w-[170px]"}
             targetBlank
           />
         </div>

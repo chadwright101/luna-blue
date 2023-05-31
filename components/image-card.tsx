@@ -6,11 +6,14 @@ import Button from "./button";
 
 import classNames from "classnames";
 import ImageContainer from "./utils/image-container";
+import Translated from "./utils/translated";
 
 interface Props {
   cssClasses?: string;
   title: string;
-  buttonText?: string | "View More";
+  titleGerman: string;
+  buttonText?: string;
+  buttonTextGerman?: string;
   mobileButtonWidth?: string;
   image: string;
   flip?: boolean;
@@ -24,7 +27,9 @@ interface Props {
 const ImageCard = ({
   cssClasses,
   title,
+  titleGerman,
   buttonText,
+  buttonTextGerman,
   mobileButtonWidth,
   image,
   link,
@@ -62,7 +67,9 @@ const ImageCard = ({
             cssClasses="mx-auto text-[16px] text-center row-start-2"
             width={mobileButtonWidth}
           >
-            {buttonText}
+            <Translated german={buttonTextGerman || "Mehr sehen"}>
+              {buttonText || "View More"}
+            </Translated>
           </Button>
         </div>
       </div>
@@ -99,7 +106,7 @@ const ImageCard = ({
               "text-right": flip,
             })}
           >
-            {title}
+            <Translated german={titleGerman}>{title}</Translated>
           </h2>
           <div
             className={classNames("flex gap-2", {
@@ -107,7 +114,9 @@ const ImageCard = ({
             })}
           >
             <p className="uppercase text-[13px] text-pureBlack font-350 tracking-widest">
-              {buttonText || "View More"}
+              <Translated german={buttonTextGerman || "Mehr sehen"}>
+                {buttonText || "View More"}
+              </Translated>
             </p>
             <Image
               src="/icons/plus.svg"

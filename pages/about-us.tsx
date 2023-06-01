@@ -175,7 +175,9 @@ const AboutUs = () => {
       <section>
         <div className="max-w-[900px] mx-auto mb-10">
           <h3 className="tabletLarge:text-center mb-10">
-            <Translated german="Aktivitäten">Things To Do</Translated>
+            <Translated german="Was man unternehmen kann">
+              Things To Do
+            </Translated>
           </h3>
           <p
             className={`${

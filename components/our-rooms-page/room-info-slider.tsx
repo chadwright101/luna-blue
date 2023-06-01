@@ -56,7 +56,7 @@ const RoomInfoSlider = ({
           <Translated german={deTitle}>{enTitle}</Translated>
         </h3>
         <p className="mb-10">
-          <Translated german="Zimmergröße">Room Size:</Translated> {enSize}m
+          <Translated german="Zimmergröße">Room Size</Translated>: {enSize}m
           <sup>2</sup>
         </p>
         <ul className="block phone:grid grid-cols-2 tablet:grid-cols-3 tabletLarge:block gap-x-10 list-disc ml-4">

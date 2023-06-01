@@ -1,28 +1,54 @@
 {
-  "bedroom1": {
-    "title": "Sapphire Suite",
-    "facilities": [
-      "King size bed",
-      "Walk-in closet",
-      "Fireplace",
-      "Large balcony",
-      "Superior bathroom"
-    ],
-    "size": 54
+  "en": {
+    "bedroom1": {
+      "enTitle": "Sapphire Suite",
+      "enFacilities": [
+        "King size bed",
+        "Walk-in closet",
+        "Fireplace",
+        "Large balcony",
+        "Superior bathroom"
+      ],
+      "enSize": 54
+    },
+    "bedroom2": {
+      "enTitle": "Cyan Room",
+      "enFacilities": ["King size bed", "Small balcony"],
+      "enSize": 24
+    },
+    "bedroom3": {
+      "enTitle": "Cobalt Room",
+      "enFacilities": ["Queen size bed", "Small balcony"],
+      "enSize": 28
+    },
+    "bedroom4": {
+      "enTitle": "Turquoise Studio",
+      "enFacilities": ["King size bed", "Superior balcony", "Kitchenette"],
+      "enSize": 52
+    }
   },
-  "bedroom2": {
-    "title": "Cyan Room",
-    "facilities": ["King size bed", "Small balcony"],
-    "size": 24
-  },
-  "bedroom3": {
-    "title": "Cobalt Room",
-    "facilities": ["Queen size bed", "Small balcony"],
-    "size": 28
-  },
-  "bedroom4": {
-    "title": "Turquoise Studio",
-    "facilities": ["King size bed", "Superior balcony", "Kitchenette"],
-    "size": 52
+  "de": {
+    "bedroom1": {
+      "deTitle": "Sapphire Suite",
+      "deFacilities": [
+        "Kingsize-Bett",
+        "Begehbarer Kleiderschrank",
+        "Kamin",
+        "Großer Balkon",
+        "Hochwertiges Badezimmer"
+      ]
+    },
+    "bedroom2": {
+      "deTitle": "Cyan Room",
+      "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
+    },
+    "bedroom3": {
+      "deTitle": "Cobalt Room",
+      "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
+    },
+    "bedroom4": {
+      "deTitle": "Turquoise Studio",
+      "deFacilities": ["Kingsize-Bett", "Erstklassiger Balkon", "Kochnische"]
+    }
   }
 }

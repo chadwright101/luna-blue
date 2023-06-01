@@ -1,10 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import generalData from "../data/general-data.json";
 import ContactMap from "@/components/contact-page/map";
+import ImageContainer from "@/components/utils/image-container";
+import Translated from "@/components/utils/translated";
 
 const {
   contact: { phone, phoneDisplay, email },
@@ -15,14 +17,21 @@ const Contact = () => {
   const [showMessage, setShowMessage] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
+  const { locale } = useRouter();
 
   return (
     <>
       <Head>
-        <title>Contact - Luna Blue Guesthouse</title>
+        <title>
+          {locale === "en" ? "Contact" : "Kontakt"} - Luna Blue Guesthouse
+        </title>
         <meta
           name="description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+          content={
+            locale === "en"
+              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+              : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue Off-grid Guesthouse ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
+          }
         />
         <meta
           name="keywords"
@@ -30,7 +39,15 @@ const Contact = () => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo-square.png"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
         />
         <meta property="og:title" content="Contact - Luna Blue Guesthouse" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
@@ -45,28 +62,45 @@ const Contact = () => {
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
       </Head>
+
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
-        Contact Us
+        <Translated german="Kontakt">Contact Us</Translated>
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
-        <Image
+        <ImageContainer
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
           alt="Luna Blue Off-grid Guesthouse"
           width={1100}
           height={750}
-          className="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
+          cssClasses="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
+          smallest={75}
+          phone={70}
+          tablet={60}
+          tabletLarge={55}
+          desktopSmall={25}
+          desktop={20}
         />
         <hr className="my-4 desktopSmall:hidden text-black" />
         <div className="grid gap-10 desktopSmall:col-start-1 desktopSmall:row-start-1">
           <ul className="flex flex-col gap-6 desktopSmall:gap-4">
-            <li className="mr-auto grid grid-cols-[80px_1fr]">
-              <p className="font-500">Phone:</p>
+            <li
+              className={`mr-auto grid ${
+                locale === "en"
+                  ? "grid-cols-[80px_1fr]"
+                  : "grid-cols-[90px_1fr]"
+              }`}
+            >
+              <p className="font-500">
+                <Translated german="Telefon">Phone</Translated>:
+              </p>
               {!showPhone && (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown tabletLarge:p-0 tabletLarge:m-0"
                   onClick={() => setShowPhone(true)}
                 >
-                  Show phone number
+                  <Translated german="Rufnummer anzeigen">
+                    Show phone number
+                  </Translated>
                 </p>
               )}
               {showPhone && (
@@ -79,14 +113,24 @@ const Contact = () => {
               )}
             </li>
 
-            <li className="mr-auto grid grid-cols-[80px_1fr]">
-              <p className="font-500">Email:</p>
+            <li
+              className={`mr-auto grid ${
+                locale === "en"
+                  ? "grid-cols-[80px_1fr]"
+                  : "grid-cols-[90px_1fr]"
+              }`}
+            >
+              <p className="font-500">
+                <Translated german="E-Mail">Email</Translated>:
+              </p>
               {!showEmail && (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={() => setShowEmail(true)}
                 >
-                  Show email address
+                  <Translated german="E-Mail Adresse anzeigen">
+                    Show email address
+                  </Translated>
                 </p>
               )}
               {showEmail && (
@@ -99,17 +143,31 @@ const Contact = () => {
               )}
             </li>
 
-            <li className="grid grid-cols-[80px_1fr] desktopSmall:col-span-2">
-              <p className="font-500">Address:</p>
+            <li
+              className={`grid ${
+                locale === "en"
+                  ? "grid-cols-[80px_1fr]"
+                  : "grid-cols-[90px_1fr]"
+              } desktopSmall:col-span-2`}
+            >
+              <p className="font-500">
+                <Translated german="Anschrift">Address</Translated>:
+              </p>
               <address className="text-left">
                 {street}, {town}, {province}, {areaCode}
               </address>
             </li>
           </ul>
           <div>
-            <p className="mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4">
-              Please fill out the form below and we&#39;ll get back to you
-              ASAP...
+            <p
+              className={`mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4 ${
+                locale === "en" ? "" : "text-left phone:text-justify"
+              }`}
+            >
+              <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
+                Please fill out the form below and we&#39;ll get back to you
+                ASAP...
+              </Translated>
             </p>
             <form
               action="https://formsubmit.co/40ca08923db7f7ef1ea324bce7ce9752"
@@ -125,7 +183,9 @@ const Contact = () => {
                   id="name"
                   name="name"
                   required
-                  placeholder="Full name"
+                  placeholder={
+                    locale === "en" ? "Full name" : "Vollständiger Name"
+                  }
                   className="pl-2 py-1.5 bg-darkBeige"
                 />
               </div>
@@ -141,19 +201,23 @@ const Contact = () => {
                       id="email"
                       name="email"
                       required
-                      placeholder="Email address"
+                      placeholder={locale === "en" ? "Email Address" : "E-Mail"}
                       className="pl-2 py-1.5 bg-darkBeige"
                     />
                   </div>
                   <div className="flex flex-col gap-3">
                     <label htmlFor="email" className="font-500">
-                      Message:
+                      <Translated german="Nachricht">Message</Translated>:
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       required
-                      placeholder="Type your message here"
+                      placeholder={
+                        locale === "en"
+                          ? "Type your message here"
+                          : "Geben Sie hier Ihre Nachricht ein"
+                      }
                       className="pl-2 py-1.5 bg-darkBeige"
                       rows={3}
                     />
@@ -162,7 +226,7 @@ const Contact = () => {
                     className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2"
                     type="submit"
                   >
-                    Submit
+                    <Translated german="Einreichen">Submit</Translated>
                   </button>
                 </>
               )}
@@ -172,18 +236,23 @@ const Contact = () => {
                 onClick={() => setShowMessage(true)}
                 className="bg-brown w-full text-white px-4 py-3 font-500 mt-8 tabletLarge:w-28 tabletLarge:py-2"
               >
-                Next
+                <Translated german="Nächste">Next</Translated>
               </button>
             )}
           </div>
         </div>
         {!showMessage && (
-          <Image
+          <ImageContainer
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
-            alt="Luna Blue Off-grid Guesthouse"
             width={1400}
             height={740}
-            className="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            cssClasses="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
+            smallest={75}
+            phone={70}
+            tablet={60}
+            tabletLarge={55}
+            desktopSmall={25}
+            desktop={20}
           />
         )}
       </div>

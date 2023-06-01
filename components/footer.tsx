@@ -4,12 +4,15 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 import generalData from "../data/general-data.json";
-import navData from "../data/navigation-data.json";
+import navigation from "../data/navigation-data.json";
 import classNames from "classnames";
+import Translated from "./utils/translated";
 
 interface Props {
   cssClasses?: string;
 }
+
+const { en, de } = navigation;
 
 const {
   contact: { phone, phoneDisplay, email },
@@ -23,6 +26,7 @@ const Footer = ({ cssClasses }: Props) => {
 
   const router = useRouter();
   const currentRoute = router.pathname;
+  const { locale } = useRouter();
 
   return (
     <footer className={`${cssClasses}`}>
@@ -31,7 +35,7 @@ const Footer = ({ cssClasses }: Props) => {
         className={classNames(
           "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
           {
-            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px_1fr]":
+            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
               currentRoute === "/contact",
           }
         )}
@@ -39,22 +43,39 @@ const Footer = ({ cssClasses }: Props) => {
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
           <ul className="mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0">
-            {navData.map(({ title, url, targetBlank }, index) => (
-              <li key={index}>
-                <Link
-                  href={url}
-                  className={classNames(
-                    "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
-                    {
-                      "font-500": targetBlank,
-                    }
-                  )}
-                  target={targetBlank ? "_blank" : "_self"}
-                >
-                  {title}
-                </Link>
-              </li>
-            ))}
+            {locale === "en"
+              ? en.map(({ title, url, targetBlank }, index) => (
+                  <li key={index}>
+                    <Link
+                      href={url}
+                      className={classNames(
+                        "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
+                        {
+                          "font-500": targetBlank,
+                        }
+                      )}
+                      target={targetBlank ? "_blank" : "_self"}
+                    >
+                      {title}
+                    </Link>
+                  </li>
+                ))
+              : de.map(({ title, url, targetBlank }, index) => (
+                  <li key={index}>
+                    <Link
+                      href={url}
+                      className={classNames(
+                        "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
+                        {
+                          "font-500": targetBlank,
+                        }
+                      )}
+                      target={targetBlank ? "_blank" : "_self"}
+                    >
+                      {title}
+                    </Link>
+                  </li>
+                ))}
           </ul>
         </div>
         <div
@@ -62,12 +83,14 @@ const Footer = ({ cssClasses }: Props) => {
             hidden: currentRoute === "/contact",
           })}
         >
-          <h4>Contact</h4>
+          {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
           <ul className="flex flex-col gap-6 desktopSmall:gap-4 mt-6 tabletLarge:grid grid-rows-[40px_40px_1fr] tabletLarge:h-[200px] tabletLarge:gap-0">
             {!showPhone && (
               <li onClick={() => setShowPhone(true)} className="mr-auto">
                 <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  Show phone number
+                  <Translated german="Rufnummer anzeigen">
+                    Show phone number
+                  </Translated>
                 </p>
               </li>
             )}
@@ -84,7 +107,9 @@ const Footer = ({ cssClasses }: Props) => {
             {!showEmail && (
               <li onClick={() => setShowEmail(true)} className="mr-auto">
                 <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  Show email address
+                  <Translated german="E-Mail Adresse anzeigen">
+                    Show email address
+                  </Translated>
                 </p>
               </li>
             )}
@@ -149,7 +174,12 @@ const Footer = ({ cssClasses }: Props) => {
           alt="Luna Blue Off-grid Guesthouse logo"
           width={150}
           height={193}
-          className="hidden w-16 h-auto desktopSmall:block ml-auto"
+          className={classNames(
+            "hidden w-16 h-auto desktopSmall:block ml-auto",
+            {
+              " justify-self-end": currentRoute === "/contact",
+            }
+          )}
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">

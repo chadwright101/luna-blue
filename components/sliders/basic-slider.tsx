@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import "@splidejs/react-splide/css/core";
+import ImageContainer from "../utils/image-container";
 
 interface Props {
   cssClasses?: string;
@@ -20,7 +19,7 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: 100,
+          dragMinThreshold: { touch: 2000, mouse: 0 },
           breakpoints: {
             900: {
               arrows: false,
@@ -70,15 +69,20 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
               key={index}
               className="h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
             >
-              <Image
+              <ImageContainer
                 src={url}
                 alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={1400}
                 height={1000}
-                className="object-cover h-full w-full max-w-[1400px]"
+                cssClasses="object-cover h-full w-full max-w-[1400px]"
                 quality={60}
-                loading={index < 2 ? "eager" : "lazy"}
-                sizes="(max-width: 425px) 50vw, (max-width:900px) 50vw, (max-width: 1400px) 80vw, 50vw"
+                eager={index < 2 ? true : false}
+                smallest={80}
+                phone={75}
+                tablet={60}
+                tabletLarge={50}
+                desktopSmall={50}
+                desktop={80}
               />
             </SplideSlide>
           ))}

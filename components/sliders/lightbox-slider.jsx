@@ -5,6 +5,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import classNames from "classnames";
 
 import "@splidejs/react-splide/css/core";
+import ImageContainer from "../utils/image-container";
 
 const LightboxSlider = ({
   imageList,
@@ -42,7 +43,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             breakpoints: {
               900: {
                 arrows: false,
@@ -65,14 +66,19 @@ const LightboxSlider = ({
           </button>
           {imageList.map(({ url }, index) => (
             <SplideSlide key={index} className="h-[80vh] flex">
-              <Image
+              <ImageContainer
                 src={url}
                 alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={1200}
                 height={900}
                 quality={60}
-                className="object-cover place-self-center"
-                sizes="(max-width:425px) 75vw, (max-width:900px) 75vw, 60vw"
+                cssClasses="object-cover place-self-center"
+                smallest={60}
+                phone={60}
+                tablet={50}
+                tabletLarge={45}
+                desktopSmall={40}
+                desktop={50}
               />
             </SplideSlide>
           ))}
@@ -90,7 +96,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 5000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -114,18 +120,22 @@ const LightboxSlider = ({
         >
           {imageList.map(({ url }, index) => (
             <SplideSlide key={index} className="h-full w-full">
-              <Image
+              <ImageContainer
                 src={url}
                 alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={900}
                 height={500}
-                className="object-cover h-full w-full cursor-pointer"
+                cssClasses="object-cover h-full w-full cursor-pointer"
                 onClick={() => (
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
-                quality={50}
-                loading={index < 2 ? "eager" : "lazy"}
-                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
+                eager={index < 2 ? true : false}
+                smallest={85}
+                phone={55}
+                tablet={45}
+                tabletLarge={40}
+                desktopSmall={35}
+                desktop={35}
               />
             </SplideSlide>
           ))}
@@ -140,7 +150,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -164,17 +174,22 @@ const LightboxSlider = ({
         >
           {imageList.map(({ url }, index) => (
             <SplideSlide key={index} className="h-full w-full">
-              <Image
+              <ImageContainer
                 src={url}
-                alt="Luna Blue guesthouse"
+                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={900}
                 height={500}
-                className="object-cover h-full w-full cursor-pointer"
+                cssClasses="object-cover h-full w-full cursor-pointer"
                 onClick={() => (
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
-                quality={50}
-                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
+                eager={index < 2 ? true : false}
+                smallest={85}
+                phone={55}
+                tablet={45}
+                tabletLarge={35}
+                desktopSmall={30}
+                desktop={25}
               />
             </SplideSlide>
           ))}
@@ -189,7 +204,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 7000,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -213,17 +228,22 @@ const LightboxSlider = ({
         >
           {imageList.map(({ url }, index) => (
             <SplideSlide key={index} className="h-full w-full">
-              <Image
+              <ImageContainer
                 src={url}
-                alt="Luna Blue guesthouse"
+                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={900}
                 height={500}
-                className="object-cover h-full w-full cursor-pointer"
+                cssClasses="object-cover h-full w-full cursor-pointer"
                 onClick={() => (
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
-                quality={50}
-                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, 50vw"
+                eager={index < 2 ? true : false}
+                smallest={85}
+                phone={55}
+                tablet={45}
+                tabletLarge={35}
+                desktopSmall={30}
+                desktop={25}
               />
             </SplideSlide>
           ))}
@@ -239,7 +259,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: 100,
+            dragMinThreshold: { touch: 2000, mouse: 0 },
             gap: "1rem",
             fixedHeight: 500,
             arrows: true,
@@ -264,17 +284,22 @@ const LightboxSlider = ({
         >
           {imageList.map(({ url }, index) => (
             <SplideSlide key={index} className="h-full w-full">
-              <Image
+              <ImageContainer
                 src={url}
-                alt="Luna Blue guesthouse"
+                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
                 width={900}
                 height={500}
-                className="object-cover h-full w-full cursor-pointer"
+                cssClasses="object-cover h-full w-full cursor-pointer"
                 onClick={() => (
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
-                quality={50}
-                sizes="(max-width:425px) 85vw, (max-width:900px) 50vw, (max-width:1100px) 50vw, 30vw"
+                eager={index < 2 ? true : false}
+                smallest={85}
+                phone={50}
+                tablet={45}
+                tabletLarge={40}
+                desktopSmall={35}
+                desktop={25}
               />
             </SplideSlide>
           ))}

@@ -1,4 +1,5 @@
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import Translated from "../utils/translated";
 
 interface Props {
   cssClasses?: string;
@@ -11,7 +12,7 @@ const ContactMap = ({ cssClasses }: Props) => {
   if (!isLoaded)
     return (
       <div className="mt-10 bg-beige text-43px text-center py-16 max-w-[1400px]">
-        Map loading...
+        <Translated german="Laden der Karte">Map loading...</Translated>
       </div>
     );
   return (

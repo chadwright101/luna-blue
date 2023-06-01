@@ -1,23 +1,31 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import imageData from "../data/image-data.json";
 import About from "@/components/home-page/about";
 import OurRooms from "@/components/home-page/our-rooms";
 import MoreInfoAvailability from "@/components/home-page/more-info-availability";
+
+import imageData from "../data/image-data.json";
 
 export default function Home() {
   const {
     homePage: { heroSlider },
   } = imageData;
+
+  const { locale } = useRouter();
   return (
     <>
       <Head>
         <title>Luna Blue Off-grid Guesthouse - Plettenberg Bay</title>
         <meta
           name="description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+          content={
+            locale === "en"
+              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+              : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue Off-grid Guesthouse ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
+          }
         />
         <meta
           name="keywords"
@@ -25,7 +33,15 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo-square.png"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
         />
         <meta property="og:title" content="Luna Blue Off-grid Guesthouse" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />

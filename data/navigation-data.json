@@ -1,27 +1,56 @@
-[
-  {
-    "title": "Home",
-    "url": "/"
-  },
-  {
-    "title": "About us",
-    "url": "/about-us"
-  },
-  {
-    "title": "Our rooms",
-    "url": "/our-rooms"
-  },
-  {
-    "title": "Gallery",
-    "url": "/about-us/#gallery"
-  },
-  {
-    "title": "Contact",
-    "url": "/contact"
-  },
-  {
-    "title": "Book now",
-    "url": "https://book.nightsbridge.com/34927",
-    "targetBlank": true
-  }
-]
+{
+  "en": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "About us",
+      "url": "/about-us"
+    },
+    {
+      "title": "Our rooms",
+      "url": "/our-rooms"
+    },
+    {
+      "title": "Gallery",
+      "url": "/about-us/#gallery"
+    },
+    {
+      "title": "Contact",
+      "url": "/contact"
+    },
+    {
+      "title": "Book now",
+      "url": "https://book.nightsbridge.com/34927",
+      "targetBlank": true
+    }
+  ],
+  "de": [
+    {
+      "title": "Startseite",
+      "url": "/"
+    },
+    {
+      "title": "Über uns",
+      "url": "/about-us"
+    },
+    {
+      "title": "Unsere Zimmer",
+      "url": "/our-rooms"
+    },
+    {
+      "title": "Galerie",
+      "url": "/about-us/#gallery"
+    },
+    {
+      "title": "Kontakt",
+      "url": "/contact"
+    },
+    {
+      "title": "Jetzt buchen",
+      "url": "https://book.nightsbridge.com/34927",
+      "targetBlank": true
+    }
+  ]
+}

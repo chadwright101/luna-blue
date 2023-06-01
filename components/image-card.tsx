@@ -5,11 +5,15 @@ import { useState } from "react";
 import Button from "./button";
 
 import classNames from "classnames";
+import ImageContainer from "./utils/image-container";
+import Translated from "./utils/translated";
 
 interface Props {
   cssClasses?: string;
   title: string;
-  buttonText?: string | "View More";
+  titleGerman: string;
+  buttonText?: string;
+  buttonTextGerman?: string;
   mobileButtonWidth?: string;
   image: string;
   flip?: boolean;
@@ -23,7 +27,9 @@ interface Props {
 const ImageCard = ({
   cssClasses,
   title,
+  titleGerman,
   buttonText,
+  buttonTextGerman,
   mobileButtonWidth,
   image,
   link,
@@ -38,18 +44,15 @@ const ImageCard = ({
     <article
       className={`h-[275px] phone:h-[325px] tablet:h-[375px] tabletLarge:h-[475px] desktop:h-[400px] ${cssClasses}`}
     >
-      <Image
+      <ImageContainer
         src={image}
         alt="Luna Blue Off-grid Guesthouse"
         width={900}
         height={500}
-        className="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
-        sizes={
-          center
-            ? "(max-width: 425px) 90vw,(max-width: 1400px) 30vw, 20vw"
-            : "(max-width: 425px) 90vw, 75vw"
-        }
-        quality={50}
+        cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
+        smallest={90}
+        desktopSmall={center ? 30 : undefined}
+        desktop={center ? 20 : 75}
       />
 
       {/* mobile view */}
@@ -64,7 +67,9 @@ const ImageCard = ({
             cssClasses="mx-auto text-[16px] text-center row-start-2"
             width={mobileButtonWidth}
           >
-            {buttonText}
+            <Translated german={buttonTextGerman || "Mehr sehen"}>
+              {buttonText || "View More"}
+            </Translated>
           </Button>
         </div>
       </div>
@@ -101,7 +106,7 @@ const ImageCard = ({
               "text-right": flip,
             })}
           >
-            {title}
+            <Translated german={titleGerman}>{title}</Translated>
           </h2>
           <div
             className={classNames("flex gap-2", {
@@ -109,7 +114,9 @@ const ImageCard = ({
             })}
           >
             <p className="uppercase text-[13px] text-pureBlack font-350 tracking-widest">
-              {buttonText || "View More"}
+              <Translated german={buttonTextGerman || "Mehr sehen"}>
+                {buttonText || "View More"}
+              </Translated>
             </p>
             <Image
               src="/icons/plus.svg"

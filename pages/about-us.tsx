@@ -17,10 +17,16 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About us - Luna Blue Guesthouse</title>
+        <title>
+          {locale === "en" ? "About us" : "Über uns"} - Luna Blue Guesthouse
+        </title>
         <meta
           name="description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+          content={
+            locale === "en"
+              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+              : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue Off-grid Guesthouse ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
+          }
         />
         <meta
           name="keywords"
@@ -28,7 +34,15 @@ const AboutUs = () => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo-square.png"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+        />
+        <meta
+          property="og:image"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
         />
         <meta property="og:title" content="About us - Luna Blue Guesthouse" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
@@ -60,12 +74,20 @@ const AboutUs = () => {
         <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg" />
       </div>
       <article className=" max-w-[900px] mx-auto">
-        <h2 className="text-43px tabletLarge:text-center mb-10">
+        <h2
+          className={`${
+            locale === "en" ? "text-43px" : "text-35px"
+          } tabletLarge:text-center mb-10`}
+        >
           <Translated german="An der wunderschönen, von Natur geprägten Küste des Indischen Ozeans liegt unser Hotel - das Luna Blue Off-grid Guesthouse.">
             Located on the magnificent, unspoilt shores of the Indian Ocean.
           </Translated>
         </h2>
-        <p className="tabletLarge:text-center">
+        <p
+          className={`${
+            locale === "en" ? "" : "text-left phone:text-justify"
+          } tabletLarge:text-center`}
+        >
           <Translated german="Kaum eine Liebesgeschichte ist älter oder bedeutender als die von Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in der Wissenschaft thematisiert wird. Sie haben die Macht, uns mit ihrer Schönheit zu verzaubern, unsere Seelen sanft zu berühren oder uns einfach innehalten zu lassen, um uns eine größere Perspektive über unseren Platz in dieser Welt zu geben, ob sie nun getrennt sind oder zusammen. Bei einem Besuch in unseren Gästehäusern möchten wir Sie diesen Zauber spüren lassen.">
             There is no older or greater love story than that of the moon and
             the sea, with this relationship covered by both mythology and
@@ -89,7 +111,7 @@ const AboutUs = () => {
         />
       </section>
       <main>
-        <p>
+        <p className={locale === "en" ? "" : "text-left phone:text-justify"}>
           <Translated german="Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue Off-grid Guesthouse ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay. ihr Zuhause gefunden haben. Auch wenn ihre beruflichen Erfahrungen sehr unterschiedlich sind, so sind doch ihre Gastfreundschaft und ihre Leidenschaft für den Umgang mit Menschen ein Faktor, der sie verbindet. Die Gästehäuser sind ein Spiegelbild der Dinge, die ihnen am meisten am Herzen liegen: Umwelt, Fitness, Tiere, vegane Küche und eine starke Liebe zu Afrika. Abseits vom Trubel des Zentrums von Plettenberg Bay gelegen, wird Ihr Aufenthalt bei uns zu einem friedlichen und erholsamen Erlebnis. Der Flughafen von Plettenberg Bay ist in 5 Minuten, die Stadt in 7 Minuten und die wunderschönen Strände in 10 Minuten zu erreichen.">
             Located in the Tsitsikamma Marine Protected Area, Plettenberg Bay in
             the Garden Route is known for it&#39;s crystal clear seas and white
@@ -109,14 +131,16 @@ const AboutUs = () => {
           </Translated>
         </p>
         <article className="my-10 desktopSmall:my-16">
-          <h2 className="mb-10">
+          <h2 className={`mb-10 ${locale === "en" ? "" : "text-35px"}`}>
             <Translated german="Einrichtungen">Facilities</Translated>
           </h2>
           <ul className="list-disc pl-4 grid gap-y-1 gap-x-10 tablet:grid-cols-2 desktopSmall:grid-cols-3">
             {locale === "en"
               ? en.map((item, index) => <li key={index}>{item}</li>)
               : de.map((item, index) => <li key={index}>{item}</li>)}
-            <li>
+            <li
+              className={locale === "en" ? "" : "text-left phone:text-justify"}
+            >
               <Translated german="Persönlicher Koch">Personal Chef</Translated>{" "}
               (
               <span className="italic">
@@ -126,7 +150,9 @@ const AboutUs = () => {
               </span>
               )
             </li>
-            <li>
+            <li
+              className={locale === "en" ? "" : "text-left phone:text-justify"}
+            >
               <Translated german="Fitnessraum">Gym</Translated> (
               <span className="italic">
                 <Translated german="Personal Trainer auf Anfrage">
@@ -135,7 +161,9 @@ const AboutUs = () => {
               </span>
               )
             </li>
-            <li>
+            <li
+              className={locale === "en" ? "" : "text-left phone:text-justify"}
+            >
               <Translated german="Nachhaltiger Tourismus &#8212; Solarenergie, Regenwassernutzung und ausschließliche Verwendung von recycelten/recycelbaren Produkten">
                 Sustainable Tourism &#8212; solar power, rainwater harvesting
                 and the use of recycled / recyclable products only
@@ -149,7 +177,11 @@ const AboutUs = () => {
           <h3 className="tabletLarge:text-center mb-10">
             <Translated german="Aktivitäten">Things To Do</Translated>
           </h3>
-          <p className="tabletLarge:text-center">
+          <p
+            className={`${
+              locale === "en" ? "" : "text-left phone:text-justify"
+            } tabletLarge:text-center`}
+          >
             <Translated german="In dieser wunderschönen Region gibt es erstklassige Golfplätze, Wanderwege, Weinberge, Kajak fahren, Surfen, Naturschutzgebiete, Bootsausflüge, Märkte und zahlreiche adrenalingeladene Aktivitäten wie beispielsweise Paragliding.">
               This beautiful region offers you access to top rated golf courses,
               hiking trails, vineyards, kayaking, surfing, wildlife sanctuaries,
@@ -160,7 +192,13 @@ const AboutUs = () => {
         </div>
         <div className="grid tabletLarge:grid-cols-2 desktop:grid-cols-3 gap-10">
           <div>
-            <h2 className="mb-8 tabletLarge:hidden">Activities</h2>
+            <h2
+              className={`mb-8 ${
+                locale === "en" ? "" : "text-35px"
+              } tabletLarge:hidden`}
+            >
+              <Translated german="Aktivitäten">Activities</Translated>
+            </h2>
             <ImageCard
               title="Activities"
               titleGerman="Aktivitäten"
@@ -174,7 +212,13 @@ const AboutUs = () => {
             />
           </div>
           <div>
-            <h2 className="mb-8 tabletLarge:hidden">Restaurants</h2>
+            <h2
+              className={`mb-8 ${
+                locale === "en" ? "" : "text-35px"
+              } tabletLarge:hidden`}
+            >
+              Restaurants
+            </h2>
             <ImageCard
               title="Restaurants"
               titleGerman="Restaurants"
@@ -188,7 +232,13 @@ const AboutUs = () => {
             />
           </div>
           <div>
-            <h2 className="mb-8 tabletLarge:hidden">Events</h2>
+            <h2
+              className={`mb-8 ${
+                locale === "en" ? "" : "text-35px"
+              } tabletLarge:hidden`}
+            >
+              <Translated german="Veranstaltungen">Events</Translated>
+            </h2>
             <ImageCard
               title="Events"
               titleGerman="Veranstaltungen"

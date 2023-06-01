@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 
 import useScrollPosition from "./utils/scroll-position";
+import LanguageMobileMenu from "./language-mobile-menu";
 
 import classNames from "classnames";
 
 import navigationList from "../data/navigation-data.json";
 import LanguageDesktopSubmenu from "./language-desktop-submenu";
-import LanguageMobileMenu from "./language-mobile-menu";
 
 interface Props {
   cssClasses?: string;
@@ -30,11 +30,12 @@ const Header = ({ cssClasses }: Props) => {
     <header className={`bg-white ${cssClasses}`}>
       <div className="desktop:max-w-[1400px] desktop:mx-auto">
         {/* mobile view */}
-        <div className="tabletLarge:hidden">
+        <div className="desktopSmall:hidden">
           <div className="flex justify-between items-center">
             <Link
               href="/"
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              rel="preload"
               as="image"
             >
               <Image
@@ -127,11 +128,12 @@ const Header = ({ cssClasses }: Props) => {
         </div>
 
         {/* desktop view */}
-        <div className="hidden tabletLarge:block">
+        <div className="hidden desktopSmall:block">
           <div className="flex justify-between items-end">
             <Link
               href="/"
               className="desktopSmall:hover:scale-105 ease-in-out duration-500"
+              rel="preload"
               as="image"
             >
               <Image
@@ -154,7 +156,9 @@ const Header = ({ cssClasses }: Props) => {
               <ul
                 className={classNames(
                   "flex gap-6 ease-in-out delay-[10ms] duration-300 -translate-y-3",
-                  { "translate-y-2": scrollPosition > 0 }
+                  {
+                    "translate-y-2": scrollPosition > 0,
+                  }
                 )}
               >
                 {locale === "en"

@@ -28,7 +28,11 @@ const About = ({ cssClasses }: Props) => {
           <h2>
             <Translated german="Über uns">About us</Translated>
           </h2>
-          <p className="mt-4 mb-8">
+          <p
+            className={`mt-4 mb-8 ${
+              locale === "en" ? "" : "text-left phone:text-justify"
+            }`}
+          >
             <Translated
               german="Kaum eine Liebesgeschichte ist älter oder bedeutender als die von
             Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in
@@ -59,7 +63,7 @@ const About = ({ cssClasses }: Props) => {
       </div>
 
       <article className="desktopSmall:row-start-2 desktopSmall:col-span-2 desktop:row-start-auto desktop:col-span-1">
-        <ul className="grid grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4  desktop:gap-y-16">
+        <ul className="grid grid-cols-2 phone:grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4 desktop:gap-y-16">
           {locale === "en"
             ? en.map(({ url, title }, index) => (
                 <li

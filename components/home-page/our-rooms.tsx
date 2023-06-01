@@ -1,5 +1,6 @@
-import Button from "../button";
+import { useRouter } from "next/router";
 
+import Button from "../button";
 import ImageCard from "../image-card";
 import Translated from "../utils/translated";
 
@@ -8,12 +9,15 @@ interface Props {
 }
 
 const OurRooms = ({ cssClasses }: Props) => {
+  const { locale } = useRouter();
   return (
     <section
       className={`grid gap-8 desktopSmall:gap-10 desktopSmall:grid-cols-[2fr_1fr] ${cssClasses}`}
     >
       <div>
-        <h2 className="mb-8 tabletLarge:hidden">Our Rooms</h2>
+        <h2 className="mb-8 tabletLarge:hidden">
+          <Translated german="Unsere Zimmer">Our Rooms</Translated>
+        </h2>
         <ImageCard
           title="Our Rooms"
           titleGerman="Unsere Zimmer"
@@ -23,7 +27,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           blankMobileCard
         />
       </div>
-      <p>
+      <p className={locale === "en" ? "" : "text-left phone:text-justify"}>
         <Translated
           german="Jedes unserer Zimmer wurde mit dem Ziel entworfen, Ihren Aufenthalt zu
           einem unvergesslichen Erlebnis zu machen, das Ihre Erwartungen
@@ -57,7 +61,11 @@ const OurRooms = ({ cssClasses }: Props) => {
           comfort and luxury.
         </Translated>
       </p>
-      <Button url="/our-rooms" cssClasses="tabletLarge:hidden">
+      <Button
+        url="/our-rooms"
+        cssClasses="tabletLarge:hidden"
+        width={locale === "en" ? undefined : "w-[170px]"}
+      >
         <Translated german="Mehr sehen">View More</Translated>
       </Button>
     </section>

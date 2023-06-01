@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 
 import ImageCard from "../image-card";
+import Translated from "../utils/translated";
+import { Trans } from "react-i18next";
 
 interface Props {
   cssClasses?: string;
@@ -12,7 +14,11 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
     <section className={`grid gap-10 ${cssClasses}`}>
       <div>
         <div>
-          <h2 className="mb-8 tabletLarge:hidden">Check Availability</h2>
+          <h2 className="mb-8 tabletLarge:hidden">
+            <Translated german="Verfügbarkeit prüfen">
+              Check Availability
+            </Translated>
+          </h2>
           <ImageCard
             title="Check Availability"
             titleGerman="Verfügbarkeit prüfen"
@@ -29,7 +35,11 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
 
       <div>
         <div>
-          <h2 className="mb-8 tabletLarge:hidden">About Plettenberg Bay</h2>
+          <h2 className="mb-8 tabletLarge:hidden">
+            <Translated german="Über Plettenberg Bay">
+              About Plettenberg Bay
+            </Translated>
+          </h2>
           <ImageCard
             title="About Plettenberg Bay"
             titleGerman="Über Plettenberg Bay"

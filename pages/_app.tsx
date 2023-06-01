@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";

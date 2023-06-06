@@ -57,7 +57,7 @@ const AboutUs = () => {
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
       </Head>
-      <h1 className=" mb-6 tabletLarge:text-center desktopSmall:mb-8">
+      <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
         <Translated german="Über uns">About Us</Translated>
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">

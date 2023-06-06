@@ -29,7 +29,7 @@ const Footer = ({ cssClasses }: Props) => {
   const { locale } = useRouter();
 
   return (
-    <footer className={`${cssClasses}`}>
+    <footer className={`${cssClasses} ${currentRoute === "/" ? "hidden" : ""}`}>
       <hr className="mb-10 text-black" />
       <div
         className={classNames(

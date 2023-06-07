@@ -3,15 +3,17 @@ import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import About from "@/components/property-home-page/about";
-import OurRooms from "@/components/property-home-page/our-rooms";
-import MoreInfoAvailability from "@/components/property-home-page/more-info-availability";
+import About from "@/components/property-home-page/hill-street/about";
+import OurRooms from "@/components/property-home-page/hill-street/our-rooms";
+import MoreInfoAvailability from "@/components/property-home-page/hill-street/more-info-availability";
 
-import imageData from "../data/image-data.json";
+import imageData from "../../data/image-data.json";
 
-export default function Home() {
+export default function HillStreet() {
   const {
-    homePage: { heroSlider },
+    robbergRidge: {
+      homePage: { heroSlider },
+    },
   } = imageData;
 
   const { locale } = useRouter();

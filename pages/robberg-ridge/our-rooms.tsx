@@ -2,8 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import RoomInfoSlider from "@/components/our-rooms-page/room-info-slider";
-import imageList from "../data/image-data.json";
-import roomData from "../data/room-data.json";
+import imageList from "@/data/image-data.json";
+import roomData from "@/data/room-data.json";
 import HeroSplit from "@/components/hero-split";
 import Translated from "@/components/utils/translated";
 
@@ -11,7 +11,9 @@ interface Props {
   cssClasses?: string;
 }
 const {
-  ourRooms: { bedroom1, bedroom2, bedroom3, bedroom4 },
+  robbergRidge: {
+    ourRooms: { bedroom1, bedroom2, bedroom3, bedroom4 },
+  },
 } = imageList;
 const { en, de } = roomData;
 

@@ -1,5 +1,8 @@
-import classNames from "classnames";
+import { ReactNode } from "react";
+
 import Button from "../../button";
+
+import classNames from "classnames";
 
 interface Props {
   title: string;
@@ -7,6 +10,7 @@ interface Props {
   whiteText?: boolean;
   buttonUrl?: string;
   buttonText?: string;
+  children?: ReactNode;
 }
 
 const TextBox = ({
@@ -15,12 +19,13 @@ const TextBox = ({
   whiteText,
   buttonUrl,
   buttonText,
+  children,
 }: Props) => {
   return (
     <div
-      className={classNames("grid gap-8 p-8 min-w-[75px] max-w-[300px]", {
+      className={classNames("grid gap-8 p-8 max-w-[280px]", {
         "bg-black/40": whiteText,
-        "bg-beige/75": !whiteText,
+        "bg-white/[65%]": !whiteText,
       })}
     >
       <h2
@@ -31,14 +36,17 @@ const TextBox = ({
       >
         {title}
       </h2>
-      <p
-        className={classNames("text-center", {
-          "text-black": !whiteText,
-          "text-white": whiteText,
-        })}
-      >
-        {paragraph}
-      </p>
+      {paragraph && (
+        <p
+          className={classNames("text-center", {
+            "text-black": !whiteText,
+            "text-white": whiteText,
+          })}
+        >
+          {paragraph}
+        </p>
+      )}
+      <>{children}</>
       {buttonUrl && (
         <Button
           url={buttonUrl!}

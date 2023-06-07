@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
 
-import Button from "../button";
-import ImageContainer from "../utils/image-container";
-import Translated from "../utils/translated";
+import Button from "../../button";
+import ImageContainer from "../../utils/image-container";
+import Translated from "../../utils/translated";
 
-import amenityIcons from "../../data/amenity-icons-data.json";
+import amenityIcons from "../../../data/amenity-icons-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -53,9 +53,9 @@ const About = ({ cssClasses }: Props) => {
             </Translated>
           </p>
           {locale === "en" ? (
-            <Button url="about-us" />
+            <Button url="/robberg-ridge/about-us" />
           ) : (
-            <Button url="about-us" width="w-[170px]">
+            <Button url="/robberg-ridge/" width="w-[170px]">
               Mehr lesen
             </Button>
           )}

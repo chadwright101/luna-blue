@@ -3,17 +3,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import generalData from "../data/general-data.json";
-import navigation from "../data/navigation-data.json";
+import generalData from "../../../data/general-data.json";
 import classNames from "classnames";
-import Translated from "./utils/translated";
+import Translated from "../../utils/translated";
+import RobbergRidgeFooterNav from "./pages/robberg-ridge-footer-nav";
+import HillStreetFooterNav from "./pages/hill-street-footer-nav";
 
 interface Props {
   cssClasses?: string;
 }
-
-const { en, de } = navigation;
-
 const {
   contact: { phone, phoneDisplay, email },
   address: { areaCode, province, street, town },
@@ -42,41 +40,17 @@ const Footer = ({ cssClasses }: Props) => {
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
-          <ul className="mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0">
-            {locale === "en"
-              ? en.map(({ title, url, targetBlank }, index) => (
-                  <li key={index}>
-                    <Link
-                      href={url}
-                      className={classNames(
-                        "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
-                        {
-                          "font-500": targetBlank,
-                        }
-                      )}
-                      target={targetBlank ? "_blank" : "_self"}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))
-              : de.map(({ title, url, targetBlank }, index) => (
-                  <li key={index}>
-                    <Link
-                      href={url}
-                      className={classNames(
-                        "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
-                        {
-                          "font-500": targetBlank,
-                        }
-                      )}
-                      target={targetBlank ? "_blank" : "_self"}
-                    >
-                      {title}
-                    </Link>
-                  </li>
-                ))}
-          </ul>
+          {currentRoute === "/robberg-ridge" ||
+          "/robberg-ridge/about-us" ||
+          "/robberg-ridge/our-rooms" ||
+          "/robberg-ridge/contact" ? (
+            <RobbergRidgeFooterNav />
+          ) : currentRoute === "/hill-street" ||
+            "/hill-street/about-us" ||
+            "/hill-street/our-rooms" ||
+            "/hill-street/contact" ? (
+            <HillStreetFooterNav />
+          ) : null}
         </div>
         <div
           className={classNames("", {

@@ -1,3 +1,6 @@
+import Image from "next/image";
+import { ReactNode } from "react";
+
 import TextBox from "./text-box";
 
 interface Props {
@@ -9,6 +12,8 @@ interface Props {
   backgroundColour?: string;
   buttonUrl?: string;
   buttonText?: string;
+  arrow?: boolean;
+  children?: ReactNode;
 }
 
 const IndividualSlide = ({
@@ -20,13 +25,17 @@ const IndividualSlide = ({
   backgroundColour,
   buttonText,
   buttonUrl,
+  arrow,
+  children,
 }: Props) => {
   return (
     <div
       className={`snap-start h-[88vh] ${layeredBackgroundImage} bg-cover bg-center`}
     >
       <div
-        className={`${backgroundImage} bg-cover bg-center ${backgroundColour} flex place-items-center justify-center h-full`}
+        className={`${backgroundImage} bg-cover bg-center ${backgroundColour} flex place-items-center justify-center h-full ${
+          arrow && "flex-col gap-10"
+        }"}}`}
       >
         <TextBox
           whiteText={whiteText}
@@ -34,7 +43,18 @@ const IndividualSlide = ({
           paragraph={paragraph!}
           buttonText={buttonText}
           buttonUrl={buttonUrl}
-        />
+        >
+          {children}
+        </TextBox>
+        {arrow && (
+          <Image
+            src="/icons/arrow-down.svg"
+            alt="Down arrow icon"
+            width={75}
+            height={75}
+            className=" animate-bounce"
+          />
+        )}
       </div>
     </div>
   );

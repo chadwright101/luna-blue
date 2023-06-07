@@ -6,10 +6,12 @@ import LightboxSlider from "@/components/sliders/lightbox-slider";
 import HeroSplit from "@/components/hero-split";
 import Translated from "@/components/utils/translated";
 
-import imageData from "../data/image-data.json";
-import facilities from "../data/faclilities-data.json";
+import imageData from "@/data/image-data.json";
+import facilities from "@/data/faclilities-data.json";
 
-const { aboutUsSlider } = imageData;
+const {
+  robbergRidge: { aboutUsSlider },
+} = imageData;
 const { en, de } = facilities;
 
 const AboutUs = () => {

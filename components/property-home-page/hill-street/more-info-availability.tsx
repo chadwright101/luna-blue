@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 
-import ImageCard from "../image-card";
-import Translated from "../utils/translated";
+import ImageCard from "@/components/image-card";
+import Translated from "@/components/utils/translated";
 import { Trans } from "react-i18next";
 
 interface Props {

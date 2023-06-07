@@ -1,8 +1,21 @@
-import HomeHeroMobile from "@/components/home-page/home-hero-mobile";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-export default function Home() {
+import BasicSlider from "@/components/sliders/basic-slider";
+
+import About from "@/components/property-home-page/robberg-ridge/about";
+import OurRooms from "@/components/property-home-page/robberg-ridge/our-rooms";
+import MoreInfoAvailability from "@/components/property-home-page/robberg-ridge/more-info-availability";
+
+import imageData from "@/data/image-data.json";
+
+export default function RobbergRidge() {
+  const {
+    robbergRidge: {
+      homePage: { heroSlider },
+    },
+  } = imageData;
+
   const { locale } = useRouter();
   return (
     <>
@@ -49,7 +62,11 @@ export default function Home() {
           content="6wijN18bZX_HMfoo9Bj3JplvYLDxVw4-vczywhmz9Y0"
         />
       </Head>
-      <HomeHeroMobile cssClasses="tabletLarge:hidden" />
+      <BasicSlider imageData={heroSlider} />
+      <About cssClasses="my-10 desktopSmall:my-16" />
+      <OurRooms cssClasses="pt-4" />
+      <hr className="text-black my-10 desktopSmall:my-16" />
+      <MoreInfoAvailability cssClasses="my-10 desktopSmall:my-16" />
     </>
   );
 }

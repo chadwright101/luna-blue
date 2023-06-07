@@ -1,56 +1,176 @@
 {
-  "en": [
-    {
-      "title": "Home",
-      "url": "/"
-    },
-    {
-      "title": "About us",
-      "url": "/about-us"
-    },
-    {
-      "title": "Our rooms",
-      "url": "/our-rooms"
-    },
-    {
-      "title": "Gallery",
-      "url": "/about-us/#gallery"
-    },
-    {
-      "title": "Contact",
-      "url": "/contact"
-    },
-    {
-      "title": "Book now",
-      "url": "https://book.nightsbridge.com/34927",
-      "targetBlank": true
-    }
-  ],
-  "de": [
-    {
-      "title": "Startseite",
-      "url": "/"
-    },
-    {
-      "title": "Über uns",
-      "url": "/about-us"
-    },
-    {
-      "title": "Unsere Zimmer",
-      "url": "/our-rooms"
-    },
-    {
-      "title": "Galerie",
-      "url": "/about-us/#gallery"
-    },
-    {
-      "title": "Kontakt",
-      "url": "/contact"
-    },
-    {
-      "title": "Jetzt buchen",
-      "url": "https://book.nightsbridge.com/34927",
-      "targetBlank": true
-    }
-  ]
+  "homePage": {
+    "en": [
+      {
+        "title": "Hill Street",
+        "url": "/hill-street"
+      },
+      {
+        "title": "Robberg Ridge",
+        "url": "/robberg-ridge"
+      },
+      {
+        "title": "About us",
+        "url": "/#about-us"
+      },
+      {
+        "title": "About Plettenberg Bay",
+        "url": "/#plett"
+      },
+      {
+        "title": "Contact",
+        "url": "/#contact"
+      }
+    ],
+    "de": [
+      {
+        "title": "Hill Street",
+        "url": "/hill-street"
+      },
+      {
+        "title": "Robberg Ridge",
+        "url": "/robberg-ridge"
+      },
+      {
+        "title": "Über uns",
+        "url": "/#about-us"
+      },
+      {
+        "title": "Über Plettenberg Bay",
+        "url": "/#plett"
+      },
+      {
+        "title": "Kontakt",
+        "url": "/contact"
+      }
+    ]
+  },
+  "robbergRidge": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "robberg-ridge"
+      },
+      {
+        "title": "About us",
+        "url": "/robberg-ridge/about-us"
+      },
+      {
+        "title": "Our rooms",
+        "url": "/robberg-ridge/our-rooms"
+      },
+      {
+        "title": "Gallery",
+        "url": "/robberg-ridge/about-us/#gallery"
+      },
+      {
+        "title": "Contact",
+        "url": "/robberg-ridge/contact"
+      },
+      {
+        "title": "Book now",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      },
+      {
+        "title": "Hill Street",
+        "url": "/hill-street"
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/robberg-ridge"
+      },
+      {
+        "title": "Über uns",
+        "url": "/robberg-ridge/about-us"
+      },
+      {
+        "title": "Unsere Zimmer",
+        "url": "/robberg-ridge/our-rooms"
+      },
+      {
+        "title": "Galerie",
+        "url": "/robberg-ridge/about-us/#gallery"
+      },
+      {
+        "title": "Kontakt",
+        "url": "/robberg-ridge/contact"
+      },
+      {
+        "title": "Jetzt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      },
+      {
+        "title": "Hill Street",
+        "url": "/hill-street"
+      }
+    ]
+  },
+  "hillStreet": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/hill-street"
+      },
+      {
+        "title": "About us",
+        "url": "/hill-street/about-us"
+      },
+      {
+        "title": "Our rooms",
+        "url": "/hill-street/our-rooms"
+      },
+      {
+        "title": "Gallery",
+        "url": "/hill-street/about-us/#gallery"
+      },
+      {
+        "title": "Contact",
+        "url": "/hill-street/contact"
+      },
+      {
+        "title": "Book now",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      },
+      {
+        "title": "Robberg Ridge",
+        "url": "/robberg-ridge"
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/hill-street"
+      },
+      {
+        "title": "Über uns",
+        "url": "/hill-street/about-us"
+      },
+      {
+        "title": "Unsere Zimmer",
+        "url": "/hill-street/our-rooms"
+      },
+      {
+        "title": "Galerie",
+        "url": "/hill-street/about-us/#gallery"
+      },
+      {
+        "title": "Kontakt",
+        "url": "/hill-street/contact"
+      },
+      {
+        "title": "Jetzt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      },
+      {
+        "title": "Robberg Ridge",
+        "url": "/robberg-ridge"
+      }
+    ]
+  }
 }

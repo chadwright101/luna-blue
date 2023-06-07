@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 
-import Button from "../button";
-import ImageCard from "../image-card";
-import Translated from "../utils/translated";
+import Button from "@/components/button";
+import ImageCard from "@/components/image-card";
+import Translated from "@/components/utils/translated";
 
 interface Props {
   cssClasses?: string;
@@ -21,7 +21,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         <ImageCard
           title="Our Rooms"
           titleGerman="Unsere Zimmer"
-          link="/our-rooms"
+          link="/robberg-ridge/our-rooms"
           image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.webp"
           mobileButtonWidth="w-[158px]"
           blankMobileCard
@@ -62,7 +62,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         </Translated>
       </p>
       <Button
-        url="/our-rooms"
+        url="/robberg-ridge/our-rooms"
         cssClasses="tabletLarge:hidden"
         width={locale === "en" ? undefined : "w-[170px]"}
       >

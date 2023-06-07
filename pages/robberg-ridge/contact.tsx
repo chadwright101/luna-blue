@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import generalData from "../data/general-data.json";
+import generalData from "@/data/general-data.json";
 import ContactMap from "@/components/contact-page/map";
 import ImageContainer from "@/components/utils/image-container";
 import Translated from "@/components/utils/translated";

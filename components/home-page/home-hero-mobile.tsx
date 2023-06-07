@@ -1,13 +1,17 @@
-import Image from "next/image";
-
 import IndividualSlide from "./hero-slider-mobile/individual-slide";
 
-const HomeHeroMobile = () => {
+interface Props {
+  cssClasses?: string;
+}
+
+const HomeHeroMobile = ({ cssClasses }: Props) => {
   return (
-    <div className="snap-y snap-mandatory h-[88vh] -mx-8 overflow-scroll scrollbar-hide">
+    <div
+      className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide ${cssClasses}`}
+    >
       <IndividualSlide
+        arrow
         title="Which view would you like to wake up to during your next holiday?"
-        paragraph=""
       />
       <IndividualSlide
         backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
@@ -29,10 +33,18 @@ const HomeHeroMobile = () => {
       delectus minus."
         buttonUrl="/luna-blue-1"
       />
-      <IndividualSlide
-        title="About us"
-        paragraph="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, voluptatem. Harum quos vitae sunt doloribus autem quidem vel facere perferendis."
-      />
+      <IndividualSlide title="About us">
+        <p className="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          minima, veritatis eius illum non dolore tempore explicabo! Fugiat,
+          suscipit veniam!
+        </p>
+        <ul className="list-disc ml-4">
+          <li>Blah</li>
+          <li>Blah Blah</li>
+          <li>Blah Blah Blah</li>
+        </ul>
+      </IndividualSlide>
     </div>
   );
 };

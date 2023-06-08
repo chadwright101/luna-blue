@@ -49,7 +49,7 @@ export default function Home() {
           content="6wijN18bZX_HMfoo9Bj3JplvYLDxVw4-vczywhmz9Y0"
         />
       </Head>
-      <HomeHeroMobile cssClasses="tabletLarge:hidden" />
+      <HomeHeroMobile cssClasses="desktopSmall:hidden" />
     </>
   );
 }

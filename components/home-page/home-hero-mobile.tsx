@@ -1,10 +1,24 @@
+import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/router";
+
 import IndividualSlide from "./hero-slider-mobile/individual-slide";
+import Translated from "../utils/translated";
+
+import generalData from "../../data/general-data.json";
 
 interface Props {
   cssClasses?: string;
 }
 
+const {
+  contact: { email },
+} = generalData;
+
 const HomeHeroMobile = ({ cssClasses }: Props) => {
+  const [showEmail, setShowEmail] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
+  const { locale } = useRouter();
   return (
     <div
       className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide ${cssClasses}`}
@@ -21,7 +35,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
     perspiciatis consectetur, tenetur aperiam adipisci accusantium
     dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
     delectus minus."
-        buttonUrl="/"
+        buttonUrl="/hill-street"
       />
 
       <IndividualSlide
@@ -31,19 +45,106 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
       perspiciatis consectetur, tenetur aperiam adipisci accusantium
       dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
       delectus minus."
-        buttonUrl="/luna-blue-1"
+        buttonUrl="/robberg-ridge"
       />
-      <IndividualSlide title="About us">
-        <p className="text-center">
+      <IndividualSlide
+        title="About us"
+        titleGerman="Über uns"
+        textBoxBackgroundColor="bg-brown"
+        whiteText
+      >
+        <p className="text-center text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
           minima, veritatis eius illum non dolore tempore explicabo! Fugiat,
           suscipit veniam!
         </p>
-        <ul className="list-disc ml-4">
+        <ul className="list-disc ml-4 text-white">
           <li>Blah</li>
           <li>Blah Blah</li>
           <li>Blah Blah Blah</li>
         </ul>
+      </IndividualSlide>
+      <IndividualSlide
+        title="Contact"
+        titleGerman="Kontakt"
+        slideBackgroundColour="bg-beige"
+      >
+        <ul>
+          {!showEmail && (
+            <li onClick={() => setShowEmail(true)} className="mr-auto">
+              <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
+                <Translated german="E-Mail Adresse anzeigen">
+                  Show email address
+                </Translated>
+              </p>
+            </li>
+          )}
+          {showEmail && (
+            <li>
+              <Link
+                href={`mailto:${email}`}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              >
+                {email}
+              </Link>
+            </li>
+          )}
+        </ul>
+        {!showMessage && (
+          <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
+            Please fill out the form below and we&#39;ll get back to you ASAP...
+          </Translated>
+        )}
+        <form
+          action="https://formsubmit.co/40ca08923db7f7ef1ea324bce7ce9752"
+          method="POST"
+          className="flex flex-col gap-8"
+        >
+          <input type="text" name="_honey" className="hidden"></input>
+          <div className="flex flex-col gap-3">
+            <input
+              type="text"
+              id="email"
+              name="email"
+              required
+              placeholder={locale === "en" ? "Email Address" : "E-Mail"}
+              className="pl-2 py-1.5 bg-darkBeige"
+            />
+          </div>
+          {showMessage && (
+            <>
+              <div className="flex flex-col gap-3">
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder={
+                    locale === "en"
+                      ? "Type your message here"
+                      : "Geben Sie hier Ihre Nachricht ein"
+                  }
+                  className="pl-2 py-1.5 bg-darkBeige"
+                  rows={3}
+                />
+              </div>
+              <button
+                className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2"
+                type="submit"
+              >
+                <Translated german="Einreichen">Submit</Translated>
+              </button>
+            </>
+          )}
+        </form>
+        {!showMessage && (
+          <button
+            onClick={() => setShowMessage(true)}
+            className="bg-brown w-full text-white px-4 py-3 font-500 mt-2 tabletLarge:w-28 tabletLarge:py-2"
+          >
+            <Translated german="Nächste">Next</Translated>
+          </button>
+        )}
+        .
       </IndividualSlide>
     </div>
   );

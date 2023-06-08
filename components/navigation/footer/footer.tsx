@@ -3,11 +3,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import generalData from "../../../data/general-data.json";
 import classNames from "classnames";
 import Translated from "../../utils/translated";
 import RobbergRidgeFooterNav from "./pages/robberg-ridge-footer-nav";
 import HillStreetFooterNav from "./pages/hill-street-footer-nav";
+import { hillStreetUrls, robbergRidgeUrls } from "../header/mobile/mobile-menu";
+
+import generalData from "../../../data/general-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -40,15 +42,9 @@ const Footer = ({ cssClasses }: Props) => {
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
-          {currentRoute === "/robberg-ridge" ||
-          "/robberg-ridge/about-us" ||
-          "/robberg-ridge/our-rooms" ||
-          "/robberg-ridge/contact" ? (
+          {robbergRidgeUrls.includes(currentRoute) ? (
             <RobbergRidgeFooterNav />
-          ) : currentRoute === "/hill-street" ||
-            "/hill-street/about-us" ||
-            "/hill-street/our-rooms" ||
-            "/hill-street/contact" ? (
+          ) : hillStreetUrls.includes(currentRoute) ? (
             <HillStreetFooterNav />
           ) : null}
         </div>

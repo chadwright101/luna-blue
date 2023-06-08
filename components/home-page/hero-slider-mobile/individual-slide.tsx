@@ -6,23 +6,29 @@ import TextBox from "./text-box";
 interface Props {
   whiteText?: boolean;
   title: string;
+  titleGerman?: string;
+  paragraphGerman?: string;
   paragraph?: string;
   backgroundImage?: string;
   layeredBackgroundImage?: string;
-  backgroundColour?: string;
+  slideBackgroundColour?: string;
   buttonUrl?: string;
   buttonText?: string;
   arrow?: boolean;
   children?: ReactNode;
+  textBoxBackgroundColor?: string;
 }
 
 const IndividualSlide = ({
   whiteText,
   title,
+  titleGerman,
   paragraph,
+  paragraphGerman,
   backgroundImage,
   layeredBackgroundImage,
-  backgroundColour,
+  slideBackgroundColour,
+  textBoxBackgroundColor,
   buttonText,
   buttonUrl,
   arrow,
@@ -33,16 +39,19 @@ const IndividualSlide = ({
       className={`snap-start h-[88vh] ${layeredBackgroundImage} bg-cover bg-center`}
     >
       <div
-        className={`${backgroundImage} bg-cover bg-center ${backgroundColour} flex place-items-center justify-center h-full ${
+        className={`${backgroundImage} bg-cover bg-center ${slideBackgroundColour} flex place-items-center justify-center h-full ${
           arrow && "flex-col gap-10"
         }"}}`}
       >
         <TextBox
           whiteText={whiteText}
           title={title}
+          titleGerman={titleGerman}
           paragraph={paragraph!}
+          paragraphGerman={paragraphGerman}
           buttonText={buttonText}
           buttonUrl={buttonUrl}
+          textBoxBackgroundColor={textBoxBackgroundColor}
         >
           {children}
         </TextBox>

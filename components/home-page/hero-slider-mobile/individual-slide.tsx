@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 
-import TextBox from "./text-box";
+import TextBox from "../text-box";
 
 interface Props {
   whiteText?: boolean;
@@ -10,7 +10,6 @@ interface Props {
   paragraphGerman?: string;
   paragraph?: string;
   backgroundImage?: string;
-  layeredBackgroundImage?: string;
   slideBackgroundColour?: string;
   buttonUrl?: string;
   buttonText?: string;
@@ -26,7 +25,6 @@ const IndividualSlide = ({
   paragraph,
   paragraphGerman,
   backgroundImage,
-  layeredBackgroundImage,
   slideBackgroundColour,
   textBoxBackgroundColor,
   buttonText,
@@ -35,13 +33,11 @@ const IndividualSlide = ({
   children,
 }: Props) => {
   return (
-    <div
-      className={`snap-start h-[88vh] ${layeredBackgroundImage} bg-cover bg-center`}
-    >
+    <article className={`snap-start h-[88vh] bg-cover bg-center`}>
       <div
         className={`${backgroundImage} bg-cover bg-center ${slideBackgroundColour} flex place-items-center justify-center h-full ${
           arrow && "flex-col gap-10"
-        }"}}`}
+        }`}
       >
         <TextBox
           whiteText={whiteText}
@@ -65,7 +61,7 @@ const IndividualSlide = ({
           />
         )}
       </div>
-    </div>
+    </article>
   );
 };
 

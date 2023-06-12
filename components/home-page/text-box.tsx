@@ -1,20 +1,21 @@
 import { ReactNode } from "react";
 import { useRouter } from "next/router";
 
-import Button from "../../button";
+import Button from "../button";
 
 import classNames from "classnames";
 
 interface Props {
   title: string;
   titleGerman?: string;
-  paragraph: string;
+  paragraph?: string;
   paragraphGerman?: string;
   whiteText?: boolean;
   buttonUrl?: string;
   buttonText?: string;
   children?: ReactNode;
   textBoxBackgroundColor?: string;
+  cssClasses?: string;
 }
 
 const TextBox = ({
@@ -27,12 +28,13 @@ const TextBox = ({
   buttonText,
   children,
   textBoxBackgroundColor,
+  cssClasses,
 }: Props) => {
   const { locale } = useRouter();
   return (
     <div
       className={classNames(
-        "grid gap-8 p-8 w-[280px] phone:w-[325px] tablet:w-[400px] tabletLarge:w-[500px]",
+        `grid gap-8 p-8 w-[280px] phone:w-[325px] tablet:w-[400px] tabletLarge:w-[500px] desktopSmall:w-[400px] desktop:w-[450px] ${cssClasses}`,
         {
           [`${textBoxBackgroundColor}`]: textBoxBackgroundColor,
           "bg-black/40": whiteText,
@@ -63,7 +65,7 @@ const TextBox = ({
         <Button
           url={buttonUrl!}
           whiteText={whiteText ? true : false}
-          cssClasses="mx-auto"
+          cssClasses="mx-auto desktopSmall:place-self-center"
         >
           {buttonText}
         </Button>

@@ -1,6 +1,8 @@
-import HomeHeroMobile from "@/components/home-page/home-hero-mobile";
 import Head from "next/head";
 import { useRouter } from "next/router";
+
+import HomeHeroMobile from "@/components/home-page/home-hero-mobile";
+import HomeHeroDesktop from "@/components/home-page/home-hero-desktop";
 
 export default function Home() {
   const { locale } = useRouter();
@@ -50,6 +52,7 @@ export default function Home() {
         />
       </Head>
       <HomeHeroMobile cssClasses="desktopSmall:hidden" />
+      <HomeHeroDesktop cssClasses="hidden desktopSmall:grid" />
     </>
   );
 }

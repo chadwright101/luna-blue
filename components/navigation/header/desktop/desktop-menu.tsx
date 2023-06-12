@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { hillStreetUrls, robbergRidgeUrls } from "../mobile/mobile-menu";
-import DesktopMenuPageComponent from "./pages/desktop-menu-page-component";
+import DesktopMenuPageComponent from "./desktop-menu-page-component";
 
 import navigationList from "@/data/navigation-data.json";
 

@@ -3,30 +3,33 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-import LanguageMobileMenu from "../../../../../pages/robberg-ridge/language-mobile-menu";
+import useScrollPosition from "../../../utils/scroll-position";
+import LanguageMobileMenu from "../../../../pages/robberg-ridge/language-mobile-menu";
 
 import classNames from "classnames";
 
-import navigationList from "../../../../../data/navigation-data.json";
-
 interface Props {
   cssClasses?: string;
+  navListEn: { title: string; url: string; targetBlank: boolean }[];
+  navListDe: { title: string; url: string; targetBlank: boolean }[];
 }
 
-const {
-  homePage: { en, de },
-} = navigationList;
-
-const HomePageMobileMenu = ({ cssClasses }: Props) => {
+const MobileMenuPageComponent = ({
+  cssClasses,
+  navListEn,
+  navListDe,
+}: Props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const router = useRouter();
   const currentRoute = router.pathname;
   const { locale } = useRouter();
 
+  const scrollPosition = useScrollPosition();
+
   return (
-    <div className={`desktopSmall:hidden h-8 ${cssClasses}`}>
-      <div className="flex justify-between items-center -translate-y-1">
+    <div className={`desktopSmall:hidden ${cssClasses}`}>
+      <div className="flex justify-between items-center">
         <Link
           href="/"
           className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
@@ -38,7 +41,12 @@ const HomePageMobileMenu = ({ cssClasses }: Props) => {
             alt="Luna Blue Off-grid Guesthouse logo"
             width={50}
             height={65}
-            className="w-[40px] h-auto -translate-y-0.5"
+            className={classNames(
+              "w-12 h-auto ease-in-out duration-300 delay-[10ms]",
+              {
+                "w-[40px] -translate-y-0.5": scrollPosition > 0,
+              }
+            )}
             priority
             sizes="(max-width: 425px) 5vw, 5vw"
           />
@@ -61,7 +69,7 @@ const HomePageMobileMenu = ({ cssClasses }: Props) => {
           <ul className="flex flex-col gap-8">
             <LanguageMobileMenu />
             {locale === "en"
-              ? en.map(({ title, url }, index) => (
+              ? navListEn.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>
                     <Link
                       href={url}
@@ -74,12 +82,13 @@ const HomePageMobileMenu = ({ cssClasses }: Props) => {
                             index === 5,
                         }
                       )}
+                      target={targetBlank ? "_blank" : "_self"}
                     >
                       {title}
                     </Link>
                   </li>
                 ))
-              : de.map(({ title, url }, index) => (
+              : navListDe.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>
                     <Link
                       href={url}
@@ -92,6 +101,7 @@ const HomePageMobileMenu = ({ cssClasses }: Props) => {
                             index === 5,
                         }
                       )}
+                      target={targetBlank ? "_blank" : "_self"}
                     >
                       {title}
                     </Link>
@@ -117,4 +127,4 @@ const HomePageMobileMenu = ({ cssClasses }: Props) => {
   );
 };
 
-export default HomePageMobileMenu;
+export default MobileMenuPageComponent;

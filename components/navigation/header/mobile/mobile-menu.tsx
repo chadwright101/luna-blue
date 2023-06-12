@@ -1,7 +1,8 @@
 import { useRouter } from "next/router";
-import RobbergRidgeMobileMenu from "./pages/robberg-ridge-mobile-menu";
-import HomePageMobileMenu from "./pages/home-page-mobile-menu";
-import HillStreetMobileMenu from "./pages/hill-street-mobile-menu";
+
+import MobileMenuPageComponent from "./mobile-menu-page-component";
+
+import navigationList from "@/data/navigation-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -21,15 +22,39 @@ export const robbergRidgeUrls = [
   "/robberg-ridge/contact",
 ];
 
+const {
+  hillStreet: { en: hillStreetEn, de: hillStreetDe },
+  robbergRidge: { en: robbergRidgeEn, de: robbergRidgeDe },
+  homePage: { en: homePageEn, de: homePageDe },
+} = navigationList;
+
 const MobileMenu = ({ cssClasses }: Props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   if (hillStreetUrls.includes(currentRoute)) {
-    return <HillStreetMobileMenu cssClasses={cssClasses} />;
+    return (
+      <MobileMenuPageComponent
+        cssClasses={cssClasses}
+        navListEn={hillStreetEn}
+        navListDe={hillStreetDe}
+      />
+    );
   } else if (robbergRidgeUrls.includes(currentRoute)) {
-    return <RobbergRidgeMobileMenu cssClasses={cssClasses} />;
+    return (
+      <MobileMenuPageComponent
+        cssClasses={cssClasses}
+        navListEn={robbergRidgeEn}
+        navListDe={robbergRidgeDe}
+      />
+    );
   } else {
-    return <HomePageMobileMenu cssClasses={cssClasses} />;
+    return (
+      <MobileMenuPageComponent
+        cssClasses={cssClasses}
+        navListEn={homePageEn}
+        navListDe={homePageDe}
+      />
+    );
   }
 };
 

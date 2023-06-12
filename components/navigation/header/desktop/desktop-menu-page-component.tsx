@@ -2,11 +2,11 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import useScrollPosition from "../../../../utils/scroll-position";
+import useScrollPosition from "../../../utils/scroll-position";
 
 import classNames from "classnames";
 
-import LanguageDesktopSubmenu from "../../../../language-desktop-submenu";
+import LanguageDesktopSubmenu from "../../../language-desktop-submenu";
 
 interface Props {
   cssClasses?: string;

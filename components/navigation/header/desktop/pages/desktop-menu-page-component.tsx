@@ -6,18 +6,19 @@ import useScrollPosition from "../../../../utils/scroll-position";
 
 import classNames from "classnames";
 
-import navigationList from "../../../../../data/navigation-data.json";
 import LanguageDesktopSubmenu from "../../../../language-desktop-submenu";
 
 interface Props {
   cssClasses?: string;
+  navListEn: { title: string; url: string; targetBlank: boolean }[];
+  navListDe: { title: string; url: string; targetBlank: boolean }[];
 }
 
-const {
-  hillStreet: { en, de },
-} = navigationList;
-
-const HillStreetDesktopMenu = ({ cssClasses }: Props) => {
+const DesktopMenuPageComponent = ({
+  cssClasses,
+  navListEn,
+  navListDe,
+}: Props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const { locale } = useRouter();
@@ -59,7 +60,7 @@ const HillStreetDesktopMenu = ({ cssClasses }: Props) => {
             )}
           >
             {locale === "en"
-              ? en.map(({ title, url, targetBlank }, index) => (
+              ? navListEn.map(({ title, url, targetBlank }, index) => (
                   <li
                     key={index}
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
@@ -80,7 +81,7 @@ const HillStreetDesktopMenu = ({ cssClasses }: Props) => {
                     </Link>
                   </li>
                 ))
-              : de.map(({ title, url, targetBlank }, index) => (
+              : navListDe.map(({ title, url, targetBlank }, index) => (
                   <li
                     key={index}
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
@@ -110,4 +111,4 @@ const HillStreetDesktopMenu = ({ cssClasses }: Props) => {
   );
 };
 
-export default HillStreetDesktopMenu;
+export default DesktopMenuPageComponent;

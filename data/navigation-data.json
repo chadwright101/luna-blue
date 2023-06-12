@@ -3,45 +3,55 @@
     "en": [
       {
         "title": "Hill Street",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       },
       {
         "title": "Robberg Ridge",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/#about-us"
+        "url": "/#about-us",
+        "targetBlank": false
       },
       {
         "title": "About Plettenberg Bay",
-        "url": "/#plett"
+        "url": "/#plett",
+        "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/#contact"
+        "url": "/#contact",
+        "targetBlank": false
       }
     ],
     "de": [
       {
         "title": "Hill Street",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       },
       {
         "title": "Robberg Ridge",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/#about-us"
+        "url": "/#about-us",
+        "targetBlank": false
       },
       {
         "title": "Über Plettenberg Bay",
-        "url": "/#plett"
+        "url": "/#plett",
+        "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/contact"
+        "url": "/contact",
+        "targetBlank": false
       }
     ]
   },
@@ -49,23 +59,28 @@
     "en": [
       {
         "title": "Home",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/robberg-ridge/about-us"
+        "url": "/robberg-ridge/about-us",
+        "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/robberg-ridge/our-rooms"
+        "url": "/robberg-ridge/our-rooms",
+        "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/robberg-ridge/about-us/#gallery"
+        "url": "/robberg-ridge/about-us/#gallery",
+        "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/robberg-ridge/contact"
+        "url": "/robberg-ridge/contact",
+        "targetBlank": false
       },
       {
         "title": "Book now",
@@ -74,29 +89,35 @@
       },
       {
         "title": "Hill Street",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       }
     ],
     "de": [
       {
         "title": "Startseite",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/robberg-ridge/about-us"
+        "url": "/robberg-ridge/about-us",
+        "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/robberg-ridge/our-rooms"
+        "url": "/robberg-ridge/our-rooms",
+        "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/robberg-ridge/about-us/#gallery"
+        "url": "/robberg-ridge/about-us/#gallery",
+        "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/robberg-ridge/contact"
+        "url": "/robberg-ridge/contact",
+        "targetBlank": false
       },
       {
         "title": "Jetzt buchen",
@@ -105,7 +126,8 @@
       },
       {
         "title": "Hill Street",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       }
     ]
   },
@@ -113,23 +135,28 @@
     "en": [
       {
         "title": "Home",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/hill-street/about-us"
+        "url": "/hill-street/about-us",
+        "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/hill-street/our-rooms"
+        "url": "/hill-street/our-rooms",
+        "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/hill-street/about-us/#gallery"
+        "url": "/hill-street/about-us/#gallery",
+        "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/hill-street/contact"
+        "url": "/hill-street/contact",
+        "targetBlank": false
       },
       {
         "title": "Book now",
@@ -138,29 +165,35 @@
       },
       {
         "title": "Robberg Ridge",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       }
     ],
     "de": [
       {
         "title": "Startseite",
-        "url": "/hill-street"
+        "url": "/hill-street",
+        "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/hill-street/about-us"
+        "url": "/hill-street/about-us",
+        "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/hill-street/our-rooms"
+        "url": "/hill-street/our-rooms",
+        "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/hill-street/about-us/#gallery"
+        "url": "/hill-street/about-us/#gallery",
+        "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/hill-street/contact"
+        "url": "/hill-street/contact",
+        "targetBlank": false
       },
       {
         "title": "Jetzt buchen",
@@ -169,7 +202,8 @@
       },
       {
         "title": "Robberg Ridge",
-        "url": "/robberg-ridge"
+        "url": "/robberg-ridge",
+        "targetBlank": false
       }
     ]
   }

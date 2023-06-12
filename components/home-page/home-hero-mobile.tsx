@@ -67,12 +67,13 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
       <IndividualSlide
         title="Contact"
         titleGerman="Kontakt"
-        slideBackgroundColour="bg-beige"
+        textBoxBackgroundColor="bg-black/80"
+        whiteText
       >
         <ul>
           {!showEmail && (
             <li onClick={() => setShowEmail(true)} className="mr-auto">
-              <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
+              <p className="italic p-3 -m-3 tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0 text-white underline underline-offset-4">
                 <Translated german="E-Mail Adresse anzeigen">
                   Show email address
                 </Translated>
@@ -83,7 +84,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
             <li>
               <Link
                 href={`mailto:${email}`}
-                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 text-white"
               >
                 {email}
               </Link>
@@ -92,7 +93,10 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
         </ul>
         {!showMessage && (
           <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
-            Please fill out the form below and we&#39;ll get back to you ASAP...
+            <p className="text-white italic">
+              Please fill out the form below and we&#39;ll get back to you
+              ASAP...
+            </p>
           </Translated>
         )}
         <form

@@ -7,6 +7,7 @@ import useScrollPosition from "../../../utils/scroll-position";
 import classNames from "classnames";
 
 import LanguageDesktopSubmenu from "../../../language-desktop-submenu";
+import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
   cssClasses?: string;
@@ -77,7 +78,7 @@ const DesktopMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      {title}
+                      <RomanNumeralsTitle index={index} title={title} />
                     </Link>
                   </li>
                 ))
@@ -98,7 +99,7 @@ const DesktopMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      {title}
+                      <RomanNumeralsTitle index={index} title={title} />
                     </Link>
                   </li>
                 ))}

@@ -28,7 +28,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
       >
         <div
           className={classNames(
-            "col-span-2 -mb-[780px] z-10 place-self-center transition ease-in-out duration-500 grid gap-2 place-items-center bg-beige/80 w-[350px] h-[350px] desktop:w-[425px] desktop:h-[425px] p-8 rounded-full",
+            "col-span-2 -mb-[780px] z-10 place-self-center transition ease-in-out duration-500 grid gap-2 place-items-center bg-beige/80 w-[400px] h-[400px] p-8 rounded-full",
             {
               "opacity-0 scale-[25%]": showHillStreet || showRobbergRidge,
             }

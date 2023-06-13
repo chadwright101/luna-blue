@@ -7,6 +7,7 @@ import useScrollPosition from "../../../utils/scroll-position";
 import LanguageMobileMenu from "../../../../pages/robberg-ridge/language-mobile-menu";
 
 import classNames from "classnames";
+import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
   cssClasses?: string;
@@ -84,7 +85,7 @@ const MobileMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      {title}
+                      <RomanNumeralsTitle index={index} title={title} mobile />
                     </Link>
                   </li>
                 ))
@@ -103,7 +104,7 @@ const MobileMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      {title}
+                      <RomanNumeralsTitle index={index} title={title} mobile />
                     </Link>
                   </li>
                 ))}

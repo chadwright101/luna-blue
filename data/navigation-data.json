@@ -18,8 +18,8 @@
       },
       {
         "title": "About Plettenberg Bay",
-        "url": "/#plett",
-        "targetBlank": false
+        "url": "https://www.plett-tourism.co.za/",
+        "targetBlank": true
       },
       {
         "title": "Contact",
@@ -45,8 +45,8 @@
       },
       {
         "title": "Über Plettenberg Bay",
-        "url": "/#plett",
-        "targetBlank": false
+        "url": "https://www.plett-tourism.co.za/",
+        "targetBlank": true
       },
       {
         "title": "Kontakt",

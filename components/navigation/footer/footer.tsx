@@ -5,11 +5,11 @@ import { useRouter } from "next/router";
 
 import classNames from "classnames";
 import Translated from "../../utils/translated";
-import RobbergRidgeFooterNav from "./pages/robberg-ridge-footer-nav";
-import HillStreetFooterNav from "./pages/hill-street-footer-nav";
 import { hillStreetUrls, robbergRidgeUrls } from "../header/mobile/mobile-menu";
 
 import generalData from "../../../data/general-data.json";
+import navigation from "@/data/navigation-data.json";
+import PageFooterNavComponent from "./pages/page-footer-nav-component";
 
 interface Props {
   cssClasses?: string;
@@ -20,37 +20,61 @@ const {
   social: { facebook, instagram },
 } = generalData;
 
+const {
+  hillStreet: { en: hillStreetEn, de: hillStreetDe },
+  robbergRidge: { en: robbergRidgeEn, de: robbergRidgeDe },
+  homePage: { en: homePageEn, de: homePageDe },
+} = navigation;
+
 const Footer = ({ cssClasses }: Props) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
 
   const router = useRouter();
   const currentRoute = router.pathname;
+  const homePagePath = currentRoute === "/";
   const { locale } = useRouter();
 
   return (
-    <footer className={`${cssClasses} ${currentRoute === "/" ? "hidden" : ""}`}>
+    <footer
+      className={`${cssClasses} ${homePagePath && "hidden desktopSmall:block"}`}
+    >
       <hr className="mb-10 text-black" />
       <div
         className={classNames(
           "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
           {
             "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
-              currentRoute === "/contact",
+              currentRoute === "/robberg-ridge/contact" ||
+              currentRoute === "/hillStreet/contact" ||
+              homePagePath,
           }
         )}
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
           {robbergRidgeUrls.includes(currentRoute) ? (
-            <RobbergRidgeFooterNav />
+            <PageFooterNavComponent
+              navListEn={robbergRidgeEn}
+              navListDe={robbergRidgeDe}
+            />
           ) : hillStreetUrls.includes(currentRoute) ? (
-            <HillStreetFooterNav />
-          ) : null}
+            <PageFooterNavComponent
+              navListEn={hillStreetEn}
+              navListDe={hillStreetDe}
+            />
+          ) : (
+            <PageFooterNavComponent
+              navListEn={homePageEn}
+              navListDe={homePageDe}
+            />
+          )}
         </div>
         <div
           className={classNames("", {
-            hidden: currentRoute === "/contact",
+            hidden:
+              currentRoute === "/robberg-ridge/contact" ||
+              currentRoute === "/hillStreet/contact",
           })}
         >
           {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
@@ -93,52 +117,58 @@ const Footer = ({ cssClasses }: Props) => {
                 </Link>
               </li>
             )}
-            <li>
-              <address>
-                {street}, {town}
-                <br />
-                {province}, {areaCode}
-              </address>
-            </li>
+            {!homePagePath && (
+              <li>
+                <address>
+                  {street}, {town}
+                  <br />
+                  {province}, {areaCode}
+                </address>
+              </li>
+            )}
           </ul>
         </div>
-        <div>
-          <h4
-            className={classNames("", {
-              "text-center tabletLarge:text-left": currentRoute === "/contact",
-            })}
-          >
-            Social
-          </h4>
-          <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
-            <Link
-              href={facebook}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
-              target="_blank"
+        {!homePagePath && (
+          <div>
+            <h4
+              className={classNames("", {
+                "text-center tabletLarge:text-left":
+                  currentRoute === "/robberg-ridge/contact" ||
+                  currentRoute === "/hillStreet/contact",
+              })}
             >
-              <Image
-                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
-                alt="Facebook logo"
-                width={35}
-                height={35}
-                className="desktopSmall:w-[30px] h-auto"
-              />
-            </Link>
-            <Link
-              href={instagram}
-              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
-              target="_blank"
-            >
-              <Image
-                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
-                alt="Instagram logo"
-                width={35}
-                height={35}
-                className="desktopSmall:w-[30px] h-auto"
-              />
-            </Link>
+              Social
+            </h4>
+            <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
+              <Link
+                href={facebook}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+                target="_blank"
+              >
+                <Image
+                  src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
+                  alt="Facebook logo"
+                  width={35}
+                  height={35}
+                  className="desktopSmall:w-[30px] h-auto"
+                />
+              </Link>
+              <Link
+                href={instagram}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+                target="_blank"
+              >
+                <Image
+                  src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
+                  alt="Instagram logo"
+                  width={35}
+                  height={35}
+                  className="desktopSmall:w-[30px] h-auto"
+                />
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
           alt="Luna Blue Off-grid Guesthouse logo"
@@ -147,7 +177,9 @@ const Footer = ({ cssClasses }: Props) => {
           className={classNames(
             "hidden w-16 h-auto desktopSmall:block ml-auto",
             {
-              " justify-self-end": currentRoute === "/contact",
+              " justify-self-end":
+                currentRoute === "/robberg-ridge/contact" ||
+                currentRoute === "/hillStreet/contact",
             }
           )}
         />

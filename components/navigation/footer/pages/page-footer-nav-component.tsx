@@ -1,20 +1,27 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import navigation from "@/data/navigation-data.json";
 import classNames from "classnames";
 
-const {
-  robbergRidge: { en, de },
-} = navigation;
+interface Props {
+  cssClasses?: string;
+  navListEn: { title: string; url: string; targetBlank: boolean }[];
+  navListDe: { title: string; url: string; targetBlank: boolean }[];
+}
 
-const RobbergRidgeFooterNav = () => {
+const PageFooterNavComponent = ({
+  cssClasses,
+  navListEn,
+  navListDe,
+}: Props) => {
   const { locale } = useRouter();
 
   return (
-    <ul className="mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0">
+    <ul
+      className={`mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0 ${cssClasses}`}
+    >
       {locale === "en"
-        ? en.map(({ title, url, targetBlank }, index) => (
+        ? navListEn.map(({ title, url, targetBlank }, index) => (
             <li key={index}>
               <Link
                 href={url}
@@ -30,7 +37,7 @@ const RobbergRidgeFooterNav = () => {
               </Link>
             </li>
           ))
-        : de.map(({ title, url, targetBlank }, index) => (
+        : navListDe.map(({ title, url, targetBlank }, index) => (
             <li key={index}>
               <Link
                 href={url}
@@ -50,4 +57,4 @@ const RobbergRidgeFooterNav = () => {
   );
 };
 
-export default RobbergRidgeFooterNav;
+export default PageFooterNavComponent;

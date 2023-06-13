@@ -236,4 +236,22 @@
   .splide__arrow--next {
     @apply right-10
   }
+
+  /* Home page hero split */
+
+  .hero-grid-split {
+    grid-template-columns: 46% 46%;
+    gap: 0% 8%;
+  }
+
+  .hero-grid-hill-street {
+    grid-template-columns: 66.5% 30.5%;
+    gap: 0% 3%;
+
+  }
+
+  .hero-grid-robberg-ridge {
+    grid-template-columns: 30.5% 66.5%;
+    gap: 0% 3%;
+  }
 }

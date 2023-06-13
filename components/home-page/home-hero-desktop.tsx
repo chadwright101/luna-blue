@@ -19,10 +19,10 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
     <>
       <section
         className={classNames(
-          `grid-cols-[48%_48%] gap-x-[4%] ease-in-out duration-700 delay-200 ${cssClasses}`,
+          `hero-grid-split ease-in-out duration-700 delay-200 ${cssClasses}`,
           {
-            "grid-cols-[73%_23%]": showHillStreet,
-            "grid-cols-[23%_73%]": showRobbergRidge,
+            "hero-grid-hill-street": showHillStreet,
+            "hero-grid-robberg-ridge": showRobbergRidge,
           }
         )}
       >
@@ -50,7 +50,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
 
         {/* Hill Street */}
         <div
-          className="overflow-hidden ease-in-out duration-700"
+          className="overflow-hidden bg-black"
           onMouseEnter={() => setHillStreet(true)}
           onMouseLeave={() => setHillStreet(false)}
         >
@@ -59,6 +59,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
               "h-[83vh] bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
                 "scale-110": showHillStreet,
+                "opacity-70": showRobbergRidge,
               }
             )}
           >
@@ -66,9 +67,9 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
               whiteText
               title="Hill Street"
               paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-    perspiciatis consectetur, tenetur aperiam adipisci accusantium
-    dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-    delectus minus."
+              perspiciatis consectetur, tenetur aperiam adipisci accusantium
+              dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
+              delectus minus."
               buttonUrl="/hill-street"
               cssClasses={classNames(
                 "opacity-0 transition ease-in-out duration-700 delay-150",
@@ -82,7 +83,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
 
         {/* Robberg Ridge */}
         <div
-          className="overflow-hidden ease-in-out duration-700"
+          className="overflow-hidden bg-black"
           onMouseEnter={() => setRobbergRidge(true)}
           onMouseLeave={() => setRobbergRidge(false)}
         >
@@ -91,6 +92,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
               "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
                 "scale-110": showRobbergRidge,
+                "opacity-70": showHillStreet,
               }
             )}
           >

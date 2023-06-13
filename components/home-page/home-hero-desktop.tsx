@@ -1,13 +1,11 @@
+import Image from "next/image";
 import { useState } from "react";
-import { useRouter } from "next/router";
 
 import TextBox from "./text-box";
-import HomePageAboutUs from "./hero-split-desktop/home-page-about-us";
-import ImageContainer from "../utils/image-container";
+import HomePageAboutUs from "./desktop/home-page-about-us";
 
 import classNames from "classnames";
-
-import generalData from "../../data/general-data.json";
+import HomePageContact from "./desktop/home-page-contact";
 
 interface Props {
   cssClasses?: string;
@@ -19,29 +17,48 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
 
   return (
     <>
-      <section className={`grid-cols-2 ${cssClasses}`}>
-        <h3
+      <section
+        className={classNames(
+          `grid-cols-[48%_48%] gap-x-[4%] ease-in-out duration-700 delay-200 ${cssClasses}`,
+          {
+            "grid-cols-[73%_23%]": showHillStreet,
+            "grid-cols-[23%_73%]": showRobbergRidge,
+          }
+        )}
+      >
+        <div
           className={classNames(
-            "text-[46px] text-center col-span-2 -mb-[785px] z-10 bg-beige/80 place-self-center w-[400px] desktop:w-[500px] px-16 py-8 transition ease-in-out duration-500",
+            "col-span-2 -mb-[780px] z-10 place-self-center transition ease-in-out duration-500 grid gap-2 place-items-center bg-beige/80 w-[350px] h-[350px] desktop:w-[425px] desktop:h-[425px] p-8 rounded-full",
             {
               "opacity-0 scale-[25%]": showHillStreet || showRobbergRidge,
             }
           )}
         >
-          Which view would you like to wake up to during your next holiday?
-        </h3>
+          <Image
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
+            alt="Luna Blue Off-grid Guesthouse logo"
+            className="-translate-y-[2px]"
+            width={75}
+            height={100}
+            priority
+            sizes="(max-width: 1400px) 10vw, 10vw"
+          />
+          <h3 className="text-[38px] text-center transition ease-in-out duration-500">
+            Which view would you like to wake up to during your next holiday?
+          </h3>
+        </div>
 
         {/* Hill Street */}
         <div
-          className="overflow-hidden"
+          className="overflow-hidden ease-in-out duration-700"
           onMouseEnter={() => setHillStreet(true)}
           onMouseLeave={() => setHillStreet(false)}
         >
           <div
             className={classNames(
-              "h-[83vh] bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')] bg-cover bg-center flex place-items-center justify-center blur-[2.5px] duration-1000 ease-in-out",
+              "h-[83vh] bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
-                "blur-[0px] bg-right": showHillStreet,
+                "scale-110": showHillStreet,
               }
             )}
           >
@@ -54,7 +71,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
     delectus minus."
               buttonUrl="/hill-street"
               cssClasses={classNames(
-                "opacity-0 transition ease-in-out duration-700",
+                "opacity-0 transition ease-in-out duration-700 delay-150",
                 {
                   "opacity-100": showHillStreet,
                 }
@@ -65,15 +82,15 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
 
         {/* Robberg Ridge */}
         <div
-          className="overflow-hidden"
+          className="overflow-hidden ease-in-out duration-700"
           onMouseEnter={() => setRobbergRidge(true)}
           onMouseLeave={() => setRobbergRidge(false)}
         >
           <div
             className={classNames(
-              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center blur-[2.5px] duration-1000 ease-in-out",
+              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
-                "blur-[0px] bg-right": showRobbergRidge,
+                "scale-110": showRobbergRidge,
               }
             )}
           >
@@ -85,7 +102,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
         delectus minus."
               buttonUrl="/robberg-ridge"
               cssClasses={classNames(
-                "opacity-0 transition ease-in-out duration-700",
+                "opacity-0 transition ease-in-out duration-700 delay-150",
                 {
                   "opacity-100": showRobbergRidge,
                 }
@@ -94,7 +111,10 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
           </div>
         </div>
       </section>
+      <div id="about-us" className="-translate-y-24"></div>
       <HomePageAboutUs cssClasses="my-16" />
+      <div id="contact" className="-translate-y-24"></div>
+      <HomePageContact cssClasses="hidden desktopSmall:block mb-16" />
     </>
   );
 };

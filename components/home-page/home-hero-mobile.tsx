@@ -2,10 +2,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import IndividualSlide from "./hero-slider-mobile/individual-slide";
+import IndividualSlide from "./mobile/individual-slide";
 import Translated from "../utils/translated";
 
 import generalData from "../../data/general-data.json";
+import HomePageAboutUs from "./desktop/home-page-about-us";
 
 interface Props {
   cssClasses?: string;
@@ -52,6 +53,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
         titleGerman="Über uns"
         textBoxBackgroundColor="bg-brown"
         whiteText
+        cssClasses="desktopSmall:hidden"
       >
         <p className="text-center text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque

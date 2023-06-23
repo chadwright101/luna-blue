@@ -12,7 +12,6 @@ interface Props {
 
 const {
   contact: { phone, phoneDisplay, email },
-  address: { areaCode, province, street, town },
 } = generalData;
 
 const HomePageContact = ({ cssClasses }: Props) => {

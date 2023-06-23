@@ -3,15 +3,15 @@ import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import About from "@/components/property-home-page/robberg-ridge/about";
-import OurRooms from "@/components/property-home-page/robberg-ridge/our-rooms";
-import MoreInfoAvailability from "@/components/property-home-page/robberg-ridge/more-info-availability";
+import About from "@/components/property-home-page/luna-blue-1/about";
+import OurRooms from "@/components/property-home-page/luna-blue-1/our-rooms";
+import MoreInfoAvailability from "@/components/property-home-page/luna-blue-1/more-info-availability";
 
 import imageData from "@/data/image-data.json";
 
-export default function RobbergRidge() {
+export default function LunaBlue1() {
   const {
-    robbergRidge: {
+    lunaBlue1: {
       homePage: { heroSlider },
     },
   } = imageData;

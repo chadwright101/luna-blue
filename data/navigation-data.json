@@ -3,12 +3,12 @@
     "en": [
       {
         "title": "Luna Blue",
-        "url": "/robberg-ridge",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
         "title": "Luna Blue",
-        "url": "/hill-street",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
@@ -25,12 +25,12 @@
     "de": [
       {
         "title": "Luna Blue",
-        "url": "/robberg-ridge",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
-        "title": "Luna Blue",
-        "url": "/hill-street",
+        "title": "Luna Blue II",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
@@ -45,155 +45,155 @@
       }
     ]
   },
-  "robbergRidge": {
+  "lunaBlue1": {
     "en": [
       {
         "title": "Home",
-        "url": "/robberg-ridge",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/robberg-ridge/about-us",
+        "url": "/luna-blue-1/about-us",
         "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/robberg-ridge/our-rooms",
+        "url": "/luna-blue-1/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/robberg-ridge/about-us/#gallery",
+        "url": "/luna-blue-1/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/robberg-ridge/contact",
+        "url": "/luna-blue-1/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Luna Blue II",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
-      },
-      {
-        "title": "Hill Street",
-        "url": "/hill-street",
-        "targetBlank": false
       }
     ],
     "de": [
       {
         "title": "Startseite",
-        "url": "/robberg-ridge",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/robberg-ridge/about-us",
+        "url": "/luna-blue-1/about-us",
         "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/robberg-ridge/our-rooms",
+        "url": "/luna-blue-1/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/robberg-ridge/about-us/#gallery",
+        "url": "/luna-blue-1/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/robberg-ridge/contact",
+        "url": "/luna-blue-1/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Luna Blue II",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
         "title": "Jetzt buchen",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
-      },
-      {
-        "title": "Hill Street",
-        "url": "/hill-street",
-        "targetBlank": false
       }
     ]
   },
-  "hillStreet": {
+  "lunaBlue2": {
     "en": [
       {
         "title": "Home",
-        "url": "/hill-street",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/hill-street/about-us",
+        "url": "/luna-blue-2/about-us",
         "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/hill-street/our-rooms",
+        "url": "/luna-blue-2/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/hill-street/about-us/#gallery",
+        "url": "/luna-blue-2/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/hill-street/contact",
+        "url": "/luna-blue-2/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Luna Blue I",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
-      },
-      {
-        "title": "Robberg Ridge",
-        "url": "/robberg-ridge",
-        "targetBlank": false
       }
     ],
     "de": [
       {
         "title": "Startseite",
-        "url": "/hill-street",
+        "url": "/luna-blue-2",
         "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/hill-street/about-us",
+        "url": "/luna-blue-2/about-us",
         "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/hill-street/our-rooms",
+        "url": "/luna-blue-2/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/hill-street/about-us/#gallery",
+        "url": "/luna-blue-2/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/hill-street/contact",
+        "url": "/luna-blue-2/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Luna Blue I",
+        "url": "/luna-blue-1",
         "targetBlank": false
       },
       {
         "title": "Jetzt buchen",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
-      },
-      {
-        "title": "Robberg Ridge",
-        "url": "/robberg-ridge",
-        "targetBlank": false
       }
     ]
   }

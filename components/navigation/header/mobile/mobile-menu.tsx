@@ -8,43 +8,43 @@ interface Props {
   cssClasses?: string;
 }
 
-export const hillStreetUrls = [
-  "/hill-street",
-  "/hill-street/about-us",
-  "/hill-street/our-rooms",
-  "/hill-street/contact",
+export const lunaBlue2Urls = [
+  "/luna-blue-2",
+  "/luna-blue-2/about-us",
+  "/luna-blue-2/our-rooms",
+  "/luna-blue-2/contact",
 ];
 
-export const robbergRidgeUrls = [
-  "/robberg-ridge",
-  "/robberg-ridge/about-us",
-  "/robberg-ridge/our-rooms",
-  "/robberg-ridge/contact",
+export const lunaBlue1Urls = [
+  "/luna-blue-1",
+  "/luna-blue-1/about-us",
+  "/luna-blue-1/our-rooms",
+  "/luna-blue-1/contact",
 ];
 
 const {
-  hillStreet: { en: hillStreetEn, de: hillStreetDe },
-  robbergRidge: { en: robbergRidgeEn, de: robbergRidgeDe },
+  lunaBlue1: { en: lunaBlue1En, de: lunaBlue1De },
+  lunaBlue2: { en: lunaBlue2En, de: lunaBlue2De },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigationList;
 
 const MobileMenu = ({ cssClasses }: Props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
-  if (hillStreetUrls.includes(currentRoute)) {
+  if (lunaBlue2Urls.includes(currentRoute)) {
     return (
       <MobileMenuPageComponent
         cssClasses={cssClasses}
-        navListEn={hillStreetEn}
-        navListDe={hillStreetDe}
+        navListEn={lunaBlue2En}
+        navListDe={lunaBlue2De}
       />
     );
-  } else if (robbergRidgeUrls.includes(currentRoute)) {
+  } else if (lunaBlue1Urls.includes(currentRoute)) {
     return (
       <MobileMenuPageComponent
         cssClasses={cssClasses}
-        navListEn={robbergRidgeEn}
-        navListDe={robbergRidgeDe}
+        navListEn={lunaBlue1En}
+        navListDe={lunaBlue1De}
       />
     );
   } else {

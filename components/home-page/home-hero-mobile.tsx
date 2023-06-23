@@ -6,7 +6,8 @@ import IndividualSlide from "./mobile/individual-slide";
 import Translated from "../utils/translated";
 
 import generalData from "../../data/general-data.json";
-import HomePageAboutUs from "./desktop/home-page-about-us";
+
+import imageData from "../../data/image-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -16,38 +17,47 @@ const {
   contact: { email },
 } = generalData;
 
+const {
+  lunaBlue1: { aboutUsSlider },
+} = imageData;
+
 const HomeHeroMobile = ({ cssClasses }: Props) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const { locale } = useRouter();
   return (
-    <div
+    <main
       className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide ${cssClasses}`}
     >
       <IndividualSlide
         arrow
         title="Which view would you like to wake up to during your next holiday?"
       />
-      <IndividualSlide
-        backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
-        whiteText
-        title="Hill Street"
-        paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-    perspiciatis consectetur, tenetur aperiam adipisci accusantium
-    dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-    delectus minus."
-        buttonUrl="/hill-street"
-      />
-
+      {/* Robberg Ridge */}
       <IndividualSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')]"
-        title="Robberg Ridge"
+        title="Luna Blue I"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
       perspiciatis consectetur, tenetur aperiam adipisci accusantium
       dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
       delectus minus."
-        buttonUrl="/robberg-ridge"
+        buttonUrl="/luna-blue-1"
       />
+
+      {/* Hill Street */}
+      <IndividualSlide
+        backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
+        whiteText
+        title="Luna Blue II"
+        paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+    perspiciatis consectetur, tenetur aperiam adipisci accusantium
+    dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
+    delectus minus."
+        buttonUrl="/luna-blue-2"
+      />
+
+      {/* About us */}
+      <div id="about-us"></div>
       <IndividualSlide
         title="About us"
         titleGerman="Über uns"
@@ -66,6 +76,13 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
           <li>Blah Blah Blah</li>
         </ul>
       </IndividualSlide>
+
+      {/* slider */}
+
+      <IndividualSlide slider imageData={aboutUsSlider} />
+
+      {/* Contact */}
+      <div id="contact"></div>
       <IndividualSlide
         title="Contact"
         titleGerman="Kontakt"
@@ -152,7 +169,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
         )}
         .
       </IndividualSlide>
-    </div>
+    </main>
   );
 };
 

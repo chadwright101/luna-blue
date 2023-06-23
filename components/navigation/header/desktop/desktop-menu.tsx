@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { hillStreetUrls, robbergRidgeUrls } from "../mobile/mobile-menu";
+import { lunaBlue1Urls, lunaBlue2Urls } from "../mobile/mobile-menu";
 import DesktopMenuPageComponent from "./desktop-menu-page-component";
 
 import navigationList from "@/data/navigation-data.json";
@@ -9,28 +9,28 @@ interface Props {
 }
 
 const {
-  hillStreet: { en: hillStreetEn, de: hillStreetDe },
-  robbergRidge: { en: robbergRidgeEn, de: robbergRidgeDe },
+  lunaBlue1: { en: lunaBlue1En, de: lunaBlue1De },
+  lunaBlue2: { en: lunaBlue2En, de: lunaBlue2De },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigationList;
 
 const DesktopMenu = ({ cssClasses }: Props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
-  if (hillStreetUrls.includes(currentRoute)) {
+  if (lunaBlue2Urls.includes(currentRoute)) {
     return (
       <DesktopMenuPageComponent
         cssClasses={cssClasses}
-        navListEn={hillStreetEn}
-        navListDe={hillStreetDe}
+        navListEn={lunaBlue2En}
+        navListDe={lunaBlue2De}
       />
     );
-  } else if (robbergRidgeUrls.includes(currentRoute)) {
+  } else if (lunaBlue1Urls.includes(currentRoute)) {
     return (
       <DesktopMenuPageComponent
         cssClasses={cssClasses}
-        navListEn={robbergRidgeEn}
-        navListDe={robbergRidgeDe}
+        navListEn={lunaBlue1En}
+        navListDe={lunaBlue1De}
       />
     );
   } else {

@@ -11,7 +11,7 @@ interface Props {
   cssClasses?: string;
 }
 const {
-  robbergRidge: {
+  lunaBlue1: {
     ourRooms: { bedroom1, bedroom2, bedroom3, bedroom4 },
   },
 } = imageList;

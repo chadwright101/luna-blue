@@ -6,7 +6,7 @@ import useScrollPosition from "../../../utils/scroll-position";
 
 import classNames from "classnames";
 
-import LanguageDesktopSubmenu from "../../../language-desktop-submenu";
+import LanguageDesktopSubmenu from "./language-desktop-submenu";
 import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
@@ -73,7 +73,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
-                            index === 5,
+                            index === 6,
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -94,7 +94,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
-                            index === 5,
+                            index === 6,
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

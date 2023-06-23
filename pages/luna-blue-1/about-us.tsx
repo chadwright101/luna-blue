@@ -10,7 +10,7 @@ import imageData from "@/data/image-data.json";
 import facilities from "@/data/faclilities-data.json";
 
 const {
-  robbergRidge: { aboutUsSlider },
+  lunaBlue1: { aboutUsSlider },
 } = imageData;
 const { en, de } = facilities;
 

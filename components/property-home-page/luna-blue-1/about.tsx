@@ -23,7 +23,10 @@ const About = ({ cssClasses }: Props) => {
           controls
           className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
           poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna+Blue+-+Video+poster.jpg"
-        ></video>
+          preload="auto"
+        >
+          Your browser does not support the video tag.
+        </video>
         <article>
           <h2>
             <Translated german="Über uns">About us</Translated>

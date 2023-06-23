@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 
 import classNames from "classnames";
 import Translated from "../../utils/translated";
-import { hillStreetUrls, robbergRidgeUrls } from "../header/mobile/mobile-menu";
+import { lunaBlue1Urls, lunaBlue2Urls } from "../header/mobile/mobile-menu";
 
 import generalData from "../../../data/general-data.json";
 import navigation from "@/data/navigation-data.json";
@@ -21,8 +21,8 @@ const {
 } = generalData;
 
 const {
-  hillStreet: { en: hillStreetEn, de: hillStreetDe },
-  robbergRidge: { en: robbergRidgeEn, de: robbergRidgeDe },
+  lunaBlue1: { en: robbergRidgeEn, de: robbergRidgeDe },
+  lunaBlue2: { en: hillStreetEn, de: hillStreetDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
@@ -53,12 +53,12 @@ const Footer = ({ cssClasses }: Props) => {
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
-          {robbergRidgeUrls.includes(currentRoute) ? (
+          {lunaBlue1Urls.includes(currentRoute) ? (
             <PageFooterNavComponent
               navListEn={robbergRidgeEn}
               navListDe={robbergRidgeDe}
             />
-          ) : hillStreetUrls.includes(currentRoute) ? (
+          ) : lunaBlue2Urls.includes(currentRoute) ? (
             <PageFooterNavComponent
               navListEn={hillStreetEn}
               navListDe={hillStreetDe}
@@ -182,6 +182,7 @@ const Footer = ({ cssClasses }: Props) => {
                 currentRoute === "/hillStreet/contact",
             }
           )}
+          priority
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">

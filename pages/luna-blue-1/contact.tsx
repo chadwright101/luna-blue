@@ -79,6 +79,7 @@ const Contact = () => {
           tabletLarge={55}
           desktopSmall={25}
           desktop={20}
+          eager
         />
         <hr className="my-4 desktopSmall:hidden text-black" />
         <div className="grid gap-10 desktopSmall:col-start-1 desktopSmall:row-start-1">

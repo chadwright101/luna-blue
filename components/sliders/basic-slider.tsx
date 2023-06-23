@@ -77,12 +77,12 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
                 cssClasses="object-cover h-full w-full max-w-[1400px]"
                 quality={60}
                 eager={index < 2 ? true : false}
-                smallest={80}
-                phone={75}
-                tablet={60}
-                tabletLarge={50}
-                desktopSmall={50}
-                desktop={80}
+                smallest={85}
+                phone={80}
+                tablet={70}
+                tabletLarge={60}
+                desktopSmall={60}
+                desktop={90}
               />
             </SplideSlide>
           ))}

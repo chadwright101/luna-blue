@@ -1,15 +1,25 @@
 import ImageContainer from "@/components/utils/image-container";
 
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+
+import imageData from "@/data/image-data.json";
+
+import "@splidejs/react-splide/css/core";
+
 interface Props {
   cssClasses?: string;
 }
+
+const {
+  lunaBlue1: { aboutUsSlider },
+} = imageData;
 
 const HomePageAboutUs = ({ cssClasses }: Props) => {
   return (
     <article
       className={`hidden desktopSmall:grid grid-cols-[400px_1fr] desktop:grid-cols-[450px_1fr] gap-10 ${cssClasses}`}
     >
-      <div className="bg-brown flex flex-col gap-8 p-8">
+      <div className="bg-brown flex flex-col gap-8 p-8 h-[500px]">
         <h2 className="text-white text-center text-35px border-y-2 py-2 border-white">
           About us
         </h2>
@@ -24,13 +34,37 @@ const HomePageAboutUs = ({ cssClasses }: Props) => {
           <li>Blah Blah Blah</li>
         </ul>
       </div>
-      <ImageContainer
-        src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0824-HDR.jpg"
-        alt="Luna Blue"
-        width={750}
-        height={300}
-        cssClasses="object-cover h-[400px] w-full"
-      />
+
+      {/* slider */}
+      <Splide
+        options={{
+          autoplay: true,
+          type: "loop",
+          interval: 4500,
+          speed: 2000,
+          gap: "1.75em",
+          dragMinThreshold: { touch: 2000, mouse: 0 },
+        }}
+        hasTrack={false}
+      >
+        <SplideTrack>
+          {aboutUsSlider.map(({ url }, index) => (
+            <SplideSlide key={index} className="h-[500px]">
+              <ImageContainer
+                src={url}
+                alt={`Luna Blue - Image ${index + 1}`}
+                width={1000}
+                height={800}
+                cssClasses="object-cover h-full w-full"
+                quality={60}
+                eager={index < 2 ? true : false}
+                desktopSmall={45}
+                desktop={35}
+              />
+            </SplideSlide>
+          ))}
+        </SplideTrack>
+      </Splide>
     </article>
   );
 };

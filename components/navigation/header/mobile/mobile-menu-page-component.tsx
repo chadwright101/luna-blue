@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 import useScrollPosition from "../../../utils/scroll-position";
-import LanguageMobileMenu from "../../../../pages/robberg-ridge/language-mobile-menu";
+import LanguageMobileMenu from "./language-mobile-menu";
 
 import classNames from "classnames";
 import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
@@ -40,8 +40,8 @@ const MobileMenuPageComponent = ({
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
             alt="Luna Blue Off-grid Guesthouse logo"
-            width={50}
-            height={65}
+            width={80}
+            height={80}
             className={classNames(
               "w-12 h-auto ease-in-out duration-300 delay-[10ms]",
               {
@@ -49,7 +49,7 @@ const MobileMenuPageComponent = ({
               }
             )}
             priority
-            sizes="(max-width: 425px) 5vw, 5vw"
+            sizes="(max-width: 425px) 7.5vw, 7.5vw"
           />
         </Link>
         <button
@@ -80,7 +80,7 @@ const MobileMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
-                            index === 5,
+                            index === 6,
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -99,7 +99,7 @@ const MobileMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
-                            index === 5,
+                            index === 6,
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

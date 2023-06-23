@@ -26,10 +26,10 @@ const HeroSplit = ({ url, cssClasses }: Props) => {
         eager
         onMouseEnter={() => setHoverZoom(true)}
         onMouseLeave={() => setHoverZoom(false)}
-        smallest={60}
-        tablet={50}
-        desktopSmall={35}
-        desktop={25}
+        smallest={70}
+        tablet={60}
+        desktopSmall={45}
+        desktop={35}
       />
     </div>
   );

@@ -50,9 +50,9 @@ const ImageCard = ({
         width={900}
         height={500}
         cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
-        smallest={90}
-        desktopSmall={center ? 30 : undefined}
-        desktop={center ? 20 : 75}
+        smallest={95}
+        desktopSmall={center ? 40 : undefined}
+        desktop={center ? 30 : 85}
       />
 
       {/* mobile view */}

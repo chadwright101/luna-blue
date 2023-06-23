@@ -1,11 +1,16 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 
+import ImageContainer from "@/components/utils/image-container";
 import TextBox from "../text-box";
+
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+
+import "@splidejs/react-splide/css/core";
 
 interface Props {
   whiteText?: boolean;
-  title: string;
+  title?: string;
   titleGerman?: string;
   paragraphGerman?: string;
   paragraph?: string;
@@ -17,6 +22,8 @@ interface Props {
   children?: ReactNode;
   textBoxBackgroundColor?: string;
   cssClasses?: string;
+  slider?: boolean;
+  imageData?: Array<{ url: string }>;
 }
 
 const IndividualSlide = ({
@@ -33,38 +40,82 @@ const IndividualSlide = ({
   arrow,
   children,
   cssClasses,
+  slider,
+  imageData,
 }: Props) => {
-  return (
-    <article className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}>
-      <div
-        className={`${backgroundImage} bg-cover bg-center ${slideBackgroundColour} flex place-items-center justify-center h-full ${
-          arrow && "flex-col gap-10"
-        }`}
+  if (!slider) {
+    return (
+      <article
+        className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
       >
-        <TextBox
-          whiteText={whiteText}
-          title={title}
-          titleGerman={titleGerman}
-          paragraph={paragraph!}
-          paragraphGerman={paragraphGerman}
-          buttonText={buttonText}
-          buttonUrl={buttonUrl}
-          textBoxBackgroundColor={textBoxBackgroundColor}
+        <div
+          className={`${backgroundImage} bg-cover bg-center ${slideBackgroundColour} flex place-items-center justify-center h-full ${
+            arrow && "flex-col gap-10"
+          }`}
         >
-          {children}
-        </TextBox>
-        {arrow && (
-          <Image
-            src="/icons/arrow-down.svg"
-            alt="Down arrow icon"
-            width={75}
-            height={75}
-            className=" animate-bounce"
-          />
-        )}
-      </div>
-    </article>
-  );
+          <TextBox
+            whiteText={whiteText}
+            title={title!}
+            titleGerman={titleGerman}
+            paragraph={paragraph!}
+            paragraphGerman={paragraphGerman}
+            buttonText={buttonText}
+            buttonUrl={buttonUrl}
+            textBoxBackgroundColor={textBoxBackgroundColor}
+          >
+            {children}
+          </TextBox>
+          {arrow && (
+            <Image
+              src="/icons/arrow-down.svg"
+              alt="Down arrow icon"
+              width={75}
+              height={75}
+              className=" animate-bounce"
+            />
+          )}
+        </div>
+      </article>
+    );
+  } else {
+    return (
+      <article
+        className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
+      >
+        <Splide
+          options={{
+            autoplay: true,
+            type: "loop",
+            interval: 4500,
+            speed: 2000,
+            gap: "1.75em",
+            drag: false,
+            rewind: true,
+          }}
+          hasTrack={false}
+        >
+          <SplideTrack>
+            {imageData!.map(({ url }, index) => (
+              <SplideSlide key={index} className="h-[88vh]">
+                <ImageContainer
+                  src={url}
+                  alt={`Luna Blue - Image ${index + 1}`}
+                  width={1400}
+                  height={1000}
+                  cssClasses="object-cover h-full w-full"
+                  quality={60}
+                  smallest={150}
+                  phone={150}
+                  tablet={125}
+                  tabletLarge={125}
+                />
+              </SplideSlide>
+            ))}
+          </SplideTrack>
+        </Splide>
+      </article>
+    );
+  }
 };
 
 export default IndividualSlide;

@@ -7,7 +7,7 @@ interface Props {
 
 const Header = ({ cssClasses }: Props) => {
   return (
-    <header className={`bg-white ${cssClasses}`}>
+    <header className={`bg-white drop-shadow-md ${cssClasses}`}>
       <div className="desktop:max-w-[1400px] desktop:mx-auto">
         {/* mobile view */}
         <MobileMenu />

@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Raleway: "Raleway",
+      Housegrind: "Housegrind",
       Comorant: "Comorant",
       Josefin_Sans: "Josefin_Sans",
     },

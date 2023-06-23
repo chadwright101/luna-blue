@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useRouter } from "next/router";
 
 interface Props {
   index: number;
@@ -7,7 +8,9 @@ interface Props {
 }
 
 const RomanNumeralsTitle = ({ index, title, mobile }: Props) => {
-  if (index === 0) {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+  if (index === 0 && currentRoute === "/") {
     return (
       <>
         {title}{" "}
@@ -20,7 +23,7 @@ const RomanNumeralsTitle = ({ index, title, mobile }: Props) => {
         </span>
       </>
     );
-  } else if (index === 1) {
+  } else if (index === 1 && currentRoute === "/") {
     return (
       <>
         {title}{" "}

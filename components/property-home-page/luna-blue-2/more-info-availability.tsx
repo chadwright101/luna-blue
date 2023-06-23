@@ -22,7 +22,7 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
             title="Check Availability"
             titleGerman="Verfügbarkeit prüfen"
             link="https://book.nightsbridge.com/34927"
-            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0440-HDR-cropped.webp"
+            image="/luna-ii-placeholders/property-9422457-4530587_sd.jpg"
             flip
             buttonText="View our calendar"
             buttonTextGerman="Unser Kalender"

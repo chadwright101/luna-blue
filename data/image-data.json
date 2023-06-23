@@ -163,5 +163,104 @@
         }
       ]
     }
+  },
+  "lunaBlue2": {
+    "homePage": {
+      "heroSlider": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-4530587_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-18712698_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42326269_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65342532_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-68616846_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-98649912_sd.jpg"
+        }
+      ]
+    },
+    "aboutUsSlider": [
+      {
+        "url": "/luna-ii-placeholders/property-9422457-15594038_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-17928183_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-18712698_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-21544801_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-36961803_sd.jpg"
+      }
+    ],
+    "ourRooms": {
+      "bedroom1": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-41316301_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42023667_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42326269_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-50108277_sd.jpg"
+        }
+      ],
+      "bedroom2": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-57700023_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-58268715_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-61769985_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65114473_sd.jpg"
+        }
+      ],
+      "bedroom3": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65342532_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-68616846_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-92492796_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-98649912_sd.jpg"
+        }
+      ],
+      "bedroom4": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-21544801_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-41316301_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-4530587_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-58268715_sd.jpg"
+        }
+      ]
+    }
   }
 }

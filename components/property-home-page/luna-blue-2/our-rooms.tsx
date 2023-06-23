@@ -22,7 +22,7 @@ const OurRooms = ({ cssClasses }: Props) => {
           title="Our Rooms"
           titleGerman="Unsere Zimmer"
           link="/robberg-ridge/our-rooms"
-          image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/9U7A0772-HDR.webp"
+          image="/luna-ii-placeholders/property-9422457-7033081_sd.jpg"
           mobileButtonWidth="w-[158px]"
           blankMobileCard
         />

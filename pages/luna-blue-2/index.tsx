@@ -11,7 +11,7 @@ import imageData from "../../data/image-data.json";
 
 export default function LunaBlue2() {
   const {
-    lunaBlue1: {
+    lunaBlue2: {
       homePage: { heroSlider },
     },
   } = imageData;

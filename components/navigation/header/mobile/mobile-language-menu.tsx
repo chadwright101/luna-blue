@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import classNames from "classnames";
 
-const LanguageMobileMenu = () => {
+const MobileLanguageMenu = () => {
   const { pathname, query, asPath, locale } = useRouter();
 
   return (
@@ -34,4 +34,4 @@ const LanguageMobileMenu = () => {
   );
 };
 
-export default LanguageMobileMenu;
+export default MobileLanguageMenu;

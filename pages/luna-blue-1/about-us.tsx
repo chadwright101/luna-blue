@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import ImageCard from "@/components/image-card";
 import LightboxSlider from "@/components/sliders/lightbox-slider";
-import HeroSplit from "@/components/hero-split";
+import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
 
 import imageData from "@/data/image-data.json";
@@ -63,17 +63,17 @@ const AboutUs = () => {
         <Translated german="Über uns">About Us</Translated>
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
-        <HeroSplit
+        <DesktopImageGrid
           url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0520-HDR.jpg"
           cssClasses="hidden tabletLarge:block"
         />
-        <HeroSplit
+        <DesktopImageGrid
           url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/Plett_Imagery-03669.jpg"
           cssClasses="hidden desktop:block"
         />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg" />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg" />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg" />
       </div>
       <article className=" max-w-[900px] mx-auto">
         <h2

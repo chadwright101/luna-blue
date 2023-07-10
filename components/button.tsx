@@ -10,20 +10,29 @@ interface Props {
   children?: ReactNode;
   width?: string;
   whiteText?: boolean;
+  luna2?: boolean;
 }
 
-const Button = ({ cssClasses, url, children, width, whiteText }: Props) => {
+const Button = ({
+  cssClasses,
+  url,
+  children,
+  width,
+  whiteText,
+  luna2,
+}: Props) => {
   const [arrowAnimate, setArrowAnimate] = useState(false);
   return (
     <Link
       href={url}
       className={classNames(
-        `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest  hover:tabletLarge:text-brown ${
-          width || "w-[147px]"
+        `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:tabletLarge:text-brown ${
+          !luna2 ? "w-[148px]" : luna2 ? "w-[128px]" : width
         } p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`,
         {
           "text-pureBlack": !whiteText,
           "text-white": whiteText,
+          "font-Poiret_One": luna2,
         }
       )}
       onMouseEnter={() => setArrowAnimate(true)}

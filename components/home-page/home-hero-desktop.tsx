@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import TextBox from "./text-box";
-import HomePageAboutUs from "./desktop/home-page-about-us";
+import HomeHeroTextBox from "./home-hero-text-box";
+import HomePageDesktopAboutUs from "./desktop/home-page-desktop-about-us";
+import HomePageDesktopContact from "./desktop/home-page-desktop-contact";
 
 import classNames from "classnames";
-import HomePageContact from "./desktop/home-page-contact";
 
 interface Props {
   cssClasses?: string;
@@ -21,8 +21,8 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
         className={classNames(
           `hero-grid-split ease-in-out duration-700 delay-200 ${cssClasses}`,
           {
-            "hero-grid-hill-street": showLunaBlue1,
-            "hero-grid-robberg-ridge": showLunaBlue2,
+            "hero-grid-luna-2": showLunaBlue1,
+            "hero-grid-luna-1": showLunaBlue2,
           }
         )}
       >
@@ -48,7 +48,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
           </h3>
         </div>
 
-        {/* Robberg Ridge */}
+        {/* Luna 1 */}
         <div
           className="overflow-hidden bg-black"
           onMouseEnter={() => setshowLunaBlue1(true)}
@@ -63,7 +63,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
               }
             )}
           >
-            <TextBox
+            <HomeHeroTextBox
               title="Luna Blue I"
               paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
         perspiciatis consectetur, tenetur aperiam adipisci accusantium
@@ -80,7 +80,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
           </div>
         </div>
 
-        {/* Hill Street */}
+        {/* Luna 2 */}
         <div
           className="overflow-hidden bg-black"
           onMouseEnter={() => setShowLunaBlue2(true)}
@@ -95,7 +95,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
               }
             )}
           >
-            <TextBox
+            <HomeHeroTextBox
               whiteText
               title="Luna Blue II"
               paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -109,14 +109,15 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
                   "opacity-100": showLunaBlue2,
                 }
               )}
+              luna2
             />
           </div>
         </div>
       </section>
-      <div id="about-us" className="-translate-y-24"></div>
-      <HomePageAboutUs cssClasses="my-16" />
-      <div id="contact" className="-translate-y-32"></div>
-      <HomePageContact cssClasses="hidden desktopSmall:block mb-16" />
+      <div id="about-us-desktop" className="-translate-y-24"></div>
+      <HomePageDesktopAboutUs cssClasses="my-16" />
+      <div id="contact-desktop" className="-translate-y-32"></div>
+      <HomePageDesktopContact cssClasses="hidden desktopSmall:block mb-16" />
     </main>
   );
 };

@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 import useScrollPosition from "../../../utils/scroll-position";
-import LanguageMobileMenu from "./language-mobile-menu";
+import MobileLanguageMenu from "./mobile-language-menu";
 
 import classNames from "classnames";
 import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
@@ -68,7 +68,7 @@ const MobileMenuPageComponent = ({
       {toggleMenu && (
         <nav className="fixed top-0 h-screen w-full bg-beige -mx-8 pl-8 pt-14">
           <ul className="flex flex-col gap-8">
-            <LanguageMobileMenu />
+            <MobileLanguageMenu />
             {locale === "en"
               ? navListEn.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>

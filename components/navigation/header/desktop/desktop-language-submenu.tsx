@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import classNames from "classnames";
 
-const LanguageDesktopSubmenu = () => {
+const DesktopLanguageSubmenu = () => {
   const [toggleLanguage, setToggleLanguage] = useState(false);
   const { pathname, query, asPath, locale } = useRouter();
 
@@ -104,4 +104,4 @@ const LanguageDesktopSubmenu = () => {
   }
 };
 
-export default LanguageDesktopSubmenu;
+export default DesktopLanguageSubmenu;

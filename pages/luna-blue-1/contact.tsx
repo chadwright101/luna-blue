@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import generalData from "@/data/general-data.json";
-import ContactMap from "@/components/contact-page/map";
+import Luna1Map from "@/components/contact-page/luna-1-map";
 import ImageContainer from "@/components/utils/image-container";
 import Translated from "@/components/utils/translated";
 
@@ -257,7 +257,7 @@ const Contact = () => {
           />
         )}
       </div>
-      <ContactMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
+      <Luna1Map cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>
   );
 };

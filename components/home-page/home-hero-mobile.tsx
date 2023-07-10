@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import IndividualSlide from "./mobile/individual-slide";
+import HomePageMobileSlide from "./mobile/home-page-mobile-slide";
 import Translated from "../utils/translated";
 
 import generalData from "../../data/general-data.json";
@@ -29,12 +29,12 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
     <main
       className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide ${cssClasses}`}
     >
-      <IndividualSlide
+      <HomePageMobileSlide
         arrow
         title="Which view would you like to wake up to during your next holiday?"
       />
-      {/* Robberg Ridge */}
-      <IndividualSlide
+      {/* Luna 1 */}
+      <HomePageMobileSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')]"
         title="Luna Blue I"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -44,8 +44,8 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
         buttonUrl="/luna-blue-1"
       />
 
-      {/* Hill Street */}
-      <IndividualSlide
+      {/* Luna 2 */}
+      <HomePageMobileSlide
         backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
         whiteText
         title="Luna Blue II"
@@ -54,11 +54,12 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
     dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
     delectus minus."
         buttonUrl="/luna-blue-2"
+        luna2
       />
 
       {/* About us */}
       <div id="about-us"></div>
-      <IndividualSlide
+      <HomePageMobileSlide
         title="About us"
         titleGerman="Über uns"
         textBoxBackgroundColor="bg-brown"
@@ -75,15 +76,15 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
           <li>Blah Blah</li>
           <li>Blah Blah Blah</li>
         </ul>
-      </IndividualSlide>
+      </HomePageMobileSlide>
 
       {/* slider */}
 
-      <IndividualSlide slider imageData={aboutUsSlider} />
+      <HomePageMobileSlide slider imageData={aboutUsSlider} />
 
       {/* Contact */}
       <div id="contact"></div>
-      <IndividualSlide
+      <HomePageMobileSlide
         title="Contact"
         titleGerman="Kontakt"
         textBoxBackgroundColor="bg-black/80"
@@ -168,7 +169,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
           </button>
         )}
         .
-      </IndividualSlide>
+      </HomePageMobileSlide>
     </main>
   );
 };

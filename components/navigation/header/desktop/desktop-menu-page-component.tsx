@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useContext } from "react";
 
 import useScrollPosition from "../../../utils/scroll-position";
+import WindowWidthContext from "@/components/utils/window-width-context";
 
 import classNames from "classnames";
 
-import LanguageDesktopSubmenu from "./language-desktop-submenu";
+import DesktopLanguageSubmenu from "./desktop-language-submenu";
 import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
@@ -25,6 +27,8 @@ const DesktopMenuPageComponent = ({
   const { locale } = useRouter();
 
   const scrollPosition = useScrollPosition();
+
+  const { windowWidth } = useContext(WindowWidthContext);
 
   return (
     <div className={`hidden desktopSmall:block ${cssClasses}`}>
@@ -67,13 +71,19 @@ const DesktopMenuPageComponent = ({
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
                   >
                     <Link
-                      href={url}
+                      href={
+                        windowWidth >= 1050 && url === "/#about-us"
+                          ? url + "-desktop"
+                          : windowWidth >= 1050 && url === "/#contact"
+                          ? url + "-desktop"
+                          : url
+                      }
                       className={classNames(
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
                           "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
-                            index === 6,
+                            title === "Book now",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -94,7 +104,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
-                            index === 6,
+                            title === "Jetzt buchen",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -104,7 +114,7 @@ const DesktopMenuPageComponent = ({
                   </li>
                 ))}
             {/* language submenu */}
-            <LanguageDesktopSubmenu />
+            <DesktopLanguageSubmenu />
           </ul>
         </nav>
       </div>

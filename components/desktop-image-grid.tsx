@@ -8,7 +8,7 @@ interface Props {
   url: string;
 }
 
-const HeroSplit = ({ url, cssClasses }: Props) => {
+const DesktopImageGrid = ({ url, cssClasses }: Props) => {
   const [hoverZoom, setHoverZoom] = useState(false);
   return (
     <div className={`overflow-hidden ${cssClasses}`}>
@@ -35,4 +35,4 @@ const HeroSplit = ({ url, cssClasses }: Props) => {
   );
 };
 
-export default HeroSplit;
+export default DesktopImageGrid;

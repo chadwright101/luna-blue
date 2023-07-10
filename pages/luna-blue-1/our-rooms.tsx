@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import RoomInfoSlider from "@/components/our-rooms-page/room-info-slider";
 import imageList from "@/data/image-data.json";
 import roomData from "@/data/room-data.json";
-import HeroSplit from "@/components/hero-split";
+import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
 
 interface Props {
@@ -70,14 +70,14 @@ const OurRooms = ({ cssClasses }: Props) => {
 
         {/* hero split */}
         <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
-          <HeroSplit
+          <DesktopImageGrid
             url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0792-HDR.jpg"
             cssClasses="hidden desktop:block"
           />
-          <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0836-HDR.jpg" />
-          <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0804-HDR.jpg" />
-          <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/9U7A0848-HDR.jpg" />
-          <HeroSplit
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0836-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0804-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/9U7A0848-HDR.jpg" />
+          <DesktopImageGrid
             url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0820-HDR.jpg"
             cssClasses="hidden tabletLarge:block"
           />

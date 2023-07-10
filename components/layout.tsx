@@ -8,7 +8,6 @@ interface Props {
 const Layout = ({ cssClasses, children }: Props) => {
   return (
     <div className={`px-8 ${cssClasses}`}>
-      {" "}
       <div className="desktop:max-w-[1400px] desktop:mx-auto">{children}</div>
     </div>
   );

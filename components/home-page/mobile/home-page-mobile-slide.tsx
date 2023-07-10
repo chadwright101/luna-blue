@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 import ImageContainer from "@/components/utils/image-container";
-import TextBox from "../text-box";
+import HomeHeroTextBox from "../home-hero-text-box";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
@@ -24,6 +24,7 @@ interface Props {
   cssClasses?: string;
   slider?: boolean;
   imageData?: Array<{ url: string }>;
+  luna2?: boolean;
 }
 
 const IndividualSlide = ({
@@ -42,6 +43,7 @@ const IndividualSlide = ({
   cssClasses,
   slider,
   imageData,
+  luna2,
 }: Props) => {
   if (!slider) {
     return (
@@ -53,7 +55,7 @@ const IndividualSlide = ({
             arrow && "flex-col gap-10"
           }`}
         >
-          <TextBox
+          <HomeHeroTextBox
             whiteText={whiteText}
             title={title!}
             titleGerman={titleGerman}
@@ -62,9 +64,10 @@ const IndividualSlide = ({
             buttonText={buttonText}
             buttonUrl={buttonUrl}
             textBoxBackgroundColor={textBoxBackgroundColor}
+            luna2={luna2}
           >
             {children}
-          </TextBox>
+          </HomeHeroTextBox>
           {arrow && (
             <Image
               src="/icons/arrow-down.svg"

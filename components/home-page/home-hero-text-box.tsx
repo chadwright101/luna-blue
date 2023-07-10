@@ -1,5 +1,8 @@
 import { ReactNode } from "react";
 import { useRouter } from "next/router";
+import { useContext } from "react";
+
+import WindowWidthContext from "../utils/window-width-context";
 
 import Button from "../button";
 
@@ -16,9 +19,10 @@ interface Props {
   children?: ReactNode;
   textBoxBackgroundColor?: string;
   cssClasses?: string;
+  luna2?: boolean;
 }
 
-const TextBox = ({
+const HomeHeroTextBox = ({
   title,
   titleGerman,
   paragraph,
@@ -29,8 +33,14 @@ const TextBox = ({
   children,
   textBoxBackgroundColor,
   cssClasses,
+  luna2,
 }: Props) => {
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const { windowWidth } = useContext(WindowWidthContext);
+
   return (
     <div
       className={classNames(
@@ -46,6 +56,7 @@ const TextBox = ({
         className={classNames("text-center text-35px border-y-2 py-2", {
           "border-black text-black": !whiteText,
           "border-white text-white": whiteText,
+          "font-Poiret_One": luna2,
         })}
       >
         {locale === "en" ? title : titleGerman || title}
@@ -55,6 +66,7 @@ const TextBox = ({
           className={classNames("text-center", {
             "text-black": !whiteText,
             "text-white": whiteText,
+            "font-Poiret_One": luna2,
           })}
         >
           {locale === "en" ? paragraph : paragraphGerman || paragraph}
@@ -65,7 +77,12 @@ const TextBox = ({
         <Button
           url={buttonUrl!}
           whiteText={whiteText ? true : false}
-          cssClasses="mx-auto desktopSmall:place-self-center"
+          cssClasses={`mx-auto desktopSmall:place-self-center ${
+            currentRoute === "/" && windowWidth < 1050 && whiteText
+              ? "bg-brown/75"
+              : ""
+          }`}
+          luna2={luna2}
         >
           {buttonText}
         </Button>
@@ -74,4 +91,4 @@ const TextBox = ({
   );
 };
 
-export default TextBox;
+export default HomeHeroTextBox;

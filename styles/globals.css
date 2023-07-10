@@ -127,6 +127,27 @@
     font-style: italic;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
 }
 
 @layer components {
@@ -145,7 +166,7 @@
   h4,
   h5,
   h6 {
-    font-family: Cormorant, serif;
+    font-family: "Cormorant", serif;
     color: #0e0e0e;
     font-weight: 500;
     text-align: left;
@@ -171,8 +192,11 @@
     @apply ease-in-out duration-300
   }
 
-  a:hover {
-    @apply text-brown
+  @media (min-width: 1050px) {
+
+    a:hover {
+      @apply text-brown
+    }
   }
 }
 
@@ -215,13 +239,13 @@
     gap: 0% 8%;
   }
 
-  .hero-grid-hill-street {
+  .hero-grid-luna-2 {
     grid-template-columns: 66.5% 30.5%;
     gap: 0% 3%;
 
   }
 
-  .hero-grid-robberg-ridge {
+  .hero-grid-luna-1 {
     grid-template-columns: 30.5% 66.5%;
     gap: 0% 3%;
   }

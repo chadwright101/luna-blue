@@ -10,6 +10,7 @@ module.exports = {
       Housegrind: "Housegrind",
       Comorant: "Comorant",
       Josefin_Sans: "Josefin_Sans",
+      Poiret_One: "Poiret_One",
     },
     fontSize: {
       "60px": "3.75rem",

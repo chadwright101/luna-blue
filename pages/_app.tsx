@@ -13,7 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Header cssClasses="sticky top-0 z-20 px-8 py-4 mb-4 tabletLarge:mb-6 desktop:mb-8" />
       <Layout>
         <Component {...pageProps} />
-        <Footer cssClasses="mt-10" />
+        <Footer cssClasses="mt-10 " />
       </Layout>
     </>
   );

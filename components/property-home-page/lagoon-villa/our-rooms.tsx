@@ -62,7 +62,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         </Translated>
       </p>
       <Button
-        url="/robberg-ridge/our-rooms"
+        url="/keurbooms-lagoon-villa/our-rooms"
         cssClasses="tabletLarge:hidden"
         width={locale === "en" ? undefined : "w-[170px]"}
       >

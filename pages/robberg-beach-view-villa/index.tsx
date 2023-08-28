@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import About from "@/components/property-home-page/luna-blue-1/about";
-import OurRooms from "@/components/property-home-page/luna-blue-1/our-rooms";
-import MoreInfoAvailability from "@/components/property-home-page/luna-blue-1/more-info-availability";
+import About from "@/components/property-home-page/robberg-beach/about";
+import OurRooms from "@/components/property-home-page/robberg-beach/our-rooms";
+import MoreInfoAvailability from "@/components/property-home-page/robberg-beach/more-info-availability";
 
 import data from "@/data/robberg-beach-data.json";
 

@@ -24,8 +24,11 @@ const About = ({ cssClasses }: Props) => {
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-showreel.mp4"
           controls
           className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
-          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-video-poster.jpg"
-        ></video>
+          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-video+poster.jpg"
+          preload="auto"
+        >
+          Your browser does not support the video tag.
+        </video>
         <article>
           <h2>
             <Translated german="Über uns">About us</Translated>
@@ -55,9 +58,9 @@ const About = ({ cssClasses }: Props) => {
             </Translated>
           </p>
           {locale === "en" ? (
-            <Button url="/robberg-ridge/about-us" />
+            <Button url="/robberg-beach-view-villa/about-us" />
           ) : (
-            <Button url="/robberg-ridge/" width="w-[170px]">
+            <Button url="/robberg-beach-view-villa/" width="w-[170px]">
               Mehr lesen
             </Button>
           )}

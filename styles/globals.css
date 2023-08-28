@@ -239,13 +239,13 @@
     gap: 0% 8%;
   }
 
-  .hero-grid-luna-2 {
+  .hero-grid-lagoon-villa {
     grid-template-columns: 66.5% 30.5%;
     gap: 0% 3%;
 
   }
 
-  .hero-grid-luna-1 {
+  .hero-grid-robberg-beach {
     grid-template-columns: 30.5% 66.5%;
     gap: 0% 3%;
   }

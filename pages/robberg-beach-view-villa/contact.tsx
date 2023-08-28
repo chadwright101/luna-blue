@@ -42,15 +42,15 @@ const Contact = () => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
         />
         <meta
           property="og:title"
@@ -74,7 +74,7 @@ const Contact = () => {
       </h1>
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
         <ImageContainer
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/contact/DSC01683.jpg"
           alt="Robberg Beach View Villa"
           width={1100}
           height={750}
@@ -250,7 +250,7 @@ const Contact = () => {
         </div>
         {!showMessage && (
           <ImageContainer
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01930.jpg"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/contact/DSC01930.jpg"
             width={1400}
             height={740}
             cssClasses="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"

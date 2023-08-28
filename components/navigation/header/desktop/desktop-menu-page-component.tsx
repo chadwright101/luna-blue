@@ -35,11 +35,9 @@ const DesktopMenuPageComponent = ({
         <Link
           href="/"
           className="desktopSmall:hover:scale-105 ease-in-out duration-500"
-          rel="preload"
-          as="image"
         >
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
             alt="Luna Blue logo"
             width={150}
             height={193}
@@ -81,7 +79,7 @@ const DesktopMenuPageComponent = ({
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white ml-0":
+                          "font-350 pb-2 pt-[10px] px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white ml-0":
                             title === "Book now",
                         }
                       )}

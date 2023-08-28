@@ -21,10 +21,10 @@ const About = ({ cssClasses }: Props) => {
     >
       <div className="grid tabletLarge:grid-cols-[360px_1fr] gap-10 desktopSmall:col-span-2 desktop:col-span-1">
         <video
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Luna+Blue+Showreel.mp4"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-showreel.mp4"
           controls
           className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
-          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Luna+Blue+-+Video+poster.jpg"
+          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-video-poster.jpg"
           preload="auto"
         >
           Your browser does not support the video tag.

@@ -30,14 +30,9 @@ const MobileMenuPageComponent = ({
   return (
     <div className={`desktopSmall:hidden ${cssClasses}`}>
       <div className="flex justify-between items-center">
-        <Link
-          href="/"
-          className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
-          rel="preload"
-          as="image"
-        >
+        <Link href="/" className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0">
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
             alt="Luna Blue logo"
             width={80}
             height={80}

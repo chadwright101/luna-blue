@@ -32,7 +32,7 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
       />
       {/* Robberg Beach */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Home+page/Slideshow/9U7A0672-HDR.jpg')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/home-page/slider/9U7A0672-HDR.jpg')]"
         title="Robberg Beach View Villa"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
       perspiciatis consectetur, tenetur aperiam adipisci accusantium

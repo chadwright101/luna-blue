@@ -39,15 +39,15 @@ const OurRooms = ({ cssClasses }: Props) => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
         />
         <meta
           property="og:title"
@@ -73,14 +73,14 @@ const OurRooms = ({ cssClasses }: Props) => {
         {/* hero split */}
         <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
           <DesktopImageGrid
-            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+2/9U7A0792-HDR.jpg"
+            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+2/9U7A0792-HDR.jpg"
             cssClasses="hidden desktop:block"
           />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0836-HDR.jpg" />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0804-HDR.jpg" />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/9U7A0848-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0836-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0804-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/9U7A0848-HDR.jpg" />
           <DesktopImageGrid
-            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Our+rooms/Bedroom+1/9U7A0820-HDR.jpg"
+            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0820-HDR.jpg"
             cssClasses="hidden tabletLarge:block"
           />
         </div>

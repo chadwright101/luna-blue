@@ -4,14 +4,16 @@ import { useRouter } from "next/router";
 
 import Translated from "@/components/utils/translated";
 
-import generalData from "@/data/general-data.json";
+import generalData from "@/data/robberg-beach-data.json";
 
 interface Props {
   cssClasses?: string;
 }
 
 const {
-  contact: { phone, phoneDisplay, email },
+  general: {
+    contact: { phone, phoneDisplay, email },
+  },
 } = generalData;
 
 const HomePageContact = ({ cssClasses }: Props) => {

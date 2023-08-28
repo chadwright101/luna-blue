@@ -46,7 +46,7 @@ const ImageCard = ({
     >
       <ImageContainer
         src={image}
-        alt="Luna Blue Off-grid Guesthouse"
+        alt="Luna Blue - Plettenberg Bay"
         width={900}
         height={500}
         cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"

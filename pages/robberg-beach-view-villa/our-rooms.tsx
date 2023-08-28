@@ -2,8 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import RoomInfoSlider from "@/components/our-rooms-page/room-info-slider";
-import imageList from "@/data/image-data.json";
-import roomData from "@/data/room-data.json";
+import data from "@/data/robberg-beach-data.json";
 import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
 
@@ -11,11 +10,11 @@ interface Props {
   cssClasses?: string;
 }
 const {
-  lunaBlue1: {
+  images: {
     ourRooms: { bedroom1, bedroom2, bedroom3, bedroom4 },
   },
-} = imageList;
-const { en, de } = roomData;
+  rooms: { en, de },
+} = data;
 
 const OurRooms = ({ cssClasses }: Props) => {
   const { locale } = useRouter();
@@ -23,8 +22,8 @@ const OurRooms = ({ cssClasses }: Props) => {
     <>
       <Head>
         <title>
-          {locale === "en" ? "Our Rooms" : "Unsere Zimmer"} - Luna Blue
-          Guesthouse
+          {locale === "en" ? "Our Rooms" : "Unsere Zimmer"} - Luna Blue -
+          Robberg Beach View Villa
         </title>
         <meta
           name="description"
@@ -36,7 +35,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         />
         <meta
           name="keywords"
-          content="luna blue guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
+          content="Robberg Beach View Villa, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
         />
         <meta
           property="og:image"
@@ -50,7 +49,10 @@ const OurRooms = ({ cssClasses }: Props) => {
           property="og:image"
           content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
         />
-        <meta property="og:title" content="Our rooms - Luna Blue Guesthouse" />
+        <meta
+          property="og:title"
+          content="Our rooms - Robberg Beach View Villa"
+        />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
         <meta property="og:type" content="website" />
         <meta
@@ -59,7 +61,7 @@ const OurRooms = ({ cssClasses }: Props) => {
         />
         <meta
           property="og:site_name"
-          content="Our rooms - Luna Blue Guesthouse"
+          content="Our rooms - Robberg Beach View Villa"
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
       </Head>

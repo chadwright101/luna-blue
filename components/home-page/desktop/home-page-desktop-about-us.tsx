@@ -2,7 +2,7 @@ import ImageContainer from "@/components/utils/image-container";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
-import imageData from "@/data/image-data.json";
+import imageData from "@/data/robberg-beach-data.json";
 
 import "@splidejs/react-splide/css/core";
 
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const {
-  lunaBlue1: { aboutUsSlider },
+  images: { aboutUsSlider },
 } = imageData;
 
 const HomePageAboutUs = ({ cssClasses }: Props) => {

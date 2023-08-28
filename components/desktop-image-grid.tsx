@@ -14,7 +14,7 @@ const DesktopImageGrid = ({ url, cssClasses }: Props) => {
     <div className={`overflow-hidden ${cssClasses}`}>
       <ImageContainer
         src={url}
-        alt="Luna Blue Off-grid Guesthouse"
+        alt="Luna Blue - Plettenberg Bay"
         width={450}
         height={500}
         cssClasses={classNames(

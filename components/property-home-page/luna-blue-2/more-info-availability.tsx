@@ -43,7 +43,7 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
             title="About Plettenberg Bay"
             titleGerman="Über Plettenberg Bay"
             link="https://www.plett-tourism.co.za/"
-            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/footprints-in-the-sand.webp"
+            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Home+page/footprints-in-the-sand.webp"
             mobileButtonWidth={locale === "en" ? "w-[158px]" : "w-[170px]"}
             targetBlank
           />

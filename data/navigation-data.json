@@ -2,13 +2,13 @@
   "homePage": {
     "en": [
       {
-        "title": "Luna Blue",
-        "url": "/luna-blue-1",
+        "title": "Robberg Beach View Villa",
+        "url": "/robberg-beach-view-villa",
         "targetBlank": false
       },
       {
-        "title": "Luna Blue",
-        "url": "/luna-blue-2",
+        "title": "Keurbooms Lagoon Villa",
+        "url": "/keurbooms-lagoon-villa",
         "targetBlank": false
       },
       {
@@ -24,13 +24,13 @@
     ],
     "de": [
       {
-        "title": "Luna Blue",
-        "url": "/luna-blue-1",
+        "title": "Robberg Beach View Villa",
+        "url": "/robberg-beach-view-villa",
         "targetBlank": false
       },
       {
-        "title": "Luna Blue",
-        "url": "/luna-blue-2",
+        "title": "Keurbooms Lagoon Villa",
+        "url": "/keurbooms-lagoon-villa",
         "targetBlank": false
       },
       {
@@ -45,36 +45,67 @@
       }
     ]
   },
-  "lunaBlue1": {
+  "propertiesSubmenu": {
+    "en": [
+      {
+        "title": "Robberg Beach View Villa",
+        "url": "/robberg-beach-view-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Keurbooms Lagoon Villa",
+        "url": "/keurbooms-lagoon-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Cliffside Cabins",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      }
+    ],
+    "de": [
+      {
+        "title": "Robberg Beach View Villa",
+        "url": "/robberg-beach-view-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Keurbooms Lagoon Villa",
+        "url": "/keurbooms-lagoon-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Cliffside Cabins",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      }
+    ]
+  },
+  "robbergBeach": {
     "en": [
       {
         "title": "Home",
-        "url": "/luna-blue-1",
+        "url": "/robberg-beach-view-villa",
         "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/luna-blue-1/about-us",
+        "url": "/robberg-beach-view-villa",
         "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/luna-blue-1/our-rooms",
+        "url": "/robberg-beach-view-villa/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/luna-blue-1/about-us/#gallery",
+        "url": "/robberg-beach-view-villa/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/luna-blue-1/contact",
-        "targetBlank": false
-      },
-      {
-        "title": "Luna Blue II",
-        "url": "/luna-blue-2",
+        "url": "/robberg-beach-view-villa/contact",
         "targetBlank": false
       },
       {
@@ -86,32 +117,27 @@
     "de": [
       {
         "title": "Startseite",
-        "url": "/luna-blue-1",
+        "url": "/robberg-beach-view-villa",
         "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/luna-blue-1/about-us",
+        "url": "/robberg-beach-view-villa/about-us",
         "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/luna-blue-1/our-rooms",
+        "url": "/robberg-beach-view-villa/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/luna-blue-1/about-us/#gallery",
+        "url": "/robberg-beach-view-villa/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/luna-blue-1/contact",
-        "targetBlank": false
-      },
-      {
-        "title": "Luna Blue II",
-        "url": "/luna-blue-2",
+        "url": "/robberg-beach-view-villa/contact",
         "targetBlank": false
       },
       {
@@ -121,36 +147,31 @@
       }
     ]
   },
-  "lunaBlue2": {
+  "lagoonVilla": {
     "en": [
       {
         "title": "Home",
-        "url": "/luna-blue-2",
+        "url": "/keurbooms-lagoon-villa",
         "targetBlank": false
       },
       {
         "title": "About us",
-        "url": "/luna-blue-2/about-us",
+        "url": "/keurbooms-lagoon-villa/about-us",
         "targetBlank": false
       },
       {
         "title": "Our rooms",
-        "url": "/luna-blue-2/our-rooms",
+        "url": "/keurbooms-lagoon-villa/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/luna-blue-2/about-us/#gallery",
+        "url": "/keurbooms-lagoon-villa/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/luna-blue-2/contact",
-        "targetBlank": false
-      },
-      {
-        "title": "Luna Blue I",
-        "url": "/luna-blue-1",
+        "url": "/keurbooms-lagoon-villa/contact",
         "targetBlank": false
       },
       {
@@ -162,32 +183,27 @@
     "de": [
       {
         "title": "Startseite",
-        "url": "/luna-blue-2",
+        "url": "/keurbooms-lagoon-villa",
         "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/luna-blue-2/about-us",
+        "url": "/keurbooms-lagoon-villa/about-us",
         "targetBlank": false
       },
       {
         "title": "Unsere Zimmer",
-        "url": "/luna-blue-2/our-rooms",
+        "url": "/keurbooms-lagoon-villa/our-rooms",
         "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/luna-blue-2/about-us/#gallery",
+        "url": "/keurbooms-lagoon-villa/about-us/#gallery",
         "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/luna-blue-2/contact",
-        "targetBlank": false
-      },
-      {
-        "title": "Luna Blue I",
-        "url": "/luna-blue-1",
+        "url": "/keurbooms-lagoon-villa/contact",
         "targetBlank": false
       },
       {

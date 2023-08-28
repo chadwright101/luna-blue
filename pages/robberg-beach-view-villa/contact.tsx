@@ -3,14 +3,16 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import generalData from "@/data/general-data.json";
-import Luna1Map from "@/components/contact-page/luna-1-map";
+import generalData from "@/data/robberg-beach-data.json";
+import RobbergBeachMap from "@/components/contact-page/robberg-beach-map";
 import ImageContainer from "@/components/utils/image-container";
 import Translated from "@/components/utils/translated";
 
 const {
-  contact: { phone, phoneDisplay, email },
-  address: { areaCode, province, street, town },
+  general: {
+    contact: { phone, phoneDisplay, email },
+    address: { areaCode, province, street, town },
+  },
 } = generalData;
 
 const Contact = () => {
@@ -23,19 +25,20 @@ const Contact = () => {
     <>
       <Head>
         <title>
-          {locale === "en" ? "Contact" : "Kontakt"} - Luna Blue Guesthouse
+          {locale === "en" ? "Contact" : "Kontakt"} - Luna Blue - Robberg Beach
+          View Villa
         </title>
         <meta
           name="description"
           content={
             locale === "en"
-              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
-              : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue Off-grid Guesthouse ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
+              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Robberg Beach View Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+              : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Robberg Beach View Villa ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
           }
         />
         <meta
           name="keywords"
-          content="luna blue guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
+          content="Robberg Beach View Villa, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
         />
         <meta
           property="og:image"
@@ -49,16 +52,19 @@ const Contact = () => {
           property="og:image"
           content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
         />
-        <meta property="og:title" content="Contact - Luna Blue Guesthouse" />
+        <meta
+          property="og:title"
+          content="Contact - Robberg Beach View Villa"
+        />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Robberg Beach View Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
         />
         <meta
           property="og:site_name"
-          content="Contact - Luna Blue Guesthouse"
+          content="Contact - Robberg Beach View Villa"
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
       </Head>
@@ -69,7 +75,7 @@ const Contact = () => {
       <div className="grid desktopSmall:grid-cols-2 desktopSmall:grid-rows-[175px_150px_300px] w-full gap-10">
         <ImageContainer
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Contact/DSC01683.jpg"
-          alt="Luna Blue Off-grid Guesthouse"
+          alt="Robberg Beach View Villa"
           width={1100}
           height={750}
           cssClasses="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
@@ -257,7 +263,7 @@ const Contact = () => {
           />
         )}
       </div>
-      <Luna1Map cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
+      <RobbergBeachMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>
   );
 };

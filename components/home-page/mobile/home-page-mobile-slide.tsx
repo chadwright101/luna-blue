@@ -24,7 +24,7 @@ interface Props {
   cssClasses?: string;
   slider?: boolean;
   imageData?: Array<{ url: string }>;
-  luna2?: boolean;
+  lagoonVilla?: boolean;
 }
 
 const IndividualSlide = ({
@@ -43,7 +43,7 @@ const IndividualSlide = ({
   cssClasses,
   slider,
   imageData,
-  luna2,
+  lagoonVilla,
 }: Props) => {
   if (!slider) {
     return (
@@ -64,7 +64,7 @@ const IndividualSlide = ({
             buttonText={buttonText}
             buttonUrl={buttonUrl}
             textBoxBackgroundColor={textBoxBackgroundColor}
-            luna2={luna2}
+            lagoonVilla={lagoonVilla}
           >
             {children}
           </HomeHeroTextBox>

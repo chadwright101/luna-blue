@@ -5,9 +5,12 @@ import { useRouter } from "next/router";
 
 import classNames from "classnames";
 import Translated from "../../utils/translated";
-import { lunaBlue1Urls, lunaBlue2Urls } from "../header/mobile/mobile-menu";
+import {
+  robbergBeachUrls,
+  lagoonVillaUrls,
+} from "../header/mobile/mobile-menu";
 
-import generalData from "../../../data/general-data.json";
+import generalData from "@/data/robberg-beach-data.json";
 import navigation from "@/data/navigation-data.json";
 import PageFooterNavComponent from "./pages/page-footer-nav-component";
 
@@ -15,14 +18,16 @@ interface Props {
   cssClasses?: string;
 }
 const {
-  contact: { phone, phoneDisplay, email },
-  address: { areaCode, province, street, town },
-  social: { facebook, instagram },
+  general: {
+    contact: { phone, phoneDisplay, email },
+    address: { areaCode, province, street, town },
+    social: { facebook, instagram },
+  },
 } = generalData;
 
 const {
-  lunaBlue1: { en: robbergRidgeEn, de: robbergRidgeDe },
-  lunaBlue2: { en: hillStreetEn, de: hillStreetDe },
+  robbergBeach: { en: robbergRidgeEn, de: robbergRidgeDe },
+  lagoonVilla: { en: hillStreetEn, de: hillStreetDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
@@ -53,12 +58,12 @@ const Footer = ({ cssClasses }: Props) => {
       >
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
-          {lunaBlue1Urls.includes(currentRoute) ? (
+          {robbergBeachUrls.includes(currentRoute) ? (
             <PageFooterNavComponent
               navListEn={robbergRidgeEn}
               navListDe={robbergRidgeDe}
             />
-          ) : lunaBlue2Urls.includes(currentRoute) ? (
+          ) : lagoonVillaUrls.includes(currentRoute) ? (
             <PageFooterNavComponent
               navListEn={hillStreetEn}
               navListDe={hillStreetDe}
@@ -171,7 +176,7 @@ const Footer = ({ cssClasses }: Props) => {
         )}
         <Image
           src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-          alt="Luna Blue Off-grid Guesthouse logo"
+          alt="Luna Blue logo"
           width={150}
           height={193}
           className={classNames(
@@ -186,7 +191,7 @@ const Footer = ({ cssClasses }: Props) => {
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
-        © Copyright <Link href="/">Luna Blue Off-grid Guesthouse</Link>
+        © Copyright <Link href="/">Luna Blue</Link>
       </p>
     </footer>
   );

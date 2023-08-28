@@ -5,21 +5,18 @@ import { useRouter } from "next/router";
 import HomePageMobileSlide from "./mobile/home-page-mobile-slide";
 import Translated from "../utils/translated";
 
-import generalData from "../../data/general-data.json";
-
-import imageData from "../../data/image-data.json";
+import robbergBeachData from "@/data/robberg-beach-data.json";
 
 interface Props {
   cssClasses?: string;
 }
 
 const {
-  contact: { email },
-} = generalData;
-
-const {
-  lunaBlue1: { aboutUsSlider },
-} = imageData;
+  general: {
+    contact: { email },
+  },
+  images: { aboutUsSlider },
+} = robbergBeachData;
 
 const HomeHeroMobile = ({ cssClasses }: Props) => {
   const [showEmail, setShowEmail] = useState(false);
@@ -33,28 +30,28 @@ const HomeHeroMobile = ({ cssClasses }: Props) => {
         arrow
         title="Which view would you like to wake up to during your next holiday?"
       />
-      {/* Luna 1 */}
+      {/* Robberg Beach */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')]"
-        title="Luna Blue I"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Home+page/Slideshow/9U7A0672-HDR.jpg')]"
+        title="Robberg Beach View Villa"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
       perspiciatis consectetur, tenetur aperiam adipisci accusantium
       dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
       delectus minus."
-        buttonUrl="/luna-blue-1"
+        buttonUrl="/robberg-beach-view-villa"
       />
 
-      {/* Luna 2 */}
+      {/* Lagoon Villa */}
       <HomePageMobileSlide
         backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
         whiteText
-        title="Luna Blue II"
+        title="Keurbooms Lagoon Villa"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
     perspiciatis consectetur, tenetur aperiam adipisci accusantium
     dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
     delectus minus."
-        buttonUrl="/luna-blue-2"
-        luna2
+        buttonUrl="/keurbooms-lagoon-villa"
+        lagoonVilla
       />
 
       {/* About us */}

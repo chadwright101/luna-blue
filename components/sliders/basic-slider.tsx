@@ -71,7 +71,7 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
             >
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={1400}
                 height={1000}
                 cssClasses="object-cover h-full w-full max-w-[1400px]"

@@ -7,7 +7,6 @@ import useScrollPosition from "../../../utils/scroll-position";
 import MobileLanguageMenu from "./mobile-language-menu";
 
 import classNames from "classnames";
-import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
   cssClasses?: string;
@@ -39,7 +38,7 @@ const MobileMenuPageComponent = ({
         >
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-            alt="Luna Blue Off-grid Guesthouse logo"
+            alt="Luna Blue logo"
             width={80}
             height={80}
             className={classNames(
@@ -85,7 +84,7 @@ const MobileMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      <RomanNumeralsTitle index={index} title={title} mobile />
+                      {title}
                     </Link>
                   </li>
                 ))
@@ -104,7 +103,7 @@ const MobileMenuPageComponent = ({
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      <RomanNumeralsTitle index={index} title={title} mobile />
+                      {title}
                     </Link>
                   </li>
                 ))}

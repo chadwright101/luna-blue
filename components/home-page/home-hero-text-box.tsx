@@ -19,7 +19,7 @@ interface Props {
   children?: ReactNode;
   textBoxBackgroundColor?: string;
   cssClasses?: string;
-  luna2?: boolean;
+  lagoonVilla?: boolean;
 }
 
 const HomeHeroTextBox = ({
@@ -33,7 +33,7 @@ const HomeHeroTextBox = ({
   children,
   textBoxBackgroundColor,
   cssClasses,
-  luna2,
+  lagoonVilla,
 }: Props) => {
   const { locale } = useRouter();
   const router = useRouter();
@@ -56,7 +56,7 @@ const HomeHeroTextBox = ({
         className={classNames("text-center text-35px border-y-2 py-2", {
           "border-black text-black": !whiteText,
           "border-white text-white": whiteText,
-          "font-Poiret_One": luna2,
+          "font-Poiret_One": lagoonVilla,
         })}
       >
         {locale === "en" ? title : titleGerman || title}
@@ -66,7 +66,7 @@ const HomeHeroTextBox = ({
           className={classNames("text-center", {
             "text-black": !whiteText,
             "text-white": whiteText,
-            "font-Poiret_One": luna2,
+            "font-Poiret_One": lagoonVilla,
           })}
         >
           {locale === "en" ? paragraph : paragraphGerman || paragraph}
@@ -82,7 +82,7 @@ const HomeHeroTextBox = ({
               ? "bg-brown/75"
               : ""
           }`}
-          luna2={luna2}
+          lagoonVilla={lagoonVilla}
         >
           {buttonText}
         </Button>

@@ -10,7 +10,7 @@ interface Props {
   children?: ReactNode;
   width?: string;
   whiteText?: boolean;
-  luna2?: boolean;
+  lagoonVilla?: boolean;
 }
 
 const Button = ({
@@ -19,7 +19,7 @@ const Button = ({
   children,
   width,
   whiteText,
-  luna2,
+  lagoonVilla,
 }: Props) => {
   const [arrowAnimate, setArrowAnimate] = useState(false);
   return (
@@ -27,12 +27,12 @@ const Button = ({
       href={url}
       className={classNames(
         `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:tabletLarge:text-brown ${
-          !luna2 ? "w-[148px]" : luna2 ? "w-[128px]" : width
+          !lagoonVilla ? "w-[148px]" : lagoonVilla ? "w-[128px]" : width
         } p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`,
         {
           "text-pureBlack": !whiteText,
           "text-white": whiteText,
-          "font-Poiret_One": luna2,
+          "font-Poiret_One": lagoonVilla,
         }
       )}
       onMouseEnter={() => setArrowAnimate(true)}

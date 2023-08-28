@@ -5,7 +5,7 @@ interface Props {
   cssClasses?: string;
 }
 
-const Luna1Map = ({ cssClasses }: Props) => {
+const CliffSideMap = ({ cssClasses }: Props) => {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string,
   });
@@ -26,4 +26,4 @@ const Luna1Map = ({ cssClasses }: Props) => {
   );
 };
 
-export default Luna1Map;
+export default CliffSideMap;

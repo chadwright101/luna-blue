@@ -68,7 +68,7 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-[80vh] flex">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={1200}
                 height={900}
                 quality={60}
@@ -122,7 +122,7 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -176,7 +176,7 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -230,7 +230,7 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -286,7 +286,7 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"

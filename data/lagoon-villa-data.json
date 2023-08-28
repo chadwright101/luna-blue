@@ -1,0 +1,272 @@
+{
+  "general": {
+    "address": {
+      "street": "7 Jane Street",
+      "town": "Plettenberg Bay",
+      "province": "Western Cape",
+      "areaCode": 6600
+    },
+    "contact": {
+      "phoneDisplay": "+27 66 488 2828",
+      "phone": "+27664882828",
+      "email": "enquiries@lunarblue.co.za"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/lunarbluevillas",
+      "instagram": "https://www.instagram.com/lunablueguesthouse/"
+    }
+  },
+  "amenities": {
+    "en": [
+      {
+        "url": "/icons/swimming-pool.svg",
+        "title": "Swimming Pool"
+      },
+      {
+        "url": "/icons/gym.svg",
+        "title": "Gym"
+      },
+      {
+        "url": "/icons/pet-friendly.svg",
+        "title": "Pet Friendly"
+      },
+      {
+        "url": "/icons/solar.svg",
+        "title": "Solar Powered"
+      },
+      {
+        "url": "/icons/kitchen.svg",
+        "title": "Kitchen"
+      },
+      {
+        "url": "/icons/garden.svg",
+        "title": "Garden"
+      },
+      {
+        "url": "/icons/bbq-facilities.svg",
+        "title": "BBQ Facilities"
+      },
+      {
+        "url": "/icons/free-wifi.svg",
+        "title": "Free Wifi"
+      }
+    ],
+    "de": [
+      {
+        "url": "/icons/swimming-pool.svg",
+        "title": "Schwimm-bad"
+      },
+      {
+        "url": "/icons/gym.svg",
+        "title": "Fitness-studio"
+      },
+      {
+        "url": "/icons/pet-friendly.svg",
+        "title": "Haustier-freundlich"
+      },
+      {
+        "url": "/icons/solar.svg",
+        "title": "Solar-betrieben"
+      },
+      {
+        "url": "/icons/kitchen.svg",
+        "title": "Küche"
+      },
+      {
+        "url": "/icons/garden.svg",
+        "title": "Garten"
+      },
+      {
+        "url": "/icons/bbq-facilities.svg",
+        "title": "BBQ Einrichtungen"
+      },
+      {
+        "url": "/icons/free-wifi.svg",
+        "title": "Kostenloses wifi"
+      }
+    ]
+  },
+  "facilities": {
+    "en": [
+      "Solar Powered",
+      "Swimming Pool",
+      "Pet Friendly",
+      "Pillow Library",
+      "Underfloor Heating",
+      "Coffee Machine",
+      "Garden",
+      "Smart TVs",
+      "BBQ Facilities",
+      "Free Wifi",
+      "Patio",
+      "Linen & Towels"
+    ],
+    "de": [
+      "Solarbetrieben",
+      "Schwimmbad",
+      "Haustierfreundlich",
+      "Kissen-Auswahl",
+      "Fußbodenheizung",
+      "Kaffeemaschine",
+      "Garten",
+      "Smart TV",
+      "BBQ Einrichtungen",
+      "Kostenloses  Wifi",
+      "Veranda",
+      "Wäsche & Handtücher"
+    ]
+  },
+  "rooms": {
+    "en": {
+      "bedroom1": {
+        "enTitle": "Sapphire Suite",
+        "enFacilities": [
+          "King size bed",
+          "Walk-in closet",
+          "Fireplace",
+          "Large balcony",
+          "Superior bathroom"
+        ],
+        "enSize": 54
+      },
+      "bedroom2": {
+        "enTitle": "Cyan Room",
+        "enFacilities": ["King size bed", "Small balcony"],
+        "enSize": 24
+      },
+      "bedroom3": {
+        "enTitle": "Cobalt Room",
+        "enFacilities": ["Queen size bed", "Small balcony"],
+        "enSize": 28
+      },
+      "bedroom4": {
+        "enTitle": "Turquoise Studio",
+        "enFacilities": ["King size bed", "Superior balcony", "Kitchenette"],
+        "enSize": 52
+      }
+    },
+    "de": {
+      "bedroom1": {
+        "deTitle": "Sapphire Suite",
+        "deFacilities": [
+          "Kingsize-Bett",
+          "Begehbarer Kleiderschrank",
+          "Kamin",
+          "Großer Balkon",
+          "Hochwertiges Badezimmer"
+        ]
+      },
+      "bedroom2": {
+        "deTitle": "Cyan Room",
+        "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
+      },
+      "bedroom3": {
+        "deTitle": "Cobalt Room",
+        "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
+      },
+      "bedroom4": {
+        "deTitle": "Turquoise Studio",
+        "deFacilities": ["Kingsize-Bett", "Erstklassiger Balkon", "Kochnische"]
+      }
+    }
+  },
+  "images": {
+    "homePage": {
+      "heroSlider": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-4530587_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-18712698_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42326269_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65342532_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-68616846_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-98649912_sd.jpg"
+        }
+      ]
+    },
+    "aboutUsSlider": [
+      {
+        "url": "/luna-ii-placeholders/property-9422457-15594038_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-17928183_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-18712698_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-21544801_sd.jpg"
+      },
+      {
+        "url": "/luna-ii-placeholders/property-9422457-36961803_sd.jpg"
+      }
+    ],
+    "ourRooms": {
+      "bedroom1": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-41316301_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42023667_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-42326269_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-50108277_sd.jpg"
+        }
+      ],
+      "bedroom2": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-57700023_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-58268715_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-61769985_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65114473_sd.jpg"
+        }
+      ],
+      "bedroom3": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-65342532_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-68616846_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-92492796_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-98649912_sd.jpg"
+        }
+      ],
+      "bedroom4": [
+        {
+          "url": "/luna-ii-placeholders/property-9422457-21544801_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-41316301_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-4530587_sd.jpg"
+        },
+        {
+          "url": "/luna-ii-placeholders/property-9422457-58268715_sd.jpg"
+        }
+      ]
+    }
+  }
+}

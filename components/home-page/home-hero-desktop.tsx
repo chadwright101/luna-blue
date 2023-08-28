@@ -12,8 +12,8 @@ interface Props {
 }
 
 const HomeHeroDesktop = ({ cssClasses }: Props) => {
-  const [showLunaBlue2, setShowLunaBlue2] = useState(false);
-  const [showLunaBlue1, setshowLunaBlue1] = useState(false);
+  const [showLagoonVilla, setShowLagoonVilla] = useState(false);
+  const [showRobbergBeach, setshowRobbergBeach] = useState(false);
 
   return (
     <main>
@@ -21,8 +21,8 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
         className={classNames(
           `hero-grid-split ease-in-out duration-700 delay-200 ${cssClasses}`,
           {
-            "hero-grid-luna-2": showLunaBlue1,
-            "hero-grid-luna-1": showLunaBlue2,
+            "hero-grid-lagoon-villa": showRobbergBeach,
+            "hero-grid-robberg-beach": showLagoonVilla,
           }
         )}
       >
@@ -30,13 +30,13 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
           className={classNames(
             "col-span-2 -mb-[780px] z-10 place-self-center transition ease-in-out duration-500 grid gap-2 place-items-center bg-beige/80 w-[425px] h-[425px] p-8 rounded-full",
             {
-              "opacity-0 scale-[25%]": showLunaBlue2 || showLunaBlue1,
+              "opacity-0 scale-[25%]": showLagoonVilla || showRobbergBeach,
             }
           )}
         >
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-            alt="Luna Blue Off-grid Guesthouse logo"
+            alt="Luna Blue logo"
             className="-translate-y-[2px]"
             width={75}
             height={100}
@@ -48,68 +48,68 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
           </h3>
         </div>
 
-        {/* Luna 1 */}
+        {/* Robberg Beach */}
         <div
           className="overflow-hidden bg-black"
-          onMouseEnter={() => setshowLunaBlue1(true)}
-          onMouseLeave={() => setshowLunaBlue1(false)}
+          onMouseEnter={() => setshowRobbergBeach(true)}
+          onMouseLeave={() => setshowRobbergBeach(false)}
         >
           <div
             className={classNames(
-              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Home+page/Slideshow/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
+              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Home+page/Slideshow/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
-                "scale-110": showLunaBlue1,
-                "opacity-70": showLunaBlue2,
+                "scale-110": showRobbergBeach,
+                "opacity-70": showLagoonVilla,
               }
             )}
           >
             <HomeHeroTextBox
-              title="Luna Blue I"
+              title="Robberg Beach View Villa"
               paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
         perspiciatis consectetur, tenetur aperiam adipisci accusantium
         dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
         delectus minus."
-              buttonUrl="/luna-blue-1"
+              buttonUrl="/robberg-beach-view-villa"
               cssClasses={classNames(
                 "opacity-0 transition ease-in-out duration-700 delay-150",
                 {
-                  "opacity-100": showLunaBlue1,
+                  "opacity-100": showRobbergBeach,
                 }
               )}
             />
           </div>
         </div>
 
-        {/* Luna 2 */}
+        {/* Lagoon Villa */}
         <div
           className="overflow-hidden bg-black"
-          onMouseEnter={() => setShowLunaBlue2(true)}
-          onMouseLeave={() => setShowLunaBlue2(false)}
+          onMouseEnter={() => setShowLagoonVilla(true)}
+          onMouseLeave={() => setShowLagoonVilla(false)}
         >
           <div
             className={classNames(
               "h-[83vh] bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
-                "scale-110": showLunaBlue2,
-                "opacity-70": showLunaBlue1,
+                "scale-110": showLagoonVilla,
+                "opacity-70": showRobbergBeach,
               }
             )}
           >
             <HomeHeroTextBox
               whiteText
-              title="Luna Blue II"
+              title="Keurbooms Lagoon Villa"
               paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
               perspiciatis consectetur, tenetur aperiam adipisci accusantium
               dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
               delectus minus."
-              buttonUrl="/luna-blue-2"
+              buttonUrl="/keurbooms-lagoon-villa"
               cssClasses={classNames(
                 "opacity-0 transition ease-in-out duration-700 delay-150",
                 {
-                  "opacity-100": showLunaBlue2,
+                  "opacity-100": showLagoonVilla,
                 }
               )}
-              luna2
+              lagoonVilla
             />
           </div>
         </div>

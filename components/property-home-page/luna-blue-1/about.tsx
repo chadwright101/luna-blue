@@ -4,7 +4,7 @@ import Button from "../../button";
 import ImageContainer from "../../utils/image-container";
 import Translated from "../../utils/translated";
 
-import amenityIcons from "../../../data/amenity-icons-data.json";
+import amenityData from "@/data/robberg-beach-data.json";
 
 interface Props {
   cssClasses?: string;
@@ -12,17 +12,19 @@ interface Props {
 
 const About = ({ cssClasses }: Props) => {
   const { locale } = useRouter();
-  const { en, de } = amenityIcons;
+  const {
+    amenities: { en, de },
+  } = amenityData;
   return (
     <main
       className={`grid desktopSmall:grid-cols-[1fr_2fr] desktop:grid-cols-[2fr_1fr] gap-10 ${cssClasses}`}
     >
       <div className="grid tabletLarge:grid-cols-[360px_1fr] gap-10 desktopSmall:col-span-2 desktop:col-span-1">
         <video
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna+Blue+Showreel.mp4"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Luna+Blue+Showreel.mp4"
           controls
           className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
-          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna+Blue+-+Video+poster.jpg"
+          poster="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/Luna+Blue+-+Video+poster.jpg"
           preload="auto"
         >
           Your browser does not support the video tag.

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import classNames from "classnames";
-import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
   cssClasses?: string;
@@ -34,7 +33,7 @@ const PageFooterNavComponent = ({
                 )}
                 target={targetBlank ? "_blank" : "_self"}
               >
-                <RomanNumeralsTitle index={index} title={title} />
+                {title}
               </Link>
             </li>
           ))
@@ -50,7 +49,7 @@ const PageFooterNavComponent = ({
                 )}
                 target={targetBlank ? "_blank" : "_self"}
               >
-                <RomanNumeralsTitle index={index} title={title} />
+                {title}
               </Link>
             </li>
           ))}

@@ -7,14 +7,14 @@ import About from "@/components/property-home-page/luna-blue-2/about";
 import OurRooms from "@/components/property-home-page/luna-blue-2/our-rooms";
 import MoreInfoAvailability from "@/components/property-home-page/luna-blue-2/more-info-availability";
 
-import imageData from "../../data/image-data.json";
+import data from "@/data/robberg-beach-data.json";
 
 export default function LunaBlue2() {
   const {
-    lunaBlue2: {
+    images: {
       homePage: { heroSlider },
     },
-  } = imageData;
+  } = data;
 
   const { locale } = useRouter();
   return (

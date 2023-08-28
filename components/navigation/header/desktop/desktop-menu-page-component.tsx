@@ -9,7 +9,6 @@ import WindowWidthContext from "@/components/utils/window-width-context";
 import classNames from "classnames";
 
 import DesktopLanguageSubmenu from "./desktop-language-submenu";
-import RomanNumeralsTitle from "@/components/utils/roman-numerals-title";
 
 interface Props {
   cssClasses?: string;
@@ -41,7 +40,7 @@ const DesktopMenuPageComponent = ({
         >
           <Image
             src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
-            alt="Luna Blue Off-grid Guesthouse logo"
+            alt="Luna Blue logo"
             width={150}
             height={193}
             className={classNames(
@@ -82,13 +81,13 @@ const DesktopMenuPageComponent = ({
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
+                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white ml-0":
                             title === "Book now",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      <RomanNumeralsTitle index={index} title={title} />
+                      {title}
                     </Link>
                   </li>
                 ))
@@ -103,13 +102,13 @@ const DesktopMenuPageComponent = ({
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white":
+                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white  ml-0":
                             title === "Jetzt buchen",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
                     >
-                      <RomanNumeralsTitle index={index} title={title} />
+                      {title}
                     </Link>
                   </li>
                 ))}

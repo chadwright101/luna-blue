@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import LightBoxSlider from "@/components/sliders/lightbox-slider";
 
 import classNames from "classnames";
-import Translated from "../utils/translated";
+import Translated from "./utils/translated";
 
 interface Props {
   imageList?: Array<{ url: string }>;
@@ -13,7 +13,6 @@ interface Props {
     enSize: number;
   };
   deRoomInfo: {
-    deTitle: string;
     deFacilities: string[];
   };
   flip?: boolean;
@@ -37,7 +36,7 @@ const RoomInfoSlider = ({
   cssClasses,
 }: Props) => {
   const { enTitle, enFacilities, enSize } = enRoomInfo;
-  const { deTitle, deFacilities } = deRoomInfo;
+  const { deFacilities } = deRoomInfo;
   const { locale } = useRouter();
 
   return (
@@ -52,9 +51,7 @@ const RoomInfoSlider = ({
           "desktopSmall:order-2": !flip,
         })}
       >
-        <h3 className="text-43px w-full mb-4 desktopSmall:mb-10">
-          <Translated german={deTitle}>{enTitle}</Translated>
-        </h3>
+        <h3 className="text-43px w-full mb-4 desktopSmall:mb-10">{enTitle}</h3>
         <p className="mb-10">
           <Translated german="Zimmergröße">Room Size</Translated>: {enSize}m
           <sup>2</sup>

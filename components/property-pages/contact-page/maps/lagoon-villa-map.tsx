@@ -1,5 +1,5 @@
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
-import Translated from "../utils/translated";
+import Translated from "../../../utils/translated";
 
 interface Props {
   cssClasses?: string;

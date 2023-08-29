@@ -67,16 +67,16 @@ const AboutUs = () => {
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
         <DesktopImageGrid
-          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/about-us/hero/9U7A0520-HDR.jpg"
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0520-HDR.jpg"
           cssClasses="hidden tabletLarge:block"
         />
         <DesktopImageGrid
-          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/about-us/hero/Plett_Imagery-03669.jpg"
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/Plett_Imagery-03669.jpg"
           cssClasses="hidden desktop:block"
         />
-        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/about-us/hero/9U7A0428-HDR.jpg" />
-        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/about-us/hero/9U7A0632-HDR.jpg" />
-        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/about-us/hero/9U7A0460-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0428-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg" />
+        <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0460-HDR.jpg" />
       </div>
       <article className=" max-w-[900px] mx-auto">
         <h2

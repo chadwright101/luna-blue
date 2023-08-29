@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import About from "@/components/property-home-page/lagoon-villa/about";
-import OurRooms from "@/components/property-home-page/lagoon-villa/our-rooms";
-import MoreInfoAvailability from "@/components/property-home-page/lagoon-villa/more-info-availability";
+import About from "@/components/property-pages/lagoon-villa/about";
+import OurRooms from "@/components/property-pages/lagoon-villa/our-rooms";
+import MoreInfoAvailability from "@/components/property-pages/lagoon-villa/more-info-availability";
 
 import data from "@/data/lagoon-villa-data.json";
 

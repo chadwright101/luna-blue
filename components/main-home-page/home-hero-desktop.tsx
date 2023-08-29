@@ -56,7 +56,7 @@ const HomeHeroDesktop = ({ cssClasses }: Props) => {
         >
           <div
             className={classNames(
-              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/home-page/slider/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
+              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
                 "scale-110": showRobbergBeach,
                 "opacity-70": showLagoonVilla,

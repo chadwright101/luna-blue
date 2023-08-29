@@ -1,7 +1,8 @@
 {
   "general": {
+    "propertyName": "Keurbooms Lagoon Villa",
     "address": {
-      "street": "7 Jane Street",
+      "street": "9 Newdigate Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
       "areaCode": 6600
@@ -9,7 +10,8 @@
     "contact": {
       "phoneDisplay": "+27 66 488 2828",
       "phone": "+27664882828",
-      "email": "enquiries@lunarblue.co.za"
+      "email": "enquiries@lunarblue.co.za",
+      "subject": "Keurbooms%20Lagoon%20Villa%20enquiry"
     },
     "social": {
       "facebook": "https://www.facebook.com/lunarbluevillas",
@@ -119,18 +121,21 @@
   "rooms": {
     "en": {
       "bedroom1": {
-        "enTitle": "Sapphire Suite",
+        "enTitle": "Azure Suite",
         "enFacilities": [
           "King size bed",
-          "Walk-in closet",
-          "Fireplace",
-          "Large balcony",
-          "Superior bathroom"
+          "walk-in Closet with makeup station",
+          "Kitchenette",
+          "Full balcony",
+          "En Suite Bathroom with spa bath, walk-in shower & heated towel rack",
+          "Block-out Curtains",
+          "Sleeper couch",
+          "Roller shutter safety doors"
         ],
-        "enSize": 54
+        "enSize": 150
       },
       "bedroom2": {
-        "enTitle": "Cyan Room",
+        "enTitle": "Teal & Sky Rooms",
         "enFacilities": ["King size bed", "Small balcony"],
         "enSize": 24
       },
@@ -147,7 +152,6 @@
     },
     "de": {
       "bedroom1": {
-        "deTitle": "Sapphire Suite",
         "deFacilities": [
           "Kingsize-Bett",
           "Begehbarer Kleiderschrank",
@@ -157,15 +161,12 @@
         ]
       },
       "bedroom2": {
-        "deTitle": "Cyan Room",
         "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
       },
       "bedroom3": {
-        "deTitle": "Cobalt Room",
         "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
       },
       "bedroom4": {
-        "deTitle": "Turquoise Studio",
         "deFacilities": ["Kingsize-Bett", "Erstklassiger Balkon", "Kochnische"]
       }
     }

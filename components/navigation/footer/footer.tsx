@@ -19,7 +19,7 @@ interface Props {
 }
 const {
   general: {
-    contact: { phone, phoneDisplay, email },
+    contact: { phone, phoneDisplay, email, subject },
     address: { areaCode, province, street, town },
     social: { facebook, instagram },
   },
@@ -115,7 +115,7 @@ const Footer = ({ cssClasses }: Props) => {
             {showEmail && (
               <li>
                 <Link
-                  href={`mailto:${email}`}
+                  href={`mailto:${email}?subject=${subject}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
                   {email}

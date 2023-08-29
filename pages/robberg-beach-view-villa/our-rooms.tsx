@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import RoomInfoSlider from "@/components/our-rooms-page/room-info-slider";
+import RoomInfoSlider from "@/components/room-info-slider";
 import data from "@/data/robberg-beach-data.json";
 import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
@@ -73,14 +73,14 @@ const OurRooms = ({ cssClasses }: Props) => {
         {/* hero split */}
         <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
           <DesktopImageGrid
-            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+2/9U7A0792-HDR.jpg"
+            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0792-HDR.jpg"
             cssClasses="hidden desktop:block"
           />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0836-HDR.jpg" />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0804-HDR.jpg" />
-          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/9U7A0848-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0836-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0804-HDR.jpg" />
+          <DesktopImageGrid url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0848-HDR.jpg" />
           <DesktopImageGrid
-            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/our-rooms/Bedroom+1/9U7A0820-HDR.jpg"
+            url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0820-HDR.jpg"
             cssClasses="hidden tabletLarge:block"
           />
         </div>
@@ -138,8 +138,8 @@ const OurRooms = ({ cssClasses }: Props) => {
               }`}
             >
               <li>
-                <Translated german="En-suite Badezimmer mit Dusche und Badewanne">
-                  En-suite bathroom with shower and bath
+                <Translated german="En suite Badezimmer mit Dusche und Badewanne">
+                  En suite bathroom with shower and bath
                 </Translated>
               </li>
               <li>

@@ -5,9 +5,21 @@ import Translated from "@/components/utils/translated";
 
 interface Props {
   cssClasses?: string;
+  data: {
+    moreInfoAvailability: {
+      bookingUrl: string;
+      roomImageUrl: string;
+      infoImageUrl: string;
+    };
+  };
 }
 
-const MoreInfoAvailability = ({ cssClasses }: Props) => {
+const MoreInfoAvailability = ({
+  cssClasses,
+  data: {
+    moreInfoAvailability: { bookingUrl, roomImageUrl, infoImageUrl },
+  },
+}: Props) => {
   const { locale } = useRouter();
   return (
     <section className={`grid gap-10 ${cssClasses}`}>
@@ -21,8 +33,8 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
           <ImageCard
             title="Check Availability"
             titleGerman="Verfügbarkeit prüfen"
-            link="https://book.nightsbridge.com/34927"
-            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/home-page/9U7A0440-HDR-cropped.webp"
+            link={bookingUrl}
+            image={roomImageUrl}
             flip
             buttonText="View our calendar"
             buttonTextGerman="Unser Kalender"
@@ -43,7 +55,7 @@ const MoreInfoAvailability = ({ cssClasses }: Props) => {
             title="About Plettenberg Bay"
             titleGerman="Über Plettenberg Bay"
             link="https://www.plett-tourism.co.za/"
-            image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/home-page/footprints-in-the-sand.webp"
+            image={infoImageUrl}
             mobileButtonWidth={locale === "en" ? "w-[158px]" : "w-[170px]"}
             targetBlank
           />

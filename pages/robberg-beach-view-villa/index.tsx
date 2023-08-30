@@ -52,10 +52,7 @@ export default function RobbergBeach() {
           content="6wijN18bZX_HMfoo9Bj3JplvYLDxVw4-vczywhmz9Y0"
         />
       </Head>
-      <HomePage
-        homePage={data.homePage}
-        slider={data.images.homePage.heroSlider}
-      />
+      <HomePage data={data} />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import LightBoxSlider from "@/components/sliders/lightbox-slider";
 
 import classNames from "classnames";
-import Translated from "./utils/translated";
+import Translated from "../../../utils/translated";
 
 interface Props {
   imageList?: Array<{ url: string }>;

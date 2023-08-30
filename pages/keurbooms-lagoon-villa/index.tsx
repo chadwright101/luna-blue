@@ -3,10 +3,6 @@ import { useRouter } from "next/router";
 
 import BasicSlider from "@/components/sliders/basic-slider";
 
-import About from "@/components/property-pages/lagoon-villa/about";
-import OurRooms from "@/components/property-pages/lagoon-villa/our-rooms";
-import MoreInfoAvailability from "@/components/property-pages/lagoon-villa/more-info-availability";
-
 import data from "@/data/lagoon-villa-data.json";
 
 export default function LagoonVilla() {
@@ -57,10 +53,6 @@ export default function LagoonVilla() {
         />
       </Head>
       <BasicSlider imageData={heroSlider} />
-      <About cssClasses="my-10 desktopSmall:my-16" />
-      <OurRooms cssClasses="pt-4" />
-      <hr className="text-black my-10 desktopSmall:my-16" />
-      <MoreInfoAvailability cssClasses="my-10 desktopSmall:my-16" />
     </>
   );
 }

@@ -119,6 +119,101 @@
       "infoImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/footprints-in-the-sand.webp"
     }
   },
+  "ourRoomsPage": {
+    "imageGridUrls": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0792-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0836-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0804-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0848-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0820-HDR.jpg"
+    ],
+    "description": {
+      "en": {
+        "paragraph1": "Our rooms are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort.",
+        "paragraph2": "Our upmarket rooms feature only the finest amenities and furnishings, including plush bedding, top-of-the-line electronics, and high-quality toiletries. You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep.",
+        "paragraph3": "Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket rooms will provide you with the ultimate in comfort and luxury."
+      },
+      "de": {
+        "paragraph1": "Jedes unserer Zimmer wurde mit dem Ziel entworfen, Ihren Aufenthalt zu einem unvergesslichen Erlebnis zu machen, das Ihre Erwartungen übertrifft. Sobald Sie einen Schritt in eines unserer zauberhaften Zimmer setzen, umgibt Sie ein Gefühl von Eleganz und Komfort.",
+        "paragraph2": "In unseren Luxuszimmern erwarten Sie erstklassige Einrichtungen, Plüschbettwäsche, hochwertige elektronische Geräte und Toilettenartikel. Lassen Sie sich von unseren weichen und bequemen Betten verwöhnen und genießen Sie einen wohlverdienten, erholsamen Schlaf.",
+        "paragraph3": "Wir achten auf jedes Detail, damit jeder Aspekt Ihres Aufenthalts perfekt wird. Ob Geschäfts- oder Vergnügungsreise, unsere Luxuszimmer vereinen Komfort und Luxus auf höchstem Niveau."
+      }
+    },
+    "globalFacilities": {
+      "en": [
+        "En suite bathroom with shower and bath",
+        "Magnificent sea facing views",
+        "Free Wifi",
+        "Smart TV",
+        "Underfloor Heating",
+        "Pillow Library",
+        "Linen & Towels"
+      ],
+      "de": [
+        "En-suite Badezimmer mit Dusche und Badewanne",
+        "Herrliche Aussicht auf das Meer",
+        "Kostenloses Wlan",
+        "Smart-TV",
+        "Fußbodenheizung",
+        "Kissen-Auswahl",
+        "Wäsche & Handtücher"
+      ]
+    },
+    "roomInfo": {
+      "en": {
+        "bedroom1": {
+          "enTitle": "Sapphire Suite",
+          "enFacilities": [
+            "King size bed",
+            "Walk-in closet",
+            "Fireplace",
+            "Large balcony",
+            "Superior bathroom"
+          ],
+          "enSize": 54
+        },
+        "bedroom2": {
+          "enTitle": "Cyan Room",
+          "enFacilities": ["King size bed", "Small balcony"],
+          "enSize": 24
+        },
+        "bedroom3": {
+          "enTitle": "Cobalt Room",
+          "enFacilities": ["Queen size bed", "Small balcony"],
+          "enSize": 28
+        },
+        "bedroom4": {
+          "enTitle": "Turquoise Studio",
+          "enFacilities": ["King size bed", "Superior balcony", "Kitchenette"],
+          "enSize": 52
+        }
+      },
+      "de": {
+        "bedroom1": {
+          "deFacilities": [
+            "Kingsize-Bett",
+            "Begehbarer Kleiderschrank",
+            "Kamin",
+            "Großer Balkon",
+            "Hochwertiges Badezimmer"
+          ]
+        },
+        "bedroom2": {
+          "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
+        },
+        "bedroom3": {
+          "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
+        },
+        "bedroom4": {
+          "deFacilities": [
+            "Kingsize-Bett",
+            "Erstklassiger Balkon",
+            "Kochnische"
+          ]
+        }
+      }
+    }
+  },
   "facilities": {
     "en": [
       "Solar Powered",
@@ -148,56 +243,6 @@
       "Veranda",
       "Wäsche & Handtücher"
     ]
-  },
-  "rooms": {
-    "en": {
-      "bedroom1": {
-        "enTitle": "Sapphire Suite",
-        "enFacilities": [
-          "King size bed",
-          "Walk-in closet",
-          "Fireplace",
-          "Large balcony",
-          "Superior bathroom"
-        ],
-        "enSize": 54
-      },
-      "bedroom2": {
-        "enTitle": "Cyan Room",
-        "enFacilities": ["King size bed", "Small balcony"],
-        "enSize": 24
-      },
-      "bedroom3": {
-        "enTitle": "Cobalt Room",
-        "enFacilities": ["Queen size bed", "Small balcony"],
-        "enSize": 28
-      },
-      "bedroom4": {
-        "enTitle": "Turquoise Studio",
-        "enFacilities": ["King size bed", "Superior balcony", "Kitchenette"],
-        "enSize": 52
-      }
-    },
-    "de": {
-      "bedroom1": {
-        "deFacilities": [
-          "Kingsize-Bett",
-          "Begehbarer Kleiderschrank",
-          "Kamin",
-          "Großer Balkon",
-          "Hochwertiges Badezimmer"
-        ]
-      },
-      "bedroom2": {
-        "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
-      },
-      "bedroom3": {
-        "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
-      },
-      "bedroom4": {
-        "deFacilities": ["Kingsize-Bett", "Erstklassiger Balkon", "Kochnische"]
-      }
-    }
   },
   "images": {
     "homePage": {

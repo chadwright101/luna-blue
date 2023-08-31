@@ -170,7 +170,7 @@ const Footer = ({ cssClasses }: Props) => {
           </div>
         </div>
         <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Logo.png"
+          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
           alt="Luna Blue Off-grid Guesthouse logo"
           width={150}
           height={193}

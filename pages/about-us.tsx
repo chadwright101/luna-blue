@@ -34,15 +34,15 @@ const AboutUs = () => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-2.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-3.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Luna-Blue-Guesthouse-og-image-1.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
         />
         <meta property="og:title" content="About us - Luna Blue Guesthouse" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
@@ -62,16 +62,16 @@ const AboutUs = () => {
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
         <HeroSplit
-          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0520-HDR.jpg"
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0520-HDR.jpg"
           cssClasses="hidden tabletLarge:block"
         />
         <HeroSplit
-          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/Plett_Imagery-03669.jpg"
+          url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/Plett_Imagery-03669.jpg"
           cssClasses="hidden desktop:block"
         />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0428-HDR.jpg" />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0632-HDR.jpg" />
-        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/hero/9U7A0460-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0428-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg" />
+        <HeroSplit url="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0460-HDR.jpg" />
       </div>
       <article className=" max-w-[900px] mx-auto">
         <h2
@@ -204,7 +204,7 @@ const AboutUs = () => {
             <ImageCard
               title="Activities"
               titleGerman="Aktivitäten"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/activities.webp"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/activities.webp"
               link="https://www.plett-tourism.co.za/do/activities/"
               targetBlank
               thinDesktopOnly
@@ -224,7 +224,7 @@ const AboutUs = () => {
             <ImageCard
               title="Restaurants"
               titleGerman="Restaurants"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/plett-food.webp"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/plett-food.webp"
               link="https://www.plett-tourism.co.za/eat/"
               targetBlank
               thinDesktopOnly
@@ -244,7 +244,7 @@ const AboutUs = () => {
             <ImageCard
               title="Events"
               titleGerman="Veranstaltungen"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/About+us/IMG_6545.webp"
+              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/IMG_6545.webp"
               link="https://www.plett-tourism.co.za/do/event/"
               targetBlank
               thinDesktopOnly

@@ -43,7 +43,7 @@ const LanguageDesktopSubmenu = () => {
                 >
                   DE
                   <Image
-                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/125px-Flag_of_Germany.svg.png"
+                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/german-flag.png"
                     alt="German flag"
                     width={20}
                     height={15}
@@ -89,7 +89,7 @@ const LanguageDesktopSubmenu = () => {
                 >
                   EN
                   <Image
-                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/Flag_of_the_United_Kingdom_(3-5).svg.png"
+                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/england-flag.png"
                     alt="German flag"
                     width={20}
                     height={15}

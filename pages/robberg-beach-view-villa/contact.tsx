@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <MetaComponent data={data} pageName="Contact" />
       <ContactPage
-        general={data.general}
+        data={data}
         verticalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01683.jpg"
         horizontalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01930.jpg"
       />

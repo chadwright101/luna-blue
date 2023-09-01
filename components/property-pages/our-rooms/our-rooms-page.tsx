@@ -3,76 +3,7 @@ import { useRouter } from "next/router";
 import RoomInfoSlider from "@/components/property-pages/our-rooms/components/room-info-slider";
 import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
-
-interface Props {
-  data: {
-    images: {
-      ourRooms: {
-        bedroom1: Array<{ url: string }>;
-        bedroom2: Array<{ url: string }>;
-        bedroom3: Array<{ url: string }>;
-        bedroom4: Array<{ url: string }>;
-      };
-    };
-    ourRoomsPage: {
-      imageGridUrls: Array<string>;
-      description: {
-        en: {
-          paragraph1: string;
-          paragraph2?: string;
-          paragraph3?: string;
-        };
-        de: {
-          paragraph1: string;
-          paragraph2?: string;
-          paragraph3?: string;
-        };
-      };
-      globalFacilities: {
-        en: Array<string>;
-        de: Array<string>;
-      };
-      roomInfo: {
-        en: {
-          bedroom1: {
-            enTitle: string;
-            enFacilities: Array<string>;
-            enSize: number;
-          };
-          bedroom2: {
-            enTitle: string;
-            enFacilities: Array<string>;
-            enSize: number;
-          };
-          bedroom3: {
-            enTitle: string;
-            enFacilities: Array<string>;
-            enSize: number;
-          };
-          bedroom4: {
-            enTitle: string;
-            enFacilities: Array<string>;
-            enSize: number;
-          };
-        };
-        de: {
-          bedroom1: {
-            deFacilities: Array<string>;
-          };
-          bedroom2: {
-            deFacilities: Array<string>;
-          };
-          bedroom3: {
-            deFacilities: Array<string>;
-          };
-          bedroom4: {
-            deFacilities: Array<string>;
-          };
-        };
-      };
-    };
-  };
-}
+import { DataProps } from "../home-page/home-page";
 
 const OurRoomsPage = ({
   data: {
@@ -84,7 +15,7 @@ const OurRoomsPage = ({
       roomInfo: { en: enRoomInfo, de: deRoomInfo },
     },
   },
-}: Props) => {
+}: DataProps) => {
   const { locale } = useRouter();
   return (
     <div>
@@ -94,17 +25,20 @@ const OurRoomsPage = ({
 
       {/* hero split */}
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
-        <DesktopImageGrid
-          url={imageGridUrls[0]}
-          cssClasses="hidden desktop:block"
-        />
-        <DesktopImageGrid url={imageGridUrls[1]} />
-        <DesktopImageGrid url={imageGridUrls[2]} />
-        <DesktopImageGrid url={imageGridUrls[3]} />
-        <DesktopImageGrid
-          url={imageGridUrls[4]}
-          cssClasses="hidden tabletLarge:block"
-        />
+        {imageGridUrls.map((url, index) => (
+          <div
+            className={
+              index === 0
+                ? "hidden tabletLarge:block"
+                : index === 3
+                ? "hidden desktop:block"
+                : ""
+            }
+            key={index}
+          >
+            <DesktopImageGrid url={url} />
+          </div>
+        ))}
       </div>
       <main className="grid desktopSmall:grid-cols-[0.8fr_1fr] gap-10">
         <article className="bg-beige p-8">

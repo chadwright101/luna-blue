@@ -3,16 +3,38 @@ import About from "./components/about";
 import OurRooms from "./components/our-rooms";
 import MoreInfoAvailability from "./components/more-info-availability";
 
-interface Props {
+export interface DataProps {
   data: {
-    images: { homePage: { heroSlider: Array<{ url: string }> } };
+    general: {
+      propertyName: string;
+      address: {
+        street: string;
+        town: string;
+        province: string;
+        areaCode: number;
+      };
+      contact: {
+        phoneDisplay: string;
+        phone: string;
+        email: string;
+        subject: string;
+      };
+      social: {
+        facebook?: string;
+        instagram?: string;
+      };
+      meta: {
+        description: {
+          en: string;
+          de: string;
+        };
+        keywords: string;
+        images: string[];
+      };
+    };
     homePage: {
       url: string;
       aboutUs: {
-        amenities: {
-          en: Array<{ url: string; title: string }>;
-          de: Array<{ url: string; title: string }>;
-        };
         video: {
           videoUrl?: string;
           posterUrl?: string;
@@ -27,11 +49,11 @@ interface Props {
         description: {
           en: {
             paragraph1: string;
-            paragraph2: string;
+            paragraph2?: string;
           };
           de: {
             paragraph1: string;
-            paragraph2: string;
+            paragraph2?: string;
           };
         };
       };
@@ -41,14 +63,106 @@ interface Props {
         infoImageUrl: string;
       };
     };
+    ourRoomsPage: {
+      imageGridUrls: Array<string>;
+      description: {
+        en: {
+          paragraph1: string;
+          paragraph2?: string;
+          paragraph3?: string;
+        };
+        de: {
+          paragraph1: string;
+          paragraph2?: string;
+          paragraph3?: string;
+        };
+      };
+      globalFacilities: {
+        en: Array<string>;
+        de: Array<string>;
+      };
+      roomInfo: {
+        en: {
+          bedroom1: {
+            enTitle: string;
+            enFacilities: Array<string>;
+            enSize: number;
+          };
+          bedroom2: {
+            enTitle: string;
+            enFacilities: Array<string>;
+            enSize: number;
+          };
+          bedroom3: {
+            enTitle: string;
+            enFacilities: Array<string>;
+            enSize: number;
+          };
+          bedroom4: {
+            enTitle: string;
+            enFacilities: Array<string>;
+            enSize: number;
+          };
+        };
+        de: {
+          bedroom1: {
+            deFacilities: Array<string>;
+          };
+          bedroom2: {
+            deFacilities: Array<string>;
+          };
+          bedroom3: {
+            deFacilities: Array<string>;
+          };
+          bedroom4: {
+            deFacilities: Array<string>;
+          };
+        };
+      };
+    };
+    aboutUsPage: {
+      imageGridUrls: Array<string>;
+      description: {
+        enDescription: {
+          heading: string;
+          paragraph1: string;
+          paragraph2?: string;
+        };
+        deDescription: {
+          heading: string;
+          paragraph1: string;
+          paragraph2?: string;
+        };
+      };
+    };
+    facilities: {
+      en: Array<{ url?: string; item: string; brackets?: string }>;
+      de: Array<{ url?: string; item: string; brackets?: string }>;
+    };
+    images: {
+      homePage: { heroSlider: Array<{ url: string }> };
+      aboutUsSlider: Array<{ url: string }>;
+      ourRooms: {
+        bedroom1: Array<{ url: string }>;
+        bedroom2: Array<{ url: string }>;
+        bedroom3: Array<{ url: string }>;
+        bedroom4: Array<{ url: string }>;
+      };
+    };
   };
 }
+export interface CssProps {
+  cssClasses?: string;
+}
 
-const HomePage = ({ data }: Props) => {
+const HomePage = ({ data }: DataProps) => {
   return (
     <>
-      <BasicSlider imageData={data.images.homePage.heroSlider} />
-      <About cssClasses="my-10 desktopSmall:my-16" data={data.homePage} />
+      <BasicSlider
+        imageData={data.images.homePage.heroSlider}
+        propertyName={data.general.propertyName}
+      />
+      <About cssClasses="my-10 desktopSmall:my-16" data={data} />
       <OurRooms cssClasses="pt-4" data={data.homePage} />
       <hr className="text-black my-10 desktopSmall:my-16" />
       <MoreInfoAvailability

@@ -7,6 +7,7 @@ import HomeHeroTextBox from "../home-hero-text-box";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import "@splidejs/react-splide/css/core";
+import BasicSlider from "@/components/sliders/basic-slider";
 
 interface Props {
   whiteText?: boolean;
@@ -85,37 +86,7 @@ const IndividualSlide = ({
       <article
         className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
       >
-        <Splide
-          options={{
-            autoplay: true,
-            type: "loop",
-            interval: 4500,
-            speed: 2000,
-            gap: "1.75em",
-            drag: false,
-            rewind: true,
-          }}
-          hasTrack={false}
-        >
-          <SplideTrack>
-            {imageData!.map(({ url }, index) => (
-              <SplideSlide key={index} className="h-[88vh]">
-                <ImageContainer
-                  src={url}
-                  alt={`Luna Blue - Image ${index + 1}`}
-                  width={1400}
-                  height={1000}
-                  cssClasses="object-cover h-full w-full"
-                  quality={60}
-                  smallest={150}
-                  phone={150}
-                  tablet={125}
-                  tabletLarge={125}
-                />
-              </SplideSlide>
-            ))}
-          </SplideTrack>
-        </Splide>
+        <BasicSlider imageData={imageData} slideHeight="h-[88vh]" />
       </article>
     );
   }

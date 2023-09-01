@@ -5,32 +5,20 @@ import { useRouter } from "next/router";
 import Translated from "../../utils/translated";
 import ImageContainer from "../../utils/image-container";
 
-interface Props {
-  general: {
-    propertyName: string;
+import { DataProps } from "../home-page/home-page";
 
-    address: {
-      street: string;
-      town: string;
-      province: string;
-      areaCode: number;
-    };
-    contact: {
-      phoneDisplay: string;
-      phone: string;
-      email: string;
-      subject: string;
-    };
-  };
+interface Props extends DataProps {
   verticalImage: string;
   horizontalImage: string;
 }
 
 const ContactPage = ({
-  general: {
-    propertyName,
-    address: { street, town, province, areaCode },
-    contact: { phoneDisplay, phone, email, subject },
+  data: {
+    general: {
+      propertyName,
+      address: { street, town, province, areaCode },
+      contact: { phoneDisplay, phone, email, subject },
+    },
   },
   verticalImage,
   horizontalImage,

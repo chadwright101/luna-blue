@@ -3,25 +3,26 @@ import { useRouter } from "next/router";
 import Button from "../../../button";
 import ImageContainer from "../../../utils/image-container";
 import Translated from "../../../utils/translated";
-import { url } from "inspector";
 
 interface Props {
   cssClasses?: string;
   data: {
-    url: string;
-    aboutUs: {
-      video: {
-        videoUrl?: string;
-        posterUrl?: string;
+    homePage: {
+      url: string;
+      aboutUs: {
+        video: {
+          videoUrl?: string;
+          posterUrl?: string;
+        };
+        description: {
+          en: string;
+          de: string;
+        };
       };
-      amenities: {
-        en: Array<{ url: string; title: string }>;
-        de: Array<{ url: string; title: string }>;
-      };
-      description: {
-        en: string;
-        de: string;
-      };
+    };
+    facilities: {
+      en: Array<{ url?: string; item: string; brackets?: string }>;
+      de: Array<{ url?: string; item: string; brackets?: string }>;
     };
   };
 }
@@ -29,12 +30,14 @@ interface Props {
 const About = ({
   cssClasses,
   data: {
-    url,
-    aboutUs: {
-      video: { videoUrl, posterUrl },
-      amenities,
-      description,
+    homePage: {
+      url,
+      aboutUs: {
+        video: { videoUrl, posterUrl },
+        description,
+      },
     },
+    facilities,
   },
 }: Props) => {
   const { locale } = useRouter();
@@ -42,16 +45,24 @@ const About = ({
     <main
       className={`grid desktopSmall:grid-cols-[1fr_2fr] desktop:grid-cols-[2fr_1fr] gap-10 ${cssClasses}`}
     >
-      <div className="grid tabletLarge:grid-cols-[360px_1fr] gap-10 desktopSmall:col-span-2 desktop:col-span-1">
-        <video
-          src={videoUrl}
-          controls
-          className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
-          poster={posterUrl}
-          preload="auto"
-        >
-          Your browser does not support the video tag.
-        </video>
+      <div
+        className={
+          videoUrl
+            ? "grid tabletLarge:grid-cols-[360px_1fr] gap-10 desktopSmall:col-span-2 desktop:col-span-1"
+            : ""
+        }
+      >
+        {videoUrl && (
+          <video
+            src={videoUrl}
+            controls
+            className="w-[360px] h-[400px] justify-self-center order-1 tabletLarge:order-none"
+            poster={posterUrl}
+            preload="auto"
+          >
+            Your browser does not support the video tag.
+          </video>
+        )}
         <article>
           <h2>
             <Translated german="Über uns">About us</Translated>
@@ -76,40 +87,44 @@ const About = ({
       <article className="desktopSmall:row-start-2 desktopSmall:col-span-2 desktop:row-start-auto desktop:col-span-1">
         <ul className="grid grid-cols-2 phone:grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4 desktop:gap-y-16">
           {locale === "en"
-            ? amenities.en.map(({ url, title }, index) => (
-                <li
-                  key={index}
-                  className="flex flex-col items-center gap-3 text-center"
-                >
-                  <ImageContainer
-                    src={url}
-                    alt={`${title}{' '} icon`}
-                    width={60}
-                    height={60}
-                    cssClasses={`desktopSmall:w-[50px] desktopSmall:h-auto ${
-                      index === 0 && "pt-1.5 -mb-1.5"
-                    }`}
-                  />
-                  {title}
-                </li>
-              ))
-            : amenities.de.map(({ url, title }, index) => (
-                <li
-                  key={index}
-                  className="flex flex-col items-center gap-3 text-center"
-                >
-                  <ImageContainer
-                    src={url}
-                    alt={`${title}{' '} icon`}
-                    width={60}
-                    height={60}
-                    cssClasses={`desktopSmall:w-[50px] desktopSmall:h-auto ${
-                      index === 0 && "pt-1.5 -mb-1.5"
-                    }`}
-                  />
-                  {title}
-                </li>
-              ))}
+            ? facilities.en
+                .filter(({ url }) => url)
+                .map(({ url, item }, index) => (
+                  <li
+                    key={index}
+                    className="flex flex-col items-center gap-3 text-center"
+                  >
+                    <ImageContainer
+                      src={url!}
+                      alt={`${item} icon`}
+                      width={60}
+                      height={60}
+                      cssClasses={`desktopSmall:w-[50px] desktopSmall:h-auto ${
+                        index === 0 && "pt-1.5 -mb-1.5"
+                      }`}
+                    />
+                    {item}
+                  </li>
+                ))
+            : facilities.de
+                .filter(({ url }) => url)
+                .map(({ url, item }, index) => (
+                  <li
+                    key={index}
+                    className="flex flex-col items-center gap-3 text-center"
+                  >
+                    <ImageContainer
+                      src={url!}
+                      alt={`${item} icon`}
+                      width={60}
+                      height={60}
+                      cssClasses={`desktopSmall:w-[50px] desktopSmall:h-auto ${
+                        index === 0 && "pt-1.5 -mb-1.5"
+                      }`}
+                    />
+                    {item}
+                  </li>
+                ))}
         </ul>
       </article>
     </main>

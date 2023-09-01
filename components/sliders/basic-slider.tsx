@@ -6,9 +6,16 @@ import ImageContainer from "../utils/image-container";
 interface Props {
   cssClasses?: string;
   imageData?: Array<{ url: string }>;
+  propertyName?: string;
+  slideHeight?: string;
 }
 
-const BasicSlider = ({ cssClasses, imageData }: Props) => {
+const BasicSlider = ({
+  cssClasses,
+  imageData,
+  propertyName,
+  slideHeight,
+}: Props) => {
   return (
     <>
       <Splide
@@ -19,7 +26,7 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: { touch: 2000, mouse: 0 },
+          dragMinThreshold: { mouse: 50, touch: 150 },
           breakpoints: {
             900: {
               arrows: false,
@@ -67,11 +74,17 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           {imageData!.map(({ url }, index) => (
             <SplideSlide
               key={index}
-              className="h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
+              className={
+                slideHeight
+                  ? slideHeight
+                  : "h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
+              }
             >
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
+                alt={`${
+                  propertyName ? propertyName : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={1400}
                 height={1000}
                 cssClasses="object-cover h-full w-full max-w-[1400px]"

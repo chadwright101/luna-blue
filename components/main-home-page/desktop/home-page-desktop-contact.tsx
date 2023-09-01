@@ -5,10 +5,7 @@ import { useRouter } from "next/router";
 import Translated from "@/components/utils/translated";
 
 import generalData from "@/data/robberg-beach-data.json";
-
-interface Props {
-  cssClasses?: string;
-}
+import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 const {
   general: {
@@ -16,7 +13,7 @@ const {
   },
 } = generalData;
 
-const HomePageContact = ({ cssClasses }: Props) => {
+const HomePageContact = ({ cssClasses }: CssProps) => {
   const [showMessage, setShowMessage] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);

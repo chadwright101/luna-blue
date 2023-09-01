@@ -3,10 +3,7 @@ import { robbergBeachUrls, lagoonVillaUrls } from "../mobile/mobile-menu";
 import DesktopMenuPageComponent from "./desktop-menu-page-component";
 
 import navigationList from "@/data/navigation-data.json";
-
-interface Props {
-  cssClasses?: string;
-}
+import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
@@ -14,7 +11,7 @@ const {
   homePage: { en: homePageEn, de: homePageDe },
 } = navigationList;
 
-const DesktopMenu = ({ cssClasses }: Props) => {
+const DesktopMenu = ({ cssClasses }: CssProps) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   if (lagoonVillaUrls.includes(currentRoute)) {

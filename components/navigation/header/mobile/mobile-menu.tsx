@@ -3,10 +3,7 @@ import { useRouter } from "next/router";
 import MobileMenuPageComponent from "./mobile-menu-page-component";
 
 import navigationList from "@/data/navigation-data.json";
-
-interface Props {
-  cssClasses?: string;
-}
+import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 export const lagoonVillaUrls = [
   "/keurbooms-lagoon-villa",
@@ -28,14 +25,22 @@ export const cliffSideUrls = [
   "/cliffside-cabins/our-cabins",
   "/cliffside-cabins/contact",
 ];
+export const forestCabinsUrls = [
+  "/forest-cabins",
+  "/forest-cabins/about-us",
+  "/forest-cabins/our-cabins",
+  "/forest-cabins/contact",
+];
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
   lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
+  cliffSide: { en: cliffSideEn, de: cliffSideDe },
+  forestCabins: { en: forestCabinsEn, de: forestCabinsDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigationList;
 
-const MobileMenu = ({ cssClasses }: Props) => {
+const MobileMenu = ({ cssClasses }: CssProps) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   if (lagoonVillaUrls.includes(currentRoute)) {
@@ -52,6 +57,22 @@ const MobileMenu = ({ cssClasses }: Props) => {
         cssClasses={cssClasses}
         navListEn={robbergBeachEn}
         navListDe={robbergBeachDe}
+      />
+    );
+  } else if (cliffSideUrls.includes(currentRoute)) {
+    return (
+      <MobileMenuPageComponent
+        cssClasses={cssClasses}
+        navListEn={cliffSideEn}
+        navListDe={cliffSideDe}
+      />
+    );
+  } else if (forestCabinsUrls.includes(currentRoute)) {
+    return (
+      <MobileMenuPageComponent
+        cssClasses={cssClasses}
+        navListEn={forestCabinsEn}
+        navListDe={forestCabinsDe}
       />
     );
   } else {

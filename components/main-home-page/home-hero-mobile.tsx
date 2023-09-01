@@ -6,10 +6,7 @@ import HomePageMobileSlide from "./mobile/home-page-mobile-slide";
 import Translated from "../utils/translated";
 
 import robbergBeachData from "@/data/robberg-beach-data.json";
-
-interface Props {
-  cssClasses?: string;
-}
+import { CssProps } from "../property-pages/home-page/home-page";
 
 const {
   general: {
@@ -18,7 +15,7 @@ const {
   images: { aboutUsSlider },
 } = robbergBeachData;
 
-const HomeHeroMobile = ({ cssClasses }: Props) => {
+const HomeHeroMobile = ({ cssClasses }: CssProps) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const { locale } = useRouter();

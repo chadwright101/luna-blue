@@ -13,11 +13,11 @@ interface Props {
       description: {
         en: {
           paragraph1: string;
-          paragraph2: string;
+          paragraph2?: string;
         };
         de: {
           paragraph1: string;
-          paragraph2: string;
+          paragraph2?: string;
         };
       };
     };
@@ -56,7 +56,7 @@ const OurRooms = ({
         <Translated german={de.paragraph1}>{en.paragraph1}</Translated>
         <br />
         <br />
-        <Translated german={de.paragraph2}>{en.paragraph2}</Translated>
+        <Translated german={de.paragraph2!}>{en.paragraph2}</Translated>
       </p>
       <Button
         url={`/${url}/our-rooms`}

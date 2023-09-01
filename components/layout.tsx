@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
+import { CssProps } from "./property-pages/home-page/home-page";
 
-interface Props {
-  cssClasses?: string;
+interface Props extends CssProps {
   children: ReactNode;
 }
 

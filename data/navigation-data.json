@@ -61,6 +61,11 @@
         "title": "Cliffside Cabins",
         "url": "/cliffside-cabins",
         "targetBlank": false
+      },
+      {
+        "title": "Forest Cabins",
+        "url": "/forest-cabins",
+        "targetBlank": false
       }
     ],
     "de": [
@@ -77,6 +82,11 @@
       {
         "title": "Cliffside Cabins",
         "url": "/cliffside-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Forest Cabins",
+        "url": "/forest-cabins",
         "targetBlank": false
       }
     ]
@@ -204,6 +214,138 @@
       {
         "title": "Kontakt",
         "url": "/keurbooms-lagoon-villa/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Jetzt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ]
+  },
+  "cliffSide": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "About us",
+        "url": "/cliffside-cabins/about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Our cabins",
+        "url": "/cliffside-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/cliffside-cabins/about-us/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/cliffside-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Book now",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/cliffside-cabins/about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Hütten",
+        "url": "/cliffside-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/cliffside-cabins/about-us/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/cliffside-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Jetzt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ]
+  },
+  "forestCabins": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/forest-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "About us",
+        "url": "/forest-cabins/about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Our cabins",
+        "url": "/forest-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/forest-cabins/about-us/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/forest-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Book now",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/forest-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/forest-cabins/about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Hütten",
+        "url": "/forest-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/forest-cabins/about-us/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/forest-cabins/contact",
         "targetBlank": false
       },
       {

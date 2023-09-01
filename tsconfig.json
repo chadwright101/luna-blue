@@ -22,7 +22,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/lightbox-slider.jsx"
+    "components/lightbox-slider.jsx",
+    "components/sliders/lightbox-slider.jsx"
   ],
   "exclude": ["node_modules"]
 }

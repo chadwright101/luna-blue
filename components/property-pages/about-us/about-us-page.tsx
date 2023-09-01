@@ -4,34 +4,11 @@ import ImageCard from "@/components/image-card";
 import LightboxSlider from "@/components/sliders/lightbox-slider";
 import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
-
-interface Props {
-  data: {
-    aboutUsPage: {
-      imageGridUrls: string[];
-      description: {
-        enDescription: {
-          heading: string;
-          paragraph1: string;
-          paragraph2: string;
-        };
-        deDescription: {
-          heading: string;
-          paragraph1: string;
-          paragraph2: string;
-        };
-      };
-    };
-    facilities: {
-      en: { item: string; brackets?: string }[];
-      de: { item: string; brackets?: string }[];
-    };
-    images: { aboutUsSlider: { url: string }[] };
-  };
-}
+import { DataProps } from "../home-page/home-page";
 
 const AboutUsPage = ({
   data: {
+    general: { propertyName },
     aboutUsPage: {
       imageGridUrls,
       description: { enDescription, deDescription },
@@ -39,7 +16,7 @@ const AboutUsPage = ({
     facilities,
     images: { aboutUsSlider },
   },
-}: Props) => {
+}: DataProps) => {
   const { locale } = useRouter();
   return (
     <>
@@ -47,17 +24,20 @@ const AboutUsPage = ({
         <Translated german="Über uns">About Us</Translated>
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
-        <DesktopImageGrid
-          url={imageGridUrls[0]}
-          cssClasses="hidden tabletLarge:block"
-        />
-        <DesktopImageGrid
-          url={imageGridUrls[1]}
-          cssClasses="hidden desktop:block"
-        />
-        <DesktopImageGrid url={imageGridUrls[2]} />
-        <DesktopImageGrid url={imageGridUrls[3]} />
-        <DesktopImageGrid url={imageGridUrls[4]} />
+        {imageGridUrls.map((url, index) => (
+          <div
+            className={
+              index === 0
+                ? "hidden tabletLarge:block"
+                : index === 1
+                ? "hidden desktop:block"
+                : ""
+            }
+            key={index}
+          >
+            <DesktopImageGrid url={url} />
+          </div>
+        ))}
       </div>
       <article className=" max-w-[900px] mx-auto">
         <h2
@@ -89,11 +69,12 @@ const AboutUsPage = ({
           singleImageFast={false}
           singleImageMedium={false}
           singleImageSlow={false}
+          propertyName={propertyName}
         />
       </section>
       <main>
         <p className={locale === "en" ? "" : "text-left phone:text-justify"}>
-          <Translated german={deDescription.paragraph2}>
+          <Translated german={deDescription.paragraph2!}>
             {enDescription.paragraph2}
           </Translated>
         </p>

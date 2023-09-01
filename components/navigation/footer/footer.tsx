@@ -13,10 +13,8 @@ import {
 import generalData from "@/data/robberg-beach-data.json";
 import navigation from "@/data/navigation-data.json";
 import PageFooterNavComponent from "./pages/page-footer-nav-component";
+import { CssProps } from "@/components/property-pages/home-page/home-page";
 
-interface Props {
-  cssClasses?: string;
-}
 const {
   general: {
     contact: { phone, phoneDisplay, email, subject },
@@ -26,12 +24,12 @@ const {
 } = generalData;
 
 const {
-  robbergBeach: { en: robbergRidgeEn, de: robbergRidgeDe },
-  lagoonVilla: { en: hillStreetEn, de: hillStreetDe },
+  robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
+  lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
-const Footer = ({ cssClasses }: Props) => {
+const Footer = ({ cssClasses }: CssProps) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
 
@@ -51,7 +49,7 @@ const Footer = ({ cssClasses }: Props) => {
           {
             "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
               currentRoute === "/robberg-ridge/contact" ||
-              currentRoute === "/hillStreet/contact" ||
+              currentRoute === "/lagoonVilla/contact" ||
               homePagePath,
           }
         )}
@@ -60,13 +58,13 @@ const Footer = ({ cssClasses }: Props) => {
           <h4>Navigation</h4>
           {robbergBeachUrls.includes(currentRoute) ? (
             <PageFooterNavComponent
-              navListEn={robbergRidgeEn}
-              navListDe={robbergRidgeDe}
+              navListEn={robbergBeachEn}
+              navListDe={robbergBeachDe}
             />
           ) : lagoonVillaUrls.includes(currentRoute) ? (
             <PageFooterNavComponent
-              navListEn={hillStreetEn}
-              navListDe={hillStreetDe}
+              navListEn={lagoonVillaEn}
+              navListDe={lagoonVillaDe}
             />
           ) : (
             <PageFooterNavComponent
@@ -79,7 +77,7 @@ const Footer = ({ cssClasses }: Props) => {
           className={classNames("", {
             hidden:
               currentRoute === "/robberg-ridge/contact" ||
-              currentRoute === "/hillStreet/contact",
+              currentRoute === "/lagoonVilla/contact",
           })}
         >
           {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
@@ -139,7 +137,7 @@ const Footer = ({ cssClasses }: Props) => {
               className={classNames("", {
                 "text-center tabletLarge:text-left":
                   currentRoute === "/robberg-ridge/contact" ||
-                  currentRoute === "/hillStreet/contact",
+                  currentRoute === "/lagoonVilla/contact",
               })}
             >
               Social
@@ -184,7 +182,7 @@ const Footer = ({ cssClasses }: Props) => {
             {
               " justify-self-end":
                 currentRoute === "/robberg-ridge/contact" ||
-                currentRoute === "/hillStreet/contact",
+                currentRoute === "/lagoonVilla/contact",
             }
           )}
           priority

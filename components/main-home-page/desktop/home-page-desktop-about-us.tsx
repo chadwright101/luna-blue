@@ -5,16 +5,14 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import imageData from "@/data/robberg-beach-data.json";
 
 import "@splidejs/react-splide/css/core";
-
-interface Props {
-  cssClasses?: string;
-}
+import { CssProps } from "@/components/property-pages/home-page/home-page";
+import BasicSlider from "@/components/sliders/basic-slider";
 
 const {
   images: { aboutUsSlider },
 } = imageData;
 
-const HomePageAboutUs = ({ cssClasses }: Props) => {
+const HomePageAboutUs = ({ cssClasses }: CssProps) => {
   return (
     <article
       className={`hidden desktopSmall:grid grid-cols-[400px_1fr] desktop:grid-cols-[450px_1fr] gap-10 ${cssClasses}`}
@@ -36,35 +34,7 @@ const HomePageAboutUs = ({ cssClasses }: Props) => {
       </div>
 
       {/* slider */}
-      <Splide
-        options={{
-          autoplay: true,
-          type: "loop",
-          interval: 4500,
-          speed: 2000,
-          gap: "1.75em",
-          dragMinThreshold: { touch: 2000, mouse: 0 },
-        }}
-        hasTrack={false}
-      >
-        <SplideTrack>
-          {aboutUsSlider.map(({ url }, index) => (
-            <SplideSlide key={index} className="h-[500px]">
-              <ImageContainer
-                src={url}
-                alt={`Luna Blue - Image ${index + 1}`}
-                width={1000}
-                height={800}
-                cssClasses="object-cover h-full w-full"
-                quality={60}
-                eager={index < 2 ? true : false}
-                desktopSmall={45}
-                desktop={35}
-              />
-            </SplideSlide>
-          ))}
-        </SplideTrack>
-      </Splide>
+      <BasicSlider imageData={aboutUsSlider} slideHeight="h-[500px]" />
     </article>
   );
 };

@@ -1,21 +1,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { DataProps } from "./home-page/home-page";
 
-interface Props {
+interface Props extends DataProps {
   pageName?: string;
-  data: {
-    general: {
-      propertyName: string;
-      meta: {
-        description: {
-          en: string;
-          de: string;
-        };
-        keywords: string;
-        images: string[];
-      };
-    };
-  };
 }
 
 const MetaComponent = ({
@@ -40,9 +28,9 @@ const MetaComponent = ({
         content={locale === "en" ? description.en : description.de}
       />
       <meta name="keywords" content={keywords} />
-      <meta property="og:image" content={images[0]} />
-      <meta property="og:image" content={images[1]} />
-      <meta property="og:image" content={images[2]} />
+      {images.map((image, index) => (
+        <meta property="og:image" content={image} key={index} />
+      ))}
       <meta
         property="og:title"
         content={`${propertyName} by Luna Blue - Plettenberg Bay`}
@@ -55,7 +43,9 @@ const MetaComponent = ({
       <meta property="og:description" content={description.en} />
       <meta
         property="og:site_name"
-        content={`${pageName} - ${propertyName} | Plettenberg Bay`}
+        content={`${
+          pageName ? `${pageName} - ` : ""
+        }${propertyName} | Plettenberg Bay`}
       />
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
     </Head>

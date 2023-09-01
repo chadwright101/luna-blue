@@ -6,12 +6,9 @@ import HomePageDesktopAboutUs from "./desktop/home-page-desktop-about-us";
 import HomePageDesktopContact from "./desktop/home-page-desktop-contact";
 
 import classNames from "classnames";
+import { CssProps } from "../property-pages/home-page/home-page";
 
-interface Props {
-  cssClasses?: string;
-}
-
-const HomeHeroDesktop = ({ cssClasses }: Props) => {
+const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
   const [showLagoonVilla, setShowLagoonVilla] = useState(false);
   const [showRobbergBeach, setshowRobbergBeach] = useState(false);
 

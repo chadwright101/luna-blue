@@ -7,6 +7,7 @@ import { DataProps } from "../home-page/home-page";
 
 const OurRoomsPage = ({
   data: {
+    general: { propertyName },
     images,
     ourRoomsPage: {
       imageGridUrls,
@@ -36,7 +37,7 @@ const OurRoomsPage = ({
             }
             key={index}
           >
-            <DesktopImageGrid url={url} />
+            <DesktopImageGrid url={url} propertyName={propertyName} />
           </div>
         ))}
       </div>
@@ -93,6 +94,8 @@ const OurRoomsPage = ({
       </main>
       <hr className="my-10 desktopSmall:my-16 text-black" />
       <RoomInfoSlider
+        roomName={enRoomInfo.bedroom1.enTitle}
+        propertyName={propertyName}
         enRoomInfo={enRoomInfo.bedroom1}
         deRoomInfo={deRoomInfo.bedroom1}
         imageList={images.ourRooms.bedroom1}
@@ -101,6 +104,8 @@ const OurRoomsPage = ({
       <hr className="my-10 desktopSmall:my-16 text-black" />
       <div className="grid gap-x-10 desktopSmall:grid-cols-2">
         <RoomInfoSlider
+          roomName={enRoomInfo.bedroom2.enTitle}
+          propertyName={propertyName}
           enRoomInfo={enRoomInfo.bedroom2}
           deRoomInfo={deRoomInfo.bedroom2}
           imageList={images.ourRooms.bedroom2}
@@ -110,6 +115,8 @@ const OurRoomsPage = ({
         />
         <hr className="my-16 desktopSmall:hidden text-black" />
         <RoomInfoSlider
+          roomName={enRoomInfo.bedroom3.enTitle}
+          propertyName={propertyName}
           enRoomInfo={enRoomInfo.bedroom3}
           deRoomInfo={deRoomInfo.bedroom3}
           imageList={images.ourRooms.bedroom3}
@@ -120,6 +127,8 @@ const OurRoomsPage = ({
       </div>
       <hr className="my-10 desktopSmall:my-16 text-black" />
       <RoomInfoSlider
+        roomName={enRoomInfo.bedroom4.enTitle}
+        propertyName={propertyName}
         enRoomInfo={enRoomInfo.bedroom4}
         deRoomInfo={deRoomInfo.bedroom4}
         imageList={images.ourRooms.bedroom4}

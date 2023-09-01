@@ -13,6 +13,7 @@ const LightboxSlider = ({
   singleImageMedium,
   singleImageSlow,
   propertyName,
+  roomName,
 }) => {
   const slider1 = useRef();
   const slider2 = useRef();
@@ -70,7 +71,11 @@ const LightboxSlider = ({
               <ImageContainer
                 src={url}
                 alt={`${
-                  propertyName ? propertyName : "Luna Blue Plettenberg Bay"
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
                 } - Image ${index + 1}`}
                 width={1200}
                 height={900}
@@ -126,7 +131,11 @@ const LightboxSlider = ({
               <ImageContainer
                 src={url}
                 alt={`${
-                  propertyName ? propertyName : "Luna Blue Plettenberg Bay"
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
                 } - Image ${index + 1}`}
                 width={900}
                 height={500}
@@ -155,7 +164,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6000,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -181,7 +190,13 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -209,7 +224,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 7000,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -235,7 +250,13 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -264,7 +285,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             gap: "1rem",
             fixedHeight: 500,
             arrows: true,
@@ -291,7 +312,13 @@ const LightboxSlider = ({
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Plettenberg Bay - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"

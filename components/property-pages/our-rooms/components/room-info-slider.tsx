@@ -6,6 +6,8 @@ import classNames from "classnames";
 import Translated from "../../../utils/translated";
 
 interface Props {
+  propertyName: string;
+  roomName?: string;
   imageList?: Array<{ url: string }>;
   enRoomInfo: {
     enTitle: string;
@@ -26,6 +28,8 @@ interface Props {
 }
 
 const RoomInfoSlider = ({
+  propertyName,
+  roomName,
   imageList,
   enRoomInfo,
   deRoomInfo,
@@ -63,6 +67,8 @@ const RoomInfoSlider = ({
         </ul>
       </div>
       <LightBoxSlider
+        roomName={roomName}
+        propertyName={propertyName}
         imageList={imageList}
         singleImageFast={singleImageFast}
         singleImageMedium={singleImageMedium}

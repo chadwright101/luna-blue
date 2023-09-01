@@ -4,17 +4,22 @@ import classNames from "classnames";
 import ImageContainer from "./utils/image-container";
 
 interface Props {
+  propertyName?: string;
   cssClasses?: string;
   url: string;
 }
 
-const DesktopImageGrid = ({ url, cssClasses }: Props) => {
+const DesktopImageGrid = ({ url, cssClasses, propertyName }: Props) => {
   const [hoverZoom, setHoverZoom] = useState(false);
   return (
     <div className={`overflow-hidden ${cssClasses}`}>
       <ImageContainer
         src={url}
-        alt="Luna Blue - Plettenberg Bay"
+        alt={`${
+          propertyName
+            ? `${propertyName} by Luna Blue - Plettenberg Bay`
+            : "Luna Blue Plettenberg Bay"
+        }`}
         width={450}
         height={500}
         cssClasses={classNames(

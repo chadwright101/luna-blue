@@ -35,7 +35,7 @@ const AboutUsPage = ({
             }
             key={index}
           >
-            <DesktopImageGrid url={url} />
+            <DesktopImageGrid url={url} propertyName={propertyName} />
           </div>
         ))}
       </div>
@@ -70,6 +70,7 @@ const AboutUsPage = ({
           singleImageMedium={false}
           singleImageSlow={false}
           propertyName={propertyName}
+          roomName={""}
         />
       </section>
       <main>

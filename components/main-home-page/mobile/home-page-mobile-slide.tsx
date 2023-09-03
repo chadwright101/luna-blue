@@ -24,7 +24,7 @@ interface Props {
   textBoxBackgroundColor?: string;
   cssClasses?: string;
   slider?: boolean;
-  imageData?: Array<{ url: string }>;
+  imageData?: Array<string>;
   lagoonVilla?: boolean;
 }
 

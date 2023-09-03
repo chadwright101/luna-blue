@@ -12,6 +12,9 @@ const AboutUsPage = ({
     aboutUsPage: {
       imageGridUrls,
       description: { enDescription, deDescription },
+      thingsToDo: {
+        images: { activities, restaurants, events },
+      },
     },
     facilities,
     images: { aboutUsSlider },
@@ -132,7 +135,7 @@ const AboutUsPage = ({
             <ImageCard
               title="Activities"
               titleGerman="Aktivitäten"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/activities.webp"
+              image={activities}
               link="https://www.plett-tourism.co.za/do/activities/"
               targetBlank
               thinDesktopOnly
@@ -152,7 +155,7 @@ const AboutUsPage = ({
             <ImageCard
               title="Restaurants"
               titleGerman="Restaurants"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/plett-food.webp"
+              image={restaurants}
               link="https://www.plett-tourism.co.za/eat/"
               targetBlank
               thinDesktopOnly
@@ -172,7 +175,7 @@ const AboutUsPage = ({
             <ImageCard
               title="Events"
               titleGerman="Veranstaltungen"
-              image="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/IMG_6545.webp"
+              image={events}
               link="https://www.plett-tourism.co.za/do/event/"
               targetBlank
               thinDesktopOnly

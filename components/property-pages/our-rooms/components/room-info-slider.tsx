@@ -8,7 +8,7 @@ import Translated from "../../../utils/translated";
 interface Props {
   propertyName: string;
   roomName?: string;
-  imageList?: Array<{ url: string }>;
+  imageList?: Array<string>;
   enRoomInfo: {
     enTitle: string;
     enFacilities: string[];

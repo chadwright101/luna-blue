@@ -134,19 +134,26 @@ export interface DataProps {
           paragraph2?: string;
         };
       };
+      thingsToDo: {
+        images: {
+          activities: string;
+          restaurants: string;
+          events: string;
+        };
+      };
     };
     facilities: {
       en: Array<{ url?: string; item: string; brackets?: string }>;
       de: Array<{ url?: string; item: string; brackets?: string }>;
     };
     images: {
-      homePage: { heroSlider: Array<{ url: string }> };
-      aboutUsSlider: Array<{ url: string }>;
+      homePage: { heroSlider: Array<string> };
+      aboutUsSlider: Array<string>;
       ourRooms: {
-        bedroom1: Array<{ url: string }>;
-        bedroom2: Array<{ url: string }>;
-        bedroom3: Array<{ url: string }>;
-        bedroom4: Array<{ url: string }>;
+        bedroom1: Array<string>;
+        bedroom2: Array<string>;
+        bedroom3: Array<string>;
+        bedroom4: Array<string>;
       };
     };
   };

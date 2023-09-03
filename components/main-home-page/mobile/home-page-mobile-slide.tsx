@@ -52,8 +52,10 @@ const IndividualSlide = ({
         className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
       >
         <div
-          className={`${backgroundImage} bg-cover bg-center ${slideBackgroundColour} flex place-items-center justify-center h-full ${
-            arrow && "flex-col gap-10"
+          className={`${backgroundImage} bg-cover bg-center ${
+            slideBackgroundColour ? slideBackgroundColour : ""
+          } flex place-items-center justify-center h-full ${
+            arrow ? "flex-col gap-10" : ""
           }`}
         >
           <HomeHeroTextBox

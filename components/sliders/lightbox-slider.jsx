@@ -66,7 +66,7 @@ const LightboxSlider = ({
               className="fixed top-6 right-8 tabletLarge:top-14 tabletLarge:right-16 bg-darkBeige/75 z-40"
             />
           </button>
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-[80vh] flex">
               <ImageContainer
                 src={url}
@@ -126,7 +126,7 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
@@ -186,7 +186,7 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
@@ -246,7 +246,7 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
@@ -308,7 +308,7 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}

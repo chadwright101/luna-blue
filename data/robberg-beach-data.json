@@ -175,6 +175,13 @@
         "paragraph1": "Kaum eine Liebesgeschichte ist älter oder bedeutender als die von Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in der Wissenschaft thematisiert wird. Sie haben die Macht, uns mit ihrer Schönheit zu verzaubern, unsere Seelen sanft zu berühren oder uns einfach innehalten zu lassen, um uns eine größere Perspektive über unseren Platz in dieser Welt zu geben, ob sie nun getrennt sind oder zusammen. Bei einem Besuch in unseren Gästehäusern möchten wir Sie diesen Zauber spüren lassen.",
         "paragraph2": "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Robberg Beach View Villa ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay. ihr Zuhause gefunden haben. Auch wenn ihre beruflichen Erfahrungen sehr unterschiedlich sind, so sind doch ihre Gastfreundschaft und ihre Leidenschaft für den Umgang mit Menschen ein Faktor, der sie verbindet. Die Gästehäuser sind ein Spiegelbild der Dinge, die ihnen am meisten am Herzen liegen: Umwelt, Fitness, Tiere, vegane Küche und eine starke Liebe zu Afrika. Abseits vom Trubel des Zentrums von Plettenberg Bay gelegen, wird Ihr Aufenthalt bei uns zu einem friedlichen und erholsamen Erlebnis. Der Flughafen von Plettenberg Bay ist in 5 Minuten, die Stadt in 7 Minuten und die wunderschönen Strände in 10 Minuten zu erreichen."
       }
+    },
+    "thingsToDo": {
+      "images": {
+        "activities": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/activities.webp",
+        "restaurants": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/plett-food.webp",
+        "events": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/IMG_6545.webp"
+      }
     }
   },
   "facilities": {
@@ -233,165 +240,63 @@
   "images": {
     "homePage": {
       "heroSlider": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0508-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0684-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0492-HDR.jpg"
-        },
-
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0508-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0684-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0492-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg"
       ]
     },
     "aboutUsSlider": [
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0432-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0624-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DJI_0204.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DJI_0205.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0908-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0304-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0332-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0352-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0364-HDR.jpg"
-      },
-
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0428-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0548-HDR.jpg"
-      },
-
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0660-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0324-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0676-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01930.jpg"
-      }
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0432-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DJI_0204.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DJI_0205.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0304-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0332-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0364-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0428-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0548-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0660-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0324-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0676-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01930.jpg"
     ],
     "ourRooms": {
       "bedroom1": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0800-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0804-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0808-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0812-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0820-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0828-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0832-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0800-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0804-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0808-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0812-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0820-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0828-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0832-HDR.jpg"
       ],
       "bedroom2": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0764-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0768-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0772-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0776-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0788-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0796-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0764-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0768-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0772-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0776-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0788-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cyan/9U7A0796-HDR.jpg"
       ],
       "bedroom3": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0712-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0720-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0752-HDR-Edit.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0756-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0712-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0720-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0752-HDR-Edit.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/cobalt/9U7A0756-HDR.jpg"
       ],
       "bedroom4": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0868-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0872-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0876-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0880-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0884-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0888-HDR-Edit.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0904-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0868-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0872-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0876-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0880-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0884-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0888-HDR-Edit.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/turquoise/9U7A0904-HDR.jpg"
       ]
     }
   }

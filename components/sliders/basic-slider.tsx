@@ -5,7 +5,7 @@ import ImageContainer from "../utils/image-container";
 
 interface Props {
   cssClasses?: string;
-  imageData?: Array<{ url: string }>;
+  imageData?: Array<string>;
   propertyName?: string;
   slideHeight?: string;
 }
@@ -71,7 +71,7 @@ const BasicSlider = ({
           </button>
         </div>
         <SplideTrack>
-          {imageData!.map(({ url }, index) => (
+          {imageData!.map((url, index) => (
             <SplideSlide
               key={index}
               className={

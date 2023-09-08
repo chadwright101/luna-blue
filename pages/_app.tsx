@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <WindowWidthListener>
-        <Header cssClasses="sticky top-0 z-20 px-8 py-4 desktop:mb-8" />
+        <Header cssClasses="sticky top-0 z-20 px-8 py-4 mb-8" />
         <Layout>
           <Component {...pageProps} />
           <Footer cssClasses="mt-10" />

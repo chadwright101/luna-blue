@@ -29,6 +29,8 @@ const {
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
+const currentYear = new Date().getFullYear();
+
 const Footer = ({ cssClasses }: CssProps) => {
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
@@ -189,7 +191,7 @@ const Footer = ({ cssClasses }: CssProps) => {
         />
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
-        © Copyright <Link href="/">Luna Blue</Link>
+        © Copyright <Link href="/">Luna Blue {currentYear}</Link>
       </p>
     </footer>
   );

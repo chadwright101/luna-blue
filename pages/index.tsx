@@ -14,7 +14,7 @@ export default function Home() {
           name="description"
           content={
             locale === "en"
-              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses and villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+              ? "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our guesthouses and villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
               : "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Luna Blue ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
           }
         />
@@ -39,7 +39,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our Guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
+          content="Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our guesthouses offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay."
         />
         <meta property="og:site_name" content="Luna Blue - Plettenberg Bay" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>

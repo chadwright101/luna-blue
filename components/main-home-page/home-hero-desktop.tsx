@@ -85,7 +85,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         >
           <div
             className={classNames(
-              "h-[83vh] bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
+              "h-[83vh] bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
               {
                 "scale-110": showLagoonVilla,
                 "opacity-70": showRobbergBeach,

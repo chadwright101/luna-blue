@@ -5,7 +5,8 @@
       "street": "7 Jane Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
-      "areaCode": 6600
+      "areaCode": 6600,
+      "googleMapsUrl": "https://www.google.com/maps/@-34.083756,23.35805,17z/data=!3m1!4b1!4m9!3m8!1s0x1e78e25fdd8c0001:0x369e48a70cc9d32f!5m2!4m1!1i2!8m2!3d-34.083756!4d23.35805!16s%2Fg%2F11v0gm7sf4?entry=ttu"
     },
     "contact": {
       "phoneDisplay": "+27 66 488 2828",

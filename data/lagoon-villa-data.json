@@ -5,7 +5,8 @@
       "street": "9 Newdigate Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
-      "areaCode": 6600
+      "areaCode": 6600,
+      "googleMapsUrl": "https://www.google.com/maps/place/34%C2%B003'07.2%22S+23%C2%B022'21.7%22E/@-34.051991,23.3701271,897m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-34.051991!4d23.372702?entry=ttu"
     },
     "contact": {
       "phoneDisplay": "+27 66 488 2828",

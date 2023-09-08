@@ -12,6 +12,7 @@ export interface DataProps {
         town: string;
         province: string;
         areaCode: number;
+        googleMapsUrl: string;
       };
       contact: {
         phoneDisplay: string;

@@ -73,8 +73,8 @@ const MobileMenuPageComponent = ({
                         "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
-                            index === 6,
+                          "font-350 p-[1.2rem_1rem_1rem_1rem] bg-brown text-white ml-0":
+                            title === "Book now",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -92,8 +92,8 @@ const MobileMenuPageComponent = ({
                         "p-4 -m-4 text-18px uppercase font-Raleway tracking-widest desktopSmall:p-0 desktopSmall:m-0",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 p-3 -m-3 bg-brown text-white hover:text-white":
-                            index === 6,
+                          "font-350 p-[1.2rem_1rem_1rem_1rem] bg-brown text-white ml-0":
+                            title === "Jetzt buchen",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

@@ -19,7 +19,7 @@ const PropertyComponent = ({
 }: Props) => {
   return (
     <article
-      className={`grid gap-6 tabletLarge:gap-4 desktopSmall:gap-2 tabletLarge:text-center ${cssClasses}`}
+      className={`grid gap-6 tabletLarge:gap-4 tabletLarge:text-center ${cssClasses}`}
     >
       <ImageContainer
         src={featuredImage}

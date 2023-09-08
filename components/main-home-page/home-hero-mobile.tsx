@@ -40,7 +40,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Lagoon Villa */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('/Keurbooms-lagoon-Plettenberg-Bay-20191222_144127.jpg')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg')]"
         whiteText
         title="Keurbooms Lagoon Villa"
         paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet

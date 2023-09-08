@@ -42,7 +42,7 @@ module.exports = {
       phone: "425px",
       tablet: "650px",
       tabletLarge: "900px",
-      desktopSmall: "1100px",
+      desktopSmall: "1175px",
       desktop: "1400px",
     },
     extend: {},

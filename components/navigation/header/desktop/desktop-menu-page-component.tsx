@@ -79,7 +79,7 @@ const DesktopMenuPageComponent = ({
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 pb-2 pt-[10px] px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white ml-0":
+                          "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white ml-0":
                             title === "Book now",
                         }
                       )}
@@ -100,7 +100,7 @@ const DesktopMenuPageComponent = ({
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 py-2 px-2.5 -my-2 -mx-2.5 bg-brown text-white hover:text-white  ml-0":
+                          "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white  ml-0":
                             title === "Jetzt buchen",
                         }
                       )}

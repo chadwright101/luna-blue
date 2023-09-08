@@ -12,7 +12,7 @@
         "targetBlank": false
       },
       {
-        "title": "Our Properties",
+        "title": "Our properties",
         "url": "/properties",
         "targetBlank": false
       },
@@ -34,7 +34,7 @@
         "targetBlank": false
       },
       {
-        "title": "**to be translated",
+        "title": "Unsere Immobilien",
         "url": "/properties",
         "targetBlank": false
       },
@@ -73,6 +73,11 @@
         "targetBlank": false
       },
       {
+        "title": "Our properties",
+        "url": "/properties",
+        "targetBlank": false
+      },
+      {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
@@ -102,6 +107,11 @@
       {
         "title": "Kontakt",
         "url": "/robberg-beach-view-villa/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Immobilien",
+        "url": "/properties",
         "targetBlank": false
       },
       {
@@ -138,6 +148,12 @@
         "url": "/keurbooms-lagoon-villa/contact",
         "targetBlank": false
       },
+
+      {
+        "title": "Our properties",
+        "url": "/properties",
+        "targetBlank": false
+      },
       {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
@@ -168,6 +184,12 @@
       {
         "title": "Kontakt",
         "url": "/keurbooms-lagoon-villa/contact",
+        "targetBlank": false
+      },
+
+      {
+        "title": "Unsere Immobilien",
+        "url": "/properties",
         "targetBlank": false
       },
       {
@@ -204,6 +226,12 @@
         "url": "/cliffside-cabins/contact",
         "targetBlank": false
       },
+
+      {
+        "title": "Our properties",
+        "url": "/properties",
+        "targetBlank": false
+      },
       {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
@@ -234,6 +262,11 @@
       {
         "title": "Kontakt",
         "url": "/cliffside-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Immobilien",
+        "url": "/properties",
         "targetBlank": false
       },
       {
@@ -271,6 +304,11 @@
         "targetBlank": false
       },
       {
+        "title": "Our properties",
+        "url": "/properties",
+        "targetBlank": false
+      },
+      {
         "title": "Book now",
         "url": "https://book.nightsbridge.com/34927",
         "targetBlank": true
@@ -300,6 +338,11 @@
       {
         "title": "Kontakt",
         "url": "/forest-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Immobilien",
+        "url": "/properties",
         "targetBlank": false
       },
       {

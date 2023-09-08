@@ -38,7 +38,7 @@ const MoreInfoAvailability = ({
             flip
             buttonText="View our calendar"
             buttonTextGerman="Unser Kalender"
-            mobileButtonWidth={locale === "en" ? "w-[249px]" : "w-[216px]"}
+            mobileButtonWidth={locale === "en" ? "" : "w-[216px]"}
             targetBlank
           />
         </div>

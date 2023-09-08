@@ -106,7 +106,6 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
                   "opacity-100": showLagoonVilla,
                 }
               )}
-              lagoonVilla
             />
           </div>
         </div>

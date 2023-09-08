@@ -1,10 +1,7 @@
 import Image from "next/image";
 import { ReactNode } from "react";
 
-import ImageContainer from "@/components/utils/image-container";
 import HomeHeroTextBox from "../home-hero-text-box";
-
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 import "@splidejs/react-splide/css/core";
 import BasicSlider from "@/components/sliders/basic-slider";
@@ -25,7 +22,6 @@ interface Props {
   cssClasses?: string;
   slider?: boolean;
   imageData?: Array<string>;
-  lagoonVilla?: boolean;
 }
 
 const IndividualSlide = ({
@@ -44,7 +40,6 @@ const IndividualSlide = ({
   cssClasses,
   slider,
   imageData,
-  lagoonVilla,
 }: Props) => {
   if (!slider) {
     return (
@@ -67,7 +62,6 @@ const IndividualSlide = ({
             buttonText={buttonText}
             buttonUrl={buttonUrl}
             textBoxBackgroundColor={textBoxBackgroundColor}
-            lagoonVilla={lagoonVilla}
           >
             {children}
           </HomeHeroTextBox>

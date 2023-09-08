@@ -48,7 +48,6 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
     dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
     delectus minus."
         buttonUrl="/keurbooms-lagoon-villa"
-        lagoonVilla
       />
 
       {/* About us */}

@@ -11,6 +11,7 @@ interface Props {
   width?: string;
   whiteText?: boolean;
   lagoonVilla?: boolean;
+  targetBlank?: boolean;
 }
 
 const Button = ({
@@ -20,6 +21,7 @@ const Button = ({
   width,
   whiteText,
   lagoonVilla,
+  targetBlank,
 }: Props) => {
   const [arrowAnimate, setArrowAnimate] = useState(false);
   return (
@@ -37,6 +39,7 @@ const Button = ({
       )}
       onMouseEnter={() => setArrowAnimate(true)}
       onMouseLeave={() => setArrowAnimate(false)}
+      target={targetBlank ? "_blank" : "_self"}
     >
       {children || "Read more"}
       {whiteText ? (

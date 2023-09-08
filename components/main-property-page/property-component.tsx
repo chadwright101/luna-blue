@@ -19,7 +19,7 @@ const PropertyComponent = ({
 }: Props) => {
   return (
     <article
-      className={`grid gap-8 tabletLarge:gap-6 desktopSmall:gap-2 tabletLarge:text-center ${cssClasses}`}
+      className={`grid gap-6 tabletLarge:gap-4 desktopSmall:gap-2 tabletLarge:text-center ${cssClasses}`}
     >
       <ImageContainer
         src={featuredImage}
@@ -31,12 +31,16 @@ const PropertyComponent = ({
       <h2 className="text-35px tabletLarge:place-self-center">
         {propertyName}
       </h2>
-      <address className="-mt-7 tabletLarge:-mt-5 desktopSmall:-mt-1">
-        <Link href={address.googleMapsUrl} target="_blank">
+      <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
+        <Link
+          href={address.googleMapsUrl}
+          target="_blank"
+          className="text-blueLink"
+        >
           {address.street}, {address.town}
         </Link>
       </address>
-      <Button cssClasses="tabletLarge:place-self-center" url={url}>
+      <Button targetBlank cssClasses="tabletLarge:place-self-center" url={url}>
         View More
       </Button>
     </article>

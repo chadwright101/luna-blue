@@ -83,6 +83,7 @@ const HomeHeroTextBox = ({
               : ""
           }`}
           lagoonVilla={lagoonVilla}
+          targetBlank
         >
           {buttonText}
         </Button>

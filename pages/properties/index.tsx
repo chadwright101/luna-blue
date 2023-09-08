@@ -54,13 +54,13 @@ const Properties = () => {
         </h1>
         <section className="grid tabletLarge:grid-cols-2 tabletLarge:gap-12">
           <PropertyComponent
-            data={robbergData}
-            featuredImage={robbergData.images.homePage.heroSlider[0]}
+            data={lagoonData}
+            featuredImage={lagoonData.images.homePage.heroSlider[1]}
           />
           <hr className="text-black my-10 tabletLarge:hidden" />
           <PropertyComponent
-            data={lagoonData}
-            featuredImage={lagoonData.images.homePage.heroSlider[0]}
+            data={robbergData}
+            featuredImage={robbergData.images.homePage.heroSlider[0]}
           />
         </section>
       </main>

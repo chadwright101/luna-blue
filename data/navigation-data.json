@@ -2,18 +2,18 @@
   "homePage": {
     "en": [
       {
-        "title": "Robberg Beach View Villa",
-        "url": "/robberg-beach-view-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Keurbooms Lagoon Villa",
-        "url": "/keurbooms-lagoon-villa",
+        "title": "Home",
+        "url": "/",
         "targetBlank": false
       },
       {
         "title": "About us",
         "url": "/#about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Our Properties",
+        "url": "/properties",
         "targetBlank": false
       },
       {
@@ -24,13 +24,8 @@
     ],
     "de": [
       {
-        "title": "Robberg Beach View Villa",
-        "url": "/robberg-beach-view-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Keurbooms Lagoon Villa",
-        "url": "/keurbooms-lagoon-villa",
+        "title": "Startseite",
+        "url": "/",
         "targetBlank": false
       },
       {
@@ -39,54 +34,13 @@
         "targetBlank": false
       },
       {
+        "title": "**to be translated",
+        "url": "/properties",
+        "targetBlank": false
+      },
+      {
         "title": "Kontakt",
         "url": "/#contact",
-        "targetBlank": false
-      }
-    ]
-  },
-  "propertiesSubmenu": {
-    "en": [
-      {
-        "title": "Robberg Beach View Villa",
-        "url": "/robberg-beach-view-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Keurbooms Lagoon Villa",
-        "url": "/keurbooms-lagoon-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Cliffside Cabins",
-        "url": "/cliffside-cabins",
-        "targetBlank": false
-      },
-      {
-        "title": "Forest Cabins",
-        "url": "/forest-cabins",
-        "targetBlank": false
-      }
-    ],
-    "de": [
-      {
-        "title": "Robberg Beach View Villa",
-        "url": "/robberg-beach-view-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Keurbooms Lagoon Villa",
-        "url": "/keurbooms-lagoon-villa",
-        "targetBlank": false
-      },
-      {
-        "title": "Cliffside Cabins",
-        "url": "/cliffside-cabins",
-        "targetBlank": false
-      },
-      {
-        "title": "Forest Cabins",
-        "url": "/forest-cabins",
         "targetBlank": false
       }
     ]

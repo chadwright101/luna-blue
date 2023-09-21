@@ -10,18 +10,9 @@ import {
   lagoonVillaUrls,
 } from "../header/mobile/mobile-menu";
 
-import generalData from "@/data/robberg-beach-data.json";
 import navigation from "@/data/navigation-data.json";
 import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import { CssProps } from "@/components/property-pages/home-page/home-page";
-
-const {
-  general: {
-    contact: { phone, phoneDisplay, email, subject },
-    address: { areaCode, province, street, town },
-    social: { facebook, instagram },
-  },
-} = generalData;
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
@@ -38,6 +29,26 @@ const Footer = ({ cssClasses }: CssProps) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const homePagePath = currentRoute === "/";
+  const robbergBeachPath =
+    currentRoute === "/robberg-beach-view-villa" ||
+    currentRoute === "/robberg-beach-view-villa/contact" ||
+    currentRoute === "/robberg-beach-view-villa/our-rooms" ||
+    currentRoute === "/robberg-beach-view-villa/about-us";
+  const lagoonVillaPath =
+    currentRoute === "/keurbooms-lagoon-villa" ||
+    currentRoute === "/keurbooms-lagoon-villa/contact" ||
+    currentRoute === "/keurbooms-lagoon-villa/our-rooms" ||
+    currentRoute === "/keurbooms-lagoon-villa/about-us";
+  const cliffsidePath =
+    currentRoute === "/cliff-side-suites" ||
+    currentRoute === "/cliff-side-suites/contact" ||
+    currentRoute === "/cliff-side-suites/our-rooms" ||
+    currentRoute === "/cliff-side-suites/about-us";
+  const forestCabinsPath =
+    currentRoute === "/forest-view-cabins" ||
+    currentRoute === "/forest-view-cabins/contact" ||
+    currentRoute === "/forest-view-cabins/our-rooms" ||
+    currentRoute === "/forest-view-cabins/about-us";
   const { locale } = useRouter();
 
   return (
@@ -50,8 +61,10 @@ const Footer = ({ cssClasses }: CssProps) => {
           "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
           {
             "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
-              currentRoute === "/robberg-ridge/contact" ||
-              currentRoute === "/lagoonVilla/contact" ||
+              robbergBeachPath ||
+              lagoonVillaPath ||
+              cliffsidePath ||
+              forestCabinsPath ||
               homePagePath,
           }
         )}
@@ -78,8 +91,10 @@ const Footer = ({ cssClasses }: CssProps) => {
         <div
           className={classNames("", {
             hidden:
-              currentRoute === "/robberg-ridge/contact" ||
-              currentRoute === "/lagoonVilla/contact",
+              robbergBeachPath ||
+              lagoonVillaPath ||
+              cliffsidePath ||
+              forestCabinsPath,
           })}
         >
           {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
@@ -96,10 +111,10 @@ const Footer = ({ cssClasses }: CssProps) => {
             {showPhone && (
               <li>
                 <Link
-                  href={`tel:${phone}`}
+                  href="tel:+27664882828"
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {phoneDisplay}
+                  +27 66 488 2828
                 </Link>
               </li>
             )}
@@ -115,20 +130,11 @@ const Footer = ({ cssClasses }: CssProps) => {
             {showEmail && (
               <li>
                 <Link
-                  href={`mailto:${email}?subject=${subject}`}
+                  href="mailto:enquiries@lunarblue.co.za"
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {email}
+                  enquiries@lunarblue.co.za
                 </Link>
-              </li>
-            )}
-            {!homePagePath && (
-              <li>
-                <address>
-                  {street}, {town}
-                  <br />
-                  {province}, {areaCode}
-                </address>
               </li>
             )}
           </ul>
@@ -138,15 +144,17 @@ const Footer = ({ cssClasses }: CssProps) => {
             <h4
               className={classNames("", {
                 "text-center tabletLarge:text-left":
-                  currentRoute === "/robberg-ridge/contact" ||
-                  currentRoute === "/lagoonVilla/contact",
+                  robbergBeachPath ||
+                  lagoonVillaPath ||
+                  cliffsidePath ||
+                  forestCabinsPath,
               })}
             >
               Social
             </h4>
             <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
               <Link
-                href={facebook}
+                href="https://www.facebook.com/lunarbluevillas"
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
                 target="_blank"
               >
@@ -159,7 +167,7 @@ const Footer = ({ cssClasses }: CssProps) => {
                 />
               </Link>
               <Link
-                href={instagram}
+                href="https://www.instagram.com/lunablueguesthouse/"
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
                 target="_blank"
               >
@@ -183,8 +191,10 @@ const Footer = ({ cssClasses }: CssProps) => {
             "hidden w-16 h-auto desktopSmall:block ml-auto",
             {
               " justify-self-end":
-                currentRoute === "/robberg-ridge/contact" ||
-                currentRoute === "/lagoonVilla/contact",
+                robbergBeachPath ||
+                lagoonVillaPath ||
+                cliffsidePath ||
+                forestCabinsPath,
             }
           )}
           priority

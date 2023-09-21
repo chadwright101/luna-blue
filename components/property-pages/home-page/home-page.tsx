@@ -20,10 +20,6 @@ export interface DataProps {
         email: string;
         subject: string;
       };
-      social: {
-        facebook?: string;
-        instagram?: string;
-      };
       meta: {
         description: {
           en: string;

@@ -60,7 +60,7 @@ const RoomInfoSlider = ({
           <Translated german="Zimmergröße">Room Size</Translated>: {enSize}m
           <sup>2</sup>
         </p>
-        <ul className="block phone:grid grid-cols-2 tablet:grid-cols-3 tabletLarge:block gap-x-10 list-disc ml-4">
+        <ul className="list-disc ml-4 text-left">
           {locale === "en"
             ? enFacilities.map((item, index) => <li key={index}>{item}</li>)
             : deFacilities.map((item, index) => <li key={index}>{item}</li>)}

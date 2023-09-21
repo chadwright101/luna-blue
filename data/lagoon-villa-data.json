@@ -2,7 +2,7 @@
   "general": {
     "propertyName": "Keurbooms Lagoon Villa",
     "address": {
-      "street": "9 Newdigate Street",
+      "street": "8 Hill Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
       "areaCode": 6600,
@@ -13,10 +13,6 @@
       "phone": "+27664882828",
       "email": "enquiries@lunarblue.co.za",
       "subject": "Keurbooms%20Lagoon%20Villa%20enquiry"
-    },
-    "social": {
-      "facebook": "",
-      "instagram": ""
     },
     "meta": {
       "description": {
@@ -79,30 +75,69 @@
       }
     },
     "globalFacilities": {
-      "en": [""],
+      "en": [
+        "Underfloor heating",
+        "Heated towel rail",
+        "Smart TV (streaming login/s required)",
+        "Myoko Hairdryers",
+        "Make-up station with LED mirror",
+        "Electric blankets",
+        "Pillow library - Hypoallergenic & memory foam",
+        "Bedding - Duck down or synthetic duvet inners & Egyption cotton linen"
+      ],
       "de": [""]
     },
     "roomInfo": {
       "en": {
         "bedroom1": {
           "enTitle": "Azure Suite",
-          "enFacilities": [""],
+          "enFacilities": [
+            "King size bed",
+            "Ensuite Bathroom - Spa bath, walk-in shower",
+            "Walk-in closet - Makeup station",
+            "Private kitchenette - Coffee machine, microwave & bar fridge",
+            "Small Lounge area",
+            "Full balcony",
+            "Block-out curtains",
+            "Roller shutter safety doors",
+            "Sleeper couch"
+          ],
           "enSize": 150
         },
         "bedroom2": {
-          "enTitle": "Indigo Room Room",
-          "enFacilities": [""],
-          "enSize": 21
-        },
-        "bedroom3": {
           "enTitle": "Aqua Suite",
-          "enFacilities": [""],
+          "enFacilities": [
+            "Queen size bed",
+            "Ensuite Bathroom - Shower only",
+            "Makeup station",
+            "Blinds"
+          ],
           "enSize": 24
         },
+        "bedroom3": {
+          "enTitle": "Indigo Room",
+          "enFacilities": [
+            "Queen size bed",
+            "Ensuite Bathroom - Shower only",
+            "Makeup station",
+            "Small balcony",
+            "Blinds",
+            "Roller shutter safety doors"
+          ],
+          "enSize": 21
+        },
         "bedroom4": {
-          "enTitle": "Bottom Suite",
-          "enFacilities": [""],
-          "enSize": 52
+          "enTitle": "Lagoon Suite",
+          "enFacilities": [
+            "Two separate rooms - King beds",
+            "Ensuite Bathrooms - Showers only",
+            "Full private kitchen – Dishwasher, ice maker & essentials",
+            "Lounge Area",
+            "Dining Area",
+            "Full balcony - Gas braai, sun loungers & umbrella",
+            "Wine Cellar"
+          ],
+          "enSize": 80
         }
       },
       "de": {
@@ -151,27 +186,39 @@
   },
   "facilities": {
     "en": [
-      { "item": "Solar Powered", "url": "" },
-      { "item": "Heated Indoor Swimming Pool", "url": "" },
-      { "item": "Pet Friendly", "url": "" },
-      { "item": "Underfloor Heating", "url": "" },
-      { "item": "Coffee Machine", "url": "" },
+      { "item": "Solar Powered", "url": "/icons/lagoon-villa/solar.svg" },
       {
-        "item": "Smart TVs",
-        "brackets": "Own streaming login/s required",
-        "url": ""
+        "item": "Heated Indoor Pool",
+        "url": "/icons/lagoon-villa/pool.svg"
       },
-      { "item": "BBQ Facilities", "url": "" },
-      { "item": "Free Wifi", "url": "" },
-      { "item": "Balcony with seating area & sun loungers", "url": "" },
-      { "item": "Linen & Towels", "url": "" },
-      { "item": "Bar", "url": "" },
-      { "item": "Gym", "url": "" },
-      { "item": "Security Cameras", "url": "" },
-      { "item": "Elevator", "url": "" },
-      { "item": "Underground 6 car garage", "url": "" },
-      { "item": "Laundry with Washing Machines & Tumble Dryer", "url": "" },
-      { "item": "Personal Chef", "brackets": "available on request", "url": "" }
+      { "item": "Pet Friendly", "url": "/icons/lagoon-villa/pets.svg" },
+      {
+        "item": "Underfloor Heating",
+        "url": "/icons/lagoon-villa/underfloor-heating.png"
+      },
+      { "item": "Free Wifi", "url": "/icons/lagoon-villa/wifi.svg" },
+      { "item": "Gym", "url": "/icons/lagoon-villa/gym.svg" },
+      {
+        "item": "Communal kitchen"
+      },
+      {
+        "item": "Bar"
+      },
+      {
+        "item": "Underground garage",
+        "url": "/icons/lagoon-villa/parking.svg",
+        "brackets": "space for 6 cars"
+      },
+      { "item": "Elevator", "url": "/icons/lagoon-villa/elevator.svg" },
+      {
+        "item": "Security cameras"
+      },
+      {
+        "item": "Separate staff quarters"
+      },
+      {
+        "item": "Separate laundry with washing machines & tumble dryer"
+      }
     ],
     "de": [{ "item": "", "url": "", "brackets": "" }]
   },

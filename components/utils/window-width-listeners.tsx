@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import WindowWidthContext from "./window-width-context";
 
 interface Props {

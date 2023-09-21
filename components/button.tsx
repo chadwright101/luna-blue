@@ -26,7 +26,7 @@ const Button = ({
     <Link
       href={url}
       className={classNames(
-        `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:tabletLarge:text-brown ${width} p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`,
+        `flex gap-2 items-center uppercase text-14px w-[123px] text-left font-350 tracking-widest hover:tabletLarge:text-brown ${width} p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`,
         {
           "text-pureBlack": !whiteText,
           "text-white": whiteText,

@@ -5,7 +5,7 @@ import robbergData from "@/data/robberg-beach-data.json";
 import lagoonData from "@/data/lagoon-villa-data.json";
 import cliffsideData from "@/data/cliffside-data.json";
 import forestData from "@/data/forest-cabins-data.json";
-import PropertyComponent from "@/components/main-property-page/property-component";
+import OurPropertiesComponent from "@/components/our-properties-page/our-properties-component";
 import Translated from "@/components/utils/translated";
 
 const Properties = () => {
@@ -53,12 +53,12 @@ const Properties = () => {
           <Translated german="**to be translated">Our Properties</Translated>
         </h1>
         <section className="grid tabletLarge:grid-cols-2 tabletLarge:gap-12">
-          <PropertyComponent
+          <OurPropertiesComponent
             data={lagoonData}
             featuredImage={lagoonData.images.homePage.heroSlider[1]}
           />
           <hr className="text-black my-10 tabletLarge:hidden" />
-          <PropertyComponent
+          <OurPropertiesComponent
             data={robbergData}
             featuredImage={robbergData.images.homePage.heroSlider[0]}
           />

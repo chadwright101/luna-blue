@@ -14,10 +14,6 @@
       "email": "enquiries@lunarblue.co.za",
       "subject": "Robberg%20Beach%20View%20Villa%20enquiry"
     },
-    "social": {
-      "facebook": "https://www.facebook.com/lunarbluevillas",
-      "instagram": "https://www.instagram.com/lunablueguesthouse/"
-    },
     "meta": {
       "description": {
         "en": "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.",
@@ -187,28 +183,37 @@
   },
   "facilities": {
     "en": [
-      { "item": "Solar Powered", "url": "/icons/solar.svg" },
-      { "item": "Swimming Pool", "url": "/icons/swimming-pool.svg" },
-      { "item": "Pet Friendly", "url": "/icons/pet-friendly.svg" },
+      { "item": "Solar Powered", "url": "/icons/robberg-beach/solar.svg" },
+      {
+        "item": "Swimming Pool",
+        "url": "/icons/robberg-beach/swimming-pool.svg"
+      },
+      {
+        "item": "Pet Friendly",
+        "url": "/icons/robberg-beach/pet-friendly.svg"
+      },
       { "item": "Pillow Library" },
       { "item": "Underfloor Heating" },
       { "item": "Coffee Machine" },
-      { "item": "Garden", "url": "/icons/garden.svg" },
+      { "item": "Garden", "url": "/icons/robberg-beach/garden.svg" },
       { "item": "Smart TVs" },
-      { "item": "BBQ Facilities", "url": "/icons/bbq-facilities.svg" },
-      { "item": "Free Wifi", "url": "/icons/free-wifi.svg" },
+      {
+        "item": "BBQ Facilities",
+        "url": "/icons/robberg-beach/bbq-facilities.svg"
+      },
+      { "item": "Free Wifi", "url": "/icons/robberg-beach/free-wifi.svg" },
       { "item": "Patio" },
       { "item": "Linen & Towels" },
       { "item": "Personal Chef", "brackets": "available on request" },
       {
         "item": "Gym",
         "brackets": "personal trainer available on request",
-        "url": "/icons/gym.svg"
+        "url": "/icons/robberg-beach/gym.svg"
       },
+      { "item": "Kitchen", "url": "/icons/robberg-beach/kitchen.svg" },
       {
         "item": "Sustainable Tourism - solar power, rainwater harvesting and the use of recycled / recyclable products only"
-      },
-      { "item": "Kitchen", "url": "/icons/kitchen.svg" }
+      }
     ],
     "de": [
       { "item": "Solar-betrieben", "url": "/icons/solar.svg" },
@@ -230,11 +235,11 @@
         "url": "/icons/gym.svg"
       },
       {
-        "item": "Nachhaltiger Tourismus - Solarenergie, Regenwassernutzung und ausschließliche Verwendung von recycelten/recycelbaren Produkten"
-      },
-      {
         "item": "Küche",
         "url": "/icons/kitchen.svg"
+      },
+      {
+        "item": "Nachhaltiger Tourismus - Solarenergie, Regenwassernutzung und ausschließliche Verwendung von recycelten/recycelbaren Produkten"
       }
     ]
   },

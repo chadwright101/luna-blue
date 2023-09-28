@@ -15,7 +15,6 @@ interface Props {
   backgroundImage?: string;
   slideBackgroundColour?: string;
   buttonUrl?: string;
-  buttonText?: string;
   arrow?: boolean;
   children?: ReactNode;
   textBoxBackgroundColor?: string;
@@ -33,7 +32,6 @@ const IndividualSlide = ({
   backgroundImage,
   slideBackgroundColour,
   textBoxBackgroundColor,
-  buttonText,
   buttonUrl,
   arrow,
   children,
@@ -59,7 +57,6 @@ const IndividualSlide = ({
             titleGerman={titleGerman}
             paragraph={paragraph!}
             paragraphGerman={paragraphGerman}
-            buttonText={buttonText}
             buttonUrl={buttonUrl}
             textBoxBackgroundColor={textBoxBackgroundColor}
           >

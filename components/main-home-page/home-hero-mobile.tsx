@@ -5,18 +5,22 @@ import { useRouter } from "next/router";
 import HomePageMobileSlide from "./mobile/home-page-mobile-slide";
 import Translated from "../utils/translated";
 
+import generalData from "@/data/general-data.json";
 import robbergBeachData from "@/data/robberg-beach-data.json";
+import lagoonVillaData from "@/data/lagoon-villa-data.json";
+
 import { CssProps } from "../property-pages/home-page/home-page";
 
 const {
-  general: {
-    contact: { email },
+  contact: { phone, phoneDisplay },
+  mainHomePage: {
+    hero: { lagoonVilla, robbergBeach },
+    gallery,
   },
-  images: { aboutUsSlider },
-} = robbergBeachData;
+} = generalData;
 
 const HomeHeroMobile = ({ cssClasses }: CssProps) => {
-  const [showEmail, setShowEmail] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const { locale } = useRouter();
   return (
@@ -26,28 +30,26 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       <HomePageMobileSlide
         arrow
         title="Which view would you like to wake up to during your next holiday?"
-      />
-      {/* Robberg Beach */}
-      <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg')]"
-        title="Robberg Beach View Villa"
-        paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-      perspiciatis consectetur, tenetur aperiam adipisci accusantium
-      dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-      delectus minus."
-        buttonUrl="/robberg-beach-view-villa"
+        titleGerman="** to be translated"
       />
 
       {/* Lagoon Villa */}
       <HomePageMobileSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg')]"
         whiteText
-        title="Keurbooms Lagoon Villa"
-        paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-    perspiciatis consectetur, tenetur aperiam adipisci accusantium
-    dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-    delectus minus."
+        title={lagoonVillaData.general.propertyName}
+        paragraph={lagoonVilla.en.description}
+        paragraphGerman={lagoonVilla.de.description}
         buttonUrl="/keurbooms-lagoon-villa"
+      />
+
+      {/* Robberg Beach */}
+      <HomePageMobileSlide
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg')]"
+        title={robbergBeachData.general.propertyName}
+        paragraph={robbergBeach.en.description}
+        paragraphGerman={robbergBeach.de.description}
+        buttonUrl="/robberg-beach-view-villa"
       />
 
       {/* About us */}
@@ -73,7 +75,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* slider */}
 
-      <HomePageMobileSlide slider imageData={aboutUsSlider} />
+      <HomePageMobileSlide slider imageData={gallery} />
 
       {/* Contact */}
       <div id="contact"></div>
@@ -84,33 +86,33 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         whiteText
       >
         <ul>
-          {!showEmail && (
-            <li onClick={() => setShowEmail(true)} className="mr-auto">
+          {!showPhone && (
+            <li onClick={() => setShowPhone(true)} className="mr-auto">
               <p className="italic p-3 -m-3 tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0 text-white underline underline-offset-4">
-                <Translated german="E-Mail Adresse anzeigen">
-                  Show email address
+                <Translated german="Rufnummer anzeigen">
+                  Show phone number
                 </Translated>
               </p>
             </li>
           )}
-          {showEmail && (
+          {showPhone && (
             <li>
               <Link
-                href={`mailto:${email}`}
+                href={`tel:${phone}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 text-white"
               >
-                {email}
+                {phoneDisplay}
               </Link>
             </li>
           )}
         </ul>
         {!showMessage && (
-          <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
-            <p className="text-white italic">
+          <p className="text-white italic">
+            <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
               Please fill out the form below and we&#39;ll get back to you
               ASAP...
-            </p>
-          </Translated>
+            </Translated>
+          </p>
         )}
         <form
           action="https://formsubmit.co/40ca08923db7f7ef1ea324bce7ce9752"
@@ -118,6 +120,12 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
           className="flex flex-col gap-8"
         >
           <input type="text" name="_honey" className="hidden"></input>
+          <input
+            type="text"
+            name="subject"
+            defaultValue={`Home page enquiry`}
+            className="hidden"
+          />
           <div className="flex flex-col gap-3">
             <input
               type="text"

@@ -48,7 +48,6 @@ const OurRooms = ({
           titleGerman="Unsere Zimmer"
           link={`/${url}/our-rooms`}
           image={imageUrl}
-          mobileButtonWidth="w-[158px]"
           blankMobileCard
         />
       </div>
@@ -58,13 +57,7 @@ const OurRooms = ({
         <br />
         <Translated german={de.paragraph2!}>{en.paragraph2}</Translated>
       </p>
-      <Button
-        url={`/${url}/our-rooms`}
-        cssClasses="tabletLarge:hidden"
-        width={locale === "en" ? undefined : "w-[170px]"}
-      >
-        <Translated german="Mehr sehen">View More</Translated>
-      </Button>
+      <Button url={`/${url}/our-rooms`} cssClasses="tabletLarge:hidden" />
     </section>
   );
 };

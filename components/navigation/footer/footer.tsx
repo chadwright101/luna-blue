@@ -3,22 +3,29 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import classNames from "classnames";
+import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import Translated from "../../utils/translated";
+
+import classNames from "classnames";
+
+import navigation from "@/data/navigation-data.json";
+import generalData from "@/data/general-data.json";
+
+import { CssProps } from "@/components/property-pages/home-page/home-page";
 import {
   robbergBeachUrls,
   lagoonVillaUrls,
 } from "../header/mobile/mobile-menu";
-
-import navigation from "@/data/navigation-data.json";
-import PageFooterNavComponent from "./pages/page-footer-nav-component";
-import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
   lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
+
+const {
+  contact: { email, phone, phoneDisplay },
+} = generalData;
 
 const currentYear = new Date().getFullYear();
 
@@ -111,10 +118,10 @@ const Footer = ({ cssClasses }: CssProps) => {
             {showPhone && (
               <li>
                 <Link
-                  href="tel:+27664882828"
+                  href={`tel:${phone}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  +27 66 488 2828
+                  {phoneDisplay}
                 </Link>
               </li>
             )}
@@ -130,10 +137,10 @@ const Footer = ({ cssClasses }: CssProps) => {
             {showEmail && (
               <li>
                 <Link
-                  href="mailto:enquiries@lunarblue.co.za"
+                  href={`mailto:${email}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  enquiries@lunarblue.co.za
+                  {email}
                 </Link>
               </li>
             )}

@@ -14,7 +14,8 @@ interface Props {
   titleGerman: string;
   buttonText?: string;
   buttonTextGerman?: string;
-  mobileButtonWidth?: string;
+  mobileButtonWidthEnglish?: string;
+  mobileButtonWidthGerman?: string;
   image: string;
   flip?: boolean;
   center?: boolean;
@@ -30,7 +31,8 @@ const ImageCard = ({
   titleGerman,
   buttonText,
   buttonTextGerman,
-  mobileButtonWidth,
+  mobileButtonWidthEnglish,
+  mobileButtonWidthGerman,
   image,
   link,
   flip,
@@ -65,12 +67,11 @@ const ImageCard = ({
           <Button
             url={link}
             cssClasses="mx-auto text-[16px] text-center row-start-2"
-            width={mobileButtonWidth}
-          >
-            <Translated german={buttonTextGerman || "Mehr sehen"}>
-              {buttonText || "View More"}
-            </Translated>
-          </Button>
+            english={buttonText}
+            german={buttonTextGerman}
+            englishWidth={mobileButtonWidthEnglish}
+            germanWidth={mobileButtonWidthGerman}
+          />
         </div>
       </div>
 

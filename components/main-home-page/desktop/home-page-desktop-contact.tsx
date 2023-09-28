@@ -4,13 +4,11 @@ import { useRouter } from "next/router";
 
 import Translated from "@/components/utils/translated";
 
-import generalData from "@/data/robberg-beach-data.json";
+import generalData from "@/data/general-data.json";
 import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 const {
-  general: {
-    contact: { phone, phoneDisplay, email },
-  },
+  contact: { phone, phoneDisplay, email },
 } = generalData;
 
 const HomePageContact = ({ cssClasses }: CssProps) => {
@@ -97,6 +95,13 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
           method="POST"
           className="flex flex-col gap-10"
         >
+          <input type="text" name="_honey" className="hidden"></input>
+          <input
+            type="text"
+            name="subject"
+            defaultValue={`Home page enquiry`}
+            className="hidden"
+          />
           <div className="flex flex-col gap-3">
             <label htmlFor="name" className="font-500">
               Name:
@@ -110,7 +115,6 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
               className="pl-2 py-1.5 bg-darkBeige"
             />
           </div>
-          <input type="text" name="_honey" className="hidden"></input>
           {showMessage && (
             <>
               <div className="flex flex-col gap-3">

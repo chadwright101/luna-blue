@@ -38,7 +38,8 @@ const MoreInfoAvailability = ({
             flip
             buttonText="View our calendar"
             buttonTextGerman="Unser Kalender"
-            mobileButtonWidth={locale === "en" ? "" : "w-[216px]"}
+            mobileButtonWidthEnglish="w-[249px]"
+            mobileButtonWidthGerman="w-[216px]"
             targetBlank
           />
         </div>
@@ -56,7 +57,9 @@ const MoreInfoAvailability = ({
             titleGerman="Über Plettenberg Bay"
             link="https://www.plett-tourism.co.za/"
             image={infoImageUrl}
-            mobileButtonWidth={locale === "en" ? "w-[158px]" : "w-[170px]"}
+            buttonText="Read More"
+            mobileButtonWidthEnglish="w-[158px]"
+            mobileButtonWidthGerman="w-[167px]"
             targetBlank
           />
         </div>

@@ -9,9 +9,6 @@
       "googleMapsUrl": "https://www.google.com/maps/@-34.083756,23.35805,17z/data=!3m1!4b1!4m9!3m8!1s0x1e78e25fdd8c0001:0x369e48a70cc9d32f!5m2!4m1!1i2!8m2!3d-34.083756!4d23.35805!16s%2Fg%2F11v0gm7sf4?entry=ttu"
     },
     "contact": {
-      "phoneDisplay": "+27 66 488 2828",
-      "phone": "+27664882828",
-      "email": "enquiries@lunarblue.co.za",
       "subject": "Robberg%20Beach%20View%20Villa%20enquiry"
     },
     "meta": {
@@ -216,27 +213,39 @@
       }
     ],
     "de": [
-      { "item": "Solar-betrieben", "url": "/icons/solar.svg" },
-      { "item": "Schwimm-bad", "url": "/icons/swimming-pool.svg" },
-      { "item": "Haustier-freundlich", "url": "/icons/pet-friendly.svg" },
+      { "item": "Solar-betrieben", "url": "/icons/robberg-beach/solar.svg" },
+      {
+        "item": "Schwimm-bad",
+        "url": "/icons/robberg-beach/swimming-pool.svg"
+      },
+      {
+        "item": "Haustier-freundlich",
+        "url": "/icons/robberg-beach/pet-friendly.svg"
+      },
       { "item": "Kissen-Auswahl" },
       { "item": "Fußbodenheizung" },
       { "item": "Kaffeemaschine" },
-      { "item": "Garten", "url": "/icons/garden.svg" },
+      { "item": "Garten", "url": "/icons/robberg-beach/garden.svg" },
       { "item": "Smart TV" },
-      { "item": "BBQ Einrichtungen", "url": "/icons/bbq-facilities.svg" },
-      { "item": "Kostenloses  Wifi", "url": "/icons/free-wifi.svg" },
+      {
+        "item": "BBQ Einrichtungen",
+        "url": "/icons/robberg-beach/bbq-facilities.svg"
+      },
+      {
+        "item": "Kostenloses  Wifi",
+        "url": "/icons/robberg-beach/free-wifi.svg"
+      },
       { "item": "Veranda" },
       { "item": "Wäsche & Handtücher" },
       { "item": "Persönlicher Koch", "brackets": "auf Anfrage erhältlich" },
       {
         "item": "Fitnessraum",
         "brackets": "Personal Trainer auf Anfrage",
-        "url": "/icons/gym.svg"
+        "url": "/icons/robberg-beach/gym.svg"
       },
       {
         "item": "Küche",
-        "url": "/icons/kitchen.svg"
+        "url": "/icons/robberg-beach/kitchen.svg"
       },
       {
         "item": "Nachhaltiger Tourismus - Solarenergie, Regenwassernutzung und ausschließliche Verwendung von recycelten/recycelbaren Produkten"

@@ -43,7 +43,11 @@ const About = ({
   const { locale } = useRouter();
   return (
     <main
-      className={`grid desktopSmall:grid-cols-[1fr_2fr] desktop:grid-cols-[2fr_1fr] gap-10 ${cssClasses}`}
+      className={`grid ${
+        videoUrl
+          ? "desktopSmall:grid-cols-[1fr_2fr] desktop:grid-cols-[2fr_1fr]"
+          : "desktopSmall:grid-cols-2"
+      } gap-10 ${cssClasses}`}
     >
       <div
         className={
@@ -74,17 +78,16 @@ const About = ({
           >
             <Translated german={description.de}>{description.en}</Translated>
           </p>
-          {locale === "en" ? (
-            <Button url={`/${url}/about-us`} />
-          ) : (
-            <Button url={`/${url}/about-us`} width="w-[170px]">
-              Mehr lesen
-            </Button>
-          )}
+          <Button url={`/${url}/about-us`} />
         </article>
       </div>
 
-      <article className="desktopSmall:row-start-2 desktopSmall:col-span-2 desktop:row-start-auto desktop:col-span-1">
+      <article
+        className={
+          videoUrl &&
+          "desktopSmall:row-start-2 desktopSmall:col-span-2 desktop:row-start-auto desktop:col-span-1"
+        }
+      >
         <ul className="grid grid-cols-2 phone:grid-cols-2 bg-beige py-8 px-4 gap-y-8 tablet:grid-cols-3 tabletLarge:grid-cols-4 desktop:gap-y-12">
           {locale === "en"
             ? facilities.en

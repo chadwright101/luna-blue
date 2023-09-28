@@ -1,0 +1,32 @@
+{
+  "contact": {
+    "phoneDisplay": "+27 66 488 2828",
+    "phone": "+27664882828",
+    "email": "enquiries@lunarblue.co.za"
+  },
+  "mainHomePage": {
+    "hero": {
+      "robbergBeach": {
+        "en": {
+          "description": "Located on the magnificent, unspoiled shores of the Indian Ocean, the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it’s crystal clear seas and white sand beaches. Luna Blue Off-grid Guesthouse offers majestic views of the coast and mountain."
+        },
+        "de": {
+          "description": "** to be translated"
+        }
+      },
+      "lagoonVilla": {
+        "en": {
+          "description": "The Keurbooms Lagoon Villa offers stylish, upmarket, and spacious accommodation with breathtaking views of the lagoon, sea and the mountains. Whether you are relaxing on the patio enjoying the sea views or swimming in the sparkling pool the villa is perfect for your well-deserved holiday."
+        },
+        "de": {
+          "description": "** to be translated"
+        }
+      }
+    },
+    "aboutUs": {
+      "paragraph": "",
+      "list": [""]
+    },
+    "gallery": [""]
+  }
+}

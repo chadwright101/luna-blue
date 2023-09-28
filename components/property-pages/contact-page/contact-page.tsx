@@ -5,6 +5,8 @@ import { useRouter } from "next/router";
 import Translated from "../../utils/translated";
 import ImageContainer from "../../utils/image-container";
 
+import generalData from "@/data/general-data.json";
+
 import { DataProps } from "../home-page/home-page";
 
 interface Props extends DataProps {
@@ -12,12 +14,16 @@ interface Props extends DataProps {
   horizontalImage: string;
 }
 
+const {
+  contact: { email, phone, phoneDisplay },
+} = generalData;
+
 const ContactPage = ({
   data: {
     general: {
       propertyName,
       address: { street, town, province, areaCode },
-      contact: { phoneDisplay, phone, email, subject },
+      contact: { subject },
     },
   },
   verticalImage,

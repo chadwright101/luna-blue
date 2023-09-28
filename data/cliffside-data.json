@@ -1,5 +1,6 @@
 {
   "general": {
+    "propertyName": "Cliffside Suites",
     "address": {
       "street": "7 Jane Street",
       "town": "Plettenberg Bay",
@@ -7,9 +8,7 @@
       "areaCode": 6600
     },
     "contact": {
-      "phoneDisplay": "+27 66 488 2828",
-      "phone": "+27664882828",
-      "email": "enquiries@lunarblue.co.za"
+      "subject": "Cliffside%20Suites%20enquiry"
     }
   },
   "amenities": {

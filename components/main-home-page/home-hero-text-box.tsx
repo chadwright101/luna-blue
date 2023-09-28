@@ -15,7 +15,6 @@ interface Props {
   paragraphGerman?: string;
   whiteText?: boolean;
   buttonUrl?: string;
-  buttonText?: string;
   children?: ReactNode;
   textBoxBackgroundColor?: string;
   cssClasses?: string;
@@ -28,7 +27,6 @@ const HomeHeroTextBox = ({
   paragraphGerman,
   whiteText,
   buttonUrl,
-  buttonText,
   children,
   textBoxBackgroundColor,
   cssClasses,
@@ -79,9 +77,7 @@ const HomeHeroTextBox = ({
               : ""
           }`}
           targetBlank
-        >
-          {buttonText}
-        </Button>
+        />
       )}
     </div>
   );

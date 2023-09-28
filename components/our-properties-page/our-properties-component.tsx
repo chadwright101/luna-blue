@@ -48,9 +48,11 @@ const OurPropertiesComponent = ({
           {address.street}, {address.town}
         </Link>
       </address>
-      <Button targetBlank cssClasses="tabletLarge:place-self-center" url={url}>
-        View More
-      </Button>
+      <Button
+        targetBlank
+        cssClasses="tabletLarge:place-self-center"
+        url={url}
+      />
     </article>
   );
 };

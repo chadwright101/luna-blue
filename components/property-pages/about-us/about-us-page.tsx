@@ -140,7 +140,8 @@ const AboutUsPage = ({
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth={locale === "en" ? "w-[161px]" : "w-[170px"}
+              mobileButtonWidthEnglish="w-[158px]"
+              mobileButtonWidthGerman="w-[167px]"
               center
             />
           </div>
@@ -160,7 +161,8 @@ const AboutUsPage = ({
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth={locale === "en" ? "w-[161px]" : "w-[170px"}
+              mobileButtonWidthEnglish="w-[158px]"
+              mobileButtonWidthGerman="w-[167px]"
               center
             />
           </div>
@@ -180,7 +182,8 @@ const AboutUsPage = ({
               targetBlank
               thinDesktopOnly
               buttonText="Read More"
-              mobileButtonWidth={locale === "en" ? "w-[161px]" : "w-[170px"}
+              mobileButtonWidthEnglish="w-[158px]"
+              mobileButtonWidthGerman="w-[167px]"
               cssClasses="tabletLarge:col-span-2 desktop:col-span-1"
               center
             />

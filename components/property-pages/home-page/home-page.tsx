@@ -15,9 +15,6 @@ export interface DataProps {
         googleMapsUrl: string;
       };
       contact: {
-        phoneDisplay: string;
-        phone: string;
-        email: string;
         subject: string;
       };
       meta: {

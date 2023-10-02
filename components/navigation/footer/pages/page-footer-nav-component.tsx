@@ -17,9 +17,7 @@ const PageFooterNavComponent = ({
   const { locale } = useRouter();
 
   return (
-    <ul
-      className={`mt-6 flex flex-col gap-2 tabletLarge:grid grid-flow-row tabletLarge:h-[200px] tabletLarge:gap-0 ${cssClasses}`}
-    >
+    <ul className={`mt-6 grid gap-4 desktopSmall:gap-2 ${cssClasses}`}>
       {locale === "en"
         ? navListEn.map(({ title, url, targetBlank }, index) => (
             <li key={index}>

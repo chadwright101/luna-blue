@@ -6,8 +6,6 @@ import { useRouter } from "next/router";
 import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import Translated from "../../utils/translated";
 
-import classNames from "classnames";
-
 import navigation from "@/data/navigation-data.json";
 import generalData from "@/data/general-data.json";
 
@@ -35,47 +33,12 @@ const Footer = ({ cssClasses }: CssProps) => {
 
   const router = useRouter();
   const currentRoute = router.pathname;
-  const homePagePath = currentRoute === "/";
-  const robbergBeachPath =
-    currentRoute === "/robberg-beach-view-villa" ||
-    currentRoute === "/robberg-beach-view-villa/contact" ||
-    currentRoute === "/robberg-beach-view-villa/our-rooms" ||
-    currentRoute === "/robberg-beach-view-villa/about-us";
-  const lagoonVillaPath =
-    currentRoute === "/keurbooms-lagoon-villa" ||
-    currentRoute === "/keurbooms-lagoon-villa/contact" ||
-    currentRoute === "/keurbooms-lagoon-villa/our-rooms" ||
-    currentRoute === "/keurbooms-lagoon-villa/about-us";
-  const cliffsidePath =
-    currentRoute === "/cliff-side-suites" ||
-    currentRoute === "/cliff-side-suites/contact" ||
-    currentRoute === "/cliff-side-suites/our-rooms" ||
-    currentRoute === "/cliff-side-suites/about-us";
-  const forestCabinsPath =
-    currentRoute === "/forest-view-cabins" ||
-    currentRoute === "/forest-view-cabins/contact" ||
-    currentRoute === "/forest-view-cabins/our-rooms" ||
-    currentRoute === "/forest-view-cabins/about-us";
   const { locale } = useRouter();
 
   return (
-    <footer
-      className={`${cssClasses} ${homePagePath && "hidden desktopSmall:block"}`}
-    >
-      <hr className="mb-10 text-black" />
-      <div
-        className={classNames(
-          "flex flex-wrap gap-10 tabletLarge:grid grid-cols-[250px_300px_250px_1fr] desktopSmall:grid-cols-[250px_300px_250px_1fr]",
-          {
-            "justify-center tabletLarge:grid grid-cols-[250px_250px_1fr] desktopSmall:grid-cols-[250px_300px__1fr]":
-              robbergBeachPath ||
-              lagoonVillaPath ||
-              cliffsidePath ||
-              forestCabinsPath ||
-              homePagePath,
-          }
-        )}
-      >
+    <footer className={`${cssClasses}`}>
+      <hr className="mb-4 tabletLarge:mb-10 text-black" />
+      <div className="grid place-items-center gap-4 tabletLarge:gap-24 tabletLarge:place-items-start tabletLarge:flex desktopSmall:grid desktopSmall:gap-0 desktopSmall:grid-cols-4">
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
           {robbergBeachUrls.includes(currentRoute) ? (
@@ -95,17 +58,9 @@ const Footer = ({ cssClasses }: CssProps) => {
             />
           )}
         </div>
-        <div
-          className={classNames("", {
-            hidden:
-              robbergBeachPath ||
-              lagoonVillaPath ||
-              cliffsidePath ||
-              forestCabinsPath,
-          })}
-        >
+        <div className="hidden tabletLarge:block">
           {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
-          <ul className="flex flex-col gap-6 desktopSmall:gap-4 mt-6 tabletLarge:grid grid-rows-[40px_40px_1fr] tabletLarge:h-[200px] tabletLarge:gap-0">
+          <ul className="grid gap-2 mt-6 grid-rows-[40px_40px_1fr] desktopSmall:gap-0">
             {!showPhone && (
               <li onClick={() => setShowPhone(true)} className="mr-auto">
                 <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
@@ -146,66 +101,57 @@ const Footer = ({ cssClasses }: CssProps) => {
             )}
           </ul>
         </div>
-        {!homePagePath && (
-          <div>
-            <h4
-              className={classNames("", {
-                "text-center tabletLarge:text-left":
-                  robbergBeachPath ||
-                  lagoonVillaPath ||
-                  cliffsidePath ||
-                  forestCabinsPath,
-              })}
+        <div>
+          <h4 className="hidden tabletLarge:block">Social</h4>
+          <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
+            <Link
+              href="https://www.facebook.com/lunarbluevillas"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
             >
-              Social
-            </h4>
-            <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
-              <Link
-                href="https://www.facebook.com/lunarbluevillas"
-                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
-                target="_blank"
-              >
-                <Image
-                  src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
-                  alt="Facebook logo"
-                  width={35}
-                  height={35}
-                  className="desktopSmall:w-[30px] h-auto"
-                />
-              </Link>
-              <Link
-                href="https://www.instagram.com/lunablueguesthouse/"
-                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
-                target="_blank"
-              >
-                <Image
-                  src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
-                  alt="Instagram logo"
-                  width={35}
-                  height={35}
-                  className="desktopSmall:w-[30px] h-auto"
-                />
-              </Link>
-            </div>
+              <Image
+                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
+                alt="Facebook logo"
+                width={35}
+                height={35}
+                className="desktopSmall:w-[30px] h-auto"
+              />
+            </Link>
+            <Link
+              href="https://www.instagram.com/lunablueguesthouse/"
+              className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
+              target="_blank"
+            >
+              <Image
+                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
+                alt="Instagram logo"
+                width={35}
+                height={35}
+                className="desktopSmall:w-[30px] h-auto"
+              />
+            </Link>
           </div>
-        )}
-        <Image
-          src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
-          alt="Luna Blue logo"
-          width={150}
-          height={193}
-          className={classNames(
-            "hidden w-16 h-auto desktopSmall:block ml-auto",
-            {
-              " justify-self-end":
-                robbergBeachPath ||
-                lagoonVillaPath ||
-                cliffsidePath ||
-                forestCabinsPath,
-            }
-          )}
-          priority
-        />
+        </div>
+        <div className="desktopSmall:ml-auto">
+          <Image
+            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
+            alt="Luna Blue logo"
+            width={150}
+            height={193}
+            className="w-16 h-auto mx-auto mb-4 tabletLarge:mx-0 tabletLarge:ml-0 desktopSmall:ml-auto"
+            priority
+          />
+          <p className="text-[16px] flex flex-col items-center tabletLarge:items-start desktopSmall:items-end desktopSmall:text-right desktopSmall:mt-2 tabletLarge:text-[15px]">
+            Designed & developed by:
+            <a
+              href="https://www.thewrightdesigns.co.za"
+              target="_blank"
+              className="-m-4 p-4 tabletLarge:m-0 tabletLarge:p-0 text-blue text-[16px] text-blueLink tablet:hover:underline underline-offset-4 tabletLarge:text-[15px]"
+            >
+              The Wright Designs
+            </a>
+          </p>
+        </div>
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
         © Copyright <Link href="/">Luna Blue {currentYear}</Link>

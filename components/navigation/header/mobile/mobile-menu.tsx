@@ -7,27 +7,27 @@ import { CssProps } from "@/components/property-pages/home-page/home-page";
 
 export const lagoonVillaUrls = [
   "/keurbooms-lagoon-villa",
-  "/keurbooms-lagoon-villa/about-us",
+  "/keurbooms-lagoon-villa/about",
   "/keurbooms-lagoon-villa/our-rooms",
   "/keurbooms-lagoon-villa/contact",
 ];
 
 export const robbergBeachUrls = [
   "/robberg-beach-view-villa",
-  "/robberg-beach-view-villa/about-us",
+  "/robberg-beach-view-villa/about",
   "/robberg-beach-view-villa/our-rooms",
   "/robberg-beach-view-villa/contact",
 ];
 
 export const cliffSideUrls = [
   "/cliffside-cabins",
-  "/cliffside-cabins/about-us",
+  "/cliffside-cabins/about",
   "/cliffside-cabins/our-cabins",
   "/cliffside-cabins/contact",
 ];
 export const forestCabinsUrls = [
   "/forest-cabins",
-  "/forest-cabins/about-us",
+  "/forest-cabins/about",
   "/forest-cabins/our-cabins",
   "/forest-cabins/contact",
 ];

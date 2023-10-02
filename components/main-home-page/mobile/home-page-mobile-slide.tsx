@@ -42,7 +42,7 @@ const IndividualSlide = ({
   if (!slider) {
     return (
       <article
-        className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
+        className={`snap-start h-[88vh] bg-cover bg-center tablet:snap-none tablet:h-[750px] ${cssClasses}`}
       >
         <div
           className={`${backgroundImage} bg-cover bg-center ${

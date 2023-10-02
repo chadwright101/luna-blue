@@ -26,7 +26,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
   const { locale } = useRouter();
   return (
     <main
-      className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide ${cssClasses}`}
+      className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide tablet:snap-none tablet:overflow-visible tablet:scrollbar-default tablet:h-full ${cssClasses}`}
     >
       <HomePageMobileSlide
         arrow
@@ -36,8 +36,9 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Lagoon Villa */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')]"
         whiteText
+        cssClasses="tablet:mb-10"
         title={lagoonVillaData.general.propertyName}
         paragraph={lagoonVilla.en.description}
         paragraphGerman={lagoonVilla.de.description}
@@ -46,7 +47,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Robberg Beach */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')]"
         title={robbergBeachData.general.propertyName}
         paragraph={robbergBeach.en.description}
         paragraphGerman={robbergBeach.de.description}

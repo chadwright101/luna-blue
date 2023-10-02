@@ -27,8 +27,8 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         className={classNames(
           `hero-grid-split ease-in-out duration-700 delay-200 ${cssClasses}`,
           {
-            "hero-grid-lagoon-villa": showRobbergBeach,
-            "hero-grid-robberg-beach": showLagoonVilla,
+            "hero-grid-lagoon-villa": showLagoonVilla,
+            "hero-grid-robberg-beach": showRobbergBeach,
           }
         )}
       >
@@ -54,45 +54,15 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
           </h3>
         </div>
 
-        {/* Robberg Beach */}
-        <div
-          className="overflow-hidden bg-black"
-          onMouseEnter={() => setshowRobbergBeach(true)}
-          onMouseLeave={() => setshowRobbergBeach(false)}
-        >
-          <div
-            className={classNames(
-              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0672-HDR.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out",
-              {
-                "scale-110": showRobbergBeach,
-                "opacity-70": showLagoonVilla,
-              }
-            )}
-          >
-            <HomeHeroTextBox
-              title="Robberg Beach View Villa"
-              paragraph={robbergBeach.en.description}
-              paragraphGerman={robbergBeach.de.description}
-              buttonUrl="/robberg-beach-view-villa"
-              cssClasses={classNames(
-                "opacity-0 transition ease-in-out duration-700 delay-150",
-                {
-                  "opacity-100": showRobbergBeach,
-                }
-              )}
-            />
-          </div>
-        </div>
-
         {/* Lagoon Villa */}
         <div
-          className="overflow-hidden bg-black"
+          className="overflow-hidden bg-black tabletLarge:h-[775px]"
           onMouseEnter={() => setShowLagoonVilla(true)}
           onMouseLeave={() => setShowLagoonVilla(false)}
         >
           <div
             className={classNames(
-              "h-[83vh] bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
+              "h-[83vh] bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showLagoonVilla,
                 "opacity-70": showRobbergBeach,
@@ -109,6 +79,36 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
                 "opacity-0 transition ease-in-out duration-700 delay-150",
                 {
                   "opacity-100": showLagoonVilla,
+                }
+              )}
+            />
+          </div>
+        </div>
+
+        {/* Robberg Beach */}
+        <div
+          className="overflow-hidden bg-black tabletLarge:h-[775px]"
+          onMouseEnter={() => setshowRobbergBeach(true)}
+          onMouseLeave={() => setshowRobbergBeach(false)}
+        >
+          <div
+            className={classNames(
+              "h-[83vh] w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
+              {
+                "scale-110": showRobbergBeach,
+                "opacity-70": showLagoonVilla,
+              }
+            )}
+          >
+            <HomeHeroTextBox
+              title="Robberg Beach View Villa"
+              paragraph={robbergBeach.en.description}
+              paragraphGerman={robbergBeach.de.description}
+              buttonUrl="/robberg-beach-view-villa"
+              cssClasses={classNames(
+                "opacity-0 transition ease-in-out duration-700 delay-150",
+                {
+                  "opacity-100": showRobbergBeach,
                 }
               )}
             />

@@ -8,7 +8,7 @@
     "hero": {
       "robbergBeach": {
         "en": {
-          "description": "Located on the magnificent, unspoiled shores of the Indian Ocean, the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it’s crystal clear seas and white sand beaches. Luna Blue Off-grid Guesthouse offers majestic views of the coast and mountain."
+          "description": "Located on the magnificent, unspoiled shores of the Indian Ocean, Robberg Beach View Villa offers majestic views of the coast and mountain."
         },
         "de": {
           "description": "** to be translated"
@@ -16,7 +16,7 @@
       },
       "lagoonVilla": {
         "en": {
-          "description": "The Keurbooms Lagoon Villa offers stylish, upmarket, and spacious accommodation with breathtaking views of the lagoon, sea and the mountains. Whether you are relaxing on the patio enjoying the sea views or swimming in the sparkling pool the villa is perfect for your well-deserved holiday."
+          "description": "The Keurbooms Lagoon Villa offers stylish, upmarket, and spacious accommodation with breathtaking views of the lagoon, sea and the mountains."
         },
         "de": {
           "description": "** to be translated"
@@ -24,9 +24,24 @@
       }
     },
     "aboutUs": {
-      "paragraph": "",
-      "list": [""]
+      "mobileParagraph": "The timeless love between the moon and the sea, woven in myth and science, enchants, touches our souls, and broadens our perspective. This is the magic we want you to feel when you visit our villas.",
+      "desktopParagraphs": [
+        "There is no older or greater love story than that of the moon and the sea, with this relationship covered by both mythology and science.",
+        "Whether apart or together they have the power to entrance with their beauty, gently touch our souls or simply make us stop and give us a greater perspective of how we fit into this world.",
+        "This is the magic we want you to feel when you visit our villas."
+      ]
     },
-    "gallery": [""]
+    "gallery": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0508-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6349-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0684-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6273-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0667-Edit.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6253-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg"
+    ]
   }
 }

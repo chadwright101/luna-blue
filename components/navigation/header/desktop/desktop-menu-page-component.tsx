@@ -80,7 +80,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white ml-0":
-                            title === "Book now",
+                            title === "Book direct",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -101,7 +101,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white  ml-0":
-                            title === "Jetzt buchen",
+                            title === "Buchen Sie direkt",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

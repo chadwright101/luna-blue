@@ -6,7 +6,16 @@ import HomePageDesktopAboutUs from "./desktop/home-page-desktop-about-us";
 import HomePageDesktopContact from "./desktop/home-page-desktop-contact";
 
 import classNames from "classnames";
+
+import generalData from "@/data/general-data.json";
+
 import { CssProps } from "../property-pages/home-page/home-page";
+
+const {
+  mainHomePage: {
+    hero: { lagoonVilla, robbergBeach },
+  },
+} = generalData;
 
 const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
   const [showLagoonVilla, setShowLagoonVilla] = useState(false);
@@ -62,10 +71,8 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
           >
             <HomeHeroTextBox
               title="Robberg Beach View Villa"
-              paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-        perspiciatis consectetur, tenetur aperiam adipisci accusantium
-        dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-        delectus minus."
+              paragraph={robbergBeach.en.description}
+              paragraphGerman={robbergBeach.de.description}
               buttonUrl="/robberg-beach-view-villa"
               cssClasses={classNames(
                 "opacity-0 transition ease-in-out duration-700 delay-150",
@@ -95,10 +102,8 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
             <HomeHeroTextBox
               whiteText
               title="Keurbooms Lagoon Villa"
-              paragraph="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              perspiciatis consectetur, tenetur aperiam adipisci accusantium
-              dignissimos. Necessitatibus rem fugit minus recusandae? Deserunt impedit
-              delectus minus."
+              paragraph={lagoonVilla.en.description}
+              paragraphGerman={lagoonVilla.de.description}
               buttonUrl="/keurbooms-lagoon-villa"
               cssClasses={classNames(
                 "opacity-0 transition ease-in-out duration-700 delay-150",

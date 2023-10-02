@@ -16,6 +16,7 @@ const {
   mainHomePage: {
     hero: { lagoonVilla, robbergBeach },
     gallery,
+    aboutUs: { mobileParagraph },
   },
 } = generalData;
 
@@ -61,16 +62,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         whiteText
         cssClasses="desktopSmall:hidden"
       >
-        <p className="text-center text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          minima, veritatis eius illum non dolore tempore explicabo! Fugiat,
-          suscipit veniam!
-        </p>
-        <ul className="list-disc ml-4 text-white">
-          <li>Blah</li>
-          <li>Blah Blah</li>
-          <li>Blah Blah Blah</li>
-        </ul>
+        <p className="text-center text-white">{mobileParagraph}</p>
       </HomePageMobileSlide>
 
       {/* slider */}

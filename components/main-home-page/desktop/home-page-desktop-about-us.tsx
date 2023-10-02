@@ -1,15 +1,14 @@
-import ImageContainer from "@/components/utils/image-container";
-
-import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-
-import imageData from "@/data/robberg-beach-data.json";
-
-import "@splidejs/react-splide/css/core";
-import { CssProps } from "@/components/property-pages/home-page/home-page";
 import BasicSlider from "@/components/sliders/basic-slider";
 
+import imageData from "@/data/general-data.json";
+
+import { CssProps } from "@/components/property-pages/home-page/home-page";
+
 const {
-  images: { aboutUsSlider },
+  mainHomePage: {
+    gallery,
+    aboutUs: { desktopParagraphs },
+  },
 } = imageData;
 
 const HomePageAboutUs = ({ cssClasses }: CssProps) => {
@@ -21,20 +20,15 @@ const HomePageAboutUs = ({ cssClasses }: CssProps) => {
         <h2 className="text-white text-center text-35px border-y-2 py-2 border-white">
           About us
         </h2>
-        <p className="text-center text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-          minima, veritatis eius illum non dolore tempore explicabo! Fugiat,
-          suscipit veniam!
-        </p>
-        <ul className="list-disc ml-4 text-white">
-          <li>Blah</li>
-          <li>Blah Blah</li>
-          <li>Blah Blah Blah</li>
-        </ul>
+        {desktopParagraphs.map((paragraph, index) => (
+          <p key={index} className="text-center text-white">
+            {paragraph}
+          </p>
+        ))}
       </div>
 
       {/* slider */}
-      <BasicSlider imageData={aboutUsSlider} slideHeight="h-[500px]" />
+      <BasicSlider imageData={gallery} slideHeight="h-[500px]" />
     </article>
   );
 };

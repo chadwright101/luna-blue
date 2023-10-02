@@ -1,15 +1,15 @@
-import AboutUsPage from "@/components/property-pages/about-us/about-us-page";
+import AboutPage from "@/components/property-pages/about/about-page";
 import MetaComponent from "@/components/property-pages/meta-component";
 
 import data from "@/data/lagoon-villa-data.json";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <>
       <MetaComponent data={data} pageName="About Us" />
-      <AboutUsPage data={data} />
+      <AboutPage data={data} />
     </>
   );
 };
 
-export default AboutUs;
+export default About;

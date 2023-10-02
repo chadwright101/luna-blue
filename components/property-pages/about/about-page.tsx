@@ -6,10 +6,10 @@ import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
 import { DataProps } from "../home-page/home-page";
 
-const AboutUsPage = ({
+const AboutPage = ({
   data: {
     general: { propertyName },
-    aboutUsPage: {
+    aboutPage: {
       imageGridUrls,
       description: { enDescription, deDescription },
       thingsToDo: {
@@ -24,7 +24,7 @@ const AboutUsPage = ({
   return (
     <>
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
-        <Translated german="Über uns">About Us</Translated>
+        <Translated german="Über uns">About</Translated>
       </h1>
       <div className="mb-10 desktopSmall:mb-16 grid grid-cols-3 tabletLarge:grid-cols-4 desktop:grid-cols-5 gap-4">
         {imageGridUrls.map((url, index) => (
@@ -194,4 +194,4 @@ const AboutUsPage = ({
   );
 };
 
-export default AboutUsPage;
+export default AboutPage;

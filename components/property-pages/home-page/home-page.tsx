@@ -114,7 +114,7 @@ export interface DataProps {
         };
       };
     };
-    aboutUsPage: {
+    aboutPage: {
       imageGridUrls: Array<string>;
       description: {
         enDescription: {

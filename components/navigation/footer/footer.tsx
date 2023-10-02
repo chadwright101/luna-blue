@@ -36,7 +36,11 @@ const Footer = ({ cssClasses }: CssProps) => {
   const { locale } = useRouter();
 
   return (
-    <footer className={`${cssClasses}`}>
+    <footer
+      className={`${cssClasses} ${
+        currentRoute === "/" ? "hidden desktopSmall:block" : ""
+      }`}
+    >
       <hr className="mb-4 tabletLarge:mb-10 text-black" />
       <div className="grid place-items-center gap-4 tabletLarge:gap-24 tabletLarge:place-items-start tabletLarge:flex desktopSmall:grid desktopSmall:gap-0 desktopSmall:grid-cols-4">
         <div className="hidden tabletLarge:block">

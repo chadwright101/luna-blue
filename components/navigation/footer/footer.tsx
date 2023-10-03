@@ -36,11 +36,7 @@ const Footer = ({ cssClasses }: CssProps) => {
   const { locale } = useRouter();
 
   return (
-    <footer
-      className={`${cssClasses} ${
-        currentRoute === "/" ? "hidden desktopSmall:block" : ""
-      }`}
-    >
+    <footer className={`${cssClasses}`}>
       <hr className="mb-4 tabletLarge:mb-10 text-black" />
       <div className="grid place-items-center gap-4 tabletLarge:gap-24 tabletLarge:place-items-start tabletLarge:flex desktopSmall:grid desktopSmall:gap-0 desktopSmall:grid-cols-4">
         <div className="hidden tabletLarge:block">
@@ -146,7 +142,7 @@ const Footer = ({ cssClasses }: CssProps) => {
             priority
           />
           <p className="text-[16px] flex flex-col items-center tabletLarge:items-start desktopSmall:items-end desktopSmall:text-right desktopSmall:mt-2 tabletLarge:text-[15px]">
-            Designed & developed by:
+            Developed by:
             <a
               href="https://www.thewrightdesigns.co.za"
               target="_blank"

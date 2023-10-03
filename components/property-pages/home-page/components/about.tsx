@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 import Button from "../../../button";
 import ImageContainer from "../../../utils/image-container";
@@ -69,7 +70,7 @@ const About = ({
         )}
         <article>
           <h2>
-            <Translated german="Über uns">About us</Translated>
+            <Translated german="** To be translated">About</Translated>
           </h2>
           <p
             className={`mt-4 mb-8 ${
@@ -79,6 +80,16 @@ const About = ({
             <Translated german={description.de}>{description.en}</Translated>
           </p>
           <Button url={`/${url}/about-us`} />
+          <p className="flex gap-2 mt-6 tabletLarge:mt-4 italic">
+            Pet Policy -
+            <Link
+              href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-dog-policy-2023.pdf"
+              className="flex gap-2 items-center hover:desktopSmall:text-brown p-3 text-blueLink -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              target="_blank"
+            >
+              <Translated german="** To be translated">Download</Translated>
+            </Link>
+          </p>
         </article>
       </div>
 

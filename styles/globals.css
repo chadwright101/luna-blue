@@ -202,16 +202,16 @@
 
 @layer utilities {
   .splide__arrows {
-    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-5
+    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-8
   }
 
   .splide__arrow {
-    @apply fill-black p-4 -m-4 opacity-90 absolute
+    @apply fill-black p-3.5 -m-4 opacity-90 absolute rounded-full bg-beige/60 hover:bg-beige/80 ease-in-out duration-200
   }
 
   @media (min-width: 1100px) {
     .splide__arrow {
-      @apply p-0 m-0
+      @apply m-0
     }
 
   }

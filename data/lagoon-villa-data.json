@@ -2,7 +2,7 @@
   "general": {
     "propertyName": "Keurbooms Lagoon Villa",
     "address": {
-      "street": "8 Hill Street",
+      "street": "9 Hill Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
       "areaCode": 6600,
@@ -18,7 +18,7 @@
       },
       "keywords": "Keurbooms Lagoon Villa, plettenberg bay, plett, villas, plett villas, plett accomodation, plettenberg bay accomodation, plettenberg bay villas, luxury, 5 star",
       "images": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6273-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6353-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0672.jpg"
       ]
@@ -40,7 +40,7 @@
       "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Indigo/9U7A6317-HDR.jpg",
       "description": {
         "en": {
-          "paragraph1": "Our rooms are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket rooms feature only the finest amenities and furnishings, including plush bedding, top-of-the-line electronics, and high-quality toiletries.",
+          "paragraph1": "Our rooms are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket rooms feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries.",
           "paragraph2": "You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep. Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket rooms will provide you with the ultimate in comfort and luxury."
         },
         "de": {
@@ -50,15 +50,15 @@
       }
     },
     "moreInfoAvailability": {
-      "bookingUrl": "",
-      "roomImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6201-HDR.jpg",
+      "bookingUrl": "https://book.nightsbridge.com/35555",
+      "roomImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6201-HDR.jpg",
       "infoImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/plettenberg-bay.jpg"
     }
   },
   "ourRoomsPage": {
     "imageGridUrls": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6285-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6249-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6285-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6249-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Indigo/9U7A6333-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/Aqua/9U7A6493-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Indigo/9U7A6317-HDR.jpg"
@@ -91,7 +91,7 @@
     "roomInfo": {
       "en": {
         "bedroom1": {
-          "enTitle": "Azure Room",
+          "enTitle": "Teal Room",
           "enFacilities": [
             "King size bed",
             "Ensuite Bathroom - Spa bath, walk-in shower",
@@ -128,7 +128,7 @@
           "enSize": 21
         },
         "bedroom4": {
-          "enTitle": "Lagoon Room",
+          "enTitle": "Lagoon Rooms",
           "enFacilities": [
             "Two separate bedrooms - King beds",
             "Ensuite Bathrooms - Showers only",
@@ -159,11 +159,11 @@
   },
   "aboutPage": {
     "imageGridUrls": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6273-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6353-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0672.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6497-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6253-HDR.jpg"
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6253-HDR.jpg"
     ],
     "description": {
       "enDescription": {
@@ -227,17 +227,17 @@
     "homePage": {
       "heroSlider": [
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6273-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6349-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0667-Edit.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6397-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6201-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6253-HDR.jpg"
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6201-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6253-HDR.jpg"
       ]
     },
     "aboutUsSlider": [
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6381-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6237-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6237-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0668.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/ground-floor/9U7A6577-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0670.jpg",
@@ -248,25 +248,25 @@
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6465-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6445-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6345-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6225-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6225-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/9U7A6601-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6201-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6201-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6469-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6225-HDR.jpg"
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6225-HDR.jpg"
     ],
     "ourRooms": {
       "bedroom1": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6213-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6201-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6225-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6221-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6225-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6237-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6241-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6261-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6301-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6265-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Azure/9U7A6273-HDR.jpg"
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6213-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6201-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6225-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6221-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6225-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6237-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6241-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6261-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6301-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6265-HDR.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg"
       ],
       "bedroom2": [
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/Aqua/9U7A6477-HDR.jpg",

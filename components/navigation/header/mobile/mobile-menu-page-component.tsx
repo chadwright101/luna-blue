@@ -74,7 +74,7 @@ const MobileMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-[1.2rem_1rem_1rem_1rem] bg-brown text-white ml-0":
-                            title === "Book now",
+                            title === "Book direct",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}
@@ -93,7 +93,7 @@ const MobileMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-[1.2rem_1rem_1rem_1rem] bg-brown text-white ml-0":
-                            title === "Jetzt buchen",
+                            title === "Buchen Sie direkt",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

@@ -25,9 +25,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
   const [showMessage, setShowMessage] = useState(false);
   const { locale } = useRouter();
   return (
-    <main
-      className={`snap-y snap-proximity h-[88vh] -mx-8 overflow-scroll scrollbar-hide tablet:snap-none tablet:overflow-visible tablet:scrollbar-default tablet:h-full ${cssClasses}`}
-    >
+    <main className={`-mx-8 ${cssClasses}`}>
       <HomePageMobileSlide
         arrow
         title="Which view would you like to wake up to during your next holiday?"
@@ -38,7 +36,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       <HomePageMobileSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')]"
         whiteText
-        cssClasses="tablet:mb-10"
+        cssClasses="mb-10"
         title={lagoonVillaData.general.propertyName}
         paragraph={lagoonVilla.en.description}
         paragraphGerman={lagoonVilla.de.description}

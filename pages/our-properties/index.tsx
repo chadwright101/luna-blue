@@ -50,7 +50,7 @@ const Properties = () => {
       </Head>
       <main>
         <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
-          <Translated german="**to be translated">Our Properties</Translated>
+          <Translated german="Unsere Objekte">Our Properties</Translated>
         </h1>
         <section className="grid tabletLarge:grid-cols-2 tabletLarge:gap-12">
           <OurPropertiesComponent

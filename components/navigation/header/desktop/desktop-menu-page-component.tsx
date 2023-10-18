@@ -101,7 +101,7 @@ const DesktopMenuPageComponent = ({
                         {
                           "text-brown": currentRoute === url,
                           "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white  ml-0":
-                            title === "Buchen Sie direkt",
+                            title === "Direkt buchen",
                         }
                       )}
                       target={targetBlank ? "_blank" : "_self"}

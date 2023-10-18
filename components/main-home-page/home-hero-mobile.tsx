@@ -16,7 +16,10 @@ const {
   mainHomePage: {
     hero: { lagoonVilla, robbergBeach },
     gallery,
-    aboutUs: { mobileParagraph },
+    aboutUs: {
+      en: { paragraphs: enParagraphs },
+      de: { paragraphs: deParagraphs },
+    },
   },
 } = generalData;
 
@@ -29,7 +32,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       <HomePageMobileSlide
         arrow
         title="Which view would you like to wake up to during your next holiday?"
-        titleGerman="** to be translated"
+        titleGerman="Mit welchem Ausblick möchten Sie am liebsten in Ihrem nächsten Urlaub erwachen?"
       />
 
       {/* Lagoon Villa */}
@@ -60,8 +63,19 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         textBoxBackgroundColor="bg-brown"
         whiteText
         cssClasses="desktopSmall:hidden"
+        height="h-[750px]"
       >
-        <p className="text-center text-white">{mobileParagraph}</p>
+        {locale === "en"
+          ? enParagraphs.map((paragraph, index) => (
+              <p key={index} className="text-center text-white">
+                {paragraph}
+              </p>
+            ))
+          : deParagraphs.map((paragraph, index) => (
+              <p key={index} className="text-center text-white">
+                {paragraph}
+              </p>
+            ))}
       </HomePageMobileSlide>
 
       {/* slider */}
@@ -73,7 +87,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       <HomePageMobileSlide
         title="Contact"
         titleGerman="Kontakt"
-        textBoxBackgroundColor="bg-black/80"
+        textBoxBackgroundColor="bg-black/75"
         whiteText
       >
         <ul>

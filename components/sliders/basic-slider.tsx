@@ -26,7 +26,7 @@ const BasicSlider = ({
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: { mouse: 50, touch: 150 },
+          dragMinThreshold: { mouse: 50, touch: 200 },
           breakpoints: {
             900: {
               arrows: false,

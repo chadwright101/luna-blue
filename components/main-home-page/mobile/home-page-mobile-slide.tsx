@@ -21,6 +21,7 @@ interface Props {
   cssClasses?: string;
   slider?: boolean;
   imageData?: Array<string>;
+  height?: string;
 }
 
 const IndividualSlide = ({
@@ -38,11 +39,14 @@ const IndividualSlide = ({
   cssClasses,
   slider,
   imageData,
+  height,
 }: Props) => {
   if (!slider) {
     return (
       <article
-        className={`h-[650px] bg-cover bg-center tablet:snap-none tablet:h-[750px] ${cssClasses}`}
+        className={`${
+          height ? height : "h-[650px]"
+        } bg-cover bg-center tablet:snap-none tablet:h-[750px] ${cssClasses}`}
       >
         <div
           className={`${backgroundImage} bg-cover bg-center ${

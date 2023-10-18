@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import HomeHeroTextBox from "./home-hero-text-box";
 import HomePageDesktopAboutUs from "./desktop/home-page-desktop-about-us";
@@ -10,6 +11,7 @@ import classNames from "classnames";
 import generalData from "@/data/general-data.json";
 
 import { CssProps } from "../property-pages/home-page/home-page";
+import Translated from "../utils/translated";
 
 const {
   mainHomePage: {
@@ -20,7 +22,7 @@ const {
 const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
   const [showLagoonVilla, setShowLagoonVilla] = useState(false);
   const [showRobbergBeach, setshowRobbergBeach] = useState(false);
-
+  const { locale } = useRouter();
   return (
     <main>
       <section
@@ -49,8 +51,14 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
             priority
             sizes="(max-width: 1400px) 10vw, 10vw"
           />
-          <h3 className="text-[38px] text-center transition ease-in-out duration-500">
-            Which view would you like to wake up to during your next holiday?
+          <h3
+            className={`text-center transition ease-in-out duration-500 ${
+              locale === "en" ? "text-[38px]" : "text-[34px] -translate-y-2"
+            }`}
+          >
+            <Translated german="Mit welchem Ausblick möchten Sie am liebsten in Ihrem nächsten Urlaub erwachen?">
+              Which view would you like to wake up to during your next holiday?
+            </Translated>
           </h3>
         </div>
 

@@ -142,7 +142,7 @@ const Footer = ({ cssClasses }: CssProps) => {
             priority
           />
           <p className="text-[16px] flex flex-col items-center tabletLarge:items-start desktopSmall:items-end desktopSmall:text-right desktopSmall:mt-2 tabletLarge:text-[15px]">
-            Developed by:
+            <Translated german="Entwickelt von:">Developed by:</Translated>
             <a
               href="https://www.thewrightdesigns.co.za"
               target="_blank"

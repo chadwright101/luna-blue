@@ -67,11 +67,7 @@ const OurRoomsPage = ({
               Each room boasts the following facilities:
             </Translated>
           </h2>
-          <ul
-            className={`list-disc pl-4 ${
-              locale === "en" ? "" : "text-left phone:text-justify"
-            }`}
-          >
+          <ul className={`list-disc pl-4 text-left`}>
             {locale === "en"
               ? enFacilities.map((facility, index) => (
                   <li key={index}>{facility}</li>

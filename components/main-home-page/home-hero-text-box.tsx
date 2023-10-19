@@ -43,8 +43,8 @@ const HomeHeroTextBox = ({
         `grid gap-8 p-8 w-[280px] phone:w-[325px] tablet:w-[400px] tabletLarge:w-[500px] desktopSmall:w-[400px] desktop:w-[450px] ${cssClasses}`,
         {
           [`${textBoxBackgroundColor}`]: textBoxBackgroundColor,
-          "bg-black/50": whiteText && !textBoxBackgroundColor,
-          "bg-white/75": !whiteText && !textBoxBackgroundColor,
+          "bg-black/60": whiteText && !textBoxBackgroundColor,
+          "bg-white/80": !whiteText && !textBoxBackgroundColor,
         }
       )}
     >

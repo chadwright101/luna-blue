@@ -8,6 +8,7 @@ interface Props {
   imageData?: Array<string>;
   propertyName?: string;
   slideHeight?: string;
+  mobileArrows?: boolean;
 }
 
 const BasicSlider = ({
@@ -15,6 +16,7 @@ const BasicSlider = ({
   imageData,
   propertyName,
   slideHeight,
+  mobileArrows,
 }: Props) => {
   return (
     <>
@@ -27,9 +29,10 @@ const BasicSlider = ({
           gap: "1.75em",
           rewind: true,
           dragMinThreshold: { mouse: 50, touch: 200 },
+          drag: mobileArrows ? false : true,
           breakpoints: {
             900: {
-              arrows: false,
+              arrows: mobileArrows ? true : false,
             },
           },
         }}

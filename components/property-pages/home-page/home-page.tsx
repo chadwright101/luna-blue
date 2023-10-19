@@ -159,6 +159,9 @@ export interface CssProps {
 const HomePage = ({ data }: DataProps) => {
   return (
     <>
+      <h1 className="text-[28px] text-center mb-6 phone:text-[30px] tablet:text-35px desktopSmall:text-43px">
+        {data.general.propertyName}
+      </h1>
       <BasicSlider
         imageData={data.images.homePage.heroSlider}
         propertyName={data.general.propertyName}

@@ -83,7 +83,11 @@ const IndividualSlide = ({
       <article
         className={`snap-start h-[88vh] bg-cover bg-center ${cssClasses}`}
       >
-        <BasicSlider imageData={imageData} slideHeight="h-[88vh]" />
+        <BasicSlider
+          mobileArrows
+          imageData={imageData}
+          slideHeight="h-[88vh]"
+        />
       </article>
     );
   }

@@ -1,39 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for https://www.lunarblue.co.za/</title>
-  <link>https://www.lunarblue.co.za/</link>
+  <title>ROR Sitemap for http://www.lunarblue.co.za/</title>
+  <link>http://www.lunarblue.co.za/</link>
 
 <item>
      <link>https://www.lunarblue.co.za/</link>
-     <title>Luna Blue Off-grid Guesthouse - Plettenberg Bay</title>
-     <description>Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay.</description>
+     <title>Luna Blue - Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our guesthouses and villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.lunarblue.co.za/about-us</link>
-     <title>About us - Luna Blue Guesthouse</title>
-     <description>Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay.</description>
+     <link>https://www.lunarblue.co.za/our-properties</link>
+     <title>Properties - Luna Blue</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our guesthouses and villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.lunarblue.co.za/our-rooms</link>
-     <title>Our rooms - Luna Blue Guesthouse</title>
-     <description>Our rooms are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you&amp;#x27;ll be surrounded by elegance and comfort. Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you&amp;#x27;re here for business or pleasure, our upmarket rooms will provide you with the ultimate in comfort and luxury.</description>
+     <link>https://www.lunarblue.co.za/keurbooms-lagoon-villa</link>
+     <title>Keurbooms Lagoon Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://www.lunarblue.co.za/contact</link>
-     <title>Contact - Luna Blue Guesthouse</title>
-     <description>Located the Tsitsikamma Marine Protected Area, Plettenburg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Luna Blue Guesthouse is the passion project of Nikki and Heath, who together found their home in Plettenburg Bay.</description>
+     <link>https://www.lunarblue.co.za/robberg-beach-view-villa</link>
+     <title>Robberg Beach View Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/keurbooms-lagoon-villa/about</link>
+     <title>About Us - Keurbooms Lagoon Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/keurbooms-lagoon-villa/our-rooms</link>
+     <title>Our Rooms - Keurbooms Lagoon Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/keurbooms-lagoon-villa/contact</link>
+     <title>Contact - Keurbooms Lagoon Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our Villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/robberg-beach-view-villa/about</link>
+     <title>About Us - Robberg Beach View Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/robberg-beach-view-villa/our-rooms</link>
+     <title>Our Rooms - Robberg Beach View Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.lunarblue.co.za/robberg-beach-view-villa/contact</link>
+     <title>Contact - Robberg Beach View Villa | Plettenberg Bay</title>
+     <description>Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it&amp;#x27;s crystal clear seas and white sand beaches. Our villas offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Keurbooms Lagoon Villa is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>

@@ -1,17 +1,54 @@
 {
-  "address": {
-    "street": "7 Jane Street",
-    "town": "Plettenberg Bay",
-    "province": "Western Cape",
-    "areaCode": 6600
-  },
   "contact": {
     "phoneDisplay": "+27 66 488 2828",
     "phone": "+27664882828",
     "email": "enquiries@lunarblue.co.za"
   },
-  "social": {
-    "facebook": "https://www.facebook.com/lunarbluevillas",
-    "instagram": "https://www.instagram.com/lunablueguesthouse/"
+  "mainHomePage": {
+    "hero": {
+      "robbergBeach": {
+        "en": {
+          "description": "Located on the magnificent, unspoiled shores of the Indian Ocean, Robberg Beach View Villa offers majestic views of the coast and mountain."
+        },
+        "de": {
+          "description": "Gelegen an der herrlichen, unberührten Küste des Indischen Ozeans bietet die Robberg Beach View Villa einen majestätischen Blick auf die Küste und die Berge."
+        }
+      },
+      "lagoonVilla": {
+        "en": {
+          "description": "The Keurbooms Lagoon Villa offers stylish, upmarket, and spacious accommodation with breathtaking views of the lagoon, sea and the mountains."
+        },
+        "de": {
+          "description": "In der Keurbooms Lagoon Villa erwartet Sie eine stilvolle, luxuriöse und geräumige Unterkunft mit atemberaubendem Blick auf die Lagune, das Meer und die Berge."
+        }
+      }
+    },
+    "aboutUs": {
+      "en": {
+        "paragraphs": [
+          "There is no older or greater love story than that of the moon and the sea, with this relationship covered by both mythology and science.",
+          "Whether apart or together they have the power to entrance with their beauty, gently touch our souls or simply make us stop and give us a greater perspective of how we fit into this world.",
+          "This is the magic we want you to feel when you visit our villas."
+        ]
+      },
+      "de": {
+        "paragraphs": [
+          "Kaum eine Liebesgeschichte ist älter oder bedeutender als die von Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in der Wissenschaft thematisiert wird.",
+          "Sie haben die Macht, uns mit ihrer Schönheit zu verzaubern, unsere Seelen sanft zu berühren oder uns einfach innehalten zu lassen, um uns eine größere Perspektive über unseren Platz in dieser Welt zu geben, ob sie nun getrennt sind oder zusammen."
+        ]
+      }
+    },
+    "gallery": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0508-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6349-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0684-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0667-Edit.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6253-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg"
+    ]
   }
 }

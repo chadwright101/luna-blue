@@ -14,7 +14,8 @@ interface Props {
   titleGerman: string;
   buttonText?: string;
   buttonTextGerman?: string;
-  mobileButtonWidth?: string;
+  mobileButtonWidthEnglish?: string;
+  mobileButtonWidthGerman?: string;
   image: string;
   flip?: boolean;
   center?: boolean;
@@ -30,7 +31,8 @@ const ImageCard = ({
   titleGerman,
   buttonText,
   buttonTextGerman,
-  mobileButtonWidth,
+  mobileButtonWidthEnglish,
+  mobileButtonWidthGerman,
   image,
   link,
   flip,
@@ -46,13 +48,13 @@ const ImageCard = ({
     >
       <ImageContainer
         src={image}
-        alt="Luna Blue Off-grid Guesthouse"
+        alt="Luna Blue - Plettenberg Bay"
         width={900}
         height={500}
         cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
-        smallest={90}
-        desktopSmall={center ? 30 : undefined}
-        desktop={center ? 20 : 75}
+        smallest={95}
+        desktopSmall={center ? 40 : undefined}
+        desktop={center ? 30 : 85}
       />
 
       {/* mobile view */}
@@ -65,12 +67,11 @@ const ImageCard = ({
           <Button
             url={link}
             cssClasses="mx-auto text-[16px] text-center row-start-2"
-            width={mobileButtonWidth}
-          >
-            <Translated german={buttonTextGerman || "Mehr sehen"}>
-              {buttonText || "View More"}
-            </Translated>
-          </Button>
+            english={buttonText}
+            german={buttonTextGerman}
+            englishWidth={mobileButtonWidthEnglish}
+            germanWidth={mobileButtonWidthGerman}
+          />
         </div>
       </div>
 

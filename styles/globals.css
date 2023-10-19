@@ -5,55 +5,26 @@
 @layer base {
 
   @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-VariableFont_wght.woff2") format("woff2 supports variations"),
-      url("../fonts/Raleway/Raleway-VariableFont_wght.woff2") format("woff2-variations");
-    font-weight: 300 700;
+    font-family: "Housegrind";
+    src: url("../fonts/Housegrid/Housegrind.woff2") format("woff2");
+    font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.woff2") format("woff2 supports variations"),
-      url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.woff2") format("woff2-variations");
-    font-weight: 300 700;
-    font-style: italic;
+    font-family: "Housegrind";
+    src: url("../fonts/Housegrid/Housegrind.woff") format("woff");
+    font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-VariableFont_wght.woff") format("woff supports variations"),
-      url("../fonts/Raleway/Raleway-VariableFont_wght.woff") format("woff-variations");
-    font-weight: 300 700;
+    font-family: "Housegrind";
+    src: url("../fonts/Housegrid/Housegrind.ttf") format("truetype");
+    font-weight: 400;
     font-display: swap;
   }
 
-  @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.woff") format("woff supports variations"),
-      url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.woff") format("woff-variations");
-    font-weight: 300 700;
-    font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype supports variations"),
-      url("../fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 300 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype supports variations"),
-      url("../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 300 700;
-    font-style: italic;
-    font-display: swap;
-  }
 
   @font-face {
     font-family: "Cormorant";
@@ -156,6 +127,27 @@
     font-style: italic;
     font-display: swap;
   }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Poiret_One";
+    src: url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
 }
 
 @layer components {
@@ -174,7 +166,7 @@
   h4,
   h5,
   h6 {
-    font-family: Cormorant, serif;
+    font-family: "Cormorant", serif;
     color: #0e0e0e;
     font-weight: 500;
     text-align: left;
@@ -200,23 +192,26 @@
     @apply ease-in-out duration-300
   }
 
-  a:hover {
-    @apply text-brown
+  @media (min-width: 1050px) {
+
+    a:hover {
+      @apply text-brown
+    }
   }
 }
 
 @layer utilities {
   .splide__arrows {
-    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-5
+    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-8
   }
 
   .splide__arrow {
-    @apply fill-black p-4 -m-4 opacity-90 absolute
+    @apply fill-black p-3.5 -m-4 opacity-90 absolute rounded-full bg-beige/60 hover:bg-beige/80 ease-in-out duration-200
   }
 
   @media (min-width: 1100px) {
     .splide__arrow {
-      @apply p-0 m-0
+      @apply m-0
     }
 
   }
@@ -237,4 +232,21 @@
     @apply right-10
   }
 
+  /* Home page hero split */
+
+  .hero-grid-split {
+    grid-template-columns: 46% 46%;
+    gap: 0% 8%;
+  }
+
+  .hero-grid-lagoon-villa {
+    grid-template-columns: 66.5% 30.5%;
+    gap: 0% 3%;
+
+  }
+
+  .hero-grid-robberg-beach {
+    grid-template-columns: 30.5% 66.5%;
+    gap: 0% 3%;
+  }
 }

@@ -12,6 +12,8 @@ const LightboxSlider = ({
   singleImageFast,
   singleImageMedium,
   singleImageSlow,
+  propertyName,
+  roomName,
 }) => {
   const slider1 = useRef();
   const slider2 = useRef();
@@ -43,7 +45,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { mouse: 50, touch: 150 },
             breakpoints: {
               900: {
                 arrows: false,
@@ -64,21 +66,27 @@ const LightboxSlider = ({
               className="fixed top-6 right-8 tabletLarge:top-14 tabletLarge:right-16 bg-darkBeige/75 z-40"
             />
           </button>
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-[80vh] flex">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={1200}
                 height={900}
                 quality={60}
                 cssClasses="object-cover place-self-center"
-                smallest={60}
-                phone={60}
-                tablet={50}
-                tabletLarge={45}
-                desktopSmall={40}
-                desktop={50}
+                smallest={70}
+                phone={70}
+                tablet={60}
+                tabletLarge={55}
+                desktopSmall={50}
+                desktop={60}
               />
             </SplideSlide>
           ))}
@@ -96,7 +104,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 5000,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { mouse: 50, touch: 150 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -118,11 +126,17 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -130,11 +144,11 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={85}
-                phone={55}
-                tablet={45}
-                tabletLarge={40}
-                desktopSmall={35}
+                smallest={90}
+                phone={65}
+                tablet={55}
+                tabletLarge={50}
+                desktopSmall={45}
                 desktop={35}
               />
             </SplideSlide>
@@ -150,7 +164,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6000,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -172,11 +186,17 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -184,12 +204,12 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={85}
-                phone={55}
-                tablet={45}
-                tabletLarge={35}
-                desktopSmall={30}
-                desktop={25}
+                smallest={90}
+                phone={65}
+                tablet={55}
+                tabletLarge={55}
+                desktopSmall={40}
+                desktop={35}
               />
             </SplideSlide>
           ))}
@@ -204,7 +224,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 7000,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
@@ -226,11 +246,17 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -238,12 +264,12 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={85}
-                phone={55}
-                tablet={45}
-                tabletLarge={35}
-                desktopSmall={30}
-                desktop={25}
+                smallest={90}
+                phone={65}
+                tablet={55}
+                tabletLarge={55}
+                desktopSmall={40}
+                desktop={35}
               />
             </SplideSlide>
           ))}
@@ -259,7 +285,7 @@ const LightboxSlider = ({
             speed: 2000,
             interval: 6500,
             autoplay: true,
-            dragMinThreshold: { touch: 2000, mouse: 0 },
+            dragMinThreshold: { touch: 150, mouse: 50 },
             gap: "1rem",
             fixedHeight: 500,
             arrows: true,
@@ -282,11 +308,17 @@ const LightboxSlider = ({
           className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
-          {imageList.map(({ url }, index) => (
+          {imageList.map((url, index) => (
             <SplideSlide key={index} className="h-full w-full">
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName && !roomName
+                    ? propertyName
+                    : roomName
+                    ? `${roomName} at ${propertyName}`
+                    : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={900}
                 height={500}
                 cssClasses="object-cover h-full w-full cursor-pointer"
@@ -294,12 +326,12 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={85}
-                phone={50}
-                tablet={45}
-                tabletLarge={40}
-                desktopSmall={35}
-                desktop={25}
+                smallest={90}
+                phone={60}
+                tablet={55}
+                tabletLarge={50}
+                desktopSmall={45}
+                desktop={35}
               />
             </SplideSlide>
           ))}

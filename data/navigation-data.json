@@ -1,56 +1,355 @@
 {
-  "en": [
-    {
-      "title": "Home",
-      "url": "/"
-    },
-    {
-      "title": "About us",
-      "url": "/about-us"
-    },
-    {
-      "title": "Our rooms",
-      "url": "/our-rooms"
-    },
-    {
-      "title": "Gallery",
-      "url": "/about-us/#gallery"
-    },
-    {
-      "title": "Contact",
-      "url": "/contact"
-    },
-    {
-      "title": "Book now",
-      "url": "https://book.nightsbridge.com/34927",
-      "targetBlank": true
-    }
-  ],
-  "de": [
-    {
-      "title": "Startseite",
-      "url": "/"
-    },
-    {
-      "title": "Über uns",
-      "url": "/about-us"
-    },
-    {
-      "title": "Unsere Zimmer",
-      "url": "/our-rooms"
-    },
-    {
-      "title": "Galerie",
-      "url": "/about-us/#gallery"
-    },
-    {
-      "title": "Kontakt",
-      "url": "/contact"
-    },
-    {
-      "title": "Jetzt buchen",
-      "url": "https://book.nightsbridge.com/34927",
-      "targetBlank": true
-    }
-  ]
+  "homePage": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/",
+        "targetBlank": false
+      },
+      {
+        "title": "About us",
+        "url": "/#about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Our properties",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/#contact",
+        "targetBlank": false
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/#about-us",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Objekte",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/#contact",
+        "targetBlank": false
+      }
+    ]
+  },
+  "robbergBeach": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/robberg-beach-view-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "About",
+        "url": "/robberg-beach-view-villa/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Our rooms",
+        "url": "/robberg-beach-view-villa/our-rooms",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/robberg-beach-view-villa/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/robberg-beach-view-villa/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Our properties",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Book direct",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/robberg-beach-view-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/robberg-beach-view-villa/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Zimmer",
+        "url": "/robberg-beach-view-villa/our-rooms",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/robberg-beach-view-villa/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/robberg-beach-view-villa/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Objekte",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Direkt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ]
+  },
+  "lagoonVilla": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/keurbooms-lagoon-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "About",
+        "url": "/keurbooms-lagoon-villa/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Our rooms",
+        "url": "/keurbooms-lagoon-villa/our-rooms",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/keurbooms-lagoon-villa/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/keurbooms-lagoon-villa/contact",
+        "targetBlank": false
+      },
+
+      {
+        "title": "Our properties",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Book direct",
+        "url": "https://book.nightsbridge.com/35555",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/keurbooms-lagoon-villa",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/keurbooms-lagoon-villa/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Zimmer",
+        "url": "/keurbooms-lagoon-villa/our-rooms",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/keurbooms-lagoon-villa/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/keurbooms-lagoon-villa/contact",
+        "targetBlank": false
+      },
+
+      {
+        "title": "Unsere Objekte",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Direkt buchen",
+        "url": "https://book.nightsbridge.com/35555",
+        "targetBlank": true
+      }
+    ]
+  },
+  "cliffSide": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "About",
+        "url": "/cliffside-cabins/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Our cabins",
+        "url": "/cliffside-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/cliffside-cabins/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/cliffside-cabins/contact",
+        "targetBlank": false
+      },
+
+      {
+        "title": "Our properties",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Book direct",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/cliffside-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/cliffside-cabins/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Hütten",
+        "url": "/cliffside-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/cliffside-cabins/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/cliffside-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Objekte",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Direkt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ]
+  },
+  "forestCabins": {
+    "en": [
+      {
+        "title": "Home",
+        "url": "/forest-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "About",
+        "url": "/forest-cabins/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Our cabins",
+        "url": "/forest-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Gallery",
+        "url": "/forest-cabins/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Contact",
+        "url": "/forest-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Our properties",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Book direct",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ],
+    "de": [
+      {
+        "title": "Startseite",
+        "url": "/forest-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Über uns",
+        "url": "/forest-cabins/about",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Hütten",
+        "url": "/forest-cabins/our-cabins",
+        "targetBlank": false
+      },
+      {
+        "title": "Galerie",
+        "url": "/forest-cabins/about/#gallery",
+        "targetBlank": false
+      },
+      {
+        "title": "Kontakt",
+        "url": "/forest-cabins/contact",
+        "targetBlank": false
+      },
+      {
+        "title": "Unsere Objekte",
+        "url": "/our-properties",
+        "targetBlank": false
+      },
+      {
+        "title": "Direkt buchen",
+        "url": "https://book.nightsbridge.com/34927",
+        "targetBlank": true
+      }
+    ]
+  }
 }

@@ -7,9 +7,10 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Raleway: "Raleway",
+      Housegrind: "Housegrind",
       Comorant: "Comorant",
       Josefin_Sans: "Josefin_Sans",
+      Poiret_One: "Poiret_One",
     },
     fontSize: {
       "60px": "3.75rem",
@@ -41,10 +42,10 @@ module.exports = {
       phone: "425px",
       tablet: "650px",
       tabletLarge: "900px",
-      desktopSmall: "1100px",
+      desktopSmall: "1225px",
       desktop: "1400px",
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

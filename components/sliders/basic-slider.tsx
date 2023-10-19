@@ -5,10 +5,19 @@ import ImageContainer from "../utils/image-container";
 
 interface Props {
   cssClasses?: string;
-  imageData?: Array<{ url: string }>;
+  imageData?: Array<string>;
+  propertyName?: string;
+  slideHeight?: string;
+  mobileArrows?: boolean;
 }
 
-const BasicSlider = ({ cssClasses, imageData }: Props) => {
+const BasicSlider = ({
+  cssClasses,
+  imageData,
+  propertyName,
+  slideHeight,
+  mobileArrows,
+}: Props) => {
   return (
     <>
       <Splide
@@ -19,10 +28,11 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           speed: 2000,
           gap: "1.75em",
           rewind: true,
-          dragMinThreshold: { touch: 2000, mouse: 0 },
+          dragMinThreshold: { mouse: 50, touch: 200 },
+          drag: mobileArrows ? false : true,
           breakpoints: {
             900: {
-              arrows: false,
+              arrows: mobileArrows ? true : false,
             },
           },
         }}
@@ -64,25 +74,31 @@ const BasicSlider = ({ cssClasses, imageData }: Props) => {
           </button>
         </div>
         <SplideTrack>
-          {imageData!.map(({ url }, index) => (
+          {imageData!.map((url, index) => (
             <SplideSlide
               key={index}
-              className="h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
+              className={
+                slideHeight
+                  ? slideHeight
+                  : "h-[275px] phone:h-[350px] tablet:h-[450px] tabletLarge:h-[525px] desktop:h-[625px]"
+              }
             >
               <ImageContainer
                 src={url}
-                alt={`Luna Blue Off-grid Guesthouse - Image ${index + 1}`}
+                alt={`${
+                  propertyName ? propertyName : "Luna Blue Plettenberg Bay"
+                } - Image ${index + 1}`}
                 width={1400}
                 height={1000}
                 cssClasses="object-cover h-full w-full max-w-[1400px]"
                 quality={60}
                 eager={index < 2 ? true : false}
-                smallest={80}
-                phone={75}
-                tablet={60}
-                tabletLarge={50}
-                desktopSmall={50}
-                desktop={80}
+                smallest={85}
+                phone={80}
+                tablet={70}
+                tabletLarge={60}
+                desktopSmall={60}
+                desktop={90}
               />
             </SplideSlide>
           ))}

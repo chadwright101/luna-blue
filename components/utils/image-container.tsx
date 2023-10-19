@@ -42,11 +42,11 @@ const ImageContainer = ({
 
   return (
     <Image
-      alt={alt || "Luna Blue Guesthouse"}
+      alt={alt || "Luna Blue - Plettenberg Bay"}
       src={src}
       width={width}
       height={height}
-      quality={isLoading ? 5 : quality ?? 50}
+      quality={isLoading ? 5 : quality ?? 60}
       loading={eager ? "eager" : "lazy"}
       className={cssClasses}
       onClick={onClick}

@@ -17,7 +17,7 @@ const CliffSideMap = ({ cssClasses }: Props) => {
     );
   return (
     <GoogleMap
-      zoom={13}
+      zoom={14}
       center={{ lat: -34.06745342020081, lng: 23.28102723421399 }}
       mapContainerClassName={`${cssClasses}`}
     >

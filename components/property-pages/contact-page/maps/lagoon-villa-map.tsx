@@ -17,7 +17,7 @@ const LagoonVillaMap = ({ cssClasses }: Props) => {
     );
   return (
     <GoogleMap
-      zoom={13}
+      zoom={14}
       center={{ lat: -34.05196563834431, lng: 23.372731539639542 }}
       mapContainerClassName={`${cssClasses}`}
     >

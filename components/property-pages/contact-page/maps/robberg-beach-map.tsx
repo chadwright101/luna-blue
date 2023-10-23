@@ -17,7 +17,7 @@ const RobbergBeachMap = ({ cssClasses }: Props) => {
     );
   return (
     <GoogleMap
-      zoom={13}
+      zoom={14}
       center={{ lat: -34.083758, lng: 23.358114 }}
       mapContainerClassName={`${cssClasses}`}
     >

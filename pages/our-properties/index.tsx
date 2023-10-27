@@ -52,7 +52,7 @@ const Properties = () => {
         <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
           <Translated german="Unsere Objekte">Our Properties</Translated>
         </h1>
-        <section className="grid tabletLarge:grid-cols-2 tabletLarge:gap-12">
+        <section className="grid tabletLarge:grid-cols-2 desktop:grid-cols-3 tabletLarge:gap-12">
           <OurPropertiesComponent
             data={lagoonData}
             featuredImage={lagoonData.images.homePage.heroSlider[1]}

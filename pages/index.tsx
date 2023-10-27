@@ -49,7 +49,7 @@ export default function Home() {
         />
       </Head>
       <HomeHeroMobile cssClasses="desktopSmall:hidden" />
-      <HomeHeroDesktop cssClasses="hidden desktopSmall:grid" />
+      <HomeHeroDesktop cssClasses="hidden desktopSmall:block" />
     </>
   );
 }

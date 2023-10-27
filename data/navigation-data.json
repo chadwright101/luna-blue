@@ -203,27 +203,27 @@
     "en": [
       {
         "title": "Home",
-        "url": "/cliffside-cabins",
+        "url": "/cliffside-suites",
         "targetBlank": false
       },
       {
         "title": "About",
-        "url": "/cliffside-cabins/about",
+        "url": "/cliffside-suites/about",
         "targetBlank": false
       },
       {
-        "title": "Our cabins",
-        "url": "/cliffside-cabins/our-cabins",
+        "title": "Our suites",
+        "url": "/cliffside-suites/our-suites",
         "targetBlank": false
       },
       {
         "title": "Gallery",
-        "url": "/cliffside-cabins/about/#gallery",
+        "url": "/cliffside-suites/about/#gallery",
         "targetBlank": false
       },
       {
         "title": "Contact",
-        "url": "/cliffside-cabins/contact",
+        "url": "/cliffside-suites/contact",
         "targetBlank": false
       },
 
@@ -234,34 +234,34 @@
       },
       {
         "title": "Book direct",
-        "url": "https://book.nightsbridge.com/34927",
+        "url": "",
         "targetBlank": true
       }
     ],
     "de": [
       {
         "title": "Startseite",
-        "url": "/cliffside-cabins",
+        "url": "/cliffside-suites",
         "targetBlank": false
       },
       {
         "title": "Über uns",
-        "url": "/cliffside-cabins/about",
+        "url": "/cliffside-suites/about",
         "targetBlank": false
       },
       {
-        "title": "Unsere Hütten",
-        "url": "/cliffside-cabins/our-cabins",
+        "title": "** To be translated",
+        "url": "/cliffside-suites/our-suites",
         "targetBlank": false
       },
       {
         "title": "Galerie",
-        "url": "/cliffside-cabins/about/#gallery",
+        "url": "/cliffside-suites/about/#gallery",
         "targetBlank": false
       },
       {
         "title": "Kontakt",
-        "url": "/cliffside-cabins/contact",
+        "url": "/cliffside-suites/contact",
         "targetBlank": false
       },
       {
@@ -271,7 +271,7 @@
       },
       {
         "title": "Direkt buchen",
-        "url": "https://book.nightsbridge.com/34927",
+        "url": "",
         "targetBlank": true
       }
     ]

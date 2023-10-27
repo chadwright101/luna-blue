@@ -32,7 +32,7 @@ const Button = ({
     <Link
       href={url}
       className={classNames(
-        `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:desktopSmall:text-brown ${
+        `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:desktopSmall:text-brown p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${
           !englishWidth && locale === "en"
             ? "w-[144px] desktopSmall:w-[123px]"
             : !germanWidth && locale !== "en"
@@ -40,7 +40,7 @@ const Button = ({
             : englishWidth && locale === "en"
             ? englishWidth
             : germanWidth
-        } p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${cssClasses}`,
+        } " ${cssClasses}`,
         {
           "text-pureBlack": !whiteText,
           "text-white": whiteText,

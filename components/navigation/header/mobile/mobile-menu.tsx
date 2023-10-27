@@ -20,16 +20,16 @@ export const robbergBeachUrls = [
 ];
 
 export const cliffSideUrls = [
-  "/cliffside-cabins",
-  "/cliffside-cabins/about",
-  "/cliffside-cabins/our-cabins",
-  "/cliffside-cabins/contact",
+  "/cliffside-suites",
+  "/cliffside-suites/about",
+  "/cliffside-suites/our-suites",
+  "/cliffside-suites/contact",
 ];
 export const forestCabinsUrls = [
-  "/forest-cabins",
-  "/forest-cabins/about",
-  "/forest-cabins/our-cabins",
-  "/forest-cabins/contact",
+  "/forest-view-cabins",
+  "/forest-view-cabins/about",
+  "/forest-view-cabins/our-cabins",
+  "/forest-view-cabins/contact",
 ];
 
 const {

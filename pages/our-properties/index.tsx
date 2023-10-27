@@ -62,6 +62,11 @@ const Properties = () => {
             data={robbergData}
             featuredImage={robbergData.images.homePage.heroSlider[0]}
           />
+          <hr className="text-black my-10 tabletLarge:hidden" />
+          <OurPropertiesComponent
+            data={cliffsideData}
+            featuredImage={cliffsideData.images.homePage.heroSlider[0]}
+          />
         </section>
       </main>
     </>

@@ -72,8 +72,8 @@ export interface DataProps {
         };
       };
       globalFacilities: {
-        en: Array<string>;
-        de: Array<string>;
+        en?: Array<string>;
+        de?: Array<string>;
       };
       roomInfo: {
         en: {
@@ -145,9 +145,9 @@ export interface DataProps {
       aboutUsSlider: Array<string>;
       ourRooms: {
         bedroom1: Array<string>;
-        bedroom2: Array<string>;
-        bedroom3: Array<string>;
-        bedroom4: Array<string>;
+        bedroom2?: Array<string>;
+        bedroom3?: Array<string>;
+        bedroom4?: Array<string>;
       };
     };
   };

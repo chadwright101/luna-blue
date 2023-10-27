@@ -40,10 +40,9 @@ const HomeHeroTextBox = ({
   return (
     <div
       className={classNames(
-        `grid gap-8 p-8 w-[280px] phone:w-[325px] tablet:w-[400px] tabletLarge:w-[500px] desktopSmall:w-[400px] desktop:w-[450px] ${cssClasses}`,
+        `grid gap-8 p-8 w-[280px] phone:w-[325px] tablet:w-[400px] tabletLarge:w-[500px] desktopSmall:w-[400px] desktopSmall:max-w-[400px] desktop:w-[450px] max-w-[450px] ${cssClasses} ${textBoxBackgroundColor}`,
         {
-          [`${textBoxBackgroundColor}`]: textBoxBackgroundColor,
-          "bg-black/60": whiteText && !textBoxBackgroundColor,
+          "bg-black/75": whiteText && !textBoxBackgroundColor,
           "bg-white/80": !whiteText && !textBoxBackgroundColor,
         }
       )}
@@ -72,7 +71,7 @@ const HomeHeroTextBox = ({
           url={buttonUrl!}
           whiteText={whiteText ? true : false}
           cssClasses={`mx-auto desktopSmall:place-self-center ${
-            currentRoute === "/" && windowWidth < 1050 && whiteText
+            currentRoute === "/" && windowWidth <= 1225 && whiteText
               ? "bg-brown/75"
               : ""
           }`}

@@ -2,7 +2,7 @@
   "general": {
     "propertyName": "Keurbooms Lagoon Villa",
     "address": {
-      "street": "8 Hill Street",
+      "street": "9 Hill Street",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
       "areaCode": 6600,
@@ -18,9 +18,9 @@
       },
       "keywords": "Keurbooms Lagoon Villa, plettenberg bay, plett, villas, plett villas, plett accomodation, plettenberg bay accomodation, plettenberg bay villas, luxury, 5 star",
       "images": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6353-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0672.jpg"
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-2.webp",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-3.webp"
       ]
     }
   },
@@ -144,7 +144,7 @@
             "Full private kitchen – Dishwasher, ice maker & essentials",
             "Lounge Area",
             "Dining Area",
-            "Full balcony - Gas braai, sun loungers & umbrella",
+            "Full balcony - Gas BBQ facility, sun loungers & umbrella",
             "Wine Cellar"
           ],
           "enSize": 80
@@ -152,7 +152,6 @@
       },
       "de": {
         "bedroom1": {
-          "deTitle": "Teal Room",
           "deFacilities": [
             "Kingsize-Bett",
             "Eigenes Badezimmer - Whirlpool-Badewanne, begehbare Dusche",
@@ -163,21 +162,17 @@
             "Verdunkelnde Vorhänge",
             "Sicherheitstüren mit Rollläden",
             "Schlafsofa"
-          ],
-          "deSize": 150
+          ]
         },
         "bedroom2": {
-          "deTitle": "Aqua Room",
           "deFacilities": [
             "Queen-Size-Bett",
             "Ensuite-Badezimmer - nur Dusche",
             "Schminkecke",
             "Jalousien"
-          ],
-          "deSize": 24
+          ]
         },
         "bedroom3": {
-          "deTitle": "Indigo Room",
           "deFacilities": [
             "Queen-Size-Bett",
             "Ensuite-Badezimmer - nur Dusche",
@@ -185,11 +180,9 @@
             "Kleiner Balkon",
             "Jalousien",
             "Sicherheitstüren mit Rollläden"
-          ],
-          "deSize": 21
+          ]
         },
         "bedroom4": {
-          "deTitle": "Lagoon Rooms",
           "deFacilities": [
             "Zwei separate Schlafzimmer - Kingsize-Betten",
             "Badezimmer - nur Duschen",
@@ -198,8 +191,7 @@
             "Essbereich",
             "Komplett ausgestatteter Balkon - Gas-Grill, Liegestühle und Sonnenschirm",
             "Weinkeller"
-          ],
-          "deSize": 80
+          ]
         }
       }
     }

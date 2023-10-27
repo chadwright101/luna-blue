@@ -35,17 +35,37 @@ const OurRooms = ({
   },
 }: Props) => {
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
   return (
     <section
       className={`grid gap-8 desktopSmall:gap-10 desktopSmall:grid-cols-[2fr_1fr] ${cssClasses}`}
     >
       <div>
         <h2 className="mb-8 tabletLarge:hidden">
-          <Translated german="Unsere Zimmer">Our Rooms</Translated>
+          {currentRoute === "/cliffside-suites/our-suites" ? (
+            <Translated german="** To be translated">Our Suites</Translated>
+          ) : currentRoute === "forest-view-cabins/our-cabins" ? (
+            <Translated german="Unsere Hütten">Our Cabins</Translated>
+          ) : (
+            <Translated german="Unsere Zimmer">Our Rooms</Translated>
+          )}
         </h2>
         <ImageCard
-          title="Our Rooms"
-          titleGerman="Unsere Zimmer"
+          title={
+            currentRoute === "/cliffside-suites"
+              ? "Our Suites"
+              : currentRoute === "forest-view-cabins"
+              ? "Our Cabins"
+              : "Our Rooms"
+          }
+          titleGerman={
+            currentRoute === "/cliffside-suites"
+              ? "** To be translated"
+              : currentRoute === "forest-view-cabins"
+              ? "Unsere Hütten"
+              : "Unsere Zimmer"
+          }
           link={`/${url}/our-rooms`}
           image={imageUrl}
           blankMobileCard

@@ -13,11 +13,15 @@ import { CssProps } from "@/components/property-pages/home-page/home-page";
 import {
   robbergBeachUrls,
   lagoonVillaUrls,
+  cliffSideUrls,
+  forestCabinsUrls,
 } from "../header/mobile/mobile-menu";
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
   lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
+  cliffSide: { en: cliffSideEn, de: cliffSideDe },
+  forestCabins: { en: forestCabinsEn, de: forestCabinsDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
@@ -50,6 +54,16 @@ const Footer = ({ cssClasses }: CssProps) => {
             <PageFooterNavComponent
               navListEn={lagoonVillaEn}
               navListDe={lagoonVillaDe}
+            />
+          ) : cliffSideUrls.includes(currentRoute) ? (
+            <PageFooterNavComponent
+              navListEn={cliffSideEn}
+              navListDe={cliffSideDe}
+            />
+          ) : forestCabinsUrls.includes(currentRoute) ? (
+            <PageFooterNavComponent
+              navListEn={forestCabinsEn}
+              navListDe={forestCabinsDe}
             />
           ) : (
             <PageFooterNavComponent

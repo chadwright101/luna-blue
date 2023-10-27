@@ -8,13 +8,14 @@ import Translated from "../utils/translated";
 import generalData from "@/data/general-data.json";
 import robbergBeachData from "@/data/robberg-beach-data.json";
 import lagoonVillaData from "@/data/lagoon-villa-data.json";
+import cliffsideData from "@/data/cliffside-data.json";
 
 import { CssProps } from "../property-pages/home-page/home-page";
 
 const {
   contact: { phone, phoneDisplay },
   mainHomePage: {
-    hero: { lagoonVilla, robbergBeach },
+    hero: { lagoonVilla, robbergBeach, cliffside },
     gallery,
     aboutUs: {
       en: { paragraphs: enParagraphs },
@@ -34,12 +35,10 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         title="Which view would you like to wake up to during your next holiday?"
         titleGerman="Mit welchem Ausblick möchten Sie am liebsten in Ihrem nächsten Urlaub erwachen?"
       />
-
       {/* Lagoon Villa */}
       <HomePageMobileSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')]"
-        whiteText
-        cssClasses="mb-10"
+        cssClasses="mb-4"
         title={lagoonVillaData.general.propertyName}
         paragraph={lagoonVilla.en.description}
         paragraphGerman={lagoonVilla.de.description}
@@ -48,11 +47,23 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Robberg Beach */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0652-HDR.jpg')]"
+        cssClasses="mb-4"
+        whiteText
         title={robbergBeachData.general.propertyName}
         paragraph={robbergBeach.en.description}
         paragraphGerman={robbergBeach.de.description}
         buttonUrl="/robberg-beach-view-villa"
+      />
+
+      {/* Cliffside */}
+      <HomePageMobileSlide
+        backgroundImage="bg-[url('/cliffside/images/9U7A4196-HDR-2.jpg')]"
+        cssClasses="mb-4"
+        title={cliffsideData.general.propertyName}
+        paragraph={cliffside.en.description}
+        paragraphGerman={cliffside.de.description}
+        buttonUrl="/cliffside-suites"
       />
 
       {/* About us */}

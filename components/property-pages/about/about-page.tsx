@@ -21,6 +21,8 @@ const AboutPage = ({
   },
 }: DataProps) => {
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
   return (
     <>
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
@@ -32,7 +34,9 @@ const AboutPage = ({
             className={
               index === 0
                 ? "hidden tabletLarge:block"
-                : index === 1
+                : index === 1 && currentRoute !== "/cliffside-suites/about"
+                ? "hidden desktop:block"
+                : index === 3 && currentRoute === "/cliffside-suites/about"
                 ? "hidden desktop:block"
                 : ""
             }

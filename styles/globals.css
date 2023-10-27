@@ -235,18 +235,23 @@
   /* Home page hero split */
 
   .hero-grid-split {
-    grid-template-columns: 46% 46%;
-    gap: 0% 8%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0% 3%;
   }
 
   .hero-grid-lagoon-villa {
-    grid-template-columns: 66.5% 30.5%;
-    gap: 0% 3%;
+    grid-template-columns: 1fr .14fr .14fr;
+    gap: 0% 1.5%;
 
   }
 
   .hero-grid-robberg-beach {
-    grid-template-columns: 30.5% 66.5%;
-    gap: 0% 3%;
+    grid-template-columns: .14fr 1fr .14fr;
+    gap: 0% 1.5%;
+  }
+
+  .hero-grid-cliffside {
+    grid-template-columns: .14fr .14fr 1fr;
+    gap: 0% 1.5%;
   }
 }

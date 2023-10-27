@@ -19,7 +19,7 @@ const OurPropertiesComponent = ({
 }: Props) => {
   return (
     <article
-      className={`grid gap-6 tabletLarge:gap-4 tabletLarge:text-center ${cssClasses}`}
+      className={`grid gap-6 tabletLarge:gap-5 tabletLarge:text-center ${cssClasses}`}
     >
       <Link target="_blank" href={url} className="overflow-hidden">
         <ImageContainer
@@ -39,15 +39,31 @@ const OurPropertiesComponent = ({
           {propertyName}
         </h2>
       </Link>
-      <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
-        <Link
-          href={address.googleMapsUrl}
-          target="_blank"
-          className="text-blueLink"
-        >
-          {address.street}, {address.town}
-        </Link>
-      </address>
+      {propertyName === "Cliffside Suites" ||
+      propertyName === "Forest View Cabins" ? (
+        <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
+          <p>
+            <Link
+              href={address.googleMapsUrl}
+              target="_blank"
+              className="text-blueLink"
+            >
+              {address.street}
+            </Link>{" "}
+            ({address.town})
+          </p>
+        </address>
+      ) : (
+        <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
+          <Link
+            href={address.googleMapsUrl}
+            target="_blank"
+            className="text-blueLink"
+          >
+            {address.street}, {address.town}
+          </Link>
+        </address>
+      )}
       <Button
         targetBlank
         cssClasses="tabletLarge:place-self-center"

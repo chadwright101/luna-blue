@@ -22,7 +22,7 @@ const ContactPage = ({
   data: {
     general: {
       propertyName,
-      address: { street, town, province, areaCode },
+      address: { street, town, province, areaCode, googleMapsUrl },
       contact: { subject },
     },
   },
@@ -33,6 +33,8 @@ const ContactPage = ({
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
   return (
     <>
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
@@ -50,7 +52,7 @@ const ContactPage = ({
           tablet={60}
           tabletLarge={55}
           desktopSmall={25}
-          desktop={20}
+          desktop={35}
           eager
         />
         <hr className="my-4 desktopSmall:hidden text-black" />
@@ -127,7 +129,23 @@ const ContactPage = ({
                 <Translated german="Anschrift">Address</Translated>:
               </p>
               <address className="text-left">
-                {street}, {town}, {province}, {areaCode}
+                {currentRoute === "/cliffside-suites/contact" ||
+                currentRoute === "/forest-view-cabins/contact" ? (
+                  <>
+                    <Link
+                      href={googleMapsUrl}
+                      target="_blank"
+                      className="text-blueLink"
+                    >
+                      {street}
+                    </Link>{" "}
+                    ({town}, {province})
+                  </>
+                ) : (
+                  <>
+                    {street}, {town}, {province}, {areaCode}
+                  </>
+                )}
               </address>
             </li>
           </ul>
@@ -231,7 +249,7 @@ const ContactPage = ({
             tablet={60}
             tabletLarge={55}
             desktopSmall={25}
-            desktop={20}
+            desktop={30}
           />
         )}
       </div>

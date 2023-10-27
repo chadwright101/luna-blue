@@ -2,11 +2,11 @@
   "general": {
     "propertyName": "Cliffside Suites",
     "address": {
-      "street": "",
+      "street": "-34.06747 23.28104",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
       "areaCode": 6600,
-      "googleMapsUrl": ""
+      "googleMapsUrl": "https://www.google.com/maps/place/34%C2%B004'02.9%22S+23%C2%B016'51.8%22E/@-34.067479,23.2804143,232m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-34.067479!4d23.281058?entry=ttu"
     },
     "contact": {
       "subject": "Cliffside%20Suites%20enquiry"

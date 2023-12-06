@@ -66,7 +66,13 @@ const OurRooms = ({
               ? "Unsere Hütten"
               : "Unsere Zimmer"
           }
-          link={`/${url}/our-rooms`}
+          link={`/${url}/${
+            currentRoute === "/cliffside-suites"
+              ? "our-suites"
+              : currentRoute === "forest-view-cabins"
+              ? "our-cabins"
+              : "our-rooms"
+          }`}
           image={imageUrl}
           blankMobileCard
         />

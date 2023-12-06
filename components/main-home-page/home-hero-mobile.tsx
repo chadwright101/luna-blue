@@ -58,7 +58,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Cliffside */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('/cliffside/images/9U7A4196-HDR-2.jpg')]"
+        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg')]"
         cssClasses="mb-4"
         title={cliffsideData.general.propertyName}
         paragraph={cliffside.en.description}

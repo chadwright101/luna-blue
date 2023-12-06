@@ -60,8 +60,9 @@ const ContactPage = ({
           <ul className="flex flex-col gap-6 desktopSmall:gap-4">
             <li
               className={`mr-auto grid ${
-                locale === "en"
-                  ? "grid-cols-[80px_1fr]"
+                currentRoute === "/cliffside-suites/contact" ||
+                currentRoute === "/forest-view-cabins/contact"
+                  ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               }`}
             >
@@ -90,8 +91,9 @@ const ContactPage = ({
 
             <li
               className={`mr-auto grid ${
-                locale === "en"
-                  ? "grid-cols-[80px_1fr]"
+                currentRoute === "/cliffside-suites/contact" ||
+                currentRoute === "/forest-view-cabins/contact"
+                  ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               }`}
             >
@@ -120,13 +122,22 @@ const ContactPage = ({
 
             <li
               className={`grid ${
-                locale === "en"
-                  ? "grid-cols-[80px_1fr]"
+                currentRoute === "/cliffside-suites/contact" ||
+                currentRoute === "/forest-view-cabins/contact"
+                  ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               } desktopSmall:col-span-2`}
             >
               <p className="font-500">
-                <Translated german="Anschrift">Address</Translated>:
+                {currentRoute === "/cliffside-suites/contact" ||
+                currentRoute === "/forest-view-cabins/contact" ? (
+                  <Translated german="** To be translated">
+                    Coordinates
+                  </Translated>
+                ) : (
+                  <Translated german="Anschrift">Address</Translated>
+                )}
+                :
               </p>
               <address className="text-left">
                 {currentRoute === "/cliffside-suites/contact" ||

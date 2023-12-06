@@ -20,8 +20,8 @@ const MetaComponent = ({
     <Head>
       <title>
         {pageName
-          ? `${pageName} - ${propertyName} | Plettenberg Bay`
-          : `${propertyName} | Plettenberg Bay`}
+          ? `${pageName} - ${propertyName} | Plettenberg Bay Accommodation`
+          : `${propertyName} | Plettenberg Bay Accommodation`}
       </title>
       <meta
         name="description"

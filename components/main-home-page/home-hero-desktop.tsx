@@ -117,6 +117,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
             )}
           >
             <HomeHeroTextBox
+              whiteText
               title="Cliffside Suites"
               paragraph={cliffside.en.description}
               paragraphGerman={cliffside.de.description}

@@ -39,7 +39,7 @@ const MobileMenuPageComponent = ({
             className={classNames(
               "w-12 h-auto ease-in-out duration-300 delay-[10ms]",
               {
-                "w-[40px] -translate-y-0.5": scrollPosition > 0,
+                "scale-[85%] translate-y-1": scrollPosition > 0,
               }
             )}
             priority
@@ -56,6 +56,9 @@ const MobileMenuPageComponent = ({
             width={45}
             height={45}
             priority
+            className={`ease-in-out duration-300 translate-y-1 ${
+              scrollPosition > 0 ? "translate-y-2" : ""
+            }`}
           />
         </button>
       </div>

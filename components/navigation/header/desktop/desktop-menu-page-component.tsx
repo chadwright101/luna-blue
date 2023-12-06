@@ -42,10 +42,10 @@ const DesktopMenuPageComponent = ({
             width={150}
             height={193}
             className={classNames(
-              "h-auto ease-in-out duration-300 delay-[10ms]",
+              "h-auto ease-in-out duration-300 delay-[10ms] w-[75px]",
               {
-                "w-[75px]": scrollPosition === 0,
-                "w-[50px]": scrollPosition > 0,
+                "scale-100": scrollPosition === 0,
+                "scale-[80%] translate-y-2": scrollPosition > 0,
               }
             )}
             priority
@@ -55,10 +55,7 @@ const DesktopMenuPageComponent = ({
         <nav>
           <ul
             className={classNames(
-              "flex gap-6 ease-in-out delay-[10ms] duration-300 -translate-y-3",
-              {
-                "translate-y-2": scrollPosition > 0,
-              }
+              "flex gap-6 ease-in-out delay-[10ms] duration-300 translate-y-2"
             )}
           >
             {locale === "en"

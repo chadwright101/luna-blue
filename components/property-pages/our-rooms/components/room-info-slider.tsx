@@ -98,6 +98,9 @@ const RoomInfoSlider = ({
           {locale === "en"
             ? enFacilities.map((item, index) => <li key={index}>{item}</li>)
             : deFacilities.map((item, index) => <li key={index}>{item}</li>)}
+          <li className="font-350 italic">
+            Guests under the age of 21 must be accompanied by an adult
+          </li>
         </ul>
       </div>
       <LightBoxSlider

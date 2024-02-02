@@ -5,18 +5,12 @@ import { useRouter } from "next/router";
 import Translated from "../../utils/translated";
 import ImageContainer from "../../utils/image-container";
 
-import generalData from "@/data/general-data.json";
-
 import { DataProps } from "../home-page/home-page";
 
 interface Props extends DataProps {
   verticalImage: string;
   horizontalImage: string;
 }
-
-const {
-  contact: { email, phone, phoneDisplay },
-} = generalData;
 
 const ContactPage = ({
   data: {
@@ -29,12 +23,40 @@ const ContactPage = ({
   verticalImage,
   horizontalImage,
 }: Props) => {
+  const defaultPhone = (
+    <Translated german="Rufnummer anzeigen">Show phone number</Translated>
+  );
+  const defaultEmail = (
+    <Translated german="E-Mail Adresse anzeigen">Show email address</Translated>
+  );
+
   const [showMessage, setShowMessage] = useState(false);
-  const [showEmail, setShowEmail] = useState(false);
-  const [showPhone, setShowPhone] = useState(false);
+  const [showEmail, setShowEmail] = useState(defaultEmail);
+  const [showPhone, setShowPhone] = useState(defaultPhone);
   const { locale } = useRouter();
   const router = useRouter();
   const currentRoute = router.pathname;
+
+  const fetchPhone = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowPhone(data.phone);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
+  const fetchEmail = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowEmail(data.email);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
   return (
     <>
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
@@ -69,22 +91,19 @@ const ContactPage = ({
               <p className="font-500">
                 <Translated german="Telefon">Phone</Translated>:
               </p>
-              {!showPhone && (
+              {showPhone !== defaultPhone ? (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown tabletLarge:p-0 tabletLarge:m-0"
-                  onClick={() => setShowPhone(true)}
+                  onClick={fetchPhone}
                 >
-                  <Translated german="Rufnummer anzeigen">
-                    Show phone number
-                  </Translated>
+                  {showPhone}
                 </p>
-              )}
-              {showPhone && (
+              ) : (
                 <Link
-                  href={`tel:${phone}`}
+                  href={`tel:${showPhone}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {phoneDisplay}
+                  {showPhone}
                 </Link>
               )}
             </li>
@@ -100,22 +119,19 @@ const ContactPage = ({
               <p className="font-500">
                 <Translated german="E-Mail">Email</Translated>:
               </p>
-              {!showEmail && (
+              {showEmail !== defaultEmail ? (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0"
-                  onClick={() => setShowEmail(true)}
+                  onClick={fetchEmail}
                 >
-                  <Translated german="E-Mail Adresse anzeigen">
-                    Show email address
-                  </Translated>
+                  {showEmail}
                 </p>
-              )}
-              {showEmail && (
+              ) : (
                 <Link
-                  href={`mailto:${email}?subject=${subject}`}
+                  href={`mailto:${showEmail}?subject=${subject}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {email}
+                  {showEmail}
                 </Link>
               )}
             </li>
@@ -131,9 +147,7 @@ const ContactPage = ({
               <p className="font-500">
                 {currentRoute === "/cliffside-suites/contact" ||
                 currentRoute === "/forest-view-cabins/contact" ? (
-                  <Translated german="** To be translated">
-                    Coordinates
-                  </Translated>
+                  <Translated german="Koordinaten">Coordinates</Translated>
                 ) : (
                   <Translated german="Anschrift">Address</Translated>
                 )}

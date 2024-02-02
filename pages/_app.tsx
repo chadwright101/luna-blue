@@ -16,6 +16,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const scrollPosition = useScrollPosition();
+  const { locale } = router;
 
   useEffect(() => {
     const currentMonth = new Date().getMonth();
@@ -24,10 +25,14 @@ const App = ({ Component, pageProps }: AppProps) => {
     const shownDisclaimer = localStorage.getItem("shownDisclaimer");
 
     if (
-      (currentMonth <= 11 && !shownDisclaimer && !storedExpirationTime) ||
+      (currentMonth <= 11 &&
+        !shownDisclaimer &&
+        !storedExpirationTime &&
+        locale === "en") ||
       (showDisclaimer &&
         storedExpirationTime &&
-        Date.now() < +storedExpirationTime)
+        Date.now() < +storedExpirationTime &&
+        locale === "en")
     ) {
       setTimeout(() => {
         setShowDisclaimer(true);
@@ -38,7 +43,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       localStorage.removeItem("shownDisclaimer");
       localStorage.removeItem("expirationTime");
     }
-  }, []);
+  }, [showDisclaimer]);
   return (
     <WindowWidthListener>
       {showDisclaimer && (

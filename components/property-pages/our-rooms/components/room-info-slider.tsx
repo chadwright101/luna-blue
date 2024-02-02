@@ -99,7 +99,9 @@ const RoomInfoSlider = ({
             ? enFacilities.map((item, index) => <li key={index}>{item}</li>)
             : deFacilities.map((item, index) => <li key={index}>{item}</li>)}
           <li className="font-350 italic">
-            Guests under the age of 21 must be accompanied by an adult
+            <Translated german="Für Gäste unter 21 Jahren ist die Begleitung eines Erwachsenen erforderlich.">
+              Guests under the age of 21 must be accompanied by an adult
+            </Translated>
           </li>
         </ul>
       </div>

@@ -44,7 +44,6 @@ const DesktopMenuPageComponent = ({
             className={classNames(
               "h-auto ease-in-out duration-300 delay-[10ms] w-[75px]",
               {
-                "scale-100": scrollPosition === 0,
                 "scale-[80%] translate-y-2": scrollPosition > 0,
               }
             )}
@@ -92,12 +91,18 @@ const DesktopMenuPageComponent = ({
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
                   >
                     <Link
-                      href={url}
+                      href={
+                        windowWidth >= 1050 && url === "/#about-us"
+                          ? url + "-desktop"
+                          : windowWidth >= 1050 && url === "/#contact"
+                          ? url + "-desktop"
+                          : url
+                      }
                       className={classNames(
                         "text-14px uppercase font-Raleway tracking-widest",
                         {
                           "text-brown": currentRoute === url,
-                          "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white  ml-0":
+                          "font-350 p-[0.8rem_0.75rem_0.75rem_0.75rem] -m-[0.8rem_0.75rem_0.75rem_0.75rem] bg-brown text-white hover:text-white ml-0":
                             title === "Direkt buchen",
                         }
                       )}

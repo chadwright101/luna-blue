@@ -5,6 +5,7 @@ import BasicSlider from "@/components/sliders/basic-slider";
 import imageData from "@/data/general-data.json";
 
 import { CssProps } from "@/components/property-pages/home-page/home-page";
+import Translated from "@/components/utils/translated";
 
 const {
   mainHomePage: {
@@ -24,7 +25,7 @@ const HomePageAboutUs = ({ cssClasses }: CssProps) => {
     >
       <div className="bg-brown flex flex-col gap-8 p-8 h-[525px] desktop:h-[500px]">
         <h2 className="text-white text-center text-35px border-y-2 py-2 border-white">
-          About us
+          <Translated german="Über uns">About us</Translated>
         </h2>
         {locale === "en"
           ? enParagraphs.map((paragraph, index) => (

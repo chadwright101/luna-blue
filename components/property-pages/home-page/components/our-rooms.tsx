@@ -44,7 +44,7 @@ const OurRooms = ({
       <div>
         <h2 className="mb-8 tabletLarge:hidden">
           {currentRoute === "/cliffside-suites/our-suites" ? (
-            <Translated german="** To be translated">Our Suites</Translated>
+            <Translated german="Unsere Suiten">Our Suites</Translated>
           ) : currentRoute === "forest-view-cabins/our-cabins" ? (
             <Translated german="Unsere Hütten">Our Cabins</Translated>
           ) : (
@@ -61,7 +61,7 @@ const OurRooms = ({
           }
           titleGerman={
             currentRoute === "/cliffside-suites"
-              ? "** To be translated"
+              ? "Unsere Suiten"
               : currentRoute === "forest-view-cabins"
               ? "Unsere Hütten"
               : "Unsere Zimmer"

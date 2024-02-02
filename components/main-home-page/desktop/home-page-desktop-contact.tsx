@@ -4,18 +4,34 @@ import { useRouter } from "next/router";
 
 import Translated from "@/components/utils/translated";
 
-import generalData from "@/data/general-data.json";
 import { CssProps } from "@/components/property-pages/home-page/home-page";
-
-const {
-  contact: { phone, phoneDisplay, email },
-} = generalData;
 
 const HomePageContact = ({ cssClasses }: CssProps) => {
   const [showMessage, setShowMessage] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
   const { locale } = useRouter();
+
+  const fetchPhone = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowPhone(data.phone);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
+  const fetchEmail = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowEmail(data.email);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
   return (
     <div className={`${cssClasses}`}>
       <h2 className="mb-6 desktopSmall:mb-8">
@@ -34,7 +50,7 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             {!showPhone && (
               <p
                 className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown tabletLarge:p-0 tabletLarge:m-0"
-                onClick={() => setShowPhone(true)}
+                onClick={fetchPhone}
               >
                 <Translated german="Rufnummer anzeigen">
                   Show phone number
@@ -43,10 +59,10 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             )}
             {showPhone && (
               <Link
-                href={`tel:${phone}`}
+                href={`tel:${showPhone}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
               >
-                {phoneDisplay}
+                {showPhone}
               </Link>
             )}
           </li>
@@ -62,7 +78,7 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             {!showEmail && (
               <p
                 className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0"
-                onClick={() => setShowEmail(true)}
+                onClick={fetchEmail}
               >
                 <Translated german="E-Mail Adresse anzeigen">
                   Show email address
@@ -71,10 +87,10 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             )}
             {showEmail && (
               <Link
-                href={`mailto:${email}`}
+                href={`mailto:${showEmail}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
               >
-                {email}
+                {showEmail}
               </Link>
             )}
           </li>

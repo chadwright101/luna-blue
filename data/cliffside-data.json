@@ -40,8 +40,8 @@
       "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
       "description": {
         "en": {
-          "paragraph1": "Our suites are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket rooms feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries.",
-          "paragraph2": "You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep. Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket rooms will provide you with the ultimate in comfort and luxury."
+          "paragraph1": "Our suites are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket suites feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries.",
+          "paragraph2": "You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep. Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket suites will provide you with the ultimate in comfort and luxury."
         },
         "de": {
           "paragraph1": "Jedes unserer Suiten wurde mit dem Ziel entworfen, Ihren Aufenthalt zu einem unvergesslichen Erlebnis zu machen, das Ihre Erwartungen übertrifft. Sobald Sie einen Schritt in eines unserer zauberhaften Suiten setzen, umgibt Sie ein Gefühl von Eleganz und Komfort. In unseren Luxussuiten erwarten Sie erstklassige Einrichtungen, Plüschbettwäsche, hochwertige elektronische Geräte und Toilettenartikel.",
@@ -50,7 +50,7 @@
       }
     },
     "moreInfoAvailability": {
-      "bookingUrl": "https://book.nightsbridge.com/",
+      "bookingUrl": "https://book.nightsbridge.com/36149",
       "roomImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
       "infoImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/plett.jpg"
     }
@@ -97,7 +97,7 @@
             "Pet-friendly by arrangement",
             "Shared kitchenette - Gas Hob, Fridge, Microwave & Nespresso Coffee Machine"
           ],
-          "enSize": 150
+          "enSize": 32
         },
         "bedroom2": {
           "enTitle": "",
@@ -117,7 +117,23 @@
       },
       "de": {
         "bedroom1": {
-          "deFacilities": [""]
+          "deFacilities": [
+            "Queen-Size-Bett",
+            "Elektrische Bettdecke",
+            "Privates Badezimmer mit Badewanne und begehbarer Dusche",
+            "Beheizter Handtuchhalter",
+            "Frisiertisch mit Myoko Haartrockner",
+            "Holzbefeuerter Kamin",
+            "Smart TV (Streaming Login/s erforderlich)",
+            "Kostenloses WiFi",
+            "Private Terrasse",
+            "Planschbecken und Liegestühle",
+            "Grill",
+            "Sonnenenergie",
+            "Gas-Geysire",
+            "Haustiere nach Absprache erlaubt",
+            "Gemeinschaftsküche - Gasherd, Kühlschrank, Mikrowelle & Nespresso Kaffeemaschine"
+          ]
         },
         "bedroom2": {
           "deFacilities": [""]
@@ -203,7 +219,7 @@
     "de": [
       {
         "url": "/icons/cliffside/splash-pool.svg",
-        "item": ""
+        "item": "Planschbecken"
       },
       {
         "url": "/icons/cliffside/pet-friendly.svg",
@@ -214,11 +230,11 @@
         "item": "Solarbetrieben"
       },
       {
-        "item": ""
+        "item": "Private Terrasse"
       },
       {
         "url": "/icons/cliffside/kitchenette.svg",
-        "item": ""
+        "item": "Gemeinsame Kochnische"
       },
       {
         "url": "/icons/cliffside/bbq-facility.svg",
@@ -230,7 +246,7 @@
       },
       {
         "url": "/icons/cliffside/fireplace.svg",
-        "item": ""
+        "item": "Feuerstelle"
       },
       {
         "url": "/icons/cliffside/coffee.svg",

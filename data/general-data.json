@@ -1,7 +1,6 @@
 {
   "contact": {
-    "phoneDisplay": "+27 66 488 2828",
-    "phone": "+27664882828",
+    "phone": "+27 66 488 2828",
     "email": "enquiries@lunarblue.co.za"
   },
   "mainHomePage": {
@@ -24,10 +23,10 @@
       },
       "cliffside": {
         "en": {
-          "description": "** To be added"
+          "description": "Our luxury self-catering suites are furnished with a queen bed and an en-suite bathroom. Each suite offers a fully equipped shared kitchen, a spectacular valley view, a private balcony with a pool, sun loungers and BBQ facilities."
         },
         "de": {
-          "description": "** To be translated"
+          "description": "In unseren luxuriösen Selbstversorger-Suiten finden Sie ein Queensize-Bett und ein eigenes Bad. Jede Suite verfügt über eine komplett ausgestattete Küche, eine herrliche Aussicht auf das Tal, eine private Terrasse mit Swimmingpool, Liegestühlen und Grill."
         }
       }
     },

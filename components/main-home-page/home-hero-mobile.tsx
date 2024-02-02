@@ -13,7 +13,6 @@ import cliffsideData from "@/data/cliffside-data.json";
 import { CssProps } from "../property-pages/home-page/home-page";
 
 const {
-  contact: { phone, phoneDisplay },
   mainHomePage: {
     hero: { lagoonVilla, robbergBeach, cliffside },
     gallery,
@@ -28,6 +27,17 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
   const [showPhone, setShowPhone] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
   const { locale } = useRouter();
+
+  const fetchPhone = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowPhone(data.phone);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
   return (
     <main className={`-mx-8 ${cssClasses}`}>
       <HomePageMobileSlide
@@ -103,7 +113,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       >
         <ul>
           {!showPhone && (
-            <li onClick={() => setShowPhone(true)} className="mr-auto">
+            <li onClick={fetchPhone} className="mr-auto">
               <p className="italic p-3 -m-3 tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0 text-white underline underline-offset-4">
                 <Translated german="Rufnummer anzeigen">
                   Show phone number
@@ -114,10 +124,10 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
           {showPhone && (
             <li>
               <Link
-                href={`tel:${phone}`}
+                href={`tel:${showPhone}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 text-white"
               >
-                {phoneDisplay}
+                {showPhone}
               </Link>
             </li>
           )}

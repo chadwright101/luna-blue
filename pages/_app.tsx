@@ -43,7 +43,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       localStorage.removeItem("shownDisclaimer");
       localStorage.removeItem("expirationTime");
     }
-  }, [showDisclaimer]);
+  }, []);
   return (
     <WindowWidthListener>
       {showDisclaimer && (

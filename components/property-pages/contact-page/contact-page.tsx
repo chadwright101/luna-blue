@@ -23,19 +23,50 @@ const ContactPage = ({
   verticalImage,
   horizontalImage,
 }: Props) => {
-  const defaultPhone = (
-    <Translated german="Rufnummer anzeigen">Show phone number</Translated>
-  );
-  const defaultEmail = (
-    <Translated german="E-Mail Adresse anzeigen">Show email address</Translated>
-  );
-
   const [showMessage, setShowMessage] = useState(false);
-  const [showEmail, setShowEmail] = useState(defaultEmail);
-  const [showPhone, setShowPhone] = useState(defaultPhone);
+  const [showEmail, setShowEmail] = useState("");
+  const [showPhone, setShowPhone] = useState("");
   const { locale } = useRouter();
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [formSumitting, setFormSubmitting] = useState(false);
+  const [formSubmited, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState("");
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setFormSubmitting(true);
+
+    const formData = new FormData(event.target as HTMLFormElement);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const property = formData.get("property");
+    const message = formData.get("message");
+
+    const response = await fetch("/api/send-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "api-email-code": process.env.NEXT_PUBLIC_API_EMAIL_SECRET_CODE || "",
+      },
+      body: JSON.stringify({ name, email, message, property }),
+    });
+
+    if (response.ok) {
+      setShowMessage(false);
+      formData.delete("name");
+      formData.delete("email");
+      formData.delete("message");
+      setFormSubmitting(false);
+      setFormSubmitted(true);
+    } else {
+      console.error("Error sending email", response);
+      setFormError(
+        "There was an error sending the email, please try again. If the problem persists, please contact us via phone."
+      );
+      setFormSubmitting(false);
+    }
+  };
 
   const fetchPhone = async () => {
     try {
@@ -91,12 +122,14 @@ const ContactPage = ({
               <p className="font-500">
                 <Translated german="Telefon">Phone</Translated>:
               </p>
-              {showPhone !== defaultPhone ? (
+              {!showPhone ? (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown tabletLarge:p-0 tabletLarge:m-0"
                   onClick={fetchPhone}
                 >
-                  {showPhone}
+                  <Translated german="Rufnummer anzeigen">
+                    Show phone number
+                  </Translated>
                 </p>
               ) : (
                 <Link
@@ -119,12 +152,14 @@ const ContactPage = ({
               <p className="font-500">
                 <Translated german="E-Mail">Email</Translated>:
               </p>
-              {showEmail !== defaultEmail ? (
+              {!showEmail ? (
                 <p
                   className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0"
                   onClick={fetchEmail}
                 >
-                  {showEmail}
+                  <Translated german="E-Mail Adresse anzeigen">
+                    Show email address
+                  </Translated>
                 </p>
               ) : (
                 <Link
@@ -174,94 +209,117 @@ const ContactPage = ({
               </address>
             </li>
           </ul>
-          <div>
-            <p
-              className={`mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4 ${
-                locale === "en" ? "" : "text-left phone:text-justify"
-              }`}
-            >
-              <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
-                Please fill out the form below and we&#39;ll get back to you
-                ASAP...
-              </Translated>
-            </p>
-            <form
-              action="https://formsubmit.co/40ca08923db7f7ef1ea324bce7ce9752"
-              method="POST"
-              className="flex flex-col gap-10"
-            >
-              <input
-                type="text"
-                name="subject"
-                defaultValue={`Website Contact Form - ${propertyName}`}
-                className="hidden"
-              />
-              <div className="flex flex-col gap-3">
-                <label htmlFor="name" className="font-500">
-                  Name:
-                </label>
+          {!formSubmited ? (
+            <div id="property-contact">
+              <p
+                className={`mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4 ${
+                  locale === "en" ? "" : "text-left phone:text-justify"
+                }`}
+              >
+                <Translated german="Füllen Sie bitte das folgende Formular aus. Wir werden uns so schnell wie möglich mit Ihnen in Verbindung setzen...">
+                  Please fill out the form below and we&#39;ll get back to you
+                  ASAP...
+                </Translated>
+              </p>
+              <form onSubmit={handleSubmit} className="flex flex-col gap-10">
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  required
-                  placeholder={
-                    locale === "en" ? "Full name" : "Vollständiger Name"
-                  }
-                  className="pl-2 py-1.5 bg-darkBeige"
+                  name="property"
+                  id="property"
+                  defaultValue={propertyName}
+                  className="hidden"
                 />
-              </div>
-              <input type="text" name="_honey" className="hidden"></input>
-              {showMessage && (
-                <>
-                  <div className="flex flex-col gap-3">
-                    <label htmlFor="email" className="font-500">
-                      Email:
-                    </label>
-                    <input
-                      type="text"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder={locale === "en" ? "Email Address" : "E-Mail"}
-                      className="pl-2 py-1.5 bg-darkBeige"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <label htmlFor="email" className="font-500">
-                      <Translated german="Nachricht">Message</Translated>:
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      required
-                      placeholder={
-                        locale === "en"
-                          ? "Type your message here"
-                          : "Geben Sie hier Ihre Nachricht ein"
-                      }
-                      className="pl-2 py-1.5 bg-darkBeige"
-                      rows={3}
-                    />
-                  </div>
-                  <button
-                    className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2"
-                    type="submit"
-                  >
-                    <Translated german="Einreichen">Submit</Translated>
-                  </button>
-                </>
+                <div className="flex flex-col gap-3">
+                  <label htmlFor="name" className="font-500">
+                    Name:
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder={
+                      locale === "en" ? "Full name" : "Vollständiger Name"
+                    }
+                    className="pl-2 py-1.5 bg-darkBeige"
+                  />
+                </div>
+                <input type="text" name="_honey" className="hidden"></input>
+                {showMessage && (
+                  <>
+                    <div className="flex flex-col gap-3">
+                      <label htmlFor="email" className="font-500">
+                        Email:
+                      </label>
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder={
+                          locale === "en" ? "Email Address" : "E-Mail"
+                        }
+                        className="pl-2 py-1.5 bg-darkBeige"
+                      />
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      <label htmlFor="email" className="font-500">
+                        <Translated german="Nachricht">Message</Translated>:
+                      </label>
+                      <textarea
+                        id="message"
+                        name="message"
+                        required
+                        placeholder={
+                          locale === "en"
+                            ? "Type your message here"
+                            : "Geben Sie hier Ihre Nachricht ein"
+                        }
+                        className="pl-2 py-1.5 bg-darkBeige"
+                        rows={3}
+                      />
+                    </div>
+                    {!formSumitting ? (
+                      <>
+                        <button
+                          className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2"
+                          type="submit"
+                        >
+                          <Translated german="Einreichen">Submit</Translated>
+                        </button>
+                        {formError && (
+                          <p className="text-errorRed italic -mt-6">
+                            {formError}
+                          </p>
+                        )}
+                      </>
+                    ) : (
+                      <button
+                        className="bg-brown w-full text-white px-4 py-3 font-500 tabletLarge:w-28 tabletLarge:py-2 flex justify-center items-center disabled:bg-darkGrey disabled:cursor-not-allowed"
+                        disabled={formSumitting}
+                      >
+                        <div className="animate-spin w-[27px] h-[27px] rounded-full border-t-2 border-b-2 border-r-2 border-purple-500"></div>
+                      </button>
+                    )}
+                  </>
+                )}
+              </form>
+              {!showMessage && (
+                <button
+                  onClick={() => setShowMessage(true)}
+                  className="bg-brown w-full text-white px-4 py-3 font-500 mt-8 tabletLarge:w-28 tabletLarge:py-2"
+                >
+                  <Translated german="Nächste">Next</Translated>
+                </button>
               )}
-            </form>
-            {!showMessage && (
-              <button
-                onClick={() => setShowMessage(true)}
-                className="bg-brown w-full text-white px-4 py-3 font-500 mt-8 tabletLarge:w-28 tabletLarge:py-2"
-              >
-                <Translated german="Nächste">Next</Translated>
-              </button>
-            )}
-          </div>
+            </div>
+          ) : (
+            <p className=" bg-brown py-4 px-2 text-white mb-8 mt-3 italic desktopSmall:mt-0 desktopSmall:mb-4">
+              <Translated german="Danke für deine Nachricht. Wir werden uns so schnell wie möglich bei Ihnen melden...">
+                Thanks for your message. We will get back to you ASAP...
+              </Translated>
+            </p>
+          )}
         </div>
         {!showMessage && (
           <ImageContainer

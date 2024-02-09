@@ -31,6 +31,7 @@ module.exports = {
       pureBlack: "#000",
       white: "#fff",
       blueLink: "#0645AD",
+      errorRed: "#FF0000",
     },
     fontWeight: {
       300: "300",

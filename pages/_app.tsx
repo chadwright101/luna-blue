@@ -47,7 +47,16 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <WindowWidthListener>
       {showDisclaimer && (
-        <RageDisclaimer setShowDisclaimer={setShowDisclaimer} />
+        <RageDisclaimer
+          setShowDisclaimer={(value: React.SetStateAction<boolean>) => {
+            setShowDisclaimer(value);
+            if (!value) {
+              const expirationTime = Date.now() + 15 * 60 * 1000;
+              localStorage.setItem("shownDisclaimer", "true");
+              localStorage.setItem("expirationTime", expirationTime.toString());
+            }
+          }}
+        />
       )}
       <Header
         cssClasses={`sticky z-20 px-8 py-4 ${

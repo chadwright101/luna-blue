@@ -2,332 +2,322 @@
   "general": {
     "propertyName": "Cliffside Suites",
     "address": {
-      "street": "7 Jane Street",
+      "street": "-34.06747 23.28104",
       "town": "Plettenberg Bay",
       "province": "Western Cape",
-      "areaCode": 6600
+      "areaCode": 6600,
+      "googleMapsUrl": "https://www.google.com/maps/place/34%C2%B004'02.9%22S+23%C2%B016'51.8%22E/@-34.067479,23.2804143,232m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d-34.067479!4d23.281058?entry=ttu"
     },
     "contact": {
       "subject": "Cliffside%20Suites%20enquiry"
+    },
+    "meta": {
+      "description": {
+        "en": "Located the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our suites offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Cliffside Suites is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay.",
+        "de": "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Cliffside Suites ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay."
+      },
+      "keywords": "cliffside suites, plettenberg bay, plett, suites, plett suites, plett accomodation, plettenberg bay accomodation, plettenberg bay suites, luxury, 5 star",
+      "images": [
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-1.webp",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-2.webp",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-3.webp"
+      ]
     }
   },
-  "amenities": {
-    "en": [
-      {
-        "url": "/icons/swimming-pool.svg",
-        "title": "Swimming Pool"
+  "homePage": {
+    "url": "cliffside-suites",
+    "aboutUs": {
+      "video": {
+        "videoUrl": "",
+        "posterUrl": ""
       },
-      {
-        "url": "/icons/gym.svg",
-        "title": "Gym"
-      },
-      {
-        "url": "/icons/pet-friendly.svg",
-        "title": "Pet Friendly"
-      },
-      {
-        "url": "/icons/solar.svg",
-        "title": "Solar Powered"
-      },
-      {
-        "url": "/icons/kitchen.svg",
-        "title": "Kitchen"
-      },
-      {
-        "url": "/icons/garden.svg",
-        "title": "Garden"
-      },
-      {
-        "url": "/icons/bbq-facilities.svg",
-        "title": "BBQ Facilities"
-      },
-      {
-        "url": "/icons/free-wifi.svg",
-        "title": "Free Wifi"
+      "description": {
+        "en": "There is no older or greater love story than that of the moon and the sea, with this relationship covered by both mythology and science. Whether apart or together they have the power to entrance with their beauty, gently touch our souls or simply make us stop and give us a greater perspective of how we fit into this world. This is the magic we want you to feel when you visit our suites.",
+        "de": "Kaum eine Liebesgeschichte ist älter oder bedeutender als die von Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in der Wissenschaft thematisiert wird. Sie haben die Macht, uns mit ihrer Schönheit zu verzaubern, unsere Seelen sanft zu berühren oder uns einfach innehalten zu lassen, um uns eine größere Perspektive über unseren Platz in dieser Welt zu geben, ob sie nun getrennt sind oder zusammen. Bei einem Besuch in unseren Gästehäusern möchten wir Sie diesen Zauber spüren lassen."
       }
+    },
+    "ourRooms": {
+      "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+      "description": {
+        "en": {
+          "paragraph1": "Our suites are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket suites feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries.",
+          "paragraph2": "You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep. Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket suites will provide you with the ultimate in comfort and luxury."
+        },
+        "de": {
+          "paragraph1": "Jedes unserer Suiten wurde mit dem Ziel entworfen, Ihren Aufenthalt zu einem unvergesslichen Erlebnis zu machen, das Ihre Erwartungen übertrifft. Sobald Sie einen Schritt in eines unserer zauberhaften Suiten setzen, umgibt Sie ein Gefühl von Eleganz und Komfort. In unseren Luxussuiten erwarten Sie erstklassige Einrichtungen, Plüschbettwäsche, hochwertige elektronische Geräte und Toilettenartikel.",
+          "paragraph2": "Lassen Sie sich von unseren weichen und bequemen Betten verwöhnen und genießen Sie einen wohlverdienten, erholsamen Schlaf. Wir achten auf jedes Detail, damit jeder Aspekt Ihres Aufenthalts perfekt wird. Ob Geschäfts- oder Vergnügungsreise, unsere Luxussuiten vereinen Komfort und Luxus auf höchstem Niveau."
+        }
+      }
+    },
+    "moreInfoAvailability": {
+      "bookingUrl": "https://book.nightsbridge.com/36149",
+      "roomImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
+      "infoImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/plett.jpg"
+    }
+  },
+  "ourRoomsPage": {
+    "imageGridUrls": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4215.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4210.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4227.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg"
     ],
-    "de": [
-      {
-        "url": "/icons/swimming-pool.svg",
-        "title": "Schwimm-bad"
+    "description": {
+      "en": {
+        "paragraph1": "Our suites are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort.",
+        "paragraph2": "Our upmarket suites feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries. You'll feel pampered and indulged as you sink into our soft, comfortable beds and enjoy a restful night's sleep.",
+        "paragraph3": "Our attention to detail is unmatched, and we strive to ensure that every aspect of your stay is perfect. Whether you're here for business or pleasure, our upmarket suites will provide you with the ultimate in comfort and luxury."
       },
-      {
-        "url": "/icons/gym.svg",
-        "title": "Fitness-studio"
-      },
-      {
-        "url": "/icons/pet-friendly.svg",
-        "title": "Haustier-freundlich"
-      },
-      {
-        "url": "/icons/solar.svg",
-        "title": "Solar-betrieben"
-      },
-      {
-        "url": "/icons/kitchen.svg",
-        "title": "Küche"
-      },
-      {
-        "url": "/icons/garden.svg",
-        "title": "Garten"
-      },
-      {
-        "url": "/icons/bbq-facilities.svg",
-        "title": "BBQ Einrichtungen"
-      },
-      {
-        "url": "/icons/free-wifi.svg",
-        "title": "Kostenloses wifi"
+      "de": {
+        "paragraph1": "Jedes unserer Suiten wurde mit dem Ziel entworfen, Ihren Aufenthalt zu einem unvergesslichen Erlebnis zu machen, das Ihre Erwartungen übertrifft. Sobald Sie einen Schritt in eines unserer zauberhaften Suiten setzen, umgibt Sie ein Gefühl von Eleganz und Komfort.",
+        "paragraph2": "In unseren Luxussuiten erwarten Sie erstklassige Einrichtungen, Plüschbettwäsche, hochwertige elektronische Geräte und Toilettenartikel. Lassen Sie sich von unseren weichen und bequemen Betten verwöhnen und genießen Sie einen wohlverdienten, erholsamen Schlaf.",
+        "paragraph3": "Wir achten auf jedes Detail, damit jeder Aspekt Ihres Aufenthalts perfekt wird. Ob Geschäfts- oder Vergnügungsreise, unsere Luxussuiten vereinen Komfort und Luxus auf höchstem Niveau."
       }
-    ]
+    },
+    "globalFacilities": {},
+    "roomInfo": {
+      "en": {
+        "bedroom1": {
+          "enTitle": "Luxury Suite",
+          "enFacilities": [
+            "Queen Size Bed",
+            "Electric blanket",
+            "Ensuite Bathroom with bath & walk-in shower",
+            "Heated towel rail",
+            "Makeup station with Myoko Hairdryer",
+            "Wood burning fireplace",
+            "Smart TV (streaming login/s required)",
+            "Free WiFi",
+            "Private deck",
+            "Splash pool & sun Loungers",
+            "BBQ Facility",
+            "Solar Powered",
+            "Gas Geysers",
+            "Pet-friendly by arrangement",
+            "Shared kitchenette - Gas Hob, Fridge, Microwave & Nespresso Coffee Machine"
+          ],
+          "enSize": 32
+        },
+        "bedroom2": {
+          "enTitle": "",
+          "enFacilities": [""],
+          "enSize": 150
+        },
+        "bedroom3": {
+          "enTitle": "",
+          "enFacilities": [""],
+          "enSize": 150
+        },
+        "bedroom4": {
+          "enTitle": "",
+          "enFacilities": [""],
+          "enSize": 150
+        }
+      },
+      "de": {
+        "bedroom1": {
+          "deFacilities": [
+            "Queen-Size-Bett",
+            "Elektrische Bettdecke",
+            "Privates Badezimmer mit Badewanne und begehbarer Dusche",
+            "Beheizter Handtuchhalter",
+            "Frisiertisch mit Myoko Haartrockner",
+            "Holzbefeuerter Kamin",
+            "Smart TV (Streaming Login/s erforderlich)",
+            "Kostenloses WiFi",
+            "Private Terrasse",
+            "Planschbecken und Liegestühle",
+            "Grill",
+            "Sonnenenergie",
+            "Gas-Geysire",
+            "Haustiere nach Absprache erlaubt",
+            "Gemeinschaftsküche - Gasherd, Kühlschrank, Mikrowelle & Nespresso Kaffeemaschine"
+          ]
+        },
+        "bedroom2": {
+          "deFacilities": [""]
+        },
+        "bedroom3": {
+          "deFacilities": [""]
+        },
+        "bedroom4": {
+          "deFacilities": [""]
+        }
+      }
+    }
+  },
+  "aboutPage": {
+    "imageGridUrls": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4247.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4188-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4253-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4251.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg"
+    ],
+    "description": {
+      "enDescription": {
+        "heading": "Located on the magnificent, unspoilt shores of the Indian Ocean.",
+        "paragraph1": "There is no older or greater love story than that of the moon and the sea, with this relationship covered by both mythology and science. Whether apart or together they have the power to entrance with their beauty, gently touch our souls or simply make us stop and give us a greater perspective of how we fit into this world. This is the magic we want you to feel when you visit our suites.",
+        "paragraph2": "Located in the Tsitsikamma Marine Protected Area, Plettenberg Bay in the Garden Route is known for it's crystal clear seas and white sand beaches. Our suites offer majestic views of the coast and were built to offer a cultivated experience of the things that we love. Cliffside Suites is the passion project of Nikki and Heath, who together found their home in Plettenberg Bay. While their work experience has been vast, the one consistent factor throughout is their hospitality and passion for dealing with people. The suites are a reflection of the things that they most care for, including the environment, fitness, animals, vegan cuisine and a deep love for Africa. Located outside of the hustle and bustle of central Plettenberg Bay, your stay with us will be a peaceful, soul restoring experience, while giving you quick access through a 5 minute drive to the Plettenberg Bay Airport, 2 minute drive to town and 5 minute drive to the beautiful beaches."
+      },
+      "deDescription": {
+        "heading": "Gelegen an der herrlichen, unberührten Küste des Indischen Ozeans.",
+        "paragraph1": "Kaum eine Liebesgeschichte ist älter oder bedeutender als die von Mond und Meer, deren Beziehung sowohl in der Mythologie als auch in der Wissenschaft thematisiert wird. Sie haben die Macht, uns mit ihrer Schönheit zu verzaubern, unsere Seelen sanft zu berühren oder uns einfach innehalten zu lassen, um uns eine größere Perspektive über unseren Platz in dieser Welt zu geben, ob sie nun getrennt sind oder zusammen. Bei einem Besuch in unseren Gästehäusern möchten wir Sie diesen Zauber spüren lassen.",
+        "paragraph2": "Die an der Garden Route gelegene Stadt Plettenberg Bay im Tsitsikamma Marine Reserve ist bekannt für ihr kristallklares Meer und ihre weißen Sandstrände. Von den Gästehäusern aus hat man einen herrlichen Blick auf die Küste und alles ist darauf ausgerichtet, Ihnen ein kultiviertes Erlebnis zu bescheren, bei dem Sie die Dinge, die Sie lieben, in vollen Zügen genießen können. Die Gründung des Cliffside Suites ist das leidenschaftliche Projekt von Nikki und Heath, die gemeinsam in Plettenberg Bay. ihr Zuhause gefunden haben. Auch wenn ihre beruflichen Erfahrungen sehr unterschiedlich sind, so sind doch ihre Gastfreundschaft und ihre Leidenschaft für den Umgang mit Menschen ein Faktor, der sie verbindet. Die Gästehäuser sind ein Spiegelbild der Dinge, die ihnen am meisten am Herzen liegen: Umwelt, Fitness, Tiere, vegane Küche und eine starke Liebe zu Afrika. Abseits vom Trubel des Zentrums von Plettenberg Bay gelegen, wird Ihr Aufenthalt bei uns zu einem friedlichen und erholsamen Erlebnis. Der Flughafen von Plettenberg Bay ist in 5 Minuten, die Stadt in 2 Minuten und die wunderschönen Strände in 5 Minuten zu erreichen."
+      }
+    },
+    "thingsToDo": {
+      "images": {
+        "activities": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/activities.jpg",
+        "restaurants": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/restaurants.jpg",
+        "events": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/events.jpg"
+      }
+    }
   },
   "facilities": {
     "en": [
-      "Solar Powered",
-      "Swimming Pool",
-      "Pet Friendly",
-      "Pillow Library",
-      "Underfloor Heating",
-      "Coffee Machine",
-      "Garden",
-      "Smart TVs",
-      "BBQ Facilities",
-      "Free Wifi",
-      "Patio",
-      "Linen & Towels"
+      {
+        "url": "/icons/cliffside/splash-pool.svg",
+        "item": "Splash pool"
+      },
+      {
+        "url": "/icons/cliffside/pet-friendly.svg",
+        "item": "Pet Friendly"
+      },
+      {
+        "url": "/icons/cliffside/solar.svg",
+        "item": "Solar Powered"
+      },
+      {
+        "item": "Private deck"
+      },
+      {
+        "url": "/icons/cliffside/kitchenette.svg",
+        "item": "Shared kitchenette"
+      },
+      {
+        "url": "/icons/cliffside/bbq-facility.svg",
+        "item": "BBQ Facility"
+      },
+      {
+        "url": "/icons/cliffside/free-wifi.svg",
+        "item": "Free Wifi"
+      },
+      {
+        "url": "/icons/cliffside/fireplace.svg",
+        "item": "Fireplace"
+      },
+      {
+        "url": "/icons/cliffside/coffee.svg",
+        "item": "Coffee Machine"
+      },
+      {
+        "item": "Linen & Towels"
+      }
     ],
     "de": [
-      "Solarbetrieben",
-      "Schwimmbad",
-      "Haustierfreundlich",
-      "Kissen-Auswahl",
-      "Fußbodenheizung",
-      "Kaffeemaschine",
-      "Garten",
-      "Smart TV",
-      "BBQ Einrichtungen",
-      "Kostenloses  Wifi",
-      "Veranda",
-      "Wäsche & Handtücher"
+      {
+        "url": "/icons/cliffside/splash-pool.svg",
+        "item": "Planschbecken"
+      },
+      {
+        "url": "/icons/cliffside/pet-friendly.svg",
+        "item": "Haustierfreundlich"
+      },
+      {
+        "url": "/icons/cliffside/solar.svg",
+        "item": "Solarbetrieben"
+      },
+      {
+        "item": "Private Terrasse"
+      },
+      {
+        "url": "/icons/cliffside/kitchenette.svg",
+        "item": "Gemeinsame Kochnische"
+      },
+      {
+        "url": "/icons/cliffside/bbq-facility.svg",
+        "item": "BBQ Einrichtungen"
+      },
+      {
+        "url": "/icons/cliffside/free-wifi.svg",
+        "item": "Kostenloses WLAN"
+      },
+      {
+        "url": "/icons/cliffside/fireplace.svg",
+        "item": "Feuerstelle"
+      },
+      {
+        "url": "/icons/cliffside/coffee.svg",
+        "item": "Kaffeemaschine"
+      },
+      {
+        "item": "Wäsche & Handtücher"
+      }
     ]
-  },
-  "rooms": {
-    "en": {
-      "bedroom1": {
-        "enTitle": "Sapphire Suite",
-        "enFacilities": [
-          "King size bed",
-          "Walk-in closet",
-          "Fireplace",
-          "Large balcony",
-          "Superior bathroom"
-        ],
-        "enSize": 54
-      },
-      "bedroom2": {
-        "enTitle": "Cyan Room",
-        "enFacilities": ["King size bed", "Small balcony"],
-        "enSize": 24
-      },
-      "bedroom3": {
-        "enTitle": "Cobalt Room",
-        "enFacilities": ["Queen size bed", "Small balcony"],
-        "enSize": 28
-      },
-      "bedroom4": {
-        "enTitle": "Turquoise Studio",
-        "enFacilities": ["King size bed", "Superior balcony", "Kitchenette"],
-        "enSize": 52
-      }
-    },
-    "de": {
-      "bedroom1": {
-        "deTitle": "Sapphire Suite",
-        "deFacilities": [
-          "Kingsize-Bett",
-          "Begehbarer Kleiderschrank",
-          "Kamin",
-          "Großer Balkon",
-          "Hochwertiges Badezimmer"
-        ]
-      },
-      "bedroom2": {
-        "deTitle": "Cyan Room",
-        "deFacilities": ["Kingsize-Bett", "Kleiner Balkon"]
-      },
-      "bedroom3": {
-        "deTitle": "Cobalt Room",
-        "deFacilities": ["QuedeSize-Bett", "Kleiner Balkon"]
-      },
-      "bedroom4": {
-        "deTitle": "Turquoise Studio",
-        "deFacilities": ["Kingsize-Bett", "Erstklassiger Balkon", "Kochnische"]
-      }
-    }
   },
   "images": {
     "homePage": {
-      "heroslider": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0508-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0684-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0816-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0824-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0632-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0492-HDR.jpg"
-        },
-
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/home-page/Slideshow/9U7A0672-HDR.jpg"
-        }
+      "heroSlider": [
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4238.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg"
       ]
     },
-    "aboutUsslider": [
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0432-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0624-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/DJI_0204.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/DJI_0205.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0908-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0304-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0332-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0352-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0364-HDR.jpg"
-      },
-
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0428-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0548-HDR.jpg"
-      },
-
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0660-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0324-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/9U7A0676-HDR.jpg"
-      },
-      {
-        "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/about-us/slider/DSC01930.jpg"
-      }
+    "aboutUsSlider": [
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4224.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4219.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4096-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4116-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4088-HDR-2.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0157.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0161.jpg"
     ],
     "ourRooms": {
       "bedroom1": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0800-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0804-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0808-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0812-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0816-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0820-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0824-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0828-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+1/9U7A0832-HDR.jpg"
-        }
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4224.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4219.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4096-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4116-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4088-HDR-2.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0157.jpg",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0161.jpg"
       ],
-      "bedroom2": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0764-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0768-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0772-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0776-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0788-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+2/9U7A0796-HDR.jpg"
-        }
-      ],
-      "bedroom3": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+3/9U7A0712-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+3/9U7A0720-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+3/9U7A0752-HDR-Edit.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+3/9U7A0756-HDR.jpg"
-        }
-      ],
-      "bedroom4": [
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0868-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0872-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0876-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0880-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0884-HDR.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0888-HDR-Edit.jpg"
-        },
-        {
-          "url": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/our-rooms/Bedroom+4/9U7A0904-HDR.jpg"
-        }
-      ]
+      "bedroom2": [""],
+      "bedroom3": [""],
+      "bedroom4": [""]
     }
   }
 }

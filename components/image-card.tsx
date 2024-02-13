@@ -54,7 +54,7 @@ const ImageCard = ({
         cssClasses="h-full w-full object-cover -mb-[275px] phone:-mb-[325px] tablet:-mb-[375px] tabletLarge:-mb-[475px] desktop:-mb-[400px]"
         smallest={95}
         desktopSmall={center ? 40 : undefined}
-        desktop={center ? 30 : 85}
+        desktop={center ? 30 : 90}
       />
 
       {/* mobile view */}

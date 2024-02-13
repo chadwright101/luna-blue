@@ -1,7 +1,6 @@
 {
   "contact": {
-    "phoneDisplay": "+27 66 488 2828",
-    "phone": "+27664882828",
+    "phone": "+27 66 488 2828",
     "email": "enquiries@lunarblue.co.za"
   },
   "mainHomePage": {
@@ -21,6 +20,14 @@
         "de": {
           "description": "In der Keurbooms Lagoon Villa erwartet Sie eine stilvolle, luxuriöse und geräumige Unterkunft mit atemberaubendem Blick auf die Lagune, das Meer und die Berge."
         }
+      },
+      "cliffside": {
+        "en": {
+          "description": "Our luxury self-catering suites are furnished with a queen bed and an en-suite bathroom. Each suite offers a fully equipped shared kitchen, a spectacular valley view, a private balcony with a pool, sun loungers and BBQ facilities."
+        },
+        "de": {
+          "description": "In unseren luxuriösen Selbstversorger-Suiten finden Sie ein Queensize-Bett und ein eigenes Bad. Jede Suite verfügt über eine komplett ausgestattete Gemeinschaftsküche, eine herrliche Aussicht auf das Tal, eine private Terrasse mit Swimmingpool, Liegestühlen und Grill."
+        }
       }
     },
     "aboutUs": {
@@ -28,7 +35,7 @@
         "paragraphs": [
           "There is no older or greater love story than that of the moon and the sea, with this relationship covered by both mythology and science.",
           "Whether apart or together they have the power to entrance with their beauty, gently touch our souls or simply make us stop and give us a greater perspective of how we fit into this world.",
-          "This is the magic we want you to feel when you visit our villas."
+          "This is the magic we want you to feel when you visit our Plettenberg Bay properties."
         ]
       },
       "de": {
@@ -40,15 +47,15 @@
     },
     "gallery": [
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0662.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0508-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/middle-floor/9U7A6349-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0684-HDR.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0157.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6273-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0816-HDR.jpg",
       "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_0667-Edit.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6253-HDR.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0632-HDR.jpg"
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/rooms/sapphire/9U7A0824-HDR.jpg"
     ]
   }
 }

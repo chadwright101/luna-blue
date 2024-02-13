@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Luna Blue - Plettenberg Bay</title>
+        <title>Luna Blue Accommodation - Plettenberg Bay</title>
         <meta
           name="description"
           content={
@@ -20,7 +20,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="luna blue,villa, guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
+          content="luna blue,accomodation, villa, guesthouse, plettenberg bay, plett, guesthouse, plett guesthouse, plett accomodation, plettenberg bay accomodation, plettenberg bay guesthouse, luxury, 5 star"
         />
         <meta
           property="og:image"
@@ -28,11 +28,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
+          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-2.webp"
         />
         <meta property="og:title" content="Luna Blue" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
@@ -49,7 +49,7 @@ export default function Home() {
         />
       </Head>
       <HomeHeroMobile cssClasses="desktopSmall:hidden" />
-      <HomeHeroDesktop cssClasses="hidden desktopSmall:grid" />
+      <HomeHeroDesktop cssClasses="hidden desktopSmall:block" />
     </>
   );
 }

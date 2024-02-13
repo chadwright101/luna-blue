@@ -18,10 +18,18 @@ const OurRoomsPage = ({
   },
 }: DataProps) => {
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
   return (
     <div>
-      <h1 className=" mb-6 tabletLarge:text-center desktopSmall:mb-8å">
-        <Translated german="Unsere Zimmer">Our Rooms</Translated>
+      <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
+        {currentRoute === "/cliffside-suites/our-suites" ? (
+          <Translated german="Unsere Suiten">Our Suites</Translated>
+        ) : currentRoute === "forest-view-cabins/our-cabins" ? (
+          <Translated german="Unsere Hütten">Our Cabins</Translated>
+        ) : (
+          <Translated german="Unsere Zimmer">Our Rooms</Translated>
+        )}
       </h1>
 
       {/* hero split */}
@@ -41,7 +49,11 @@ const OurRoomsPage = ({
           </div>
         ))}
       </div>
-      <main className="grid desktopSmall:grid-cols-[0.8fr_1fr] gap-10">
+      <main
+        className={
+          enFacilities ? "grid desktopSmall:grid-cols-[0.8fr_1fr] gap-10" : ""
+        }
+      >
         <article className="bg-beige p-8">
           <div className="grid gap-4">
             <p
@@ -61,20 +73,22 @@ const OurRoomsPage = ({
             </p>
           </div>
         </article>
-        <article>
+        <article className={!enFacilities ? "hidden" : ""}>
           <h2 className="mb-10">
             <Translated german="Folgendes ist in jedem Zimmer vorhanden:">
               Each room boasts the following facilities:
             </Translated>
           </h2>
           <ul className={`list-disc pl-4 text-left`}>
-            {locale === "en"
+            {locale === "en" && enFacilities
               ? enFacilities.map((facility, index) => (
                   <li key={index}>{facility}</li>
                 ))
-              : deFacilities.map((facility, index) => (
+              : deFacilities
+              ? deFacilities.map((facility, index) => (
                   <li key={index}>{facility}</li>
-                ))}
+                ))
+              : null}
           </ul>
           <p
             className={`italic mt-4 ${
@@ -95,42 +109,46 @@ const OurRoomsPage = ({
         enRoomInfo={enRoomInfo.bedroom1}
         deRoomInfo={deRoomInfo.bedroom1}
         imageList={images.ourRooms.bedroom1}
-        singleImageFast={true}
+        singleImageMedium={true}
       />
-      <hr className="my-10 desktopSmall:my-16 text-black" />
-      <div className="grid gap-x-10 desktopSmall:grid-cols-2">
-        <RoomInfoSlider
-          roomName={enRoomInfo.bedroom2.enTitle}
-          propertyName={propertyName}
-          enRoomInfo={enRoomInfo.bedroom2}
-          deRoomInfo={deRoomInfo.bedroom2}
-          imageList={images.ourRooms.bedroom2}
-          flip
-          singleImageMedium={true}
-          cssClasses="mt-0"
-        />
-        <hr className="my-16 desktopSmall:hidden text-black" />
-        <RoomInfoSlider
-          roomName={enRoomInfo.bedroom3.enTitle}
-          propertyName={propertyName}
-          enRoomInfo={enRoomInfo.bedroom3}
-          deRoomInfo={deRoomInfo.bedroom3}
-          imageList={images.ourRooms.bedroom3}
-          flip
-          singleImageSlow={true}
-          cssClasses="-mt-5 desktopSmall:mt-0"
-        />
-      </div>
-      <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider
-        roomName={enRoomInfo.bedroom4.enTitle}
-        propertyName={propertyName}
-        enRoomInfo={enRoomInfo.bedroom4}
-        deRoomInfo={deRoomInfo.bedroom4}
-        imageList={images.ourRooms.bedroom4}
-        flip
-        singleImageFast={true}
-      />
+      {enFacilities && (
+        <>
+          <hr className="my-10 desktopSmall:my-16 text-black" />
+          <div className="grid gap-x-10 desktopSmall:grid-cols-2">
+            <RoomInfoSlider
+              roomName={enRoomInfo.bedroom2.enTitle}
+              propertyName={propertyName}
+              enRoomInfo={enRoomInfo.bedroom2}
+              deRoomInfo={deRoomInfo.bedroom2}
+              imageList={images.ourRooms.bedroom2}
+              flip
+              singleImageMedium={true}
+              cssClasses="mt-0"
+            />
+            <hr className="my-16 desktopSmall:hidden text-black" />
+            <RoomInfoSlider
+              roomName={enRoomInfo.bedroom3.enTitle}
+              propertyName={propertyName}
+              enRoomInfo={enRoomInfo.bedroom3}
+              deRoomInfo={deRoomInfo.bedroom3}
+              imageList={images.ourRooms.bedroom3}
+              flip
+              singleImageSlow={true}
+              cssClasses="-mt-5 desktopSmall:mt-0"
+            />
+          </div>
+          <hr className="my-10 desktopSmall:my-16 text-black" />
+          <RoomInfoSlider
+            roomName={enRoomInfo.bedroom4.enTitle}
+            propertyName={propertyName}
+            enRoomInfo={enRoomInfo.bedroom4}
+            deRoomInfo={deRoomInfo.bedroom4}
+            imageList={images.ourRooms.bedroom4}
+            flip
+            singleImageFast={true}
+          />
+        </>
+      )}
     </div>
   );
 };

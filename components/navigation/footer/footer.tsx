@@ -7,33 +7,57 @@ import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import Translated from "../../utils/translated";
 
 import navigation from "@/data/navigation-data.json";
-import generalData from "@/data/general-data.json";
 
 import { CssProps } from "@/components/property-pages/home-page/home-page";
 import {
   robbergBeachUrls,
   lagoonVillaUrls,
+  cliffSideUrls,
+  forestCabinsUrls,
 } from "../header/mobile/mobile-menu";
 
 const {
   robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
   lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
+  cliffSide: { en: cliffSideEn, de: cliffSideDe },
+  forestCabins: { en: forestCabinsEn, de: forestCabinsDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
-
-const {
-  contact: { email, phone, phoneDisplay },
-} = generalData;
 
 const currentYear = new Date().getFullYear();
 
 const Footer = ({ cssClasses }: CssProps) => {
-  const [showEmail, setShowEmail] = useState(false);
-  const [showPhone, setShowPhone] = useState(false);
+  const defaultEmail = (
+    <Translated german="E-Mail Adresse anzeigen">Show email address</Translated>
+  );
+  const defaultPhone = (
+    <Translated german="Rufnummer anzeigen">Show phone number</Translated>
+  );
+  const [showEmail, setShowEmail] = useState(defaultEmail);
+  const [showPhone, setShowPhone] = useState(defaultPhone);
 
   const router = useRouter();
   const currentRoute = router.pathname;
-  const { locale } = useRouter();
+
+  const fetchPhone = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowPhone(data.phone);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
+
+  const fetchEmail = async () => {
+    try {
+      const response = await fetch("/api/contact-details");
+      const data = await response.json();
+      setShowEmail(data.email);
+    } catch (error) {
+      console.error("Error fetching contact data:", error);
+    }
+  };
 
   return (
     <footer className={`${cssClasses}`}>
@@ -51,6 +75,16 @@ const Footer = ({ cssClasses }: CssProps) => {
               navListEn={lagoonVillaEn}
               navListDe={lagoonVillaDe}
             />
+          ) : cliffSideUrls.includes(currentRoute) ? (
+            <PageFooterNavComponent
+              navListEn={cliffSideEn}
+              navListDe={cliffSideDe}
+            />
+          ) : forestCabinsUrls.includes(currentRoute) ? (
+            <PageFooterNavComponent
+              navListEn={forestCabinsEn}
+              navListDe={forestCabinsDe}
+            />
           ) : (
             <PageFooterNavComponent
               navListEn={homePageEn}
@@ -59,43 +93,39 @@ const Footer = ({ cssClasses }: CssProps) => {
           )}
         </div>
         <div className="hidden tabletLarge:block">
-          {locale === "en" ? <h4>Contact</h4> : <h4>Kontakt</h4>}
+          <h4>
+            <Translated german="Kontakt">Contact</Translated>
+          </h4>
           <ul className="grid gap-2 mt-6 grid-rows-[40px_40px_1fr] desktopSmall:gap-0">
-            {!showPhone && (
-              <li onClick={() => setShowPhone(true)} className="mr-auto">
+            {showPhone !== defaultPhone ? (
+              <li onClick={fetchPhone} className="mr-auto">
                 <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  <Translated german="Rufnummer anzeigen">
-                    Show phone number
-                  </Translated>
+                  {showPhone}
                 </p>
               </li>
-            )}
-            {showPhone && (
+            ) : (
               <li>
                 <Link
-                  href={`tel:${phone}`}
+                  href={`tel:${showPhone}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {phoneDisplay}
+                  {showPhone}
                 </Link>
               </li>
             )}
-            {!showEmail && (
-              <li onClick={() => setShowEmail(true)} className="mr-auto">
+            {showEmail !== defaultEmail ? (
+              <li onClick={fetchEmail} className="mr-auto">
                 <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  <Translated german="E-Mail Adresse anzeigen">
-                    Show email address
-                  </Translated>
+                  {showEmail}
                 </p>
               </li>
-            )}
-            {showEmail && (
+            ) : (
               <li>
                 <Link
-                  href={`mailto:${email}`}
+                  href={`mailto:${showEmail}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
-                  {email}
+                  {showEmail}
                 </Link>
               </li>
             )}

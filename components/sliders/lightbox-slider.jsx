@@ -165,9 +165,12 @@ const LightboxSlider = ({
             interval: 6000,
             autoplay: true,
             dragMinThreshold: { touch: 150, mouse: 50 },
-            fixedHeight: 500,
             arrows: true,
+            fixedHeight: 600,
             breakpoints: {
+              1225: {
+                fixedHeight: 500,
+              },
               1100: {
                 perPage: 1,
               },
@@ -183,7 +186,7 @@ const LightboxSlider = ({
               },
             },
           }}
-          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
+          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px] desktopSmall:h-[600px]"
           ref={(slider) => (slider2.current = slider)}
         >
           {imageList.map((url, index) => (

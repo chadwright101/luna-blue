@@ -72,7 +72,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         </div>
 
         {/* Robberg Beach */}
-        <div
+        {/* <div
           className="overflow-hidden bg-black desktopSmall:h-[650px] desktop:h-[725px]"
           onMouseEnter={() => setShowRobbergBeach(true)}
           onMouseLeave={() => setShowRobbergBeach(false)}
@@ -99,7 +99,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
               )}
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Cliffside */}
         <div

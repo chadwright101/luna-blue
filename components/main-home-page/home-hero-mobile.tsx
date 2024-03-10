@@ -94,7 +94,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       />
 
       {/* Robberg Beach */}
-      <HomePageMobileSlide
+      {/* <HomePageMobileSlide
         backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0652-HDR.jpg')]"
         cssClasses="mb-4"
         whiteText
@@ -102,7 +102,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         paragraph={robbergBeach.en.description}
         paragraphGerman={robbergBeach.de.description}
         buttonUrl="/robberg-beach-view-villa"
-      />
+      /> */}
 
       {/* Cliffside */}
       <HomePageMobileSlide

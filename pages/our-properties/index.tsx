@@ -55,7 +55,7 @@ const Properties = () => {
         <section className="grid tabletLarge:grid-cols-2 tabletLarge:gap-12">
           <OurPropertiesComponent
             data={lagoonData}
-            featuredImage={lagoonData.images.homePage.heroSlider[1]}
+            featuredImage={lagoonData.images.homePage.heroSlider[0]}
           />
           <hr className="text-black my-10 tabletLarge:hidden" />
           {/* <OurPropertiesComponent

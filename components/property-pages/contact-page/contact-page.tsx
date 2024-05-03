@@ -104,8 +104,7 @@ const ContactPage = ({
           phone={70}
           tablet={60}
           tabletLarge={55}
-          desktopSmall={25}
-          desktop={35}
+          desktopSmall={35}
           eager
         />
         <hr className="my-4 desktopSmall:hidden text-black" />

@@ -108,6 +108,9 @@ const LightboxSlider = ({
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
+              1225: {
+                fixedHeight: 500,
+              },
               1100: {
                 perPage: 1,
               },
@@ -166,7 +169,7 @@ const LightboxSlider = ({
             autoplay: true,
             dragMinThreshold: { touch: 150, mouse: 50 },
             arrows: true,
-            fixedHeight: 600,
+            fixedHeight: 500,
             breakpoints: {
               1225: {
                 fixedHeight: 500,
@@ -186,7 +189,7 @@ const LightboxSlider = ({
               },
             },
           }}
-          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px] desktopSmall:h-[600px]"
+          className="h-[275px] phone:h-[300px] tablet:h-[400px] tabletLarge:h-[500px]"
           ref={(slider) => (slider2.current = slider)}
         >
           {imageList.map((url, index) => (
@@ -231,6 +234,9 @@ const LightboxSlider = ({
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
+              1225: {
+                fixedHeight: 500,
+              },
               1100: {
                 perPage: 1,
               },
@@ -293,6 +299,9 @@ const LightboxSlider = ({
             fixedHeight: 500,
             arrows: true,
             breakpoints: {
+              1225: {
+                fixedHeight: 500,
+              },
               1100: {
                 perPage: 1,
               },

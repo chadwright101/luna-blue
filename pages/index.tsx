@@ -24,10 +24,6 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
-        />
-        <meta
-          property="og:image"
           content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp"
         />
         <meta

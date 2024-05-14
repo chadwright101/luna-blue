@@ -156,7 +156,7 @@ const About = ({
         </div>
         <p className="text-center text-white italic">
           Available dates:{" "}
-          <span className="font-500">13 Dec 2024 - 12 Jan 2024</span> (minimum
+          <span className="font-500">13 Dec 2024 - 12 Jan 2025</span> (minimum
           stay 3 weeks)
         </p>
       </div>

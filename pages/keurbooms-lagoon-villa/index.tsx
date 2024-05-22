@@ -8,7 +8,7 @@ import data from "@/data/lagoon-villa-data.json";
 export default function LagoonVilla() {
   return (
     <>
-      <Script strategy="lazyOnload">
+      <Script id="facebook-pixel" strategy="lazyOnload">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,6 +26,7 @@ export default function LagoonVilla() {
         <img
           height="1"
           width="1"
+          alt="facebook-pixel"
           style={{ display: "none" }}
           src={`https://www.facebook.com/tr?id=1105845360676104&ev=PageView&noscript=1`}
         />

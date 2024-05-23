@@ -18,8 +18,8 @@
       },
       "keywords": "Keurbooms Lagoon Villa, plettenberg bay, plett, villas, plett villas, plett accomodation, plettenberg bay accomodation, plettenberg bay villas, luxury, 5 star",
       "images": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-2.webp",
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-3.webp"
       ]
     }
@@ -77,6 +77,7 @@
     },
     "globalFacilities": {
       "en": [
+        "Solar powered (completely off-grid)",
         "Underfloor heating",
         "Air conditioning",
         "Heated towel rail",
@@ -84,10 +85,9 @@
         "Myoko Hairdryers",
         "Make-up station with LED mirror",
         "Electric blankets",
-        "Safe",
         "Pillow library - Hypoallergenic & memory foam",
         "Bedding - Duck down or synthetic duvet inners & Egyption cotton linen",
-        "Access to all communal areas - fully equipped kitchen, gym, heated indoor pool, dining and living area"
+        "Access to all communal areas - fully equipped kitchen, gym, heated indoor pool, balconies, dining and living area"
       ],
       "de": [
         "Fußbodenheizung",
@@ -305,12 +305,12 @@
   "images": {
     "homePage": {
       "heroSlider": [
+        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_20240416154119_0519_D.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/9U7A9495-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_20240416154152_0521_D.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/9U7A9455-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/9U7A9487-HDR.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/9U7A9523-HDR.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/DJI_20240416154119_0519_D.jpg",
         "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/images/top-floor/Teal/9U7A6253-HDR.jpg"
       ]
     },

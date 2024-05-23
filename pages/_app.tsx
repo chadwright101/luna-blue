@@ -19,31 +19,25 @@ const App = ({ Component, pageProps }: AppProps) => {
   const { locale } = router;
 
   useEffect(() => {
-    const currentMonth = new Date().getMonth();
-    const expirationTime = Date.now() + 15 * 60 * 1000;
-    const storedExpirationTime = localStorage.getItem("expirationTime");
     const shownDisclaimer = localStorage.getItem("shownDisclaimer");
 
-    if (
-      (currentMonth <= 11 &&
-        !shownDisclaimer &&
-        !storedExpirationTime &&
-        locale === "en") ||
-      (showDisclaimer &&
-        storedExpirationTime &&
-        Date.now() < +storedExpirationTime &&
-        locale === "en")
-    ) {
+    if (locale === "en" && !shownDisclaimer) {
       setTimeout(() => {
         setShowDisclaimer(true);
         localStorage.setItem("shownDisclaimer", "true");
-        localStorage.setItem("expirationTime", expirationTime.toString());
       }, 4000);
-    } else if (storedExpirationTime && Date.now() > +storedExpirationTime) {
-      localStorage.removeItem("shownDisclaimer");
-      localStorage.removeItem("expirationTime");
     }
-  }, [locale, showDisclaimer]);
+
+    const handleBeforeUnload = () => {
+      localStorage.removeItem("shownDisclaimer");
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, [locale]);
+
   return (
     <WindowWidthListener>
       {showDisclaimer && (
@@ -51,9 +45,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           setShowDisclaimer={(value: React.SetStateAction<boolean>) => {
             setShowDisclaimer(value);
             if (!value) {
-              const expirationTime = Date.now() + 15 * 60 * 1000;
               localStorage.setItem("shownDisclaimer", "true");
-              localStorage.setItem("expirationTime", expirationTime.toString());
             }
           }}
         />

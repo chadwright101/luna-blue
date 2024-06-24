@@ -210,12 +210,12 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={90}
-                phone={65}
-                tablet={55}
-                tabletLarge={55}
-                desktopSmall={40}
-                desktop={35}
+                smallest={95}
+                phone={75}
+                tablet={65}
+                tabletLarge={65}
+                desktopSmall={50}
+                desktop={45}
               />
             </SplideSlide>
           ))}

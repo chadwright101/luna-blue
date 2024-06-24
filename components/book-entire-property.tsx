@@ -26,8 +26,8 @@ const BookEntireProperty = () => {
           </Translated>
         </span>{" "}
         (
-        <Translated german="Mindestaufenthalt 3 Wochen">
-          minimum stay 3 weeks
+        <Translated german="Mindestaufenthalt 10 Tage">
+          minimum stay 10 days
         </Translated>
         )
       </p>

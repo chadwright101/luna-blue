@@ -77,12 +77,13 @@
     },
     "globalFacilities": {
       "en": [
-        "Solar powered (completely off-grid)",
+        "Solar powered",
         "Underfloor heating",
         "Air conditioning",
         "Heated towel rail",
         "Smart TV (streaming login/s required)",
-        "Myoko Hairdryers",
+        "Myoko Hairdryer",
+        "Hair straightener",
         "Make-up station with LED mirror",
         "Electric blankets",
         "Pillow library - Hypoallergenic & memory foam",
@@ -90,6 +91,7 @@
         "Access to all communal areas - fully equipped kitchen, gym, heated indoor pool, balconies, dining and living area"
       ],
       "de": [
+        "Solarbetrieben",
         "Fußbodenheizung",
         "Klimaanlage",
         "Beheizter Handtuchhalter",

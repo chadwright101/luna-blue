@@ -25,8 +25,6 @@ const OurRoomsPage = ({
       <h1 className="mb-6 tabletLarge:text-center desktopSmall:mb-8">
         {currentRoute === "/cliffside-suites/our-suites" ? (
           <Translated german="Unsere Suiten">Our Suites</Translated>
-        ) : currentRoute === "forest-view-cabins/our-cabins" ? (
-          <Translated german="Unsere Hütten">Our Cabins</Translated>
         ) : (
           <Translated german="Unsere Zimmer">Our Rooms</Translated>
         )}

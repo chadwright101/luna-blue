@@ -144,11 +144,15 @@
         "targetBlank": false
       },
       {
+        "title": "Virtual tour",
+        "url": "https://virtual.escapism.ai/en/embed/lASLweAL3I",
+        "targetBlank": true
+      },
+      {
         "title": "Contact",
         "url": "/keurbooms-lagoon-villa/contact",
         "targetBlank": false
       },
-
       {
         "title": "Our properties",
         "url": "/our-properties",

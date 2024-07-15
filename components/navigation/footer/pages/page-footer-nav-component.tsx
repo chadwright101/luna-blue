@@ -36,7 +36,7 @@ const PageFooterNavComponent = ({
                 className={classNames(
                   "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
                   {
-                    "font-500": targetBlank,
+                    "font-500": title === "Book direct",
                   }
                 )}
                 target={targetBlank ? "_blank" : "_self"}
@@ -58,7 +58,7 @@ const PageFooterNavComponent = ({
                 className={classNames(
                   "p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0",
                   {
-                    "font-500": targetBlank,
+                    "font-500": title === "Direkt buchen",
                   }
                 )}
                 target={targetBlank ? "_blank" : "_self"}

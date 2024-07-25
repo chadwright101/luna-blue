@@ -1,10 +1,8 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-import robbergData from "@/data/robberg-beach-data.json";
 import lagoonData from "@/data/lagoon-villa-data.json";
 import cliffsideData from "@/data/cliffside-data.json";
-import forestData from "@/data/forest-cabins-data.json";
 import OurPropertiesComponent from "@/components/our-properties-page/our-properties-component";
 import Translated from "@/components/utils/translated";
 

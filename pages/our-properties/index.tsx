@@ -26,15 +26,11 @@ const Properties = () => {
         />
         <meta
           property="og:image"
-          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
+          content="/assets/images/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp"
         />
         <meta
           property="og:image"
-          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
-        />
-        <meta
-          property="og:image"
-          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
+          content="/assets/images/cliffside/luna-blue-cliffside-suites-og-image-2.webp"
         />
         <meta property="og:title" content="Properties - Luna Blue" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />
@@ -56,11 +52,6 @@ const Properties = () => {
             featuredImage={lagoonData.images.homePage.heroSlider[0]}
           />
           <hr className="text-black my-10 tabletLarge:hidden" />
-          {/* <OurPropertiesComponent
-            data={robbergData}
-            featuredImage={robbergData.images.homePage.heroSlider[0]}
-          />
-          <hr className="text-black my-10 tabletLarge:hidden" /> */}
           <OurPropertiesComponent
             data={cliffsideData}
             featuredImage={cliffsideData.images.homePage.heroSlider[0]}

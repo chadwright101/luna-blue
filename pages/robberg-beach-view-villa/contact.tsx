@@ -10,8 +10,8 @@ const Contact = () => {
       <MetaComponent data={data} pageName="Contact" />
       <ContactPage
         data={data}
-        verticalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01683.jpg"
-        horizontalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/DSC01930.jpg"
+        verticalImage="/assets/images/robberg-beach/images/DSC01683.jpg"
+        horizontalImage="/assets/images/robberg-beach/images/DSC01930.jpg"
       />
       <RobbergBeachMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>

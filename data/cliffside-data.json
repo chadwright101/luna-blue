@@ -18,9 +18,9 @@
       },
       "keywords": "cliffside suites, plettenberg bay, plett, suites, plett suites, plett accomodation, plettenberg bay accomodation, plettenberg bay suites, luxury, 5 star",
       "images": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-1.webp",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-2.webp",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-3.webp"
+        "/assets/images/cliffside/luna-blue-cliffside-suites-og-image-1.webp",
+        "/assets/images/cliffside/luna-blue-cliffside-suites-og-image-2.webp",
+        "/assets/images/cliffside/luna-blue-cliffside-suites-og-image-3.webp"
       ]
     }
   },
@@ -37,7 +37,7 @@
       }
     },
     "ourRooms": {
-      "imageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
+      "imageUrl": "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
       "description": {
         "en": {
           "paragraph1": "Our suites are designed to provide you with an unforgettable experience that will exceed your expectations. From the moment you step into your room, you'll be surrounded by elegance and comfort. Our upmarket suites feature only the finest amenities and furnishings, including plush bedding, top of the line electronics, and high-quality toiletries.",
@@ -51,17 +51,17 @@
     },
     "moreInfoAvailability": {
       "bookingUrl": "https://book.nightsbridge.com/36149",
-      "roomImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
-      "infoImageUrl": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/plett.jpg"
+      "roomImageUrl": "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
+      "infoImageUrl": "/assets/images/cliffside/plett.jpg"
     }
   },
   "ourRoomsPage": {
     "imageGridUrls": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4215.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4210.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4227.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg"
+      "/assets/images/cliffside/images/rooms/9U7A4215.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4210.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4227.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4209.jpg"
     ],
     "description": {
       "en": {
@@ -149,11 +149,11 @@
   },
   "aboutPage": {
     "imageGridUrls": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4247.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4188-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4253-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4251.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg"
+      "/assets/images/cliffside/images/9U7A4247.jpg",
+      "/assets/images/cliffside/images/9U7A4188-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4253-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4251.jpg",
+      "/assets/images/cliffside/images/9U7A4240-Edit.jpg"
     ],
     "description": {
       "enDescription": {
@@ -169,47 +169,47 @@
     },
     "thingsToDo": {
       "images": {
-        "activities": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/activities.jpg",
-        "restaurants": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/restaurants.jpg",
-        "events": "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/events.jpg"
+        "activities": "/assets/images/cliffside/activities.jpg",
+        "restaurants": "/assets/images/cliffside/restaurants.jpg",
+        "events": "/assets/images/cliffside/events.jpg"
       }
     }
   },
   "facilities": {
     "en": [
       {
-        "url": "/icons/cliffside/splash-pool.svg",
+        "url": "/assets/icons/cliffside/splash-pool.svg",
         "item": "Splash pool"
       },
       {
-        "url": "/icons/cliffside/pet-friendly.svg",
+        "url": "/assets/icons/cliffside/pet-friendly.svg",
         "item": "Pet Friendly"
       },
       {
-        "url": "/icons/cliffside/solar.svg",
+        "url": "/assets/icons/cliffside/solar.svg",
         "item": "Solar Powered"
       },
       {
         "item": "Private deck"
       },
       {
-        "url": "/icons/cliffside/kitchenette.svg",
+        "url": "/assets/icons/cliffside/kitchenette.svg",
         "item": "Shared kitchenette"
       },
       {
-        "url": "/icons/cliffside/bbq-facility.svg",
+        "url": "/assets/icons/cliffside/bbq-facility.svg",
         "item": "BBQ Facility"
       },
       {
-        "url": "/icons/cliffside/free-wifi.svg",
+        "url": "/assets/icons/cliffside/free-wifi.svg",
         "item": "Free Wifi"
       },
       {
-        "url": "/icons/cliffside/fireplace.svg",
+        "url": "/assets/icons/cliffside/fireplace.svg",
         "item": "Fireplace"
       },
       {
-        "url": "/icons/cliffside/coffee.svg",
+        "url": "/assets/icons/cliffside/coffee.svg",
         "item": "Coffee Machine"
       },
       {
@@ -218,38 +218,38 @@
     ],
     "de": [
       {
-        "url": "/icons/cliffside/splash-pool.svg",
+        "url": "/assets/icons/cliffside/splash-pool.svg",
         "item": "Planschbecken"
       },
       {
-        "url": "/icons/cliffside/pet-friendly.svg",
+        "url": "/assets/icons/cliffside/pet-friendly.svg",
         "item": "Haustierfreundlich"
       },
       {
-        "url": "/icons/cliffside/solar.svg",
+        "url": "/assets/icons/cliffside/solar.svg",
         "item": "Solarbetrieben"
       },
       {
         "item": "Private Terrasse"
       },
       {
-        "url": "/icons/cliffside/kitchenette.svg",
+        "url": "/assets/icons/cliffside/kitchenette.svg",
         "item": "Gemeinsame Kochnische"
       },
       {
-        "url": "/icons/cliffside/bbq-facility.svg",
+        "url": "/assets/icons/cliffside/bbq-facility.svg",
         "item": "BBQ Einrichtungen"
       },
       {
-        "url": "/icons/cliffside/free-wifi.svg",
+        "url": "/assets/icons/cliffside/free-wifi.svg",
         "item": "Kostenloses WLAN"
       },
       {
-        "url": "/icons/cliffside/fireplace.svg",
+        "url": "/assets/icons/cliffside/fireplace.svg",
         "item": "Feuerstelle"
       },
       {
-        "url": "/icons/cliffside/coffee.svg",
+        "url": "/assets/icons/cliffside/coffee.svg",
         "item": "Kaffeemaschine"
       },
       {
@@ -260,60 +260,60 @@
   "images": {
     "homePage": {
       "heroSlider": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4238.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg"
+        "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
+        "/assets/images/cliffside/images/DJI_0164.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
+        "/assets/images/cliffside/images/9U7A4238.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg"
       ]
     },
     "aboutUsSlider": [
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4224.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4219.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4096-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4116-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4088-HDR-2.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0157.jpg",
-      "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0161.jpg"
+      "/assets/images/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
+      "/assets/images/cliffside/images/DJI_0164.jpg",
+      "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4224.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
+      "/assets/images/cliffside/images/9U7A4096-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4116-HDR-2.jpg",
+      "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
+      "/assets/images/cliffside/images/DJI_0157.jpg",
+      "/assets/images/cliffside/images/DJI_0161.jpg"
     ],
     "ourRooms": {
       "bedroom1": [
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0164.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4240-Edit.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4224.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4184-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4209.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4219.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/rooms/9U7A4226.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4096-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4116-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4088-HDR-2.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0157.jpg",
-        "https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/DJI_0161.jpg"
+        "/assets/images/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
+        "/assets/images/cliffside/images/DJI_0164.jpg",
+        "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4224.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
+        "/assets/images/cliffside/images/9U7A4096-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A4116-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
+        "/assets/images/cliffside/images/DJI_0157.jpg",
+        "/assets/images/cliffside/images/DJI_0161.jpg"
       ],
       "bedroom2": [""],
       "bedroom3": [""],

@@ -32,7 +32,7 @@ const MobileMenuPageComponent = ({
       <div className="flex justify-between items-center">
         <Link href="/" className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0">
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
+            src="/assets/images/luna-blue-logo.png"
             alt="Luna Blue logo"
             width={80}
             height={80}
@@ -51,7 +51,7 @@ const MobileMenuPageComponent = ({
           className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
         >
           <Image
-            src="/icons/menu.svg"
+            src="/assets/icons/menu.svg"
             alt="Menu icon"
             width={45}
             height={45}
@@ -111,7 +111,7 @@ const MobileMenuPageComponent = ({
             className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
           >
             <Image
-              src="/icons/close.svg"
+              src="/assets/icons/close.svg"
               alt="Close icon"
               width={45}
               height={45}

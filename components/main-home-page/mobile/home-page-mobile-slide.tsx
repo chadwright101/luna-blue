@@ -68,7 +68,7 @@ const IndividualSlide = ({
           </HomeHeroTextBox>
           {arrow && (
             <Image
-              src="/icons/arrow-down.svg"
+              src="/assets/icons/arrow-down.svg"
               alt="Down arrow icon"
               width={75}
               height={75}

@@ -10,8 +10,8 @@ const Contact = () => {
       <MetaComponent data={data} pageName="Contact" />
       <ContactPage
         data={data}
-        verticalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4253-HDR-2.jpg"
-        horizontalImage="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4241.jpg"
+        verticalImage="/assets/images/cliffside/images/9U7A4253-HDR-2.jpg"
+        horizontalImage="/assets/images/cliffside/images/9U7A4241.jpg"
       />
       <LagoonVillaMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>

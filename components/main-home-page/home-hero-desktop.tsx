@@ -48,7 +48,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         >
           <div
             className={classNames(
-              "bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
+              "bg-[url('/assets/images/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showLagoonVilla,
                 "opacity-70": showRobbergBeach || showCliffside,
@@ -79,7 +79,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         >
           <div
             className={classNames(
-              "w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
+              "w-full bg-[url('/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showRobbergBeach,
                 "opacity-70": showLagoonVilla || showCliffside,
@@ -109,7 +109,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
         >
           <div
             className={classNames(
-              "w-full bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/cliffside-suites-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
+              "w-full bg-[url('/assets/images/cliffside/cliffside-suites-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showCliffside,
                 "opacity-70": showLagoonVilla || showRobbergBeach,

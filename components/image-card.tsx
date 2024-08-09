@@ -120,7 +120,7 @@ const ImageCard = ({
               </Translated>
             </p>
             <Image
-              src="/icons/plus.svg"
+              src="/assets/icons/plus.svg"
               alt="Plus sign icon"
               width={13}
               height={13}

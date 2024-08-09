@@ -182,7 +182,7 @@ const About = ({
               <Translated german="Haustierrichtlinie:">Pets policy:</Translated>
             </h4>
             <Link
-              href="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-dog-policy-2023.pdf"
+              href="/assets/images/luna-blue-dog-policy-2023.pdf"
               className="flex gap-2 hover:desktopSmall:text-brown p-3 text-blueLink -m-3 desktopSmall:p-0 desktopSmall:m-0"
               target="_blank"
             >

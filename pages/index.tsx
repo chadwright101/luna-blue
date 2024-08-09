@@ -24,11 +24,11 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp"
+          content="/assets/images/lagoon-villa/luna-blue-keurbooms-lagoon-villa-og-image-1.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/luna-blue-cliffside-suites-og-image-2.webp"
+          content="/assets/images/cliffside/luna-blue-cliffside-suites-og-image-2.webp"
         />
         <meta property="og:title" content="Luna Blue" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />

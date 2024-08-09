@@ -59,7 +59,7 @@ const LightboxSlider = ({
             className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
           >
             <Image
-              src="/icons/close.svg"
+              src="/assets/icons/close.svg"
               alt="Close icon"
               width={45}
               height={45}

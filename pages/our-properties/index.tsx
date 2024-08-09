@@ -26,15 +26,15 @@ const Properties = () => {
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
+          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-2.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
+          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-3.webp"
         />
         <meta
           property="og:image"
-          content="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
+          content="/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-og-image-1.webp"
         />
         <meta property="og:title" content="Properties - Luna Blue" />
         <meta property="og:url" content="https://www.lunarblue.co.za" />

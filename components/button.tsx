@@ -53,7 +53,7 @@ const Button = ({
       {locale === "en" ? english || "View more" : german || "Mehr lesen"}
       {whiteText ? (
         <Image
-          src="/icons/plus-white.svg"
+          src="/assets/icons/plus-white.svg"
           alt="Plus sign icon"
           width={13}
           height={13}
@@ -67,7 +67,7 @@ const Button = ({
         />
       ) : (
         <Image
-          src="/icons/plus.svg"
+          src="/assets/icons/plus.svg"
           alt="Plus sign icon"
           width={13}
           height={13}

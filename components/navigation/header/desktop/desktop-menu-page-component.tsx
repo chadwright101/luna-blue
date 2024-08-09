@@ -37,7 +37,7 @@ const DesktopMenuPageComponent = ({
           className="desktopSmall:hover:scale-105 ease-in-out duration-500"
         >
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
+            src="/assets/images/luna-blue-logo.png"
             alt="Luna Blue logo"
             width={150}
             height={193}

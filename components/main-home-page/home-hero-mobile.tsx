@@ -6,7 +6,6 @@ import HomePageMobileSlide from "./mobile/home-page-mobile-slide";
 import Translated from "../utils/translated";
 
 import generalData from "@/data/general-data.json";
-import robbergBeachData from "@/data/robberg-beach-data.json";
 import lagoonVillaData from "@/data/lagoon-villa-data.json";
 import cliffsideData from "@/data/cliffside-data.json";
 
@@ -14,7 +13,7 @@ import { CssProps } from "../property-pages/home-page/home-page";
 
 const {
   mainHomePage: {
-    hero: { lagoonVilla, robbergBeach, cliffside },
+    hero: { lagoonVilla, cliffside },
     gallery,
     aboutUs: {
       en: { paragraphs: enParagraphs },
@@ -85,7 +84,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
       />
       {/* Lagoon Villa */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')]"
+        backgroundImage="bg-[url('/assets/images/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')]"
         cssClasses="mb-4"
         title={lagoonVillaData.general.propertyName}
         paragraph={lagoonVilla.en.description}
@@ -95,7 +94,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Robberg Beach */}
       {/* <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/robberg-beach/images/9U7A0652-HDR.jpg')]"
+        backgroundImage="bg-[url('/assets/images/robberg-beach/images/9U7A0652-HDR.jpg')]"
         cssClasses="mb-4"
         whiteText
         title={robbergBeachData.general.propertyName}
@@ -106,7 +105,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
 
       {/* Cliffside */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/cliffside/images/9U7A4196-HDR-2.jpg')]"
+        backgroundImage="bg-[url('/assets/images/cliffside/images/9U7A4196-HDR-2.jpg')]"
         cssClasses="mb-4"
         title={cliffsideData.general.propertyName}
         paragraph={cliffside.en.description}

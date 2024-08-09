@@ -140,7 +140,7 @@ const Footer = ({ cssClasses }: CssProps) => {
               target="_blank"
             >
               <Image
-                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/facebook-logo.png"
+                src="/assets/images/facebook-logo.png"
                 alt="Facebook logo"
                 width={35}
                 height={35}
@@ -153,7 +153,7 @@ const Footer = ({ cssClasses }: CssProps) => {
               target="_blank"
             >
               <Image
-                src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/instagram-logo.png"
+                src="/assets/images/instagram-logo.png"
                 alt="Instagram logo"
                 width={35}
                 height={35}
@@ -164,7 +164,7 @@ const Footer = ({ cssClasses }: CssProps) => {
         </div>
         <div className="desktopSmall:ml-auto">
           <Image
-            src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/luna-blue-logo.png"
+            src="/assets/images/luna-blue-logo.png"
             alt="Luna Blue logo"
             width={150}
             height={193}

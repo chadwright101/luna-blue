@@ -19,7 +19,7 @@ const DesktopLanguageSubmenu = () => {
         <div className="flex hover:text-brown  p-2 -m-2 translate-y-[3px] desktopSmall:p-0 desktopSmall:m-0">
           EN
           <Image
-            src="/icons/down-arrow.svg"
+            src="/assets/icons/down-arrow.svg"
             alt="Down arrow icon"
             width={25}
             height={25}
@@ -43,7 +43,7 @@ const DesktopLanguageSubmenu = () => {
                 >
                   DE
                   <Image
-                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/german-flag.png"
+                    src="/assets/images/german-flag.png"
                     alt="German flag"
                     width={20}
                     height={15}
@@ -65,7 +65,7 @@ const DesktopLanguageSubmenu = () => {
         <button className="flex hover:text-brown  p-2 -m-2 translate-y-[3px] desktopSmall:p-0 desktopSmall:m-0">
           DE
           <Image
-            src="/icons/down-arrow.svg"
+            src="/assets/icons/down-arrow.svg"
             alt="Down arrow icon"
             width={25}
             height={25}
@@ -89,7 +89,7 @@ const DesktopLanguageSubmenu = () => {
                 >
                   EN
                   <Image
-                    src="https://the-wright-designs-website-images.s3.af-south-1.amazonaws.com/luna-blue/england-flag.png"
+                    src="/assets/images/england-flag.png"
                     alt="German flag"
                     width={20}
                     height={15}

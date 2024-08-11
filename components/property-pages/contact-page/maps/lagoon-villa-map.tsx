@@ -11,7 +11,7 @@ const LagoonVillaMap = ({ cssClasses }: Props) => {
   });
   if (!isLoaded)
     return (
-      <div className="mt-10 bg-beige text-43px text-center py-16 max-w-[1400px] font-Poiret_One">
+      <div className="mt-10 bg-beige text-43px text-center py-16 max-w-[1400px] font-Josefin_Sans">
         <Translated german="Laden der Karte">Map loading...</Translated>
       </div>
     );

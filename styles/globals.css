@@ -4,27 +4,6 @@
 
 @layer base {
 
-  @font-face {
-    font-family: "Housegrind";
-    src: url("../fonts/Housegrid/Housegrind.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Housegrind";
-    src: url("../fonts/Housegrid/Housegrind.woff") format("woff");
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Housegrind";
-    src: url("../fonts/Housegrid/Housegrind.ttf") format("truetype");
-    font-weight: 400;
-    font-display: swap;
-  }
-
 
   @font-face {
     font-family: "Cormorant";
@@ -125,27 +104,6 @@
       url("../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype-variations");
     font-weight: 300 700;
     font-style: italic;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Poiret_One";
-    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Poiret_One";
-    src: url("../fonts/Poiret_One/PoiretOne-Regular.woff") format("woff");
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Poiret_One";
-    src: url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
-    font-weight: 400;
     font-display: swap;
   }
 }

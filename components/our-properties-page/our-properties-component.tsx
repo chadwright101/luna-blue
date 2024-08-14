@@ -39,8 +39,7 @@ const OurPropertiesComponent = ({
           {propertyName}
         </h2>
       </Link>
-      {propertyName === "Cliffside Suites" ||
-      propertyName === "Forest View Cabins" ? (
+      {propertyName === "Cliffside Suites" ? (
         <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
           <p>
             <Link

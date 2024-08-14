@@ -109,38 +109,50 @@ const OurRoomsPage = ({
         imageList={images.ourRooms.bedroom1}
         singleImageMedium
       />
-      <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider
-        roomName={enRoomInfo.bedroom3.enTitle}
-        propertyName={propertyName}
-        enRoomInfo={enRoomInfo.bedroom3}
-        deRoomInfo={deRoomInfo.bedroom3}
-        imageList={images.ourRooms.bedroom3}
-        singleImageSlow
-        flip
-        cssClasses="mt-0"
-      />
-      <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider
-        roomName={enRoomInfo.bedroom4.enTitle}
-        propertyName={propertyName}
-        enRoomInfo={enRoomInfo.bedroom4}
-        deRoomInfo={deRoomInfo.bedroom4}
-        imageList={images.ourRooms.bedroom4}
-        singleImageMedium
-        cssClasses="desktopSmall:-mb-10"
-      />
-      <hr className="my-10 desktopSmall:my-16 text-black" />
-      <RoomInfoSlider
-        roomName={enRoomInfo.bedroom2.enTitle}
-        propertyName={propertyName}
-        enRoomInfo={enRoomInfo.bedroom2}
-        deRoomInfo={deRoomInfo.bedroom2}
-        imageList={images.ourRooms.bedroom2}
-        singleImageFast
-        flip
-        cssClasses="mt-0 desktopSmall:pb-5"
-      />
+      {enRoomInfo.bedroom3.enTitle && (
+        <>
+          <hr className="my-10 desktopSmall:my-16 text-black" />
+          <RoomInfoSlider
+            roomName={enRoomInfo.bedroom3.enTitle}
+            propertyName={propertyName}
+            enRoomInfo={enRoomInfo.bedroom3}
+            deRoomInfo={deRoomInfo.bedroom3}
+            imageList={images.ourRooms.bedroom3}
+            singleImageSlow
+            flip
+            cssClasses="mt-0"
+          />
+        </>
+      )}
+      {enRoomInfo.bedroom4.enTitle && (
+        <>
+          <hr className="my-10 desktopSmall:my-16 text-black" />
+          <RoomInfoSlider
+            roomName={enRoomInfo.bedroom4.enTitle}
+            propertyName={propertyName}
+            enRoomInfo={enRoomInfo.bedroom4}
+            deRoomInfo={deRoomInfo.bedroom4}
+            imageList={images.ourRooms.bedroom4}
+            singleImageMedium
+            cssClasses="desktopSmall:-mb-10"
+          />
+        </>
+      )}
+      {enRoomInfo.bedroom2.enTitle && (
+        <>
+          <hr className="my-10 desktopSmall:my-16 text-black" />
+          <RoomInfoSlider
+            roomName={enRoomInfo.bedroom2.enTitle}
+            propertyName={propertyName}
+            enRoomInfo={enRoomInfo.bedroom2}
+            deRoomInfo={deRoomInfo.bedroom2}
+            imageList={images.ourRooms.bedroom2}
+            singleImageFast
+            flip
+            cssClasses="mt-0 desktopSmall:pb-5"
+          />
+        </>
+      )}
     </div>
   );
 };

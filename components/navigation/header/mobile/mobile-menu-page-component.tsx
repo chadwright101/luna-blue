@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import useScrollPosition from "../../../utils/scroll-position";
 import MobileLanguageMenu from "./mobile-language-menu";
@@ -26,6 +26,18 @@ const MobileMenuPageComponent = ({
   const { locale } = useRouter();
 
   const scrollPosition = useScrollPosition();
+
+  useEffect(() => {
+    if (toggleMenu) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [toggleMenu]);
 
   return (
     <div className={`desktopSmall:hidden ${cssClasses}`}>
@@ -121,7 +133,10 @@ const MobileMenuPageComponent = ({
               alt="Close icon"
               width={45}
               height={45}
-              className="fixed top-0 pt-[24px] right-8"
+              className={classNames("fixed top-0 right-8", {
+                "pt-7": scrollPosition === 0 && toggleMenu,
+                "pt-8": scrollPosition > 0 && toggleMenu,
+              })}
               priority
             />
           </button>

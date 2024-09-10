@@ -5,6 +5,7 @@ import About from "./components/about";
 import OurRooms from "./components/our-rooms";
 import MoreInfoAvailability from "./components/more-info-availability";
 import Translated from "@/components/utils/translated";
+import Policies from "./components/policies";
 
 export interface DataProps {
   data: {
@@ -197,6 +198,7 @@ const HomePage = ({ data }: DataProps) => {
         cssClasses="my-10 desktopSmall:my-16"
         data={data.homePage}
       />
+      <Policies />
     </>
   );
 };

@@ -11,6 +11,7 @@ const BookEntireProperty = () => {
           </Translated>
         </h3>
         <Link
+          prefetch={false}
           href="https://book.nightsbridge.com/35555?special=LBSUMMER"
           target="_blank"
           className="px-4 pt-[6px] pb-1 bg-lightBeige border-2 rounded-xl text-25px text-brown font-500 desktopSmall:hover:bg-brown desktopSmall:hover:border-2 border-lightBeige ease-in-out duration-300 desktopSmall:hover:text-white desktopSmall:text-[20px]"

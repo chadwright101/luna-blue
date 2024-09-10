@@ -30,7 +30,11 @@ const MobileMenuPageComponent = ({
   return (
     <div className={`desktopSmall:hidden ${cssClasses}`}>
       <div className="flex justify-between items-center">
-        <Link href="/" className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0">
+        <Link
+          prefetch={false}
+          href="/"
+          className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+        >
           <Image
             src="/assets/images/luna-blue-logo.png"
             alt="Luna Blue logo"
@@ -70,6 +74,7 @@ const MobileMenuPageComponent = ({
               ? navListEn.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>
                     <Link
+                      prefetch={false}
                       href={url}
                       onClick={() => setToggleMenu(false)}
                       className={classNames(
@@ -89,6 +94,7 @@ const MobileMenuPageComponent = ({
               : navListDe.map(({ title, url, targetBlank }, index) => (
                   <li key={index}>
                     <Link
+                      prefetch={false}
                       href={url}
                       onClick={() => setToggleMenu(false)}
                       className={classNames(

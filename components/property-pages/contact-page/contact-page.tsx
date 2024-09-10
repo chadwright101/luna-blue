@@ -132,6 +132,7 @@ const ContactPage = ({
                 </p>
               ) : (
                 <Link
+                  prefetch={false}
                   href={`tel:${showPhone}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
@@ -162,6 +163,7 @@ const ContactPage = ({
                 </p>
               ) : (
                 <Link
+                  prefetch={false}
                   href={`mailto:${showEmail}?subject=${subject}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
@@ -192,6 +194,7 @@ const ContactPage = ({
                 currentRoute === "/forest-view-cabins/contact" ? (
                   <>
                     <Link
+                      prefetch={false}
                       href={googleMapsUrl}
                       target="_blank"
                       className="text-blueLink"

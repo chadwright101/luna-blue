@@ -106,6 +106,7 @@ const Footer = ({ cssClasses }: CssProps) => {
             ) : (
               <li>
                 <Link
+                  prefetch={false}
                   href={`tel:${showPhone}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
@@ -122,6 +123,7 @@ const Footer = ({ cssClasses }: CssProps) => {
             ) : (
               <li>
                 <Link
+                  prefetch={false}
                   href={`mailto:${showEmail}`}
                   className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 >
@@ -135,6 +137,7 @@ const Footer = ({ cssClasses }: CssProps) => {
           <h4 className="hidden tabletLarge:block">Social</h4>
           <div className="flex gap-5 items-center mt-6 desktopSmall:gap-3">
             <Link
+              prefetch={false}
               href="https://www.facebook.com/lunarbluevillas"
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
               target="_blank"
@@ -148,6 +151,7 @@ const Footer = ({ cssClasses }: CssProps) => {
               />
             </Link>
             <Link
+              prefetch={false}
               href="https://www.instagram.com/lunablueguesthouse/"
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
               target="_blank"
@@ -184,7 +188,10 @@ const Footer = ({ cssClasses }: CssProps) => {
         </div>
       </div>
       <p className="text-[16px] text-center py-4 mt-8 bg-darkBeige tabletLarge:mt-4 mb-6">
-        © Copyright <Link href="/">Luna Blue {currentYear}</Link>
+        © Copyright{" "}
+        <Link prefetch={false} href="/">
+          Luna Blue {currentYear}
+        </Link>
       </p>
     </footer>
   );

@@ -100,6 +100,7 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             )}
             {showPhone && (
               <Link
+                prefetch={false}
                 href={`tel:${showPhone}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
               >
@@ -128,6 +129,7 @@ const HomePageContact = ({ cssClasses }: CssProps) => {
             )}
             {showEmail && (
               <Link
+                prefetch={false}
                 href={`mailto:${showEmail}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
               >

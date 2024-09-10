@@ -9,6 +9,7 @@ const MobileLanguageMenu = () => {
   return (
     <li className="mb-4 flex gap-8">
       <Link
+        prefetch={false}
         href={{ pathname, query }}
         as={asPath}
         locale="en"
@@ -20,6 +21,7 @@ const MobileLanguageMenu = () => {
         English
       </Link>
       <Link
+        prefetch={false}
         href={{ pathname, query }}
         as={asPath}
         locale="de"

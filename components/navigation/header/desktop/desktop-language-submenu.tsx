@@ -36,6 +36,7 @@ const DesktopLanguageSubmenu = () => {
             <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
               <li>
                 <Link
+                  prefetch={false}
                   href={{ pathname, query }}
                   as={asPath}
                   locale="de"
@@ -82,6 +83,7 @@ const DesktopLanguageSubmenu = () => {
             <ul className="-translate-x-10 flex flex-col gap-3 bg-white/90 px-5 pb-5 pt-7 absolute -translate-y-5 text-[12px]">
               <li>
                 <Link
+                  prefetch={false}
                   className="hover:text-brown ease-in-out duration-300 cursor-pointer desktopSmall:hover:scale-110"
                   href={{ pathname, query }}
                   as={asPath}

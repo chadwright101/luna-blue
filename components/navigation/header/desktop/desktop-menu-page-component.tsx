@@ -33,6 +33,7 @@ const DesktopMenuPageComponent = ({
     <div className={`hidden desktopSmall:block ${cssClasses}`}>
       <div className="flex justify-between items-end">
         <Link
+          prefetch={false}
           href="/"
           className="desktopSmall:hover:scale-105 ease-in-out duration-500"
         >
@@ -64,6 +65,7 @@ const DesktopMenuPageComponent = ({
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
                   >
                     <Link
+                      prefetch={false}
                       href={
                         windowWidth >= 1050 && url === "/#about-us"
                           ? url + "-desktop"
@@ -91,6 +93,7 @@ const DesktopMenuPageComponent = ({
                     className="desktopSmall:hover:scale-105 ease-in-out duration-300"
                   >
                     <Link
+                      prefetch={false}
                       href={
                         windowWidth >= 1050 && url === "/#about-us"
                           ? url + "-desktop"

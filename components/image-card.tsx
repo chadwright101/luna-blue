@@ -86,6 +86,7 @@ const ImageCard = ({
         )}
       >
         <Link
+          prefetch={false}
           href={link}
           onMouseEnter={() => setCardMove(true)}
           onMouseLeave={() => setCardMove(false)}

@@ -21,7 +21,12 @@ const OurPropertiesComponent = ({
     <article
       className={`grid gap-6 tabletLarge:gap-5 tabletLarge:text-center ${cssClasses}`}
     >
-      <Link target="_blank" href={url} className="overflow-hidden">
+      <Link
+        prefetch={false}
+        target="_blank"
+        href={url}
+        className="overflow-hidden"
+      >
         <ImageContainer
           src={featuredImage}
           alt={`${propertyName} by Luna Blue`}
@@ -31,6 +36,7 @@ const OurPropertiesComponent = ({
         />
       </Link>
       <Link
+        prefetch={false}
         target="_blank"
         href={url}
         className="tabletLarge:place-self-center"
@@ -43,6 +49,7 @@ const OurPropertiesComponent = ({
         <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
           <p>
             <Link
+              prefetch={false}
               href={address.googleMapsUrl}
               target="_blank"
               className="text-blueLink"
@@ -55,6 +62,7 @@ const OurPropertiesComponent = ({
       ) : (
         <address className="-mt-5 tabletLarge:-mt-3 desktopSmall:-mt-1">
           <Link
+            prefetch={false}
             href={address.googleMapsUrl}
             target="_blank"
             className="text-blueLink"

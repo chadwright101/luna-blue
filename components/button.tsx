@@ -30,6 +30,7 @@ const Button = ({
   const { locale } = useRouter();
   return (
     <Link
+      prefetch={false}
       href={url}
       className={classNames(
         `flex gap-2 items-center uppercase text-14px text-left font-350 tracking-widest hover:desktopSmall:text-brown p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 ${

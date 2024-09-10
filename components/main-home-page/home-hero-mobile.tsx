@@ -161,6 +161,7 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
           {showPhone && (
             <li>
               <Link
+                prefetch={false}
                 href={`tel:${showPhone}`}
                 className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 text-white"
               >

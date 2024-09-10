@@ -26,6 +26,7 @@ const PageFooterNavComponent = ({
         ? navListEn.map(({ title, url, targetBlank }, index) => (
             <li key={index}>
               <Link
+                prefetch={false}
                 href={
                   windowWidth >= 1050 && url === "/#about-us"
                     ? url + "-desktop"
@@ -48,6 +49,7 @@ const PageFooterNavComponent = ({
         : navListDe.map(({ title, url, targetBlank }, index) => (
             <li key={index}>
               <Link
+                prefetch={false}
                 href={
                   windowWidth >= 1050 && url === "/#about-us"
                     ? url + "-desktop"

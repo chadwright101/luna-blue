@@ -42,6 +42,8 @@ const About = ({
   },
 }: Props) => {
   const { locale } = useRouter();
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   return (
     <main
@@ -133,7 +135,7 @@ const About = ({
         </ul>
       </article>
 
-      <BookEntireProperty />
+      {currentRoute === "/keurbooms-lagoon-villa" && <BookEntireProperty />}
     </main>
   );
 };

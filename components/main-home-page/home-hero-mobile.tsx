@@ -92,20 +92,9 @@ const HomeHeroMobile = ({ cssClasses }: CssProps) => {
         buttonUrl="/keurbooms-lagoon-villa"
       />
 
-      {/* Robberg Beach */}
-      {/* <HomePageMobileSlide
-        backgroundImage="bg-[url('/assets/images/robberg-beach/images/9U7A0652-HDR.jpg')]"
-        cssClasses="mb-4"
-        whiteText
-        title={robbergBeachData.general.propertyName}
-        paragraph={robbergBeach.en.description}
-        paragraphGerman={robbergBeach.de.description}
-        buttonUrl="/robberg-beach-view-villa"
-      /> */}
-
       {/* Cliffside */}
       <HomePageMobileSlide
-        backgroundImage="bg-[url('/assets/images/cliffside/images/9U7A4196-HDR-2.jpg')]"
+        backgroundImage="bg-[url('/assets/images/cliffside/cliffside-suites-main-home-page-hero.webp')]"
         cssClasses="mb-4"
         title={cliffsideData.general.propertyName}
         paragraph={cliffside.en.description}

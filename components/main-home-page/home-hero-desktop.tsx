@@ -13,13 +13,12 @@ import Translated from "../utils/translated";
 
 const {
   mainHomePage: {
-    hero: { lagoonVilla, robbergBeach, cliffside },
+    hero: { lagoonVilla, cliffside },
   },
 } = generalData;
 
 const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
   const [showLagoonVilla, setShowLagoonVilla] = useState(false);
-  const [showRobbergBeach, setShowRobbergBeach] = useState(false);
   const [showCliffside, setShowCliffside] = useState(false);
   return (
     <main className={`${cssClasses}`}>
@@ -35,7 +34,6 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
           "grid hero-grid-split ease-in-out duration-700 delay-200",
           {
             "hero-grid-lagoon-villa": showLagoonVilla,
-            "hero-grid-robberg-beach": showRobbergBeach,
             "hero-grid-cliffside": showCliffside,
           }
         )}
@@ -51,7 +49,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
               "bg-[url('/assets/images/lagoon-villa/luna-blue-lagoon-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showLagoonVilla,
-                "opacity-70": showRobbergBeach || showCliffside,
+                "opacity-70": showCliffside,
               }
             )}
           >
@@ -112,7 +110,7 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
               "w-full bg-[url('/assets/images/cliffside/cliffside-suites-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
               {
                 "scale-110": showCliffside,
-                "opacity-70": showLagoonVilla || showRobbergBeach,
+                "opacity-70": showLagoonVilla,
               }
             )}
           >

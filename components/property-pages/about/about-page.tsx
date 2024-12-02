@@ -5,7 +5,7 @@ import LightboxSlider from "@/components/sliders/lightbox-slider";
 import DesktopImageGrid from "@/components/desktop-image-grid";
 import Translated from "@/components/utils/translated";
 import { DataProps } from "../home-page/home-page";
-import BookEntireProperty from "../../book-entire-property";
+/* import BookEntireProperty from "../../book-entire-property"; */
 
 const AboutPage = ({
   data: {
@@ -67,7 +67,7 @@ const AboutPage = ({
           </Translated>
         </p>
       </article>
-      <BookEntireProperty />
+      {/* <BookEntireProperty /> */}
       <div id="gallery" className="-translate-y-20"></div>
       <section className="my-10 desktopSmall:my-16">
         <h2 className="mb-10">

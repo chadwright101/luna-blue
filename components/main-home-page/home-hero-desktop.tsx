@@ -69,36 +69,6 @@ const HomeHeroDesktop = ({ cssClasses }: CssProps) => {
           </div>
         </div>
 
-        {/* Robberg Beach */}
-        {/* <div
-          className="overflow-hidden bg-black desktopSmall:h-[650px] desktop:h-[725px]"
-          onMouseEnter={() => setShowRobbergBeach(true)}
-          onMouseLeave={() => setShowRobbergBeach(false)}
-        >
-          <div
-            className={classNames(
-              "w-full bg-[url('/assets/images/robberg-beach/luna-blue-robberg-beach-view-villa-main-home-page-hero.webp')] bg-cover bg-center flex place-items-center justify-center duration-1000 delay-500 ease-in-out desktopSmall:h-full",
-              {
-                "scale-110": showRobbergBeach,
-                "opacity-70": showLagoonVilla || showCliffside,
-              }
-            )}
-          >
-            <HomeHeroTextBox
-              title="Robberg Beach View Villa"
-              paragraph={robbergBeach.en.description}
-              paragraphGerman={robbergBeach.de.description}
-              buttonUrl="/robberg-beach-view-villa"
-              cssClasses={classNames(
-                "opacity-0 ease-in-out duration-700 delay-150",
-                {
-                  "opacity-100": showRobbergBeach,
-                }
-              )}
-            />
-          </div>
-        </div> */}
-
         {/* Cliffside */}
         <div
           className="overflow-hidden bg-black desktopSmall:h-[650px] desktop:h-[725px]"

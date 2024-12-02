@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Button from "../../../button";
 import ImageContainer from "../../../utils/image-container";
 import Translated from "../../../utils/translated";
-import BookEntireProperty from "../../../book-entire-property";
+/* import BookEntireProperty from "../../../book-entire-property"; */
 
 interface Props {
   cssClasses?: string;
@@ -135,7 +135,7 @@ const About = ({
         </ul>
       </article>
 
-      {currentRoute === "/keurbooms-lagoon-villa" && <BookEntireProperty />}
+      {/* {currentRoute === "/keurbooms-lagoon-villa" && <BookEntireProperty />} */}
     </main>
   );
 };

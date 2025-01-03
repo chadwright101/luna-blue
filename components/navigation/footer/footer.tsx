@@ -1,13 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
+import Link from "next/link";
 import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import Translated from "../../utils/translated";
-
 import navigation from "@/data/navigation-data.json";
-
 import { CssProps } from "@/components/property-pages/home-page/home-page";
 import {
   robbergBeachUrls,
@@ -27,35 +24,41 @@ const {
 const currentYear = new Date().getFullYear();
 
 const Footer = ({ cssClasses }: CssProps) => {
-  const defaultEmail = (
-    <Translated german="E-Mail Adresse anzeigen">Show email address</Translated>
-  );
-  const defaultPhone = (
-    <Translated german="Rufnummer anzeigen">Show phone number</Translated>
-  );
-  const [showEmail, setShowEmail] = useState(defaultEmail);
-  const [showPhone, setShowPhone] = useState(defaultPhone);
+  const [showEmail, setShowEmail] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const fetchPhone = async () => {
-    try {
-      const response = await fetch("/api/contact-details");
-      const data = await response.json();
-      setShowPhone(data.phone);
-    } catch (error) {
-      console.error("Error fetching contact data:", error);
+  const handleEmailClick = async () => {
+    if (!showEmail) {
+      try {
+        const response = await fetch("/api/contact-details");
+        const data = await response.json();
+        setEmail(data.email);
+        setShowEmail(true);
+      } catch (error) {
+        console.error("Error fetching email:", error);
+      }
+    } else {
+      setShowEmail(false);
     }
   };
 
-  const fetchEmail = async () => {
-    try {
-      const response = await fetch("/api/contact-details");
-      const data = await response.json();
-      setShowEmail(data.email);
-    } catch (error) {
-      console.error("Error fetching contact data:", error);
+  const handlePhoneClick = async () => {
+    if (!showPhone) {
+      try {
+        const response = await fetch("/api/contact-details");
+        const data = await response.json();
+        setPhone(data.phone);
+        setShowPhone(true);
+      } catch (error) {
+        console.error("Error fetching phone:", error);
+      }
+    } else {
+      setShowPhone(false);
     }
   };
 
@@ -97,40 +100,38 @@ const Footer = ({ cssClasses }: CssProps) => {
             <Translated german="Kontakt">Contact</Translated>
           </h4>
           <ul className="grid gap-2 mt-6 grid-rows-[40px_40px_1fr] desktopSmall:gap-0">
-            {showPhone !== defaultPhone ? (
-              <li onClick={fetchPhone} className="mr-auto">
-                <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  {showPhone}
-                </p>
-              </li>
-            ) : (
-              <li>
-                <Link
-                  prefetch={false}
-                  href={`tel:${showPhone}`}
-                  className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
-                >
-                  {showPhone}
-                </Link>
-              </li>
-            )}
-            {showEmail !== defaultEmail ? (
-              <li onClick={fetchEmail} className="mr-auto">
-                <p className="italic p-3 -m-3 text-blueLink tabletLarge:hover:cursor-pointer tabletLarge:hover:text-brown desktopSmall:p-0 desktopSmall:m-0">
-                  {showEmail}
-                </p>
-              </li>
-            ) : (
-              <li>
-                <Link
-                  prefetch={false}
-                  href={`mailto:${showEmail}`}
-                  className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
-                >
-                  {showEmail}
-                </Link>
-              </li>
-            )}
+            <li>
+              <button
+                onClick={handlePhoneClick}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              >
+                {showPhone ? (
+                  <Link prefetch={false} href={`tel:${phone}`}>
+                    {phone}
+                  </Link>
+                ) : (
+                  <Translated german="Rufnummer anzeigen">
+                    Show phone number
+                  </Translated>
+                )}
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={handleEmailClick}
+                className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0"
+              >
+                {showEmail ? (
+                  <Link prefetch={false} href={`mailto:${email}`}>
+                    {email}
+                  </Link>
+                ) : (
+                  <Translated german="E-Mail Adresse anzeigen">
+                    Show email address
+                  </Translated>
+                )}
+              </button>
+            </li>
           </ul>
         </div>
         <div>

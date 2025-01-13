@@ -54,19 +54,18 @@ export default async function handler(
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
-    port: 587,
-    secure: false,
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.SMTP_USERNAME,
       pass: process.env.SMTP_PASSWORD,
     },
-    requireTLS: true,
   });
 
   const mailOptions = {
     from: process.env.SEND_FROM_EMAIL,
     to: process.env.SEND_TO_EMAIL,
-    subject: "Website - Contact Form",
+    subject: "Luna Blue - Website Contact Form",
     replyTo: email,
     text: message,
     html: EmailTemplate({ name, email, message, property }),

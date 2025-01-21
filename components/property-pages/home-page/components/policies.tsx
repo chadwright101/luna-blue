@@ -43,7 +43,7 @@ const Policies = () => {
                 </li>
                 <li>
                   <Translated german="2 x SUP-Boards">
-                    2 x sup boards
+                    2 x standup paddleboards
                   </Translated>
                 </li>
               </ul>

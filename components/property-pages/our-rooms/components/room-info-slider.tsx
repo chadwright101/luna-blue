@@ -46,26 +46,25 @@ const RoomInfoSlider = ({
   const router = useRouter();
   const currentRoute = router.pathname;
 
-  const cabinUrls =
-    currentRoute === "/cliffside-suites/our-suites" ||
-    currentRoute === "/forest-view-cabins/our-cabins";
+  const cliffsideRooms = currentRoute === "/cliffside-suites/our-rooms";
 
   return (
     <section
       className={classNames(`block desktopSmall:grid gap-10 ${cssClasses}`, {
-        "desktopSmall:grid-cols-[1fr_2fr]": flip && !cabinUrls,
-        "desktopSmall:grid-cols-[2fr_1fr]": !flip && !cabinUrls,
-        "desktopSmall:block": cabinUrls,
+        "desktopSmall:grid-cols-[1fr_2fr]": flip,
+        "desktopSmall:grid-cols-[2fr_1fr]": !flip,
       })}
     >
       <h3
         className={
-          !cabinUrls ? "hidden" : "text-43px w-full mb-4 desktopSmall:-mb-8"
+          !cliffsideRooms
+            ? "hidden"
+            : "text-43px w-full mb-4 desktopSmall:-mb-8"
         }
       >
         {enTitle}
       </h3>
-      <p className={cabinUrls ? "mb-10 desktopSmall:-mb-4" : "hidden"}>
+      <p className={cliffsideRooms ? "mb-10 desktopSmall:-mb-4" : "hidden"}>
         <Translated german="Zimmergröße">Room Size</Translated>: {enSize}m
         <sup>2</sup>
       </p>
@@ -76,21 +75,27 @@ const RoomInfoSlider = ({
       >
         <h3
           className={
-            cabinUrls ? "hidden" : "text-43px w-full mb-4 desktopSmall:mb-10"
+            cliffsideRooms
+              ? "hidden"
+              : "text-43px w-full mb-4 desktopSmall:mb-10"
           }
         >
           {enTitle}
         </h3>
-        <p className={!cabinUrls ? "mb-10" : "hidden"}>
+        <p className={!cliffsideRooms ? "mb-10" : "hidden"}>
           <Translated german="Zimmergröße">Room Size</Translated>: {enSize}m
           <sup>2</sup>
         </p>
-        <h4 className={cabinUrls ? "hidden desktopSmall:block mb-4" : "hidden"}>
+        <h4
+          className={
+            cliffsideRooms ? "hidden desktopSmall:block mb-4" : "hidden"
+          }
+        >
           Facilities:
         </h4>
         <ul
           className={
-            !cabinUrls
+            !cliffsideRooms
               ? "list-disc ml-4 text-left"
               : "list-disc ml-4 text-left tabletLarge:grid grid-cols-2 gap-x-10"
           }

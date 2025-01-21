@@ -45,33 +45,21 @@ const OurRooms = ({
         <h2 className="mb-8 tabletLarge:hidden">
           {currentRoute === "/cliffside-suites/our-suites" ? (
             <Translated german="Unsere Suiten">Our Suites</Translated>
-          ) : currentRoute === "forest-view-cabins/our-cabins" ? (
-            <Translated german="Unsere Hütten">Our Cabins</Translated>
           ) : (
             <Translated german="Unsere Zimmer">Our Rooms</Translated>
           )}
         </h2>
         <ImageCard
           title={
-            currentRoute === "/cliffside-suites"
-              ? "Our Suites"
-              : currentRoute === "forest-view-cabins"
-              ? "Our Cabins"
-              : "Our Rooms"
+            currentRoute === "/cliffside-suites" ? "Our Suites" : "Our Rooms"
           }
           titleGerman={
             currentRoute === "/cliffside-suites"
               ? "Unsere Suiten"
-              : currentRoute === "forest-view-cabins"
-              ? "Unsere Hütten"
               : "Unsere Zimmer"
           }
           link={`/${url}/${
-            currentRoute === "/cliffside-suites"
-              ? "our-suites"
-              : currentRoute === "forest-view-cabins"
-              ? "our-cabins"
-              : "our-rooms"
+            currentRoute === "/cliffside-suites" ? "our-suites" : "our-rooms"
           }`}
           image={imageUrl}
           blankMobileCard

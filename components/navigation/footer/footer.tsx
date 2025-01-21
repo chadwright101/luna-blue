@@ -6,18 +6,11 @@ import PageFooterNavComponent from "./pages/page-footer-nav-component";
 import Translated from "../../utils/translated";
 import navigation from "@/data/navigation-data.json";
 import { CssProps } from "@/components/property-pages/home-page/home-page";
-import {
-  robbergBeachUrls,
-  lagoonVillaUrls,
-  cliffSideUrls,
-  forestCabinsUrls,
-} from "../header/mobile/mobile-menu";
+import { lagoonVillaUrls, cliffSideUrls } from "../header/mobile/mobile-menu";
 
 const {
-  robbergBeach: { en: robbergBeachEn, de: robbergBeachDe },
   lagoonVilla: { en: lagoonVillaEn, de: lagoonVillaDe },
   cliffSide: { en: cliffSideEn, de: cliffSideDe },
-  forestCabins: { en: forestCabinsEn, de: forestCabinsDe },
   homePage: { en: homePageEn, de: homePageDe },
 } = navigation;
 
@@ -68,12 +61,7 @@ const Footer = ({ cssClasses }: CssProps) => {
       <div className="grid place-items-center gap-4 tabletLarge:gap-24 tabletLarge:place-items-start tabletLarge:flex desktopSmall:grid desktopSmall:gap-0 desktopSmall:grid-cols-4">
         <div className="hidden tabletLarge:block">
           <h4>Navigation</h4>
-          {robbergBeachUrls.includes(currentRoute) ? (
-            <PageFooterNavComponent
-              navListEn={robbergBeachEn}
-              navListDe={robbergBeachDe}
-            />
-          ) : lagoonVillaUrls.includes(currentRoute) ? (
+          {lagoonVillaUrls.includes(currentRoute) ? (
             <PageFooterNavComponent
               navListEn={lagoonVillaEn}
               navListDe={lagoonVillaDe}
@@ -82,11 +70,6 @@ const Footer = ({ cssClasses }: CssProps) => {
             <PageFooterNavComponent
               navListEn={cliffSideEn}
               navListDe={cliffSideDe}
-            />
-          ) : forestCabinsUrls.includes(currentRoute) ? (
-            <PageFooterNavComponent
-              navListEn={forestCabinsEn}
-              navListDe={forestCabinsDe}
             />
           ) : (
             <PageFooterNavComponent

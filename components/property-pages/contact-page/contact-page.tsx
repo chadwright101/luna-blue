@@ -112,8 +112,7 @@ const ContactPage = ({
           <ul className="flex flex-col gap-6 desktopSmall:gap-4">
             <li
               className={`mr-auto grid ${
-                currentRoute === "/cliffside-suites/contact" ||
-                currentRoute === "/forest-view-cabins/contact"
+                currentRoute === "/cliffside-suites/contact"
                   ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               }`}
@@ -143,8 +142,7 @@ const ContactPage = ({
 
             <li
               className={`mr-auto grid ${
-                currentRoute === "/cliffside-suites/contact" ||
-                currentRoute === "/forest-view-cabins/contact"
+                currentRoute === "/cliffside-suites/contact"
                   ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               }`}
@@ -174,15 +172,13 @@ const ContactPage = ({
 
             <li
               className={`grid ${
-                currentRoute === "/cliffside-suites/contact" ||
-                currentRoute === "/forest-view-cabins/contact"
+                currentRoute === "/cliffside-suites/contact"
                   ? "grid-cols-[120px_1fr]"
                   : "grid-cols-[90px_1fr]"
               } desktopSmall:col-span-2`}
             >
               <p className="font-500">
-                {currentRoute === "/cliffside-suites/contact" ||
-                currentRoute === "/forest-view-cabins/contact" ? (
+                {currentRoute === "/cliffside-suites/contact" ? (
                   <Translated german="Koordinaten">Coordinates</Translated>
                 ) : (
                   <Translated german="Anschrift">Address</Translated>
@@ -190,8 +186,7 @@ const ContactPage = ({
                 :
               </p>
               <address className="text-left">
-                {currentRoute === "/cliffside-suites/contact" ||
-                currentRoute === "/forest-view-cabins/contact" ? (
+                {currentRoute === "/cliffside-suites/contact" ? (
                   <>
                     <Link
                       prefetch={false}

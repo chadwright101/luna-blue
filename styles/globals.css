@@ -203,11 +203,6 @@
 
   }
 
-  /* .hero-grid-robberg-beach {
-    grid-template-columns: .14fr 1fr .14fr;
-    gap: 0% 1.5%;
-  } */
-
   .hero-grid-cliffside {
     grid-template-columns: 1fr 3.5fr;
     gap: 0% 1.5%;

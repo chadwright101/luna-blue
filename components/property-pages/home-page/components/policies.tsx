@@ -123,7 +123,7 @@ const Policies = () => {
               </h4>
               <Link
                 prefetch={false}
-                href="/assets/images/luna-blue-dog-policy-2023.pdf"
+                href="/assets/luna-blue-dog-policy-2023.pdf"
                 className="flex gap-2 hover:desktopSmall:text-brown p-3 text-blueLink -m-3 desktopSmall:p-0 desktopSmall:m-0"
                 target="_blank"
               >

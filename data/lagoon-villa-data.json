@@ -123,7 +123,7 @@
         "bedroom2": {
           "enTitle": "Aqua Room",
           "enFacilities": [
-            "Queen size bed",
+            "King size bed",
             "Ensuite Bathroom - Shower only",
             "Makeup station",
             "Blinds"
@@ -133,7 +133,7 @@
         "bedroom3": {
           "enTitle": "Indigo Suite",
           "enFacilities": [
-            "Queen size bed",
+            "King size bed",
             "Ensuite Bathroom - Bath & walk-in shower",
             "Makeup station",
             "Balcony with outdoor furniture",
@@ -173,7 +173,7 @@
         },
         "bedroom2": {
           "deFacilities": [
-            "Queen-Size-Bett",
+            "King-Size-Bett",
             "Ensuite-Badezimmer - nur Dusche",
             "Schminkecke",
             "Jalousien"
@@ -181,7 +181,7 @@
         },
         "bedroom3": {
           "deFacilities": [
-            "Queen-Size-Bett",
+            "King-Size-Bett",
             "Ensuite-Badezimmer - Badewanne und begehbare Dusche",
             "Schminkstation",
             "Balkon mit Gartenmöbeln",

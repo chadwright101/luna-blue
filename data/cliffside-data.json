@@ -81,7 +81,7 @@
         "bedroom1": {
           "enTitle": "Luxury Suite",
           "enFacilities": [
-            "Queen Size Bed",
+            "King Size Bed",
             "Electric blanket",
             "Ensuite Bathroom with bath & walk-in shower",
             "Heated towel rail",
@@ -118,7 +118,7 @@
       "de": {
         "bedroom1": {
           "deFacilities": [
-            "Queen-Size-Bett",
+            "King-Size-Bett",
             "Elektrische Bettdecke",
             "Privates Badezimmer mit Badewanne und begehbarer Dusche",
             "Beheizter Handtuchhalter",

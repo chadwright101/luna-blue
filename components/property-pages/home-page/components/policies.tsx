@@ -117,6 +117,22 @@ const Policies = () => {
               })}
             >
               <h4 className="text-18px font-Josefin_Sans font-500 underline underline-offset-4 decoration-[0.5px]">
+                <Translated german="Besucherpolitik:">
+                  Visitors policy:
+                </Translated>
+              </h4>
+              <Translated german="Ohne vorherige Zustimmung der Geschäftsleitung sind keine Besucher zugelassen.">
+                No visitors will be allowed without prior consent from
+                management.
+              </Translated>
+            </li>
+            <li
+              className={classNames("flex gap-2 flex-col", {
+                "desktopSmall:flex-row":
+                  currentRoute !== "/keurbooms-lagoon-villa",
+              })}
+            >
+              <h4 className="text-18px font-Josefin_Sans font-500 underline underline-offset-4 decoration-[0.5px]">
                 <Translated german="Haustierrichtlinie:">
                   Pets policy:
                 </Translated>

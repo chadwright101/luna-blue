@@ -93,11 +93,8 @@ const BasicSlider = ({
                 cssClasses="object-cover h-full w-full max-w-[1400px]"
                 quality={60}
                 eager={index < 2 ? true : false}
-                smallest={85}
-                phone={80}
-                tablet={70}
-                tabletLarge={60}
-                desktopSmall={60}
+                phone={85}
+                tabletLarge={70}
                 desktop={90}
               />
             </SplideSlide>

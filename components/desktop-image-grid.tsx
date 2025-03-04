@@ -31,10 +31,9 @@ const DesktopImageGrid = ({ url, cssClasses, propertyName }: Props) => {
         eager
         onMouseEnter={() => setHoverZoom(true)}
         onMouseLeave={() => setHoverZoom(false)}
-        smallest={70}
-        tablet={60}
-        desktopSmall={45}
-        desktop={35}
+        phone={70}
+        tabletLarge={60}
+        desktop={45}
       />
     </div>
   );

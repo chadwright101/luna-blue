@@ -81,11 +81,8 @@ const LightboxSlider = ({
                 height={900}
                 quality={60}
                 cssClasses="object-cover place-self-center"
-                smallest={70}
                 phone={70}
-                tablet={60}
-                tabletLarge={55}
-                desktopSmall={50}
+                tabletLarge={60}
                 desktop={60}
               />
             </SplideSlide>
@@ -147,12 +144,9 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={90}
-                phone={65}
-                tablet={55}
-                tabletLarge={50}
-                desktopSmall={45}
-                desktop={35}
+                phone={90}
+                tabletLarge={55}
+                desktop={45}
               />
             </SplideSlide>
           ))}
@@ -210,12 +204,9 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={95}
-                phone={75}
-                tablet={65}
+                phone={95}
                 tabletLarge={65}
-                desktopSmall={50}
-                desktop={45}
+                desktop={50}
               />
             </SplideSlide>
           ))}
@@ -273,12 +264,9 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={90}
-                phone={65}
-                tablet={55}
+                phone={90}
                 tabletLarge={55}
-                desktopSmall={40}
-                desktop={35}
+                desktop={40}
               />
             </SplideSlide>
           ))}
@@ -338,12 +326,9 @@ const LightboxSlider = ({
                   slider1.current.go(index), setToggleLightbox(true)
                 )}
                 eager={index < 2 ? true : false}
-                smallest={90}
-                phone={60}
-                tablet={55}
-                tabletLarge={50}
-                desktopSmall={45}
-                desktop={35}
+                phone={90}
+                tabletLarge={55}
+                desktop={45}
               />
             </SplideSlide>
           ))}

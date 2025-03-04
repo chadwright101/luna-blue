@@ -100,11 +100,9 @@ const ContactPage = ({
           width={1100}
           height={750}
           cssClasses="object-cover h-[300px] phone:h-[350px] tablet:h-[400px] tabletLarge:h-[450px] desktopSmall:h-full desktopSmall:row-span-3"
-          smallest={75}
-          phone={70}
-          tablet={60}
-          tabletLarge={55}
-          desktopSmall={35}
+          phone={75}
+          tabletLarge={60}
+          desktop={35}
           eager
         />
         <hr className="my-4 desktopSmall:hidden text-black" />
@@ -324,11 +322,8 @@ const ContactPage = ({
             width={1400}
             height={740}
             cssClasses="object-cover mt-4 col-span-full h-[250px] phone:h-[275px] tablet:h-[400px] tabletLarge:h-[550px] desktopSmall:col-span-1 desktopSmall:h-[300px] desktopSmall:row-start-3 desktopSmall:mt-0"
-            smallest={75}
-            phone={70}
-            tablet={60}
-            tabletLarge={55}
-            desktopSmall={25}
+            phone={75}
+            tabletLarge={60}
             desktop={30}
           />
         )}

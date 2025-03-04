@@ -1,16 +1,12 @@
 import Image from "next/image";
-import { useState } from "react";
 
 interface Props {
   src: string;
   alt?: string;
   width: number;
   height: number;
-  smallest?: number;
   phone?: number;
-  tablet?: number;
   tabletLarge?: number;
-  desktopSmall?: number;
   desktop?: number;
   cssClasses?: string;
   quality?: number;
@@ -25,12 +21,9 @@ const ImageContainer = ({
   alt,
   width,
   height,
-  smallest,
   phone,
-  tablet,
   tabletLarge,
   desktop,
-  desktopSmall,
   cssClasses,
   quality,
   eager,
@@ -50,7 +43,7 @@ const ImageContainer = ({
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
-      sizes={`(max-width: 425px) ${smallest}vw,(max-width: 650px) ${phone}vw, (max-width: 900px) ${tablet}vw, (max-width: 1100px) ${tabletLarge}vw, (max-width: 1400px) ${desktopSmall}vw, ${desktop}vw `}
+      sizes={`((max-width: 650px) ${phone}vw, (max-width: 1100px) ${tabletLarge}vw, ${desktop}vw `}
     />
   );
 };

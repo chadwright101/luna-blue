@@ -94,8 +94,7 @@
             "BBQ Facility",
             "Solar Powered",
             "Gas Geysers",
-            "Pet-friendly by arrangement",
-            "Shared kitchenette - Gas Hob, Fridge, Microwave & Nespresso Coffee Machine"
+            "Full Kitchen - Gas Hob, Fridge, Microwave & Nespresso Coffee Machine"
           ],
           "enSize": 32
         },
@@ -131,8 +130,7 @@
             "Grill",
             "Sonnenenergie",
             "Gas-Geysire",
-            "Haustiere nach Absprache erlaubt",
-            "Gemeinschaftsküche - Gasherd, Kühlschrank, Mikrowelle & Nespresso Kaffeemaschine"
+            "Voll ausgestattete Küche - Gasherd, Kühlschrank, Mikrowelle & Nespresso Kaffeemaschine"
           ]
         },
         "bedroom2": {
@@ -182,10 +180,6 @@
         "item": "Splash pool"
       },
       {
-        "url": "/assets/icons/cliffside/pet-friendly.svg",
-        "item": "Pet Friendly"
-      },
-      {
         "url": "/assets/icons/cliffside/solar.svg",
         "item": "Solar Powered"
       },
@@ -194,7 +188,7 @@
       },
       {
         "url": "/assets/icons/cliffside/kitchenette.svg",
-        "item": "Shared kitchenette"
+        "item": "Full kitchen"
       },
       {
         "url": "/assets/icons/cliffside/bbq-facility.svg",
@@ -222,10 +216,6 @@
         "item": "Planschbecken"
       },
       {
-        "url": "/assets/icons/cliffside/pet-friendly.svg",
-        "item": "Haustierfreundlich"
-      },
-      {
         "url": "/assets/icons/cliffside/solar.svg",
         "item": "Solarbetrieben"
       },
@@ -234,7 +224,7 @@
       },
       {
         "url": "/assets/icons/cliffside/kitchenette.svg",
-        "item": "Gemeinsame Kochnische"
+        "item": "Voll ausgestattete Küche"
       },
       {
         "url": "/assets/icons/cliffside/bbq-facility.svg",
@@ -285,8 +275,8 @@
       "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
-      "/assets/images/cliffside/images/9U7A4096-HDR-2.jpg",
-      "/assets/images/cliffside/images/9U7A4116-HDR-2.jpg",
+      "/assets/images/cliffside/images/_MG_8015.jpg",
+      "/assets/images/cliffside/images/_MG_8016.jpg",
       "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
       "/assets/images/cliffside/images/DJI_0157.jpg",
       "/assets/images/cliffside/images/DJI_0161.jpg"
@@ -309,8 +299,7 @@
         "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
-        "/assets/images/cliffside/images/9U7A4096-HDR-2.jpg",
-        "/assets/images/cliffside/images/9U7A4116-HDR-2.jpg",
+        "/assets/images/cliffside/images/_MG_8015.jpg",
         "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
         "/assets/images/cliffside/images/DJI_0157.jpg",
         "/assets/images/cliffside/images/DJI_0161.jpg"

@@ -126,26 +126,6 @@ const Policies = () => {
                 management.
               </Translated>
             </li>
-            <li
-              className={classNames("flex gap-2 flex-col", {
-                "desktopSmall:flex-row":
-                  currentRoute !== "/keurbooms-lagoon-villa",
-              })}
-            >
-              <h4 className="text-18px font-Josefin_Sans font-500 underline underline-offset-4 decoration-[0.5px]">
-                <Translated german="Haustierrichtlinie:">
-                  Pets policy:
-                </Translated>
-              </h4>
-              <Link
-                prefetch={false}
-                href="/assets/luna-blue-dog-policy-2023.pdf"
-                className="flex gap-2 hover:desktopSmall:text-brown p-3 text-blueLink -m-3 desktopSmall:p-0 desktopSmall:m-0"
-                target="_blank"
-              >
-                <Translated german="Herunterladen">Download</Translated>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

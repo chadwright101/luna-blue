@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <WindowWidthListener>
-      <RageDisclaimer />
+      {/* <RageDisclaimer /> */}
       <Header
         cssClasses={`sticky z-20 px-8 py-4 ${
           scrollPosition !== 0 ? "-top-3 tabletLarge:-top-6" : "top-0"

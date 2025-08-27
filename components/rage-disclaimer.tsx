@@ -28,7 +28,7 @@ const RageDisclaimer = () => {
 
   return (
     <div className="fixed top-0 left-0 z-50 bg-white/90 w-full h-full min-[350px]:grid place-items-center">
-      <div className="max-w-[700px] mx-8 flex flex-col gap-4 p-8 bg-darkBeige drop-shadow-md border-4 border-brown">
+      <div className="max-w-[700px] mx-8 flex flex-col gap-4 p-8 bg-darkBeige drop-shadow-md border-4 border-brown max-h-full overflow-y-auto">
         <h3 className="text-center">Guest age policy</h3>
         <p>
           Please note that guests booking our properties has an age requirement

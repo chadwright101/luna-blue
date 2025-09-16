@@ -1,8 +1,8 @@
-import LagoonVillaMap from "@/components/property-pages/contact-page/maps/lagoon-villa-map";
 import ContactPage from "@/components/property-pages/contact-page/contact-page";
 import MetaComponent from "@/components/property-pages/meta-component";
 
 import data from "@/data/cliffside-data.json";
+import CliffSideMap from "@/components/property-pages/contact-page/maps/cliff-side-map";
 
 const Contact = () => {
   return (
@@ -13,7 +13,7 @@ const Contact = () => {
         verticalImage="/assets/images/cliffside/images/9U7A4253-HDR-2.jpg"
         horizontalImage="/assets/images/cliffside/images/9U7A4241.jpg"
       />
-      <LagoonVillaMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
+      <CliffSideMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>
   );
 };

@@ -51,17 +51,17 @@
     },
     "moreInfoAvailability": {
       "bookingUrl": "https://book.nightsbridge.com/36149",
-      "roomImageUrl": "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
+      "roomImageUrl": "/assets/images/cliffside/images/rooms/9U7A1850-HDR.jpg",
       "infoImageUrl": "/assets/images/cliffside/plett.jpg"
     }
   },
   "ourRoomsPage": {
     "imageGridUrls": [
+      "/assets/images/cliffside/images/rooms/9U7A4211.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4215.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4210.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4227.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4209.jpg"
+      "/assets/images/cliffside/images/rooms/9U7A1982-HDR.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4200-HDR-2.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A4210.jpg"
     ],
     "description": {
       "en": {
@@ -81,7 +81,7 @@
         "bedroom1": {
           "enTitle": "Luxury Suite",
           "enFacilities": [
-            "King Size Bed",
+            "Queen Size Bed",
             "Electric blanket",
             "Ensuite Bathroom with bath & walk-in shower",
             "Heated towel rail",
@@ -94,7 +94,7 @@
             "BBQ Facility",
             "Solar Powered",
             "Gas Geysers",
-            "Full Kitchen - Gas Hob, Fridge, Microwave & Nespresso Coffee Machine"
+            "Full Kitchen - Gas Hob, Fridge & Microwave"
           ],
           "enSize": 32
         },
@@ -117,7 +117,7 @@
       "de": {
         "bedroom1": {
           "deFacilities": [
-            "King-Size-Bett",
+            "Queensize-Bett",
             "Elektrische Bettdecke",
             "Privates Badezimmer mit Badewanne und begehbarer Dusche",
             "Beheizter Handtuchhalter",
@@ -130,7 +130,7 @@
             "Grill",
             "Sonnenenergie",
             "Gas-Geysire",
-            "Voll ausgestattete Küche - Gasherd, Kühlschrank, Mikrowelle & Nespresso Kaffeemaschine"
+            "Voll ausgestattete Küche - Gasherd, Kühlschrank & Mikrowelle"
           ]
         },
         "bedroom2": {
@@ -147,11 +147,11 @@
   },
   "aboutPage": {
     "imageGridUrls": [
-      "/assets/images/cliffside/images/9U7A4247.jpg",
-      "/assets/images/cliffside/images/9U7A4188-HDR-2.jpg",
-      "/assets/images/cliffside/images/9U7A4253-HDR-2.jpg",
-      "/assets/images/cliffside/images/9U7A4251.jpg",
-      "/assets/images/cliffside/images/9U7A4240-Edit.jpg"
+      "/assets/images/cliffside/images/DJI_20251007154237_0622_D.jpg",
+      "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
+      "/assets/images/cliffside/images/9U7A2086-HDR.jpg",
+      "/assets/images/cliffside/images/9U7A4238.jpg",
+      "/assets/images/cliffside/images/9U7A1918-HDR.jpg"
     ],
     "description": {
       "enDescription": {
@@ -250,59 +250,47 @@
   "images": {
     "homePage": {
       "heroSlider": [
+        "/assets/images/cliffside/images/DJI_20251007154237_0622_D.jpg",
         "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
-        "/assets/images/cliffside/images/DJI_0164.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1882-HDR.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
         "/assets/images/cliffside/images/9U7A4238.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-        "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg"
+        "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A1814-HDR.jpg",
+        "/assets/images/cliffside/images/9U7A2010-HDR.jpg"
       ]
     },
     "aboutUsSlider": [
-      "/assets/images/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
-      "/assets/images/cliffside/images/DJI_0164.jpg",
+      "/assets/images/cliffside/images/DJI_20251007154055_0614_D.jpg",
       "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4224.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
-      "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
       "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
-      "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
       "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
-      "/assets/images/cliffside/images/_MG_8015.jpg",
-      "/assets/images/cliffside/images/_MG_8016.jpg",
-      "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
-      "/assets/images/cliffside/images/DJI_0157.jpg",
-      "/assets/images/cliffside/images/DJI_0161.jpg"
+      "/assets/images/cliffside/images/9U7A1898-HDR.jpg",
+      "/assets/images/cliffside/images/9U7A1830-HDR.jpg",
+      "/assets/images/cliffside/images/rooms/9U7A1982-HDR.jpg"
     ],
     "ourRooms": {
       "bedroom1": [
-        "/assets/images/cliffside/images/rooms/9U7A4128-HDR-2.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4136-HDR-2.jpg",
-        "/assets/images/cliffside/images/DJI_0164.jpg",
-        "/assets/images/cliffside/images/9U7A4240-Edit.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4164-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4176-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4172-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4180-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4224.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
-        "/assets/images/cliffside/images/9U7A4184-HDR-2.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1982-HDR.jpg",
         "/assets/images/cliffside/images/9U7A4196-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4160-HDR-2.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4209.jpg",
-        "/assets/images/cliffside/images/rooms/9U7A4219.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1846-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1882-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1850-HDR.jpg",
+        "/assets/images/cliffside/images/9U7A2002-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1886-HDR.jpg",
         "/assets/images/cliffside/images/rooms/9U7A4226.jpg",
-        "/assets/images/cliffside/images/_MG_8015.jpg",
-        "/assets/images/cliffside/images/9U7A4088-HDR-2.jpg",
-        "/assets/images/cliffside/images/DJI_0157.jpg",
-        "/assets/images/cliffside/images/DJI_0161.jpg"
+        "/assets/images/cliffside/images/rooms/9U7A1966-HDR.jpg",
+        "/assets/images/cliffside/images/9U7A1826-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1994-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A1878-HDR.jpg",
+        "/assets/images/cliffside/images/rooms/9U7A4112-HDR-2.jpg",
+        "/assets/images/cliffside/images/9U7A1906-HDR.jpg",
+        "/assets/images/cliffside/images/DJI_20251007154311_0623_D.jpg"
       ],
       "bedroom2": [""],
       "bedroom3": [""],

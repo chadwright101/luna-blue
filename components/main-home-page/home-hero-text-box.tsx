@@ -75,7 +75,6 @@ const HomeHeroTextBox = ({
               ? "bg-brown/75"
               : ""
           }`}
-          targetBlank
         />
       )}
     </div>

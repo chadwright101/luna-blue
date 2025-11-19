@@ -10,8 +10,8 @@ const Contact = () => {
       <MetaComponent data={data} pageName="Contact" />
       <ContactPage
         data={data}
-        verticalImage="/assets/images/cliffside/images/9U7A4253-HDR-2.jpg"
-        horizontalImage="/assets/images/cliffside/images/9U7A4241.jpg"
+        verticalImage="/assets/images/cliffside/images/DJI_20251007154311_0623_D.jpg"
+        horizontalImage="/assets/images/cliffside/images/9U7A4237.jpg"
       />
       <CliffSideMap cssClasses="w-full mt-10 h-[350px] phone:h-[400px] tabletLarge:h-[500px]" />
     </>

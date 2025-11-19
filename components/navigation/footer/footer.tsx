@@ -136,7 +136,7 @@ const Footer = ({ cssClasses }: CssProps) => {
             </Link>
             <Link
               prefetch={false}
-              href="https://www.instagram.com/lunablueguesthouse/"
+              href="https://www.instagram.com/lunabluevillas/"
               className="p-3 -m-3 desktopSmall:p-0 desktopSmall:m-0 desktopSmall:hover:scale-125 desktopSmall:hover:opacity-[85%] transition-all duration-500"
               target="_blank"
             >

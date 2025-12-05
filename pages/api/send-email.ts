@@ -32,8 +32,8 @@ export default async function handler(
   }
 
   try {
-    await rateLimiter.consume(ip);
-  } catch {
+    await rateLimiter.consume(ip as string);
+  } catch (error) {
     return res
       .status(429)
       .json({ error: "Too many requests, please try again later." });

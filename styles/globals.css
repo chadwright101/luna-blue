@@ -1,6 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-beige: #F6F3EA;
+  --color-lightBeige: #FBFBF9;
+  --color-darkBeige: #F3ECE7;
+  --color-lightBrown: #C3AC67;
+  --color-brown: #B56953;
+  --color-darkGrey: #4d4d4d;
+  --color-black: #0e0e0e;
+  --color-pureBlack: #000;
+  --color-white: #fff;
+  --color-blueLink: #0645AD;
+  --color-errorRed: #FF0000;
+
+  --font-family-*: initial;
+  --font-family-Comorant: "Cormorant", serif;
+  --font-family-Josefin_Sans: "Josefin_Sans", sans-serif;
+
+  --text-*: initial;
+  --text-60px: 3.75rem;
+  --text-43px: 2.688rem;
+  --text-35px: 2.188rem;
+  --text-25px: 1.563rem;
+  --text-18px: 1.125rem;
+  --text-14px: 0.875rem;
+
+  --font-*: initial;
+  --font-300: 300;
+  --font-350: 350;
+  --font-500: 500;
+  --font-700: 700;
+
+  --breakpoint-*: initial;
+  --breakpoint-phone: 425px;
+  --breakpoint-tablet: 650px;
+  --breakpoint-tabletLarge: 900px;
+  --breakpoint-desktopSmall: 1225px;
+  --breakpoint-desktop: 1400px;
+}
 
 @layer base {
 
@@ -131,63 +169,63 @@
   }
 
   h1 {
-    @apply text-60px
+    @apply text-60px;
   }
 
   h2 {
-    @apply text-43px
+    @apply text-43px;
   }
 
   h3 {
-    @apply text-35px
+    @apply text-35px;
   }
 
   h4 {
-    @apply text-25px
+    @apply text-25px;
   }
 
   a {
-    @apply ease-in-out duration-300
+    @apply ease-in-out duration-300;
   }
 
   @media (min-width: 1050px) {
 
     a:hover {
-      @apply text-brown
+      @apply text-brown;
     }
   }
 }
 
 @layer utilities {
   .splide__arrows {
-    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-8
+    @apply z-10 absolute w-full px-10 top-1/2 -translate-y-8;
   }
 
   .splide__arrow {
-    @apply fill-black p-3.5 -m-4 opacity-90 absolute rounded-full bg-beige/60 hover:bg-beige/80 ease-in-out duration-200
+    @apply fill-black p-3.5 -m-4 opacity-90 absolute rounded-full bg-beige/60 hover:bg-beige/80 ease-in-out duration-200;
   }
 
   @media (min-width: 1100px) {
     .splide__arrow {
-      @apply m-0
+      @apply m-0;
     }
 
   }
 
   .splide__arrow:hover {
-    @apply fill-brown
+    @apply fill-brown;
   }
 
   .splide__arrow:disabled {
-    @apply fill-white
+    @apply fill-white;
   }
 
   .splide__arrow--prev {
-    @apply -scale-100
+    @apply -scale-100;
   }
 
   .splide__arrow--next {
-    @apply right-10
+    @apply right-10;
   }
 
   /* Home page hero split */
